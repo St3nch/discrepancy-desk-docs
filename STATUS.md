@@ -14,19 +14,18 @@ M03 — Local Control Room MVP
 
 ## Current Focus
 
-M02 is complete. M03 is active. The repository baseline and five bounded persistence/reliability batches are committed and pushed. Current validation is 37 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. Governed dirty-marker recovery, dedicated human-authority gates, detector non-authority, publication-mismatch preservation, explicit unknown-state queries, and automatic post-test evidence emission are now implemented and tested.
+M02 is complete. M03 is active. The repository baseline and six bounded persistence/reliability/service batches are committed and pushed. Current validation is 42 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. The minimal governed operator service loop now runs from owned-account and work capture through sources, evidence, exact approval, manual-ready, publication, metrics, and control-room readback.
 
 Current sequence:
 
-1. implement the minimal complete operator service loop from owned-account/work-item creation through approval, manual-ready, publication, mismatch, and metrics;
-2. replace fixture-only setup paths with governed service operations;
-3. add read/query operations required by the local control room;
-4. strengthen successor-revision approval invalidation and corrected-publication workflow;
-5. emit named per-fixture HT evidence and perform the HT-01 through HT-20 closure review;
-6. begin the local FastAPI/Jinja/HTMX interface only after the service loop passes;
-7. keep both repositories clean and synchronized after each accepted checkpoint.
+1. prepare the first thin local FastAPI/Jinja/HTMX control-room package over the governed service boundary;
+2. ensure every UI action calls a dedicated service operation and cannot mutate lifecycle state directly;
+3. strengthen successor-revision approval invalidation and corrected-publication workflow;
+4. emit named per-fixture HT evidence and perform the HT-01 through HT-20 closure review;
+5. keep visual scope minimal until persistence and operator authority remain green through interface tests;
+6. keep both repositories clean and synchronized after each accepted checkpoint.
 
-The initial physical persistence slice now exists locally. M03 is not complete, and the local dashboard has not started.
+The physical persistence and operator service slices now exist. M03 is not complete, and the production dashboard has not started.
 
 ## Completed / Decided
 

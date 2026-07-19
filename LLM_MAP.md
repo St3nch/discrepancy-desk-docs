@@ -95,13 +95,14 @@ Read these first:
 30. `05-implementation-planning/m03-work-package-c-idempotency-concurrency-and-reconciliation-return.md`
 31. `05-implementation-planning/m03-work-package-d-guarded-migrations-encrypted-archives-and-evidence-return.md`
 32. `05-implementation-planning/m03-work-package-e-recovery-authority-mismatch-and-evidence-return.md`
-33. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
-34. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
-35. `05-implementation-planning/chrome-extension-plan.md`
-36. `06-research/truth-social-platform-research.md`
-37. `06-research/truth-social-capture-boundaries.md`
-38. `99-decisions/decision-log.md`
-39. `99-decisions/research-log.md`
+33. `05-implementation-planning/m03-work-package-f-minimal-operator-service-loop-return.md`
+34. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
+35. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
+36. `05-implementation-planning/chrome-extension-plan.md`
+37. `06-research/truth-social-platform-research.md`
+38. `06-research/truth-social-capture-boundaries.md`
+39. `99-decisions/decision-log.md`
+40. `99-decisions/research-log.md`
 
 ## Core Boundaries
 
