@@ -18,8 +18,8 @@ M01 is complete. The owner-approved M02 hammer-test doctrine is recorded. The in
 
 Current sequence:
 
-1. validate, commit, and push the completed audit-correction package;
-2. refine the probe-derived candidate tests into a project-specific M02 matrix;
+1. owner reviews the draft `05-implementation-planning/m02-adversarial-test-matrix.md`;
+2. revise and approve the project-specific M02 invariants and deliberate violation cases;
 3. define the smallest operational persistence contract and lifecycle model;
 4. keep schema, migrations, SQLite creation, and persistence implementation blocked until the M02 exit gate is satisfied.
 
@@ -73,6 +73,7 @@ No database implementation is admitted during M02. The milestone is planning-onl
 - The plaintext X environment file was moved by the owner from `C:\dev\x\local-secrets\` to `C:\Users\Stench\.discrepancy-desk\`; the old path no longer exists, the new path exists, and credential contents were not inspected.
 - Main assets/evidence directory remains intentionally non-Git pending owner-approved third-party-data, publication, ignore, binary, and secret policies.
 - M02 now explicitly requires SQLite foreign-key, locking, idempotency, audit-integrity, cross-store evidence, dirty-migration, restore, and Unicode/text-mutation hammer categories.
+- Draft project-specific adversarial matrix created at `05-implementation-planning/m02-adversarial-test-matrix.md` with 20 invariants and deliberate violation cases; owner review is the next gate.
 - Approved image asset paths:
   - `C:\dev\x\discrepancy-desk\assets\brand\quinton-clearance\master\quinton-clearance-avatar-master-v001.png`
   - `C:\dev\x\discrepancy-desk\assets\brand\banners\master\discrepancy-desk-x-banner-master-v001.png`
@@ -98,9 +99,9 @@ Work Packages A–D closed on 2026-07-19 with profile evidence, developer and bi
 
 ### M02 — Active
 
-Owner clarification is satisfied. The independent audit correction package is complete pending validation and checkpointing.
+Owner clarification is satisfied. The independent audit correction package was committed and pushed as `85aca52`. The project-specific adversarial test matrix is now drafted for owner review.
 
-M02 may proceed with persistence-contract and adversarial test-matrix planning after this package is committed and pushed. It may not create schema, migrations, a SQLite database, application models, or persistence code.
+M02 may continue planning the persistence contract and lifecycle after the matrix is reviewed. It may not create schema, migrations, a SQLite database, application models, or persistence code.
 
 ## Not Started
 

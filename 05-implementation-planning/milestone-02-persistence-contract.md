@@ -78,6 +78,10 @@ Accepted audit requirements include:
 
 Use all operational-database and **M02 Required SQLite-Specific Categories** in `05-implementation-planning/hammer-test-strategy.md`. M02 must refine each into a named invariant, valid fixture, deliberate violation fixture, expected fail-closed result, real-engine requirement, and preserved evidence requirement before any migration work.
 
+## Active Planning Artifacts
+
+- `05-implementation-planning/m02-adversarial-test-matrix.md` — draft 20-invariant project-specific hammer-test matrix for owner review.
+
 ## Required Evidence
 
 - owner-approved hammer-test contract
