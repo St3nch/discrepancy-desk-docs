@@ -2,7 +2,9 @@
 
 ## Status
 
-Active planning register. Every item below remains unresolved unless a later owner-approved decision explicitly closes it.
+UD-01 through UD-12 were resolved by the owner on 2026-07-19. Their accepted choices are governed by `05-implementation-planning/m02-owner-approved-persistence-decisions.md`.
+
+UD-13 through UD-18 remain deferred and unresolved within their stated later-milestone boundaries. The original questions below are retained as decision history.
 
 This register prevents implementation choices from being smuggled into conceptual planning as defaults.
 
@@ -17,9 +19,11 @@ For each item:
 5. update the persistence contract, lifecycle model, adversarial matrix, milestone, status, and decision log when the choice materially changes them;
 6. do not begin physical design until all decisions required by the M02 exit gate are closed.
 
-## Blocking Decisions for M02 Exit
+## Resolved Decisions for M02 Exit
 
 ### UD-01 — Canonical raw-evidence storage boundary
+
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
 
 **Question:** Should canonical raw API evidence remain immutable files referenced by governed path plus SHA-256, be stored as exact-byte database BLOBs plus SHA-256, or use a deliberately bounded combination?
 
@@ -43,6 +47,8 @@ For each item:
 
 ### UD-02 — Exact revision identity and approval-binding method
 
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
+
 **Question:** What exact deterministic representation binds human approval to text, links, media, alt text, platform, account, and review-bound labels?
 
 **Known facts:**
@@ -63,6 +69,8 @@ For each item:
 
 ### UD-03 — Lifecycle state vocabulary and reopening rules
 
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
+
 **Question:** Does the owner approve the companion state model exactly, including `withdrawn`, `publication_mismatch`, and `evidence_blocked`, and which non-published terminal states may reopen?
 
 **Known facts:**
@@ -76,6 +84,8 @@ For each item:
 **Hammer impact:** HT-03, HT-09, HT-20.
 
 ### UD-04 — Audit immutability or tamper-detection mechanism
+
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
 
 **Question:** What mechanism will make accepted audit history immutable through normal operations and detect out-of-band mutation?
 
@@ -92,6 +102,8 @@ For each item:
 
 ### UD-05 — Named idempotency keys and uniqueness boundaries
 
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
+
 **Question:** What exact operation identity governs capture, evidence registration, approval, manual-ready designation, publication recording, and metric snapshots?
 
 **Known facts:**
@@ -105,6 +117,8 @@ For each item:
 **Hammer impact:** HT-04, HT-08, HT-09, HT-10, HT-12.
 
 ### UD-06 — Representation of missing, empty, withheld, unavailable, malformed, and errored values
+
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
 
 **Question:** What conceptual and later physical representation preserves these states without inventing defaults?
 
@@ -120,6 +134,8 @@ For each item:
 
 ### UD-07 — Evidence retention, deletion, and third-party-data boundary
 
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
+
 **Question:** What raw evidence and derived observations may be retained, for how long, and under what deletion or withdrawal rules?
 
 **Known facts:**
@@ -133,6 +149,8 @@ For each item:
 **Hammer impact:** HT-05, HT-06, HT-11, HT-18, HT-19.
 
 ### UD-08 — Manual publication confirmation and mismatch evidence
+
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
 
 **Question:** What minimum evidence is required to accept that the human published the exact approved revision?
 
@@ -149,6 +167,8 @@ For each item:
 
 ### UD-09 — Metric snapshot identity and duplicate semantics
 
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
+
 **Question:** What makes two metric observations distinct or duplicate?
 
 **Must resolve:** timestamp precision, observation method, capture-session identity, exact metric-set identity, whether same-time manual and API observations coexist, correction behavior for a human entry error, and treatment of unavailable or partial metrics.
@@ -158,6 +178,8 @@ For each item:
 **Hammer impact:** HT-08, HT-12, HT-13.
 
 ### UD-10 — SQLite journal mode, transaction mode, and bounded busy timeout
+
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
 
 **Question:** Which SQLite operational settings are required for the expected local workflow?
 
@@ -173,6 +195,8 @@ For each item:
 
 ### UD-11 — Migration authority, version state, and dirty-state marker
 
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
+
 **Question:** What evidence and state prove that the database is at a known migration version and safe to operate?
 
 **Known facts:**
@@ -185,6 +209,8 @@ For each item:
 **Hammer impact:** HT-16, HT-17.
 
 ### UD-12 — Backup unit, archive format, and disposable restore acceptance
+
+**Resolution:** Closed by owner approval on 2026-07-19. See `m02-owner-approved-persistence-decisions.md`.
 
 **Question:** What exact material constitutes one recoverable generation?
 
@@ -259,6 +285,6 @@ Required evidence:
 
 ## Current Gate Result
 
-The persistence contract and lifecycle model may be reviewed now, but M02 cannot satisfy its exit gate until the owner resolves at least UD-01 through UD-12 or explicitly defers an item with a bounded rationale that does not undermine M03 integrity.
+UD-01 through UD-12 are closed. M02 may proceed through final contract reconciliation, migration/test planning, and exit-gate review.
 
-No unresolved item authorizes the Project Steward to choose an implementation default independently.
+UD-13 through UD-18 remain deferred and do not authorize expansion of M03 beyond the accepted smallest operational contract.

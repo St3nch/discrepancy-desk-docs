@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft planning artifact for owner review. No physical schema or implementation is authorized.
+Owner-approved conceptual lifecycle model as of 2026-07-19. No physical schema or implementation is authorized.
 
 ## Purpose
 
@@ -242,7 +242,7 @@ A later valid approval exists for a successor revision.
 
 The approval was used to support one accepted manual publication record.
 
-Consumption does not erase approval. Whether the same approval may support a deliberate repost or second publication is unresolved and must default to **no** until separately approved.
+Consumption does not erase approval. Under the accepted default, one exact approval supports at most one accepted publication record on one platform and owned account. Reposts, corrected publications, and cross-platform variants require successor revisions and separate approval unless a later owner decision changes that boundary.
 
 ## Approval Invalidation Procedure
 
@@ -373,10 +373,10 @@ AI may draft, summarize, compare, classify, and flag. It may not convert its own
 
 ## State-Model Acceptance Criteria
 
-This state model is ready for owner approval only when:
+This state model was owner-approved on 2026-07-19. Its continued acceptance requires that:
 
-- the owner accepts the admitted states and legal transitions;
-- the owner resolves any disputed terminal or reopen behavior;
+- the admitted states and legal transitions remain consistent with the owner-approved UD-03 rules;
+- rejected and withdrawn work reopen only through explicit successor history;
 - every transition maps to an adversarial matrix case;
 - exact approval invalidation behavior is accepted;
 - no implementation mechanism is treated as decided merely because the conceptual rule is clear.

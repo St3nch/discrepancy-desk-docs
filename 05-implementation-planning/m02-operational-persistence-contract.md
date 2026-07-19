@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft planning artifact for owner review. No physical schema or implementation is authorized.
+Owner-approved conceptual persistence contract as of 2026-07-19. No physical schema or implementation is authorized.
 
 ## Purpose
 
@@ -33,7 +33,7 @@ The persistence boundary must support that loop without autonomous platform acti
 1. Human approval is mandatory for every public content item.
 2. Approval binds to one exact platform-specific revision and all approval-relevant components.
 3. Any approval-relevant mutation invalidates or supersedes the prior approval.
-4. Canonical raw API evidence remains exact bytes or an immutable external file with verified SHA-256 and capture provenance.
+4. Canonical raw API evidence remains immutable external files under a governed evidence root, referenced by root-relative locator, SHA-256, byte size, provenance, and verification state.
 5. Parsed, normalized, summarized, or classified information is derivative and cannot replace canonical evidence.
 6. Stable external platform identifiers remain separate from mutable profile, text, verification, and metric observations.
 7. Historical observations append; they are not silently rewritten into a timeless current value.
@@ -328,11 +328,11 @@ The final implementation must support a reconciliation operation that can identi
 - stale database copy after restore;
 - exact approved text or relationship drift after restore.
 
-The exact file-versus-BLOB boundary is unresolved and recorded separately.
+The owner resolved the boundary in UD-01: immutable governed files are canonical; SQLite may later store only the governed relative locator and verification metadata, not a second canonical copy.
 
 ## Contract Acceptance Criteria
 
-This conceptual contract is ready for owner approval only when:
+This conceptual contract was owner-approved on 2026-07-19. Its continued acceptance requires that:
 
 - every required record class maps to a real MVP workflow need;
 - every lifecycle state and transition is defined in the companion state model;

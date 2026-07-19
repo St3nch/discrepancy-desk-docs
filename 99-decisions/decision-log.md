@@ -200,3 +200,16 @@ The baseline contains 20 named persistence invariants and deliberate violation c
 The matrix may be strengthened as the conceptual persistence contract and owner decisions are reconciled, but it may not be silently weakened, omitted, or treated as implementation authority.
 
 This decision does not authorize SQL schema, migrations, SQLite creation, ORM models, CRUD code, application persistence, dashboard implementation, or platform writes.
+
+
+## D020 — M02 Persistence Contract and UD-01 Through UD-12 Approved
+
+Accepted: 2026-07-19.
+
+The owner approved the smallest operational persistence contract, lifecycle/state model, and the Project Steward recommendations resolving UD-01 through UD-12.
+
+The accepted decisions govern canonical external-file evidence, immutable exact-component revision binding, lifecycle reopening and publication history, append-only hash-chained audit events, operation-specific idempotency, explicit observation states, bounded third-party retention, manual-publication confirmation, immutable metric snapshots, SQLite WAL/foreign-key/busy-timeout/write-transaction settings, Alembic migration authority with dirty-state refusal, and encrypted three-generation backup with disposable restore proof.
+
+The detailed accepted choices are recorded in `05-implementation-planning/m02-owner-approved-persistence-decisions.md`. UD-13 through UD-18 remain deferred within their stated later-milestone boundaries.
+
+This approval remains planning authority only. It does not authorize SQL schema, migration files, SQLite creation, ORM models, CRUD code, application persistence, dashboard implementation, or platform writes.

@@ -2,7 +2,7 @@
 
 ## Status
 
-Active — owner doctrine, Claude audit correction package, and 20-invariant adversarial matrix baseline approved; persistence-contract review package drafted for owner decision.
+Active — all planning artifacts and UD-01 through UD-12 decisions reconciled; M02 is ready for owner closure review and explicit M03 authorization.
 
 ## Goal
 
@@ -81,9 +81,11 @@ Use all operational-database and **M02 Required SQLite-Specific Categories** in 
 ## Active Planning Artifacts
 
 - `05-implementation-planning/m02-adversarial-test-matrix.md` — owner-approved 20-invariant M02 baseline.
-- `05-implementation-planning/m02-operational-persistence-contract.md` — smallest conceptual operational persistence contract for owner review.
-- `05-implementation-planning/m02-lifecycle-state-model.md` — conceptual lifecycle, legal-transition, approval-invalidation, and fail-closed model for owner review.
-- `05-implementation-planning/m02-unresolved-decision-register.md` — blocking and deferred persistence decisions requiring owner resolution.
+- `05-implementation-planning/m02-operational-persistence-contract.md` — owner-approved smallest conceptual operational persistence contract.
+- `05-implementation-planning/m02-lifecycle-state-model.md` — owner-approved lifecycle, legal-transition, approval-invalidation, and fail-closed model.
+- `05-implementation-planning/m02-owner-approved-persistence-decisions.md` — owner-approved resolutions for UD-01 through UD-12.
+- `05-implementation-planning/m02-unresolved-decision-register.md` — resolved UD-01 through UD-12 history plus deferred UD-13 through UD-18.
+- `05-implementation-planning/m02-migration-and-hammer-execution-plan.md` — planning-only migration, recovery, fixture, test-evidence, and M03 bounding plan.
 
 ## Required Evidence
 
@@ -92,7 +94,7 @@ Use all operational-database and **M02 Required SQLite-Specific Categories** in 
 - lifecycle/state diagram
 - migration plan
 - test matrix with deliberate negative cases
-- unresolved schema questions
+- resolved UD-01 through UD-12 decision record and explicitly deferred UD-13 through UD-18
 
 ## Exit Gate
 

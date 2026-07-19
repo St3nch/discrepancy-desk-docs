@@ -18,11 +18,10 @@ M01 is complete. The owner-approved M02 hammer-test doctrine is recorded. The in
 
 Current sequence:
 
-1. review the drafted smallest operational persistence contract;
-2. review the drafted lifecycle and state model;
-3. resolve the blocking items in the M02 unresolved-decision register;
-4. reconcile the accepted contract and decisions back into the adversarial matrix and migration/test plan;
-5. keep schema, migrations, SQLite creation, and persistence implementation blocked until the M02 exit gate is satisfied.
+1. preserve the owner-approved persistence contract, lifecycle model, and UD-01 through UD-12 decisions;
+2. preserve the reconciled migration and hammer-execution plan;
+3. obtain explicit owner approval to close M02 and authorize the bounded first M03 package;
+4. keep schema, migrations, SQLite creation, and persistence implementation blocked until that authorization.
 
 No database implementation is admitted during M02. The milestone is planning-only.
 
@@ -75,7 +74,9 @@ No database implementation is admitted during M02. The milestone is planning-onl
 - Main assets/evidence directory remains intentionally non-Git pending owner-approved third-party-data, publication, ignore, binary, and secret policies.
 - M02 now explicitly requires SQLite foreign-key, locking, idempotency, audit-integrity, cross-store evidence, dirty-migration, restore, and Unicode/text-mutation hammer categories.
 - The 20-invariant project-specific adversarial matrix at `05-implementation-planning/m02-adversarial-test-matrix.md` was owner-approved and committed as the governing M02 baseline in `fb1410f`.
-- The smallest operational persistence contract, lifecycle/state model, and unresolved-decision register were drafted as one bounded M02 planning package for owner review.
+- The owner approved the smallest operational persistence contract, lifecycle/state model, and recommendations resolving UD-01 through UD-12 on 2026-07-19.
+- The accepted choices are recorded in `05-implementation-planning/m02-owner-approved-persistence-decisions.md`; UD-13 through UD-18 remain explicitly deferred.
+- The planning-only migration and hammer-execution plan now bounds real-engine fixtures, migration preflight, dirty-state recovery, audit proof, backup/restore proof, test evidence, and the first M03 package.
 - Approved image asset paths:
   - `C:\dev\x\discrepancy-desk\assets\brand\quinton-clearance\master\quinton-clearance-avatar-master-v001.png`
   - `C:\dev\x\discrepancy-desk\assets\brand\banners\master\discrepancy-desk-x-banner-master-v001.png`
@@ -103,7 +104,7 @@ Work Packages A–D closed on 2026-07-19 with profile evidence, developer and bi
 
 Owner clarification is satisfied. The independent audit correction package was committed and pushed as `85aca52`. The project-specific adversarial test matrix was owner-approved and committed as the governing baseline in `fb1410f`.
 
-The smallest operational persistence contract, lifecycle/state model, and unresolved-decision register are now drafted for owner review. M02 may continue only through conceptual contract review, decision resolution, and planning reconciliation. It may not create schema, migrations, a SQLite database, application models, or persistence code.
+The smallest operational persistence contract and lifecycle/state model are owner-approved, and UD-01 through UD-12 are closed. M02 may continue through migration/test planning, exit-gate verification, and M03 package bounding. It may not create schema, migrations, a SQLite database, application models, or persistence code until separately authorized.
 
 ## Not Started
 
@@ -142,10 +143,4 @@ No database implementation before M02 approval.
 
 ## Next Bounded Action
 
-Owner review of the coherent M02 planning package:
-
-- `05-implementation-planning/m02-operational-persistence-contract.md`;
-- `05-implementation-planning/m02-lifecycle-state-model.md`;
-- `05-implementation-planning/m02-unresolved-decision-register.md`.
-
-The next genuine gate is owner resolution of the blocking persistence decisions, followed by reconciliation of the accepted choices into the contract, lifecycle model, adversarial matrix, and migration/test plan. Do not begin schema, migrations, SQLite creation, or persistence implementation.
+Owner decision gate: approve M02 closure and authorize preparation/execution of the bounded first M03 physical-design and persistence implementation package defined in `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`. Until approved, do not begin schema, migrations, SQLite creation, ORM models, CRUD code, application persistence, or dashboard implementation.

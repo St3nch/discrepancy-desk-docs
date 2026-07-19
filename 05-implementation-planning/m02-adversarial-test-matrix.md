@@ -8,6 +8,25 @@ This document defines the minimum persistence invariants and deliberate violatio
 
 It does not approve tables, columns, migrations, a SQLite file, ORM models, CRUD code, or application implementation.
 
+## Owner-Approved Decision Reconciliation
+
+UD-01 through UD-12 were approved on 2026-07-19 and are governed by `m02-owner-approved-persistence-decisions.md`. Their accepted choices strengthen and resolve the enforcement assumptions behind this matrix:
+
+- canonical evidence is immutable governed files, not parsed JSON or a competing canonical BLOB copy;
+- revision approval uses exact component bytes and a versioned aggregate SHA-256 binding;
+- rejected, withdrawn, mismatch, and blocked history reopens only through explicit successor action;
+- audit events are append-only, transactionally required, and hash-chained;
+- idempotency identity is operation-specific;
+- observation states remain explicit;
+- third-party evidence retention is bounded and deletion is owner-only and audited;
+- publication confirmation and later platform verification remain distinct;
+- metric corrections append rather than overwrite;
+- SQLite uses WAL, `foreign_keys=ON`, a 5000 ms busy timeout, and `BEGIN IMMEDIATE` for writes;
+- Alembic plus a migration-integrity manifest and durable dirty marker govern migration state;
+- backup acceptance requires encrypted generations and disposable restore proof.
+
+Every implemented HT-01 through HT-20 test must be consistent with these decisions. A test that silently substitutes a different boundary does not satisfy the matrix.
+
 ## Governing Rule
 
 Every persistence rule must be attacked with deliberate bad data, illegal state transitions, fabricated identifiers, modified evidence, stale approvals, duplicate operations, partial failures, detector failures, migration failures, and recovery failures.
