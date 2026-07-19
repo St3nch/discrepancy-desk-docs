@@ -153,3 +153,7 @@ Corrected in application commit `b92b874`:
 - raw `UNIQUE constraint failed` details are no longer shown for this path.
 
 Regression validation after the correction: `51 passed`, zero warnings, clean Ruff checks.
+
+### Live walkthrough correction: mutable username metadata
+
+A second live walkthrough exposed that treating username changes as conflicts was too rigid. Stable external account ID remains the identity authority; username is mutable metadata. Commit `f37f441` now reuses the existing account, updates a new nonblank username with an audit event, preserves the current username when the form is blank, and explains this behavior in the control-room form. Validation remained 51 passing tests with clean Ruff checks.
