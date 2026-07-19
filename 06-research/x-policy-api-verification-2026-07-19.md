@@ -28,18 +28,20 @@ X permits compliant Parody, Commentary, and Fan accounts that depict another per
 
 ### Project posture
 
-The Discrepancy Desk is an original fictional brand rather than a copy of a specific agency or official. Even so, its government-adjacent fictional lore and explicit commentary/parody framing create avoidable ambiguity.
+The Discrepancy Desk is an original fictional brand rather than an account depicting a specific real person, group, agency, or organization. The official PCF display-name rule is therefore recorded as a conditional platform requirement, not automatically treated as controlling this account.
 
-The conservative M01 profile posture is:
+The owner-approved live profile posture is:
 
 ```text
-Display name: Commentary | The Discrepancy Desk
+Display name: Quinton Clearance
 Handle: @DiscrepancyDesk
-PCF label: Commentary
-Bio: explicitly fictional/commentary and not affiliated with any government agency
+Bio: Every anomaly becomes paperwork.
+Location: Basement 1, Level 7
 ```
 
-Do not use real government seals, insignia, agency branding, or claims of classified access.
+The owner rejected adding `Commentary |` or similar wording to the display name. The account must instead avoid affiliation confusion through its original fictional identity, artwork, public content, and refusal to use real government seals, insignia, agency branding, employment claims, or claims of classified access.
+
+Re-evaluate PCF-label applicability only if X provides account-specific guidance, issues a warning, or materially changes the policy.
 
 Confidence: High — official X policy.
 

@@ -83,7 +83,7 @@ As of 2026-07-19, X's official Authenticity policy requires compliant Parody, Co
 
 Project implication:
 
-The conservative M01 posture is `Commentary | The Discrepancy Desk`, the Commentary PCF label, and explicit fictional/non-affiliation language in the bio.
+The rule is controlling when an account depicts another person, group, or organization. The Discrepancy Desk is an original fictional brand, so exact PCF-label applicability is not assumed. The owner-approved live display name remains `Quinton Clearance`; the owner explicitly rejected adding `Commentary |` to it. Re-evaluate only if X gives account-specific guidance, issues a warning, or materially changes the policy.
 
 Source: `06-research/x-policy-api-verification-2026-07-19.md`.
 

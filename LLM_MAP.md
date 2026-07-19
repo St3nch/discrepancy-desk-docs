@@ -195,6 +195,14 @@ Docs:
 - `08-operations/mcp-tooling-plan.md`
 - `07-prompts/claude-mcp-research-prompt.md`
 
+### Fresh-Chat Handoff
+
+Use the governed sync prompt when moving project stewardship into a new ChatGPT thread:
+
+- `07-prompts/fresh-chat-project-steward-sync.md`
+
+The new steward must inspect live repo truth, read the active milestone and its required documents, and verify Git state before acting.
+
 ## Important Implementation Rule
 
 Do not schema-from-vibes.

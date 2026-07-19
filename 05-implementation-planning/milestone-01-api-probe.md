@@ -35,13 +35,28 @@ Credit purchase and API execution remain separately gated by explicit owner appr
 
 ## Work Package A — Account and Identity Readiness
 
-- apply the conservative PCF/commentary posture;
-- set or confirm `Commentary | The Discrepancy Desk` as the display name;
-- enable the Commentary PCF label;
-- finalize bio and non-affiliation language;
-- finalize avatar and banner against anti-impersonation rules;
-- prepare and approve a pinned-post draft;
+- preserve the approved display name `Quinton Clearance` and handle `@DiscrepancyDesk`;
+- preserve the approved bio `Every anomaly becomes paperwork.`;
+- preserve the approved location `Basement 1, Level 7`;
+- apply and verify the approved Quinton avatar and B1-L7 banner;
+- keep the fictional/commentary posture clear through the full profile and public content without forcing unwanted wording into the display name;
+- prepare and approve the first-post and pinned-post package;
 - record final profile settings and policy recheck date.
+
+Completed on 2026-07-19:
+
+- X account created and live;
+- display name, handle, bio, and location confirmed;
+- approved avatar applied;
+- approved banner applied;
+- live profile crop visually reviewed and accepted by the owner;
+- approved source assets verified in the main repo under `assets/brand/`.
+
+Remaining in Work Package A:
+
+- first-post and pinned-post package;
+- any final account-label or disclosure setting the owner chooses to use;
+- final Work Package A completion record.
 
 No public profile change should be claimed complete without owner confirmation or evidence.
 

@@ -4,19 +4,22 @@
 
 The project treats current X platform rules as a hard boundary.
 
-The Discrepancy Desk is an original fictional brand, but its government-adjacent lore and commentary/parody presentation create possible affiliation confusion. The project therefore adopts the conservative PCF posture documented in `06-research/x-policy-api-verification-2026-07-19.md`.
+The Discrepancy Desk is an original fictional brand and does not depict a specific real person, group, agency, or organization. The PCF rule verified in `06-research/x-policy-api-verification-2026-07-19.md` applies to accounts that depict another entity; its exact applicability to this original fictional account is not assumed.
 
-## Required Profile Posture
+## Approved Profile Posture
 
 Use:
 
 ```text
-Display name: Commentary | The Discrepancy Desk
+Display name: Quinton Clearance
 Handle: @DiscrepancyDesk
-PCF label: Commentary
+Bio: Every anomaly becomes paperwork.
+Location: Basement 1, Level 7
 ```
 
-The bio must clearly state that the persona is fictional/commentary and is not affiliated with any government agency.
+The owner rejected adding `Commentary |` or similar wording to the display name. Do not reintroduce it as the approved profile posture.
+
+The overall profile and public content must remain clearly fictional and must not imply affiliation with any real government agency.
 
 Do not use:
 
