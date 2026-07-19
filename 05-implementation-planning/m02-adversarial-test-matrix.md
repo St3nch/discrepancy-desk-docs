@@ -2,9 +2,9 @@
 
 ## Status
 
-Draft for owner review. Planning only.
+Owner-approved M02 baseline as of 2026-07-19. Planning only.
 
-This document defines the minimum persistence invariants and deliberate violation cases required before any M03 implementation package may be authorized.
+This document defines the minimum persistence invariants and deliberate violation cases required before any M03 implementation package may be authorized. The baseline may be strengthened during contract review but may not be silently weakened or omitted.
 
 It does not approve tables, columns, migrations, a SQLite file, ORM models, CRUD code, or application implementation.
 

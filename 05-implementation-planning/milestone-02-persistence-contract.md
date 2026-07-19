@@ -2,7 +2,7 @@
 
 ## Status
 
-Active — owner doctrine approved; independent audit correction package in progress before persistence-contract drafting proceeds.
+Active — owner doctrine, Claude audit correction package, and 20-invariant adversarial matrix baseline approved; persistence-contract review package drafted for owner decision.
 
 ## Goal
 
@@ -64,7 +64,7 @@ Do not infer the exact persistence contract from The Observatory. Its fail-close
 
 ## Independent Audit Gate
 
-A Claude AI read-only audit completed after M01 with verdict **PASS WITH CORRECTIONS**. M02 planning remains admitted, but physical schema and persistence implementation remain blocked until the accepted correction package is resolved.
+A Claude AI read-only audit completed after M01 with verdict **PASS WITH CORRECTIONS**. The accepted correction package was completed and committed on 2026-07-19. M02 planning remains admitted, but physical schema and persistence implementation remain blocked until the M02 exit gate is satisfied.
 
 Accepted audit requirements include:
 
@@ -80,7 +80,10 @@ Use all operational-database and **M02 Required SQLite-Specific Categories** in 
 
 ## Active Planning Artifacts
 
-- `05-implementation-planning/m02-adversarial-test-matrix.md` — draft 20-invariant project-specific hammer-test matrix for owner review.
+- `05-implementation-planning/m02-adversarial-test-matrix.md` — owner-approved 20-invariant M02 baseline.
+- `05-implementation-planning/m02-operational-persistence-contract.md` — smallest conceptual operational persistence contract for owner review.
+- `05-implementation-planning/m02-lifecycle-state-model.md` — conceptual lifecycle, legal-transition, approval-invalidation, and fail-closed model for owner review.
+- `05-implementation-planning/m02-unresolved-decision-register.md` — blocking and deferred persistence decisions requiring owner resolution.
 
 ## Required Evidence
 

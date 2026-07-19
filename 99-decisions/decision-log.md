@@ -187,3 +187,16 @@ M01 remains accepted and M02 planning may continue. Physical schema, migrations,
 The root-level attempt-001 evidence will not be moved or rewritten. Its historical layout must be documented, and verification must use only the paths explicitly recorded in each `hashes.sha256` manifest.
 
 The accepted audit review is recorded in `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`.
+
+
+## D019 — M02 Adversarial Persistence Matrix Baseline Approved
+
+Accepted: 2026-07-19.
+
+The owner approved `05-implementation-planning/m02-adversarial-test-matrix.md` as the governing M02 baseline.
+
+The baseline contains 20 named persistence invariants and deliberate violation classes covering exact authored-text approval binding, approval freshness, lifecycle legality, external identity, canonical evidence, database/filesystem reconciliation, connection-level foreign-key enforcement, uniqueness and idempotency, transaction atomicity, concurrency and busy handling, audit integrity, metric observations, explicit unknown states, mention classification, platform isolation, dirty and interrupted migrations, backup and disposable restore, three-way post-restore reconciliation, and detector/classifier non-authority.
+
+The matrix may be strengthened as the conceptual persistence contract and owner decisions are reconciled, but it may not be silently weakened, omitted, or treated as implementation authority.
+
+This decision does not authorize SQL schema, migrations, SQLite creation, ORM models, CRUD code, application persistence, dashboard implementation, or platform writes.

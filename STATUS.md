@@ -14,14 +14,15 @@ M02 — Persistence Contract and Hammer-Test Plan
 
 ## Current Focus
 
-M01 is complete. The owner-approved M02 hammer-test doctrine is recorded. The independent Claude audit returned **PASS WITH CORRECTIONS**, and the accepted correction package has been completed pending final validation and checkpointing.
+M01 is complete. The owner-approved M02 hammer-test doctrine is recorded. The independent Claude audit returned **PASS WITH CORRECTIONS**, and the accepted correction package was completed, committed, and pushed. The owner-approved 20-invariant adversarial matrix is the governing M02 baseline.
 
 Current sequence:
 
-1. owner reviews the draft `05-implementation-planning/m02-adversarial-test-matrix.md`;
-2. revise and approve the project-specific M02 invariants and deliberate violation cases;
-3. define the smallest operational persistence contract and lifecycle model;
-4. keep schema, migrations, SQLite creation, and persistence implementation blocked until the M02 exit gate is satisfied.
+1. review the drafted smallest operational persistence contract;
+2. review the drafted lifecycle and state model;
+3. resolve the blocking items in the M02 unresolved-decision register;
+4. reconcile the accepted contract and decisions back into the adversarial matrix and migration/test plan;
+5. keep schema, migrations, SQLite creation, and persistence implementation blocked until the M02 exit gate is satisfied.
 
 No database implementation is admitted during M02. The milestone is planning-only.
 
@@ -73,7 +74,8 @@ No database implementation is admitted during M02. The milestone is planning-onl
 - The plaintext X environment file was moved by the owner from `C:\dev\x\local-secrets\` to `C:\Users\Stench\.discrepancy-desk\`; the old path no longer exists, the new path exists, and credential contents were not inspected.
 - Main assets/evidence directory remains intentionally non-Git pending owner-approved third-party-data, publication, ignore, binary, and secret policies.
 - M02 now explicitly requires SQLite foreign-key, locking, idempotency, audit-integrity, cross-store evidence, dirty-migration, restore, and Unicode/text-mutation hammer categories.
-- Draft project-specific adversarial matrix created at `05-implementation-planning/m02-adversarial-test-matrix.md` with 20 invariants and deliberate violation cases; owner review is the next gate.
+- The 20-invariant project-specific adversarial matrix at `05-implementation-planning/m02-adversarial-test-matrix.md` was owner-approved and committed as the governing M02 baseline in `fb1410f`.
+- The smallest operational persistence contract, lifecycle/state model, and unresolved-decision register were drafted as one bounded M02 planning package for owner review.
 - Approved image asset paths:
   - `C:\dev\x\discrepancy-desk\assets\brand\quinton-clearance\master\quinton-clearance-avatar-master-v001.png`
   - `C:\dev\x\discrepancy-desk\assets\brand\banners\master\discrepancy-desk-x-banner-master-v001.png`
@@ -99,9 +101,9 @@ Work Packages A–D closed on 2026-07-19 with profile evidence, developer and bi
 
 ### M02 — Active
 
-Owner clarification is satisfied. The independent audit correction package was committed and pushed as `85aca52`. The project-specific adversarial test matrix is now drafted for owner review.
+Owner clarification is satisfied. The independent audit correction package was committed and pushed as `85aca52`. The project-specific adversarial test matrix was owner-approved and committed as the governing baseline in `fb1410f`.
 
-M02 may continue planning the persistence contract and lifecycle after the matrix is reviewed. It may not create schema, migrations, a SQLite database, application models, or persistence code.
+The smallest operational persistence contract, lifecycle/state model, and unresolved-decision register are now drafted for owner review. M02 may continue only through conceptual contract review, decision resolution, and planning reconciliation. It may not create schema, migrations, a SQLite database, application models, or persistence code.
 
 ## Not Started
 
@@ -140,4 +142,10 @@ No database implementation before M02 approval.
 
 ## Next Bounded Action
 
-Complete the accepted audit correction package, including the owner's manual credential-file move outside `C:\dev`. Validate, commit, and push the bounded correction package, then proceed to the M02 persistence-contract and adversarial-test-matrix planning batch. Do not begin schema, migrations, SQLite creation, or persistence implementation.
+Owner review of the coherent M02 planning package:
+
+- `05-implementation-planning/m02-operational-persistence-contract.md`;
+- `05-implementation-planning/m02-lifecycle-state-model.md`;
+- `05-implementation-planning/m02-unresolved-decision-register.md`.
+
+The next genuine gate is owner resolution of the blocking persistence decisions, followed by reconciliation of the accepted choices into the contract, lifecycle model, adversarial matrix, and migration/test plan. Do not begin schema, migrations, SQLite creation, or persistence implementation.
