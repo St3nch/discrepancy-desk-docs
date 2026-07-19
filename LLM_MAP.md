@@ -162,6 +162,8 @@ Before final schema, collect real X API JSON samples to understand payload shape
 
 Docs:
 
+- `06-research/x-policy-api-verification-2026-07-19.md`
+- `04-platform-rules/x-account-rules.md`
 - `04-platform-rules/x-api-probe-plan.md`
 - `05-implementation-planning/milestone-01-api-probe.md`
 

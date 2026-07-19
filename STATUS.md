@@ -4,77 +4,115 @@
 
 ## Current Mode
 
-Planning.
+Planning and controlled platform-readiness work.
+
+## Active Milestone
+
+```text
+M01 — X Identity, Policy, and Read-Only API Probe
+```
 
 ## Current Focus
 
-Complete M00 planning-foundation review and establish the initial Git baseline. The implementation roadmap now uses milestone contracts with required reading, entry gates, evidence, tests, exit gates, and mandatory completion updates.
+Execute M01 in bounded work packages:
 
-Before any database work, the Project Steward must stop and confirm the Discrepancy Desk hammer-test contract against `05-implementation-planning/hammer-test-strategy.md`. No schema, migration, or persistence implementation is admitted until M02 refines that baseline into project-specific invariants, fixtures, deliberate violation cases, real-engine tests, and evidence requirements.
+1. finalize the X profile and PCF/commentary posture;
+2. establish the developer-app, secret, and spending boundary;
+3. run a tiny read-only X API probe after separate owner approval for credits;
+4. preserve raw evidence and produce the M02 persistence-planning handoff.
+
+No database work is admitted during M01.
+
+Before any database work, the Project Steward must confirm the Discrepancy Desk hammer-test contract against `05-implementation-planning/hammer-test-strategy.md`. M02 must refine that baseline into project-specific invariants, fixtures, deliberate violation cases, real-engine tests, and evidence requirements before schema, migration, or persistence implementation begins.
 
 ## Completed / Decided
 
+- M00 completed on 2026-07-19.
+- Docs Git repository initialized on `main`.
+- Initial planning baseline committed as `fc6d3de`.
+- Remote configured at `https://github.com/St3nch/discrepancy-desk-docs`.
+- Initial baseline pushed successfully; working tree was clean.
 - Public brand selected: **The Discrepancy Desk**.
 - Exact `.com` domain purchased: `discrepancydesk.com`.
 - X/social handle selected: `@DiscrepancyDesk`.
-- X bio chosen around B1-L7 / commentary/parody / Quinton Clearance.
 - Persona selected: **Quinton Clearance**.
 - Lore location selected: **Basement 1, Level 7** / **B1-L7**.
 - Canon hobby selected: bread baking / sourdough.
 - Public tone selected: deadpan bureaucratic weird-history/conspiracy archive clerk.
-- Project folders created:
-  - `C:\dev\x\discrepancy-desk-docs`
-  - `C:\dev\x\discrepancy-desk`
-- Docs repo role decided: planning, doctrine, specs, implementation instructions.
-- App repo role decided: actual coded project.
-- MCP helper repo path selected: `C:\dev\gpt-mcp`.
-- Initial technical direction selected: local-first, raw-first, human-approved.
+- Docs repo role: planning, doctrine, specs, research, and implementation instructions.
+- App repo role: actual coded project and implementation evidence.
+- MCP helper repo path: `C:\dev\gpt-mcp`.
+- Initial technical direction: local-first, raw-first, human-approved.
 - Cross-system hammer-test strategy documented for SQLite, Anomaly Vault, No Coincidences, Qdrant, mock fixtures, and recovery; each subsystem contract must be refined during its milestone.
 - Platform sequence accepted: **X first**, then Truth Social only after the X workflow is operational and stable (D013).
-- Truth Social platform admission accepted as manual-only (D014): official UI/share tools, URLs, human notes, owned-content records, manual metrics, bookmarks, and owner export.
-- Truth Social DOM/browser-extension capture is not admitted. See `06-research/truth-social-capture-boundaries.md`.
-- Chrome extension plan is now X-only; no Truth Social content script or parser may be built under the current decision.
+- Truth Social platform admission accepted as manual-only (D014).
+- Truth Social DOM/browser-extension capture is not admitted.
+- Chrome extension plan is X-only under the current decision.
+- Current official X policy/pricing/rate-limit verification recorded in `06-research/x-policy-api-verification-2026-07-19.md`.
+- Conservative X profile posture selected for M01: `Commentary | The Discrepancy Desk`, Commentary PCF label, and explicit fictional/non-affiliation bio language.
 
-## Pending
+## M01 Pending Work
 
-- Initialize `C:\dev\x\discrepancy-desk-docs` as a Git repo.
-- Add this document pack to the docs repo.
-- Create GitHub repo `discrepancy-desk-docs`.
-- Commit initial planning docs.
-- Validate and document the operational `gpt-mcp` / Go10 tool boundary for this project (Go10 is online with 26 tools and has successfully accessed project roots — remaining work is documenting the boundary, not standing up the server).
-- Finish X profile details, avatar, banner, pinned post.
-- Prepare API probe plan before app schema.
+### Account and identity
+
+- confirm or apply the display name `Commentary | The Discrepancy Desk`;
+- enable the Commentary PCF label;
+- finalize bio and non-affiliation text;
+- finish avatar, banner, and pinned post;
+- record owner confirmation and final policy check.
+
+### Developer and cost boundary
+
+- create or verify the X developer account, Project, and App;
+- use minimum read permissions;
+- define local secret handling;
+- recheck live Developer Console pricing;
+- obtain owner approval for the credit purchase;
+- disable auto-recharge and set a low spending limit.
+
+### Probe and analysis
+
+- initialize the approved app-repo evidence path;
+- execute the bounded read-only probe;
+- preserve raw responses, manifest, hashes, errors, rate-limit headers, and costs;
+- produce field inventory, schema implications, unknowns, and M02 handoff.
 
 ## Not Started
 
-- Actual app implementation.
-- X API probe.
+- Actual application implementation.
+- X API probe execution.
+- Database schema or migrations.
 - Local dashboard.
-- Chrome extension build (planning complete; no code yet).
-- Truth Social manual-publishing workflow build (planning complete; no code yet).
+- Chrome extension build.
+- Truth Social manual-publishing workflow build.
 - Obsidian vault integration.
 - Qdrant integration.
-- Metrics capture.
+- Metrics ledger implementation.
 - No Coincidences implementation.
 
 ## Hard Boundaries
 
-No autonomous posting (X or Truth Social).
-No autonomous replies (X or Truth Social).
+No autonomous posting on X or Truth Social.
+No autonomous replies.
 No auto-likes.
 No auto-follows.
+No auto-reposts.
 No engagement pods.
-No calling undocumented/internal API endpoints on either platform.
+No undocumented/internal API endpoints.
+No credentials in Git, Markdown, screenshots, manifests, or raw evidence.
 No real-government impersonation.
 No claims of real classified access.
 No declaring speculation as confirmed truth.
+No database implementation before M02 approval.
 
-## Open Verification Items
+## Recheck Items
 
-These are known-unverified facts that specific plans currently depend on. Re-check before the relevant milestone starts:
+- Recheck X Authenticity and Profile Labels policies before final public profile approval.
+- Recheck live X Developer Console prices immediately before buying credits.
+- Recheck relevant endpoint limits immediately before probe execution.
+- Recheck Truth Social's manual-only boundary by 2026-10-19 or earlier if official policy changes, written permission is received, or professional legal guidance is obtained.
+- Recheck Truth Social parody-account enforcement before its later launch milestone.
 
-- X: whether PCF-compliant keywords are still required at the start of the account **display name** (not just bio) — see `04-platform-rules/x-account-rules.md` and source notes.
-- X: current pay-per-use API pricing and account-level daily post caps.
-- Truth Social: re-confirm no public, self-service developer program has launched since July 2026 research (`06-research/truth-social-platform-research.md`); note Truth API (institutional B2B) already exists and is out of scope regardless.
-- Truth Social: parody-account enforcement consistency — legal review recommended before launch.
-- Truth Social: recheck the manual-only capture boundary by 2026-10-19 or earlier if official policy changes, written permission is received, or professional legal guidance is obtained.
+## Next Bounded Action
+
+Complete M01 Work Package A: X account/profile readiness, including display name, PCF label, bio, avatar, banner, and pinned-post package. Then prepare—but do not purchase or execute—the developer/API probe boundary for owner approval.

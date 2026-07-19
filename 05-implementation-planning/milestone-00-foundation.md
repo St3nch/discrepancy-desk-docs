@@ -2,7 +2,7 @@
 
 ## Status
 
-Active.
+Complete.
 
 ## Goal
 
@@ -24,42 +24,86 @@ Project folders and initial docs pack exist.
 
 ## Scope
 
-- docs repo structure
-- doctrine, brand, product, architecture, platform, research, and roadmap docs
-- decision and research logs
-- LLM read order
-- milestone contracts
-- MCP/root verification
-- initial Git baseline
+- docs repo structure;
+- doctrine, brand, product, architecture, platform, research, and roadmap docs;
+- decision and research logs;
+- LLM read order;
+- milestone contracts;
+- MCP/root verification;
+- initial Git baseline.
 
 ## Out of Scope
 
-- app implementation
-- API calls
-- database work
-- schema finalization
-- platform automation
-- extension code
-- vector search
+- app implementation;
+- API calls;
+- database work;
+- schema finalization;
+- platform automation;
+- extension code;
+- vector search.
 
 ## Required Evidence
 
-- complete docs tree review
-- contradiction/staleness review
-- MCP root status
-- Git status before initialization
-- initial Git status/diff after initialization
-- owner-approved first commit
+- complete docs tree review;
+- contradiction/staleness review;
+- MCP root status;
+- Git status before initialization;
+- initial Git status after initialization;
+- owner-approved first commit;
+- configured GitHub remote and successful push.
 
-## Exit Gate
+## Exit Gate Result
 
-- `C:\dev\x\discrepancy-desk-docs` is a Git repo on `main`
-- initial docs package is reviewed and committed
-- GitHub repo exists or remote setup is explicitly deferred
-- `LLM_MAP.md` provides current read order
-- roadmap and milestone files are internally consistent
-- `STATUS.md` names the next active milestone
+- `C:\dev\x\discrepancy-desk-docs` is a Git repository on `main`;
+- initial docs package was reviewed and committed;
+- GitHub remote `origin` is configured;
+- baseline was pushed to `https://github.com/St3nch/discrepancy-desk-docs`;
+- `LLM_MAP.md` provides the current read order;
+- roadmap and milestone contracts are present;
+- `STATUS.md` activates M01.
 
-## Completion Updates
+All exit-gate requirements are satisfied.
 
-On completion, record date, commit hash, evidence, deviations, and next milestone here; update `STATUS.md` and logs as required.
+## Completion Record
+
+Completion date: 2026-07-19.
+
+Baseline commit:
+
+```text
+fc6d3de Establish Discrepancy Desk planning baseline
+```
+
+Baseline contents:
+
+```text
+59 files
+4,411 inserted lines
+```
+
+Repository:
+
+```text
+Local:  C:\dev\x\discrepancy-desk-docs
+Remote: https://github.com/St3nch/discrepancy-desk-docs
+Branch: main
+```
+
+Validation:
+
+- Go10 MCP roots were healthy;
+- initial commit succeeded;
+- push to `origin/main` succeeded;
+- working tree was clean after the push.
+
+Accepted deviations:
+
+- None affecting M00 closure.
+
+Next milestone:
+
+```text
+M01 — X Identity, Policy, and Read-Only API Probe
+```
+
+M01 was activated in the next bounded planning batch. No application implementation or API call occurred during M00.

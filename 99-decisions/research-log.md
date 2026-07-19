@@ -4,17 +4,20 @@ Tracks accepted research findings that other docs depend on, separate from produ
 
 Each entry should be re-checked at or before the "Recheck by" point. Findings sourced from official documentation still drift — platforms change rules and endpoints without notice.
 
-## R001 — X API Is Pay-Per-Use, No Free Tier (as of research date)
+## R001 — Historical X API Pricing Note — Superseded
 
-Accepted:
+Status: Superseded by R007.
 
-X moved to pay-per-use pricing for new developers on February 6, 2026. No free tier for new signups; Basic/Pro closed to new signups. Enterprise starts at ~$42,000/month.
+This entry originally recorded third-party reporting about X's 2026 pricing transition. It must not be used for current planning, cost estimates, or access claims.
 
-Source: third-party trackers citing X's pricing page (which defers exact figures to the Developer Console).
+Current official-source verification is recorded in:
 
-Confidence: Moderate (exact current rate card not independently re-verified at time of this log entry).
+```text
+R007 — X API Pay-Per-Use and Owned-Read Pricing Verified
+06-research/x-policy-api-verification-2026-07-19.md
+```
 
-Recheck by: before Milestone 01 (X API Probe) begins, and again before any API spend is committed.
+Retained only to preserve research history and show why re-verification was necessary.
 
 ## R002 — Truth Social Has No Public Developer Program
 
@@ -52,12 +55,11 @@ Confidence: High, from official help documentation. Note: some third-party sourc
 
 Recheck by: before finalizing any draft-length UI constraints in the dashboard or extension.
 
-## Open Items Not Yet Logged as Findings
+## Resolved X Verification Items
 
-- X: PCF-compliant keyword requirement in account **display name** (not just bio) — flagged as needing verification, not yet independently confirmed either way.
-- X: current exact account-level daily post caps for Premium vs. unverified accounts.
+The former X PCF display-name and API-pricing questions were resolved on 2026-07-19 through official X sources and are now recorded as R006 and R007.
 
-These remain open questions in `STATUS.md` under "Open Verification Items" until resolved into a numbered entry here.
+The project does not rely on a generic social-account daily-post estimate for M01. API endpoint rate limits, billing, and ordinary account anti-spam limits are distinct controls; the read-only probe follows the official endpoint limits and its much smaller owner-approved budget.
 
 ## R005 — Truth Social Browser/DOM Capture Not Admitted
 
@@ -72,3 +74,33 @@ Source: `06-research/truth-social-capture-boundaries.md`.
 Confidence: High for the conservative product boundary; legal interpretation remains non-final and may be revisited only with written permission, revised official policy, or professional legal guidance.
 
 Recheck by: 2026-10-19, or earlier upon a relevant policy change.
+
+## R006 — X PCF Display-Name and Profile Requirements Verified
+
+Accepted:
+
+As of 2026-07-19, X's official Authenticity policy requires compliant Parody, Commentary, and Fan accounts that depict another entity to use a PCF label, avoid an identical avatar, place a term such as `parody`, `fake`, `fan`, or `commentary` at the beginning of the display name, and include a matching disclosure in the bio.
+
+Project implication:
+
+The conservative M01 posture is `Commentary | The Discrepancy Desk`, the Commentary PCF label, and explicit fictional/non-affiliation language in the bio.
+
+Source: `06-research/x-policy-api-verification-2026-07-19.md`.
+
+Confidence: High — official X policy.
+
+Recheck by: before final public profile approval or after any relevant X policy change.
+
+## R007 — X API Pay-Per-Use and Owned-Read Pricing Verified
+
+Accepted:
+
+As of 2026-07-19, X API v2 uses prepaid credit-based pay-per-use pricing. Official documentation lists Post reads at $0.005 per returned Post, User reads at $0.010 per returned User, and qualifying owned reads at $0.001 per resource. Relevant endpoint rate limits are documented separately and are not spending permissions. Pay-per-use plans are documented with a 2 million monthly Post-read cap.
+
+The official X marketing page and detailed pricing documentation have shown inconsistent write-price figures. M01 is read-only, so this does not block the probe. The live Developer Console remains the final authority before any credit purchase.
+
+Source: `06-research/x-policy-api-verification-2026-07-19.md`.
+
+Confidence: High for read and owned-read pricing; Moderate for irrelevant write pricing.
+
+Recheck by: immediately before buying credits and before probe execution.
