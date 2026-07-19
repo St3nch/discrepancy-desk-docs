@@ -82,11 +82,12 @@ Read these first:
 17. `05-implementation-planning/m01-work-package-c-controlled-probe-procedure.md`
 18. `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`
 19. `05-implementation-planning/hammer-test-strategy.md`
-20. `05-implementation-planning/chrome-extension-plan.md`
-21. `06-research/truth-social-platform-research.md`
-22. `06-research/truth-social-capture-boundaries.md`
-23. `99-decisions/decision-log.md`
-24. `99-decisions/research-log.md`
+20. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
+21. `05-implementation-planning/chrome-extension-plan.md`
+22. `06-research/truth-social-platform-research.md`
+23. `06-research/truth-social-capture-boundaries.md`
+24. `99-decisions/decision-log.md`
+25. `99-decisions/research-log.md`
 
 ## Core Boundaries
 

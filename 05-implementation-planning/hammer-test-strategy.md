@@ -24,6 +24,31 @@ For every subsystem:
 
 Mock and fixture data are required where repeatable known outcomes are needed. Prefer fictional, synthetic, owned, or public-domain material.
 
+## Owner-Approved M02 Doctrine
+
+Accepted on 2026-07-19:
+
+> Every persistence rule must be attacked with deliberate bad data, invalid state transitions, fabricated identifiers, modified evidence, stale approvals, duplicate operations, partial failures, detector failures, migration failures, and recovery failures. Tests must run against the real SQLite engine where database behavior matters. Any ambiguity, missing evidence, integrity mismatch, or unrecognized failure must fail closed. Happy-path tests alone prove nothing.
+
+The M02 hammer-test contract must explicitly require:
+
+- exact approved text cannot be replaced by X-returned text containing generated links or other platform-added material;
+- any edit after approval invalidates the prior approval;
+- fabricated account, post, media, approval, publication, metric, and evidence identifiers are rejected;
+- modified raw evidence is detected through hash mismatch;
+- missing raw evidence blocks normalized promotion or acceptance;
+- invalid lifecycle jumps are rejected at the persistence boundary;
+- duplicate publication records, double submits, and replayed operations are either safely idempotent or explicitly rejected;
+- metric snapshots require source, observation method, and capture time;
+- empty, unavailable, withheld, missing, and errored values remain distinct;
+- spam or relevance classification never deletes or rewrites original mention evidence;
+- classifier, detector, or review-tool failure never auto-promotes content, mentions, claims, or pattern candidates;
+- migration interruption, rollback, and recovery behavior are tested against the real engine;
+- backup and restore preserve identifiers, relationships, exact approved text, provenance, and evidence hashes;
+- tests deliberately prove non-detection, malformed evidence, partial writes, modified evidence, fabricated IDs, empty result sets, and recovery failures are caught.
+
+This doctrine is the minimum. M02 may add stricter invariants when the persistence contract is defined.
+
 ## Operational Database Categories
 
 Before schema or migration work, M02 must refine these categories into an owner-approved test matrix.

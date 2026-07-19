@@ -14,15 +14,16 @@ M02 — Persistence Contract and Hammer-Test Plan
 
 ## Current Focus
 
-M01 is complete. M02 is active at its mandatory owner-clarification gate.
+M01 is complete. The owner-approved M02 hammer-test doctrine is recorded. The next bounded action is an independent Claude audit of the project through M01, with special focus on whether the hammer-test boundary is complete, internally consistent, evidence-based, and strong enough to govern M02 planning.
 
 Current sequence:
 
-1. obtain the owner's exact Discrepancy Desk hammer-test requirements;
-2. record the approved failure modes, invariants, adversarial cases, and evidence requirements in the M02 planning documents;
-3. refine the probe-derived candidate tests into a bounded project-specific matrix;
-4. define the smallest operational persistence contract and lifecycle model;
-5. keep schema, migrations, SQLite creation, and persistence implementation blocked until the M02 exit gate is satisfied.
+1. run the independent Claude audit from live repository truth;
+2. review and classify every audit finding as accepted, rejected, duplicate, or requiring owner decision;
+3. correct any confirmed doctrine, evidence, milestone, or consistency defects in one bounded package;
+4. refine the probe-derived candidate tests into a project-specific M02 matrix;
+5. define the smallest operational persistence contract and lifecycle model;
+6. keep schema, migrations, SQLite creation, and persistence implementation blocked until the M02 exit gate is satisfied.
 
 No database implementation is admitted during M02. The milestone is planning-only.
 
@@ -66,7 +67,9 @@ No database implementation is admitted during M02. The milestone is planning-onl
 - Developer Console remaining balance after probe: `$4.98` from `$5.00`; actual billed cost recorded as `$0.02` after console rounding.
 - Evidence hash verification returned `HASHES_OK`.
 - M01 Work Package D analysis completed in `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`.
-- M01 completed on 2026-07-19 and M02 activated at the mandatory owner hammer-test clarification gate.
+- M01 completed on 2026-07-19 and M02 activated.
+- Owner-approved M02 hammer-test doctrine recorded on 2026-07-19 in `05-implementation-planning/hammer-test-strategy.md` and `05-implementation-planning/milestone-02-persistence-contract.md`.
+- Independent Claude audit requested before persistence-contract drafting, with special focus on hammer-test completeness, fail-closed behavior, real-engine requirements, evidence integrity, migration/recovery failure cases, and non-detection/detector-failure coverage.
 - Approved image asset paths:
   - `C:\dev\x\discrepancy-desk\assets\brand\quinton-clearance\master\quinton-clearance-avatar-master-v001.png`
   - `C:\dev\x\discrepancy-desk\assets\brand\banners\master\discrepancy-desk-x-banner-master-v001.png`
@@ -133,4 +136,4 @@ No database implementation before M02 approval.
 
 ## Next Bounded Action
 
-Ask and record the mandatory M02 owner clarification: what exact failure modes, invariants, adversarial cases, and evidence requirements must the Discrepancy Desk hammer-test contract include? Do not begin schema or persistence implementation.
+Run the independent Claude audit using `07-prompts/claude-project-audit-through-m01-hammer-focus.md`. Review every finding against live repo truth before accepting corrections. Do not begin schema, migrations, SQLite creation, or persistence implementation.

@@ -10,9 +10,15 @@ Define the smallest operational persistence contract and the tests that must att
 
 ## Mandatory Owner Clarification
 
-Before doing database work, stop and ask the owner what **hammer tests** must mean for The Discrepancy Desk. Record the answer here before proceeding.
+Satisfied on 2026-07-19.
 
-Do not infer the exact contract from The Observatory, although its fail-closed, adversarial, real-database testing doctrine is relevant context.
+The owner approved the following doctrine:
+
+> Every persistence rule must be attacked with deliberate bad data, invalid state transitions, fabricated identifiers, modified evidence, stale approvals, duplicate operations, partial failures, detector failures, migration failures, and recovery failures. Tests must run against the real SQLite engine where database behavior matters. Any ambiguity, missing evidence, integrity mismatch, or unrecognized failure must fail closed. Happy-path tests alone prove nothing.
+
+The detailed minimum requirements are governed by `05-implementation-planning/hammer-test-strategy.md` under **Owner-Approved M02 Doctrine**.
+
+Do not infer the exact persistence contract from The Observatory. Its fail-closed, adversarial, real-database testing doctrine is relevant context, but Discrepancy Desk invariants must be justified by this project's real workflows and M01 evidence.
 
 ## Required Reading
 
