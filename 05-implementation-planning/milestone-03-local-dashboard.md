@@ -2,7 +2,7 @@
 
 ## Status
 
-Active — M02 closed and first bounded package authorized; physical execution blocked at the repository-initialization entry gate pending owner-approved D017 governance policies.
+Active — repository governance approved, application repository initialized, and initial persistence implementation committed locally. Full HT-01 through HT-20 execution and the local dashboard remain in progress.
 
 ## Goal
 

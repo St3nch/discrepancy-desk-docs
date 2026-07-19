@@ -14,16 +14,16 @@ M03 — Local Control Room MVP
 
 ## Current Focus
 
-M02 is complete. The owner approved closure and authorized the bounded first M03 physical-design and persistence implementation package. M03 is active, but physical execution is blocked at its repository-initialization entry gate because D017 still requires separate owner approval of repository governance policies before Git may be initialized in `C:\dev\x\discrepancy-desk`.
+M02 is complete. M03 is active. The owner approved the D017 repository-governance package, the application repository was initialized on `main`, and the first bounded persistence implementation batches were committed locally. Current validation is 14 passing tests plus clean Ruff checks. The application repository has no configured remote, so no push has occurred.
 
 Current sequence:
 
-1. approve the D017 repository-governance package;
-2. initialize the application repository only after that approval;
-3. execute the bounded M03 physical-design and persistence package;
-4. preserve all M02 hammer, evidence, migration, backup, and fail-closed requirements.
+1. continue the authorized M03 persistence and hammer-test package;
+2. complete explicit idempotency, concurrency, dirty-migration, three-way restore, and remaining HT-01 through HT-20 coverage;
+3. preserve exact implementation-return evidence;
+4. configure and push the application repository only after the owner supplies or approves its GitHub remote and visibility.
 
-No schema, migration, SQLite file, ORM, CRUD, or persistence code has been created yet because the M03 repository entry gate is not satisfied.
+The initial physical persistence slice now exists locally. M03 is not complete, and the local dashboard has not started.
 
 ## Completed / Decided
 
@@ -71,7 +71,7 @@ No schema, migration, SQLite file, ORM, CRUD, or persistence code has been creat
 - Accepted audit review recorded in `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`.
 - Root-level attempt-001 evidence and `attempt-002/` both passed explicit-manifest hash verification; preserved verifier output lives under `C:\dev\x\discrepancy-desk\evidence\api-probes\x\m01\verification\`.
 - The plaintext X environment file was moved by the owner from `C:\dev\x\local-secrets\` to `C:\Users\Stench\.discrepancy-desk\`; the old path no longer exists, the new path exists, and credential contents were not inspected.
-- Main assets/evidence directory remains intentionally non-Git pending owner-approved third-party-data, publication, ignore, binary, and secret policies.
+- D017 repository-governance defaults were owner-approved on 2026-07-19; the application repository was initialized locally on `main` with raw evidence, runtime databases, backups, restores, virtual environments, and secrets excluded from Git.
 - M02 now explicitly requires SQLite foreign-key, locking, idempotency, audit-integrity, cross-store evidence, dirty-migration, restore, and Unicode/text-mutation hammer categories.
 - The 20-invariant project-specific adversarial matrix at `05-implementation-planning/m02-adversarial-test-matrix.md` was owner-approved and committed as the governing M02 baseline in `fb1410f`.
 - The owner approved the smallest operational persistence contract, lifecycle/state model, and recommendations resolving UD-01 through UD-12 on 2026-07-19.
@@ -106,14 +106,19 @@ Owner clarification is satisfied. The independent audit correction package was c
 
 M02 closed on 2026-07-19 after owner approval of the persistence contract, lifecycle model, UD-01 through UD-12, adversarial baseline, migration/hammer plan, and bounded M03 package.
 
-### M03 — Active / Blocked at Entry Gate
+### M03 — Active
 
-The owner authorized preparation and execution of the bounded first M03 package. Execution is blocked because `C:\dev\x\discrepancy-desk` is intentionally non-Git and D017 requires owner-approved repository governance before initialization. The exact required policy package is recorded in `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`.
+The repository-governance entry gate is satisfied. The application repository was initialized on `main` and contains two local commits:
+
+```text
+8590399 — Initialize governed M03 persistence baseline
+6281f44 — Add migration integrity and restore proof
+```
+
+Current validation is `14 passed` with clean Ruff checks. The full authorized persistence and HT-01 through HT-20 package remains in progress. No remote is configured for the application repository.
 
 ## Not Started
 
-- Actual application implementation.
-- Database schema or migrations.
 - Local dashboard.
 - Chrome extension build.
 - Truth Social manual-publishing workflow build.
@@ -147,4 +152,4 @@ No database implementation before M02 approval.
 
 ## Next Bounded Action
 
-Owner decision gate: approve the repository-governance defaults in `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`. After approval, initialize the app repository and execute the already-authorized bounded M03 persistence package. No Git initialization or physical persistence work may occur before that policy approval.
+Continue the authorized M03 persistence and hammer-test package from the implementation return in `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`. The next external owner input is the application repository's GitHub URL and visibility before any remote is configured or pushed.

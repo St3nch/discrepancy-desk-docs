@@ -224,3 +224,22 @@ The owner approved M02 closure and authorized preparation and execution of the b
 M03 is active. Physical execution remains blocked at the repository-initialization entry gate because D017 separately reserved third-party-data, raw-evidence publication, ignore, binary, secret, and remote-governance decisions. Authorization to execute M03 does not silently waive D017.
 
 The next owner gate is the repository-governance package in `m03-work-package-a-repository-governance-and-bootstrap.md`.
+
+
+## D022 — M03 Repository Governance Approved
+
+Accepted: 2026-07-19.
+
+The owner approved the repository-governance defaults in `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`.
+
+The application directory `C:\dev\x\discrepancy-desk` may operate as a Git repository on `main` under these controls:
+
+- raw evidence, runtime databases, backups, restores, virtual environments, credentials, and secret-bearing files remain outside Git;
+- approved production brand assets may be tracked;
+- synthetic, fictional, owned, or public-domain fixtures may be tracked;
+- ordinary tracked files are limited to 10 MiB unless separately approved;
+- Git LFS is not admitted yet;
+- staged scope and secret review are required before commits;
+- repository URL and visibility require owner confirmation before first remote push.
+
+This decision admitted repository initialization and the already-authorized M03 implementation package. It did not authorize raw-evidence publication or credential access.

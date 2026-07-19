@@ -90,14 +90,15 @@ Read these first:
 25. `05-implementation-planning/m02-owner-approved-persistence-decisions.md`
 26. `05-implementation-planning/m02-unresolved-decision-register.md`
 27. `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`
-29. `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`
-28. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
-30. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
-31. `05-implementation-planning/chrome-extension-plan.md`
-32. `06-research/truth-social-platform-research.md`
-33. `06-research/truth-social-capture-boundaries.md`
-34. `99-decisions/decision-log.md`
-35. `99-decisions/research-log.md`
+28. `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`
+29. `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`
+30. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
+31. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
+32. `05-implementation-planning/chrome-extension-plan.md`
+33. `06-research/truth-social-platform-research.md`
+34. `06-research/truth-social-capture-boundaries.md`
+35. `99-decisions/decision-log.md`
+36. `99-decisions/research-log.md`
 
 ## Core Boundaries
 
