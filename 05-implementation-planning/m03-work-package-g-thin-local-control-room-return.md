@@ -138,3 +138,18 @@ The application is local-only under the current boundary. No external deployment
 ## Next Gate
 
 The next bounded package should strengthen successor revision and corrected-publication semantics, then perform a real local operator walkthrough before M03 closure review.
+
+
+## Live Walkthrough Correction — Stable Account Identity Retry
+
+The first owner walkthrough exposed a real interface defect. Re-submitting an already-registered `(platform, external_account_id)` pair generated a fresh web operation key and surfaced the raw SQLite uniqueness error.
+
+Corrected in application commit `b92b874`:
+
+- repeated submission of the same stable identity and same username metadata reuses the existing account;
+- the new operation key records the existing account as its result;
+- no duplicate account or audit event is created;
+- conflicting username metadata fails with a plain-language governed error;
+- raw `UNIQUE constraint failed` details are no longer shown for this path.
+
+Regression validation after the correction: `51 passed`, zero warnings, clean Ruff checks.
