@@ -183,3 +183,39 @@ A milestone using this strategy is not complete until its completion record iden
 SQLite and the Anomaly Vault hold canonical records according to their defined boundaries. No Coincidences proposes reviewable candidates. Qdrant retrieves candidates. None of them may silently change project truth.
 
 Hammer-test plans must become more specific as the system becomes real. The point is not to freeze today's guesses. The point is to prevent tomorrow's implementation from forgetting what must be attacked.
+
+## M02 Required SQLite-Specific Categories
+
+M02 must refine each category below into a named invariant, valid fixture, deliberate violation fixture, expected fail-closed result, real-engine requirement, and preserved evidence requirement.
+
+### Connection-level foreign-key enforcement
+
+Every operational SQLite connection must prove `PRAGMA foreign_keys=ON`. Tests must deliberately use a connection with enforcement disabled and fail the test rather than silently accepting orphaned relationships. Engine rejection must be demonstrated for missing raw evidence, source, post, approval, publication, and metric references.
+
+### Locking, journal mode, and busy handling
+
+Choose and record journal mode and bounded busy-timeout behavior. Real-engine tests must use overlapping writers and prove the result is deterministic serialization or clean rejection with no partial commit, lost audit event, or ambiguous retry state. `SQLITE_BUSY` and interrupted transactions must be explicit outcomes, not unclassified exceptions.
+
+### Named idempotency and uniqueness keys
+
+Every operation described as idempotent must identify the exact operation key or uniqueness constraint that makes it so. Replayed captures, approvals, manual-publication records, metric snapshots, and external platform identifiers must be deliberately duplicated against real constraints. The second operation must be a proven no-op or an explicit rejection, never accidental duplication.
+
+### Audit-event immutability and tamper detection
+
+Normal application paths must not update or delete accepted audit events. Direct mutation fixtures must be prevented by engine controls or detected by an independently verifiable integrity mechanism. A detector error, skipped verification, or broken integrity chain must fail closed rather than report a clean audit history.
+
+### Database-to-raw-evidence reconciliation
+
+The selected raw-evidence boundary must detect a referenced file or object that is missing, moved, altered, truncated, re-encoded, or hash-mismatched. It must also report orphan raw evidence with no operational reference. Parsed JSON or normalized rows cannot satisfy the canonical evidence requirement when exact bytes are unavailable.
+
+### Dirty and interrupted SQLite migrations
+
+Real SQLite migration tests must cover interruption during table-copy or batch operations, invalid legacy rows, stale or incorrect version markers, leftover temporary tables, partial indexes or triggers, reruns, and rollback. A dirty or ambiguous migration state must refuse further implementation activity until reconciled with preserved evidence.
+
+### Disposable restore and cross-store reconciliation
+
+Restore tests must run in a clean disposable location. They must reconcile identifiers, relationships, record counts, exact approved text, canonical raw bytes, database-held hashes, sidecar manifests, and audit history. Missing files, corrupted archives, stale database copies, or three-way hash disagreement must fail explicitly.
+
+### Exact-text mutation and Unicode adversaries
+
+Approval tests must cover appended platform links, shortened text, newline and whitespace changes, Unicode normalization variants, zero-width characters, punctuation substitutions, link changes, media changes, and platform-specific variants. Any non-identical approved revision must invalidate or supersede approval even when it appears visually similar.

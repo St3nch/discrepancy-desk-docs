@@ -2,7 +2,7 @@
 
 ## Status
 
-Active — owner hammer-test clarification required before persistence-contract drafting proceeds.
+Active — owner doctrine approved; independent audit correction package in progress before persistence-contract drafting proceeds.
 
 ## Goal
 
@@ -62,9 +62,21 @@ Do not infer the exact persistence contract from The Observatory. Its fail-close
 - dashboard implementation
 - platform writes
 
+## Independent Audit Gate
+
+A Claude AI read-only audit completed after M01 with verdict **PASS WITH CORRECTIONS**. M02 planning remains admitted, but physical schema and persistence implementation remain blocked until the accepted correction package is resolved.
+
+Accepted audit requirements include:
+
+- immutable documentation of the root-level attempt-001 layout and explicit-manifest hash verification;
+- reconciliation of candidate data-model language with exact-byte raw evidence;
+- removal of the plaintext credential file from the broad `C:\dev` connector boundary by owner action;
+- an explicit non-Git and third-party-data policy for the main assets/evidence directory;
+- SQLite-specific hammer coverage for connection pragmas, locking, idempotency, audit integrity, cross-store evidence, dirty migrations, restore reconciliation, and Unicode/text mutation.
+
 ## Required Hammer-Test Categories
 
-Use the operational-database categories in `05-implementation-planning/hammer-test-strategy.md` as the baseline. M02 must refine them into project-specific invariants, fixtures, deliberate violation cases, real-engine tests, and evidence requirements after the owner clarification and before any migration work.
+Use all operational-database and **M02 Required SQLite-Specific Categories** in `05-implementation-planning/hammer-test-strategy.md`. M02 must refine each into a named invariant, valid fixture, deliberate violation fixture, expected fail-closed result, real-engine requirement, and preserved evidence requirement before any migration work.
 
 ## Required Evidence
 

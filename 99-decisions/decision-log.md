@@ -158,3 +158,32 @@ Tests must run against the real SQLite engine where database behavior matters. A
 The doctrine specifically requires protection of exact approved text from platform-returned text drift, approval invalidation after edits, rejection of fabricated IDs, hash-based modified-evidence detection, blocking promotion when raw evidence is missing, lifecycle enforcement, deliberate duplicate/replay behavior, timestamped metric provenance, distinct missing/withheld/error states, preservation of original mention evidence, no auto-promotion after classifier or detector failure, and migration/backup/restore proof that preserves identifiers, relationships, exact text, provenance, and evidence hashes.
 
 The detailed minimum contract is governed by `05-implementation-planning/hammer-test-strategy.md`. M02 may strengthen it but may not silently weaken it.
+
+## D017 — Main Assets/Evidence Directory Remains Non-Git Pending Governance
+
+Accepted: 2026-07-19.
+
+`C:\dev\x\discrepancy-desk` remains intentionally non-Git. Do not initialize it casually.
+
+Before any future Git initialization, the owner must approve:
+
+- third-party-data and personally identifiable information retention policy;
+- whether raw API evidence may be committed or published;
+- `.gitignore` rules covering credentials, `.env`, caches, generated files, and OS artifacts;
+- evidence-size and binary-storage policy;
+- secret scanning and pre-commit verification;
+- whether evidence belongs in a private repository, external archive, or another governed store.
+
+Approved brand assets and local evidence may remain in this directory under current manual controls. This decision does not authorize publication or remote synchronization.
+
+## D018 — Claude Audit Accepted as PASS WITH CORRECTIONS
+
+Accepted: 2026-07-19.
+
+The independent read-only audit through M01 is accepted with verdict `PASS WITH CORRECTIONS`.
+
+M01 remains accepted and M02 planning may continue. Physical schema, migrations, SQLite creation, ORM/application models, CRUD, and persistence implementation remain blocked until the accepted correction package and M02 exit gate are satisfied.
+
+The root-level attempt-001 evidence will not be moved or rewritten. Its historical layout must be documented, and verification must use only the paths explicitly recorded in each `hashes.sha256` manifest.
+
+The accepted audit review is recorded in `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`.

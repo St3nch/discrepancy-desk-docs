@@ -14,16 +14,14 @@ M02 — Persistence Contract and Hammer-Test Plan
 
 ## Current Focus
 
-M01 is complete. The owner-approved M02 hammer-test doctrine is recorded. The next bounded action is an independent Claude audit of the project through M01, with special focus on whether the hammer-test boundary is complete, internally consistent, evidence-based, and strong enough to govern M02 planning.
+M01 is complete. The owner-approved M02 hammer-test doctrine is recorded. The independent Claude audit returned **PASS WITH CORRECTIONS**, and the accepted correction package has been completed pending final validation and checkpointing.
 
 Current sequence:
 
-1. run the independent Claude audit from live repository truth;
-2. review and classify every audit finding as accepted, rejected, duplicate, or requiring owner decision;
-3. correct any confirmed doctrine, evidence, milestone, or consistency defects in one bounded package;
-4. refine the probe-derived candidate tests into a project-specific M02 matrix;
-5. define the smallest operational persistence contract and lifecycle model;
-6. keep schema, migrations, SQLite creation, and persistence implementation blocked until the M02 exit gate is satisfied.
+1. validate, commit, and push the completed audit-correction package;
+2. refine the probe-derived candidate tests into a project-specific M02 matrix;
+3. define the smallest operational persistence contract and lifecycle model;
+4. keep schema, migrations, SQLite creation, and persistence implementation blocked until the M02 exit gate is satisfied.
 
 No database implementation is admitted during M02. The milestone is planning-only.
 
@@ -69,7 +67,12 @@ No database implementation is admitted during M02. The milestone is planning-onl
 - M01 Work Package D analysis completed in `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`.
 - M01 completed on 2026-07-19 and M02 activated.
 - Owner-approved M02 hammer-test doctrine recorded on 2026-07-19 in `05-implementation-planning/hammer-test-strategy.md` and `05-implementation-planning/milestone-02-persistence-contract.md`.
-- Independent Claude audit requested before persistence-contract drafting, with special focus on hammer-test completeness, fail-closed behavior, real-engine requirements, evidence integrity, migration/recovery failure cases, and non-detection/detector-failure coverage.
+- Independent Claude audit completed with verdict `PASS WITH CORRECTIONS`; M02 planning remains admitted while physical schema and implementation remain blocked.
+- Accepted audit review recorded in `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`.
+- Root-level attempt-001 evidence and `attempt-002/` both passed explicit-manifest hash verification; preserved verifier output lives under `C:\dev\x\discrepancy-desk\evidence\api-probes\x\m01\verification\`.
+- The plaintext X environment file was moved by the owner from `C:\dev\x\local-secrets\` to `C:\Users\Stench\.discrepancy-desk\`; the old path no longer exists, the new path exists, and credential contents were not inspected.
+- Main assets/evidence directory remains intentionally non-Git pending owner-approved third-party-data, publication, ignore, binary, and secret policies.
+- M02 now explicitly requires SQLite foreign-key, locking, idempotency, audit-integrity, cross-store evidence, dirty-migration, restore, and Unicode/text-mutation hammer categories.
 - Approved image asset paths:
   - `C:\dev\x\discrepancy-desk\assets\brand\quinton-clearance\master\quinton-clearance-avatar-master-v001.png`
   - `C:\dev\x\discrepancy-desk\assets\brand\banners\master\discrepancy-desk-x-banner-master-v001.png`
@@ -95,9 +98,9 @@ Work Packages A–D closed on 2026-07-19 with profile evidence, developer and bi
 
 ### M02 — Active
 
-Blocked at the mandatory owner clarification until the required hammer-test doctrine is stated and recorded.
+Owner clarification is satisfied. The independent audit correction package is complete pending validation and checkpointing.
 
-M02 may plan the persistence contract and adversarial test matrix. It may not create schema, migrations, a SQLite database, application models, or persistence code.
+M02 may proceed with persistence-contract and adversarial test-matrix planning after this package is committed and pushed. It may not create schema, migrations, a SQLite database, application models, or persistence code.
 
 ## Not Started
 
@@ -136,4 +139,4 @@ No database implementation before M02 approval.
 
 ## Next Bounded Action
 
-Run the independent Claude audit using `07-prompts/claude-project-audit-through-m01-hammer-focus.md`. Review every finding against live repo truth before accepting corrections. Do not begin schema, migrations, SQLite creation, or persistence implementation.
+Complete the accepted audit correction package, including the owner's manual credential-file move outside `C:\dev`. Validate, commit, and push the bounded correction package, then proceed to the M02 persistence-contract and adversarial-test-matrix planning batch. Do not begin schema, migrations, SQLite creation, or persistence implementation.
