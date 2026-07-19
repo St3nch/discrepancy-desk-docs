@@ -14,16 +14,17 @@ M03 — Local Control Room MVP
 
 ## Current Focus
 
-M02 is complete. M03 is active. The repository baseline and four bounded persistence batches are committed and pushed. Current validation is 28 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. Guarded Alembic execution, durable interrupted-migration state, real age encryption/decryption, deterministic archives, deterministic test-evidence records, and the active HT-01 through HT-20 coverage ledger are now implemented and tested.
+M02 is complete. M03 is active. The repository baseline and five bounded persistence/reliability batches are committed and pushed. Current validation is 37 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. Governed dirty-marker recovery, dedicated human-authority gates, detector non-authority, publication-mismatch preservation, explicit unknown-state queries, and automatic post-test evidence emission are now implemented and tested.
 
 Current sequence:
 
-1. add governed migration recovery after a retained dirty marker;
-2. integrate deterministic evidence emission with actual test execution;
-3. complete named fixtures for the remaining HT-01 through HT-20 gaps, especially detector error and unknown-state semantics;
-4. implement publication-mismatch reconciliation;
-5. begin the minimal local operator loop only after the persistence evidence gate is accepted;
-6. keep both repositories clean and synchronized after each accepted checkpoint.
+1. implement the minimal complete operator service loop from owned-account/work-item creation through approval, manual-ready, publication, mismatch, and metrics;
+2. replace fixture-only setup paths with governed service operations;
+3. add read/query operations required by the local control room;
+4. strengthen successor-revision approval invalidation and corrected-publication workflow;
+5. emit named per-fixture HT evidence and perform the HT-01 through HT-20 closure review;
+6. begin the local FastAPI/Jinja/HTMX interface only after the service loop passes;
+7. keep both repositories clean and synchronized after each accepted checkpoint.
 
 The initial physical persistence slice now exists locally. M03 is not complete, and the local dashboard has not started.
 
