@@ -14,18 +14,18 @@ M03 — Local Control Room MVP
 
 ## Current Focus
 
-M02 is complete. M03 is active. The repository baseline and six bounded persistence/reliability/service batches are committed and pushed. Current validation is 42 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. The minimal governed operator service loop now runs from owned-account and work capture through sources, evidence, exact approval, manual-ready, publication, metrics, and control-room readback.
+M02 is complete. M03 is active. The repository baseline and seven bounded persistence/reliability/service/interface batches are committed and pushed. Current validation is 47 passing tests with zero warnings plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. A thin local FastAPI/Jinja control room now exposes the governed operator loop without introducing alternate lifecycle or approval paths.
 
 Current sequence:
 
-1. prepare the first thin local FastAPI/Jinja/HTMX control-room package over the governed service boundary;
-2. ensure every UI action calls a dedicated service operation and cannot mutate lifecycle state directly;
-3. strengthen successor-revision approval invalidation and corrected-publication workflow;
-4. emit named per-fixture HT evidence and perform the HT-01 through HT-20 closure review;
-5. keep visual scope minimal until persistence and operator authority remain green through interface tests;
+1. strengthen successor-revision approval invalidation and corrected/replacement publication workflow;
+2. perform a real local control-room walkthrough against a disposable runtime database;
+3. emit named per-fixture HT evidence and perform the HT-01 through HT-20 closure review;
+4. consider local HTMX progressive enhancement only after the route contracts remain green;
+5. prepare the M03 exit-gate review without widening into automation, analytics, or public deployment;
 6. keep both repositories clean and synchronized after each accepted checkpoint.
 
-The physical persistence and operator service slices now exist. M03 is not complete, and the production dashboard has not started.
+The physical persistence, governed operator service, and thin local control-room slices now exist. M03 is not complete, and no production/public deployment is admitted.
 
 ## Completed / Decided
 
