@@ -23,7 +23,13 @@ Commits:
 6281f44 — Add migration integrity and restore proof
 ```
 
-The application repository currently has no configured remote. No push was attempted.
+Remote:
+
+```text
+origin -> https://github.com/St3nch/discrepancy-desk.git
+```
+
+The owner supplied the repository URL on 2026-07-19. Both application commits were pushed to `origin/main`, and local `main` now tracks `origin/main`.
 
 ## Governance Applied
 
@@ -112,4 +118,4 @@ The implementation is not yet a complete HT-01 through HT-20 proof. Remaining bo
 
 ## Current Gate
 
-M03 may continue within the already approved persistence and hammer-test boundary. A remote repository URL and visibility decision are required before the application repository can be pushed.
+M03 may continue within the already approved persistence and hammer-test boundary. The application repository is now pushed and synchronized at `origin/main`. The next bounded work remains explicit idempotency, concurrency, dirty-migration, three-way restore, and remaining HT-01 through HT-20 coverage.

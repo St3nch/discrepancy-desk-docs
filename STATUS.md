@@ -14,14 +14,14 @@ M03 — Local Control Room MVP
 
 ## Current Focus
 
-M02 is complete. M03 is active. The owner approved the D017 repository-governance package, the application repository was initialized on `main`, and the first bounded persistence implementation batches were committed locally. Current validation is 14 passing tests plus clean Ruff checks. The application repository has no configured remote, so no push has occurred.
+M02 is complete. M03 is active. The owner approved the D017 repository-governance package, the application repository was initialized on `main`, and the first bounded persistence implementation batches were committed and pushed. Current validation is 14 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`.
 
 Current sequence:
 
 1. continue the authorized M03 persistence and hammer-test package;
 2. complete explicit idempotency, concurrency, dirty-migration, three-way restore, and remaining HT-01 through HT-20 coverage;
 3. preserve exact implementation-return evidence;
-4. configure and push the application repository only after the owner supplies or approves its GitHub remote and visibility.
+4. keep the application repository clean and synchronized with `origin/main` after approved checkpoints.
 
 The initial physical persistence slice now exists locally. M03 is not complete, and the local dashboard has not started.
 
