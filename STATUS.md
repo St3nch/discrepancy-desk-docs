@@ -14,14 +14,15 @@ M03 — Local Control Room MVP
 
 ## Current Focus
 
-M02 is complete. M03 is active. The owner approved the D017 repository-governance package, the application repository was initialized on `main`, and the first bounded persistence implementation batches were committed and pushed. Current validation is 14 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`.
+M02 is complete. M03 is active. The repository baseline and three bounded persistence batches are committed and pushed. Current validation is 22 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. Idempotency, real writer contention, dirty migration blocking, out-of-band audit tamper detection, and three-way restore reconciliation are now implemented and tested.
 
 Current sequence:
 
-1. continue the authorized M03 persistence and hammer-test package;
-2. complete explicit idempotency, concurrency, dirty-migration, three-way restore, and remaining HT-01 through HT-20 coverage;
-3. preserve exact implementation-return evidence;
-4. keep the application repository clean and synchronized with `origin/main` after approved checkpoints.
+1. integrate the dirty migration guard with actual Alembic preflight and interrupted-migration fixtures;
+2. add encrypted backup archive handling and deterministic test-evidence packaging;
+3. complete the explicit HT-01 through HT-20 coverage ledger and remaining deliberate violation cases;
+4. begin the minimal local operator loop only after the persistence gates are strong enough;
+5. keep both repositories clean and synchronized after each accepted checkpoint.
 
 The initial physical persistence slice now exists locally. M03 is not complete, and the local dashboard has not started.
 
