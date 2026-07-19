@@ -14,7 +14,7 @@ M03 — Local Control Room MVP
 
 ## Current Focus
 
-M02 is complete. M03 is active. The repository baseline and seven bounded persistence/reliability/service/interface batches plus the first live-walkthrough correction are committed and pushed. Current validation is 51 passing tests with zero warnings plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. A thin local FastAPI/Jinja control room now exposes the governed operator loop without introducing alternate lifecycle or approval paths. Repeated submission of an already-registered stable account identity now reuses the existing account instead of exposing a raw SQLite uniqueness failure.
+M02 is complete. M03 is active. The repository baseline and eight bounded persistence/reliability/service/interface batches plus live-walkthrough corrections are committed and pushed. Current validation is 54 passing tests with zero warnings plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. Successor revisions now supersede active approvals atomically, and corrected replacement publications preserve and link back to the original mismatched publication.
 
 Current sequence:
 
