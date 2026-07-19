@@ -93,13 +93,14 @@ Read these first:
 28. `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`
 29. `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`
 30. `05-implementation-planning/m03-work-package-c-idempotency-concurrency-and-reconciliation-return.md`
-31. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
-32. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
-33. `05-implementation-planning/chrome-extension-plan.md`
-34. `06-research/truth-social-platform-research.md`
-35. `06-research/truth-social-capture-boundaries.md`
-36. `99-decisions/decision-log.md`
-37. `99-decisions/research-log.md`
+31. `05-implementation-planning/m03-work-package-d-guarded-migrations-encrypted-archives-and-evidence-return.md`
+32. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
+33. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
+34. `05-implementation-planning/chrome-extension-plan.md`
+35. `06-research/truth-social-platform-research.md`
+36. `06-research/truth-social-capture-boundaries.md`
+37. `99-decisions/decision-log.md`
+38. `99-decisions/research-log.md`
 
 ## Core Boundaries
 

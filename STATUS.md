@@ -14,15 +14,16 @@ M03 — Local Control Room MVP
 
 ## Current Focus
 
-M02 is complete. M03 is active. The repository baseline and three bounded persistence batches are committed and pushed. Current validation is 22 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. Idempotency, real writer contention, dirty migration blocking, out-of-band audit tamper detection, and three-way restore reconciliation are now implemented and tested.
+M02 is complete. M03 is active. The repository baseline and four bounded persistence batches are committed and pushed. Current validation is 28 passing tests plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. Guarded Alembic execution, durable interrupted-migration state, real age encryption/decryption, deterministic archives, deterministic test-evidence records, and the active HT-01 through HT-20 coverage ledger are now implemented and tested.
 
 Current sequence:
 
-1. integrate the dirty migration guard with actual Alembic preflight and interrupted-migration fixtures;
-2. add encrypted backup archive handling and deterministic test-evidence packaging;
-3. complete the explicit HT-01 through HT-20 coverage ledger and remaining deliberate violation cases;
-4. begin the minimal local operator loop only after the persistence gates are strong enough;
-5. keep both repositories clean and synchronized after each accepted checkpoint.
+1. add governed migration recovery after a retained dirty marker;
+2. integrate deterministic evidence emission with actual test execution;
+3. complete named fixtures for the remaining HT-01 through HT-20 gaps, especially detector error and unknown-state semantics;
+4. implement publication-mismatch reconciliation;
+5. begin the minimal local operator loop only after the persistence evidence gate is accepted;
+6. keep both repositories clean and synchronized after each accepted checkpoint.
 
 The initial physical persistence slice now exists locally. M03 is not complete, and the local dashboard has not started.
 
