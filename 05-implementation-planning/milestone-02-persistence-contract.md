@@ -2,7 +2,7 @@
 
 ## Status
 
-Not started.
+Active — owner hammer-test clarification required before persistence-contract drafting proceeds.
 
 ## Goal
 

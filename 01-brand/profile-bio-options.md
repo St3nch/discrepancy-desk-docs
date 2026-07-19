@@ -36,4 +36,17 @@ discrepancydesk.com
 
 ## Profile Safety
 
-Use “commentary/parody” or similar language to avoid accidental fake-official framing.
+The owner-approved live profile remains:
+
+```text
+Display name: Quinton Clearance
+Handle: @DiscrepancyDesk
+Bio: Every anomaly becomes paperwork.
+Location: Basement 1, Level 7
+```
+
+The owner rejected adding `Commentary |` or similar wording to the display name. Do not reintroduce it as the accepted profile posture.
+
+Avoid accidental fake-official framing through the complete fictional identity, original artwork, public content, and strict refusal to use real agency seals, insignia, employment claims, or claims of classified access.
+
+Reconsider an additional profile label or disclosure only if the owner chooses one, X provides account-specific guidance, X issues a relevant warning, or the governing policy materially changes.

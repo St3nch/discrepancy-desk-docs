@@ -9,22 +9,22 @@ Planning and controlled platform-readiness work.
 ## Active Milestone
 
 ```text
-M01 — X Identity, Policy, and Read-Only API Probe
+M02 — Persistence Contract and Hammer-Test Plan
 ```
 
 ## Current Focus
 
-Finish the remaining M01 account package, then prepare the bounded developer/API boundary:
+M01 is complete. M02 is active at its mandatory owner-clarification gate.
 
-1. draft and approve the first-post and pinned-post package;
-2. record final Work Package A completion;
-3. establish the developer-app, secret, and spending boundary;
-4. run a tiny read-only X API probe only after separate owner approval for credits;
-5. preserve raw evidence and produce the M02 persistence-planning handoff.
+Current sequence:
 
-No database work is admitted during M01.
+1. obtain the owner's exact Discrepancy Desk hammer-test requirements;
+2. record the approved failure modes, invariants, adversarial cases, and evidence requirements in the M02 planning documents;
+3. refine the probe-derived candidate tests into a bounded project-specific matrix;
+4. define the smallest operational persistence contract and lifecycle model;
+5. keep schema, migrations, SQLite creation, and persistence implementation blocked until the M02 exit gate is satisfied.
 
-Before any database work, the Project Steward must confirm the Discrepancy Desk hammer-test contract against `05-implementation-planning/hammer-test-strategy.md`. M02 must refine that baseline into project-specific invariants, fixtures, deliberate violation cases, real-engine tests, and evidence requirements before schema, migration, or persistence implementation begins.
+No database implementation is admitted during M02. The milestone is planning-only.
 
 ## Completed / Decided
 
@@ -47,9 +47,30 @@ Before any database work, the Project Steward must confirm the Discrepancy Desk 
 - Public tone selected: deadpan bureaucratic weird-history/conspiracy archive clerk.
 - Approved Quinton avatar created, saved in the main repo, applied to X, and visually accepted in the live profile crop.
 - Approved B1-L7 X banner created, saved in the main repo, applied to X, and visually accepted in the live profile crop.
+- M01 Work Package A completed on 2026-07-19.
+- First public post approved and manually published: `https://x.com/DiscrepancyDesk/status/2078860810688848010`.
+- Pinned post approved, manually published, and pinned: `https://x.com/DiscrepancyDesk/status/2078869974622392424`.
+- Pinned-post image included with alt text and visible `Made with AI` labeling.
+- Blue verification check confirmed from owner-supplied live profile evidence.
+- M01 Work Package B completed on 2026-07-19.
+- Active probe app: `Discrepancy Desk Read Probe`, App ID `33215850`, Development environment, read-only OAuth 1.0a User Context.
+- Four required OAuth 1.0a values stored in the owner's Bitwarden vault; no OAuth 2.0 probe credentials retained.
+- X API credits purchased: `$5.00`; billing-cycle spend cap: `$5.00`; auto-recharge off/unavailable.
+- Redacted completion record: `05-implementation-planning/m01-work-package-b-redacted-configuration-record.md`.
+- M01 Work Package C completed on 2026-07-19 under the approved P01–P04 boundary.
+- Attempt 001 stopped fail-closed on HTTP 401 and remains preserved.
+- Attempt 002 completed four read-only GET requests with HTTP 200 and zero automatic retries.
+- Successful evidence path: `C:\dev\x\discrepancy-desk\evidence\api-probes\x\m01\attempt-002\`.
+- Returned resources: one authenticated user, two owned posts, one mention, and two direct post lookups.
+- Runner-estimated attributable cost: `$0.023`; hard operational ceiling: `$0.10`.
+- Developer Console remaining balance after probe: `$4.98` from `$5.00`; actual billed cost recorded as `$0.02` after console rounding.
+- Evidence hash verification returned `HASHES_OK`.
+- M01 Work Package D analysis completed in `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`.
+- M01 completed on 2026-07-19 and M02 activated at the mandatory owner hammer-test clarification gate.
 - Approved image asset paths:
   - `C:\dev\x\discrepancy-desk\assets\brand\quinton-clearance\master\quinton-clearance-avatar-master-v001.png`
   - `C:\dev\x\discrepancy-desk\assets\brand\banners\master\discrepancy-desk-x-banner-master-v001.png`
+  - `C:\dev\x\discrepancy-desk\assets\brand\pinned-posts\master\discrepancy-desk-x-pinned-intake-master-v001.png`
 - Only owner-approved, manually saved image assets belong in the main repo; rejected generations are not retained.
 - Docs repo role: planning, doctrine, specs, research, and implementation instructions.
 - App repo role: actual coded project, approved production assets, and implementation evidence.
@@ -63,35 +84,21 @@ Before any database work, the Project Steward must confirm the Discrepancy Desk 
 - Current official X policy/pricing/rate-limit verification recorded in `06-research/x-policy-api-verification-2026-07-19.md`.
 - The owner rejected adding `Commentary |` or similar wording to the display name. Do not reintroduce that suggestion as an accepted profile decision.
 
-## M01 Pending Work
+## Milestone State
 
-### Account and identity
+### M01 — Complete
 
-- draft the first public post;
-- draft and approve the pinned-post package;
-- decide whether any additional account-label or disclosure setting is desired;
-- record final Work Package A completion.
+Work Packages A–D closed on 2026-07-19 with profile evidence, developer and billing controls, preserved read-only probe evidence, verified hashes, actual billed cost, analysis, and M02 handoff.
 
-### Developer and cost boundary
+### M02 — Active
 
-- create or verify the X developer account, Project, and App;
-- use minimum read permissions;
-- define local secret handling;
-- recheck live Developer Console pricing;
-- obtain owner approval for the credit purchase;
-- disable auto-recharge and set a low spending limit.
+Blocked at the mandatory owner clarification until the required hammer-test doctrine is stated and recorded.
 
-### Probe and analysis
-
-- initialize the approved app-repo evidence path;
-- execute the bounded read-only probe;
-- preserve raw responses, manifest, hashes, errors, rate-limit headers, and costs;
-- produce field inventory, schema implications, unknowns, and M02 handoff.
+M02 may plan the persistence contract and adversarial test matrix. It may not create schema, migrations, a SQLite database, application models, or persistence code.
 
 ## Not Started
 
 - Actual application implementation.
-- X API probe execution.
 - Database schema or migrations.
 - Local dashboard.
 - Chrome extension build.
@@ -126,4 +133,4 @@ No database implementation before M02 approval.
 
 ## Next Bounded Action
 
-Complete the M01 first-post and pinned-post package, record Work Package A completion, then prepare—but do not purchase or execute—the developer/API probe boundary for owner approval.
+Ask and record the mandatory M02 owner clarification: what exact failure modes, invariants, adversarial cases, and evidence requirements must the Discrepancy Desk hammer-test contract include? Do not begin schema or persistence implementation.

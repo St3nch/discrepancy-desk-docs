@@ -71,17 +71,22 @@ Read these first:
 6. `01-brand/brand-identity.md`
 7. `01-brand/quinton-clearance-persona.md`
 8. `01-brand/voice-and-style-guide.md`
-9. `02-product/product-overview.md`
-10. `03-system-design/architecture-overview.md`
-11. `04-platform-rules/truth-social-account-rules.md`
-12. `04-platform-rules/truth-social-automation-boundaries.md`
-13. `05-implementation-planning/implementation-roadmap.md`
-14. `05-implementation-planning/hammer-test-strategy.md`
-15. `05-implementation-planning/chrome-extension-plan.md`
-16. `06-research/truth-social-platform-research.md`
-17. `06-research/truth-social-capture-boundaries.md`
-18. `99-decisions/decision-log.md`
-19. `99-decisions/research-log.md`
+9. `01-brand/x-launch-post-package.md`
+10. `02-product/product-overview.md`
+11. `03-system-design/architecture-overview.md`
+12. `04-platform-rules/truth-social-account-rules.md`
+13. `04-platform-rules/truth-social-automation-boundaries.md`
+14. `05-implementation-planning/implementation-roadmap.md`
+15. `05-implementation-planning/m01-work-package-b-developer-cost-boundary.md`
+16. `05-implementation-planning/m01-work-package-b-redacted-configuration-record.md`
+17. `05-implementation-planning/m01-work-package-c-controlled-probe-procedure.md`
+18. `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`
+19. `05-implementation-planning/hammer-test-strategy.md`
+20. `05-implementation-planning/chrome-extension-plan.md`
+21. `06-research/truth-social-platform-research.md`
+22. `06-research/truth-social-capture-boundaries.md`
+23. `99-decisions/decision-log.md`
+24. `99-decisions/research-log.md`
 
 ## Core Boundaries
 
@@ -125,6 +130,7 @@ Docs:
 - `01-brand/voice-and-style-guide.md`
 - `01-brand/profile-bio-options.md`
 - `01-brand/avatar-banner-direction.md`
+- `01-brand/x-launch-post-package.md`
 - `01-brand/bread-baker-canon.md`
 
 ### B1-L7 Control Room

@@ -2,7 +2,7 @@
 
 ## Status
 
-Active.
+Complete.
 
 ## Goal
 
@@ -50,52 +50,99 @@ Completed on 2026-07-19:
 - approved avatar applied;
 - approved banner applied;
 - live profile crop visually reviewed and accepted by the owner;
-- approved source assets verified in the main repo under `assets/brand/`.
+- approved source assets verified in the main repo under `assets/brand/`;
+- first public post approved and manually published;
+- first-post URL recorded: `https://x.com/DiscrepancyDesk/status/2078860810688848010`;
+- pinned post approved, manually published, and pinned;
+- pinned-post URL recorded: `https://x.com/DiscrepancyDesk/status/2078869974622392424`;
+- pinned-post image included with alt text and visible `Made with AI` labeling;
+- blue verification check confirmed from owner-supplied live profile evidence;
+- approved pinned-post image preserved at `C:\\dev\\x\\discrepancy-desk\\assets\\brand\\pinned-posts\\master\\discrepancy-desk-x-pinned-intake-master-v001.png`;
+- pinned-post image SHA-256 recorded as `c767e3018c4715d3e3a77a99f1d4e7e07cfabd35d81758167e6d01a31777a8b8`;
+- no additional profile label or disclosure setting was selected;
+- Work Package A completed.
 
-Remaining in Work Package A:
+Governing launch record:
 
-- first-post and pinned-post package;
-- any final account-label or disclosure setting the owner chooses to use;
-- final Work Package A completion record.
+```text
+01-brand/x-launch-post-package.md
+```
 
 No public profile change should be claimed complete without owner confirmation or evidence.
 
 ## Work Package B — Developer and Cost Boundary
 
-- create or verify the X developer account, Project, and App;
-- use minimum read permissions;
-- define local secret handling;
-- verify live Developer Console prices immediately before purchase;
-- owner approves the credit amount;
-- disable auto-recharge and set a low spending limit;
-- record the bounded endpoint and cost plan.
+Complete on 2026-07-19.
 
-Do not store credentials in either repository.
+Governing plan and redacted completion evidence:
+
+```text
+05-implementation-planning/m01-work-package-b-developer-cost-boundary.md
+05-implementation-planning/m01-work-package-b-redacted-configuration-record.md
+```
+
+Completion result:
+
+- active developer account;
+- dedicated active probe app named `Discrepancy Desk Read Probe`;
+- App ID `33215850`;
+- read-only OAuth 1.0a User Context;
+- four required OAuth 1.0a credential values stored in the owner's Bitwarden vault;
+- no OAuth 2.0 probe credentials retained;
+- `$5.00` credits purchased;
+- `$5.00` billing-cycle spend cap;
+- auto-recharge off/unavailable;
+- no API request executed.
+
+Do not store credentials in either repository. Work Package C remains separately gated by a reviewed execution procedure.
 
 ## Work Package C — Controlled Read-Only Probe
 
-Execute the packages admitted by `04-platform-rules/x-api-probe-plan.md`:
+Governing execution procedure:
 
-- identity;
-- owned posts;
-- mentions;
-- direct post lookup;
-- conversation and quote context only when justified.
+```text
+05-implementation-planning/m01-work-package-c-controlled-probe-procedure.md
+```
 
-Preserve raw evidence, request context, manifest entries, hashes, rate-limit headers, costs, empty responses, and errors.
+Completed on 2026-07-19:
+
+- owner approved the fixed P01–P04 sequence, OAuth 1.0a user context, five-post and five-mention maxima, two fixed lookup IDs, `$0.10` ceiling, no retries, no overwrite, and fail-closed stop conditions;
+- attempt 001 stopped fail-closed at P01 with HTTP 401 because the initial secret-loading method supplied one-character values;
+- attempt 001 was preserved without overwrite or retry;
+- attempt 002 completed all four fixed GET requests with HTTP 200;
+- returned resources: one authenticated user, two owned posts, one mention, and two direct post lookups;
+- runner-estimated attributable cost: `$0.023`;
+- automatic retries: `0`;
+- raw bodies, safe headers, request records, manifest, summary, and SHA-256 file preserved;
+- independent hash verification returned `HASHES_OK`;
+- no write permission or write endpoint was exercised.
+
+Successful evidence:
+
+```text
+C:\dev\x\discrepancy-desk\evidence\api-probes\x\m01\attempt-002\
+```
+
+Work Package C is complete. Final console-observed cost remains part of M01 closeout.
 
 ## Work Package D — Analysis and M02 Handoff
 
-Produce:
+Completed analysis:
 
-- payload-field inventory;
-- relationship inventory;
-- access and cost observations;
-- retention and privacy notes;
-- missing-field and unknowns report;
-- schema implications;
-- candidate M02 questions;
+```text
+05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md
+```
+
+The report records:
+
+- payload-field and relationship inventories;
+- identity, post, media, metrics, mention, and provenance implications;
+- access, cost, retention, and privacy observations;
+- missing-field and unknown-state boundaries;
+- candidate M02 schema questions and hammer-test inputs;
 - explicit non-conclusions.
+
+Work Package D analysis is complete. The Developer Console observed cost and milestone closeout are recorded below; M01 is complete.
 
 ## Scope
 
@@ -149,6 +196,59 @@ Produce:
 
 ## Completion Record
 
-Not yet complete.
+Completion date: 2026-07-19.
 
-On completion, record date, commit, profile evidence, API evidence paths, costs, official-doc recheck date, deviations, defects, owner decisions, and next milestone.
+Profile evidence:
+
+```text
+First post: https://x.com/DiscrepancyDesk/status/2078860810688848010
+Pinned post: https://x.com/DiscrepancyDesk/status/2078869974622392424
+```
+
+Developer and billing evidence:
+
+```text
+App: Discrepancy Desk Read Probe
+App ID: 33215850
+Permission: Read only
+Authentication: OAuth 1.0a User Context
+Credential storage: owner Bitwarden vault
+Purchased credits: $5.00
+Remaining balance after probe: $4.98
+Actual billed probe cost: $0.02
+Billing-cycle spend cap: $5.00
+Auto-recharge: off/unavailable
+```
+
+API evidence:
+
+```text
+C:\dev\x\discrepancy-desk\evidence\api-probes\x\m01\attempt-002\
+```
+
+Execution result:
+
+```text
+P01–P04: HTTP 200
+Requests: 4
+Automatic retries: 0
+Runner-estimated attributable cost: $0.023
+Console-recorded billed cost: $0.02
+Hash verification: HASHES_OK
+Write capability exercised: No
+```
+
+Accepted deviation:
+
+- attempt 001 stopped fail-closed on HTTP 401 because the first credential-loading method supplied one-character environment values; it remains preserved and was not overwritten;
+- attempt 002 used the same approved fixed boundary with correctly loaded session credentials and completed successfully.
+
+Official X policy, pricing, and endpoint documentation were rechecked on 2026-07-19. Work Package D and the M02 handoff are recorded in `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`.
+
+Next milestone:
+
+```text
+M02 — Persistence Contract and Hammer-Test Plan
+```
+
+M02 begins with the mandatory owner clarification. No schema, migration, SQLite file, or persistence implementation is authorized by this closeout.
