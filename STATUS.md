@@ -14,18 +14,18 @@ M03 — Local Control Room MVP
 
 ## Current Focus
 
-M02 is complete. M03 is active. The repository baseline and eight bounded persistence/reliability/service/interface batches plus live-walkthrough corrections are committed and pushed. Current validation is 54 passing tests with zero warnings plus clean Ruff checks. The application repository is synchronized with `origin/main` at `https://github.com/St3nch/discrepancy-desk.git`. Successor revisions now supersede active approvals atomically, and corrected replacement publications preserve and link back to the original mismatched publication.
+M02 is complete. M03 is technically complete and awaiting owner closure acceptance. The application repository is synchronized with `origin/main` at `08ce68212923bc903d12bb21ab301fb342c170b6`. Validation is 54 passing tests, clean Ruff checks, and an executable HT matrix with 19 in-scope invariants executed, 19 passed, zero failed, and HT-14 explicitly deferred by approved scope.
 
 Current sequence:
 
-1. strengthen successor-revision approval invalidation and corrected/replacement publication workflow;
-2. perform a real local control-room walkthrough against a disposable runtime database;
-3. emit named per-fixture HT evidence and perform the HT-01 through HT-20 closure review;
-4. consider local HTMX progressive enhancement only after the route contracts remain green;
-5. prepare the M03 exit-gate review without widening into automation, analytics, or public deployment;
+1. obtain owner acceptance or rejection of the M03 closure package;
+2. if accepted, mark M03 closed and prepare the next milestone plan;
+3. preserve the FastAPI/Jinja control room as disposable contract scaffolding rather than the product UI;
+4. plan any future Tauri client separately against the frozen service and authority contracts;
+5. do not widen into automation, public deployment, polling, mention classification, or analytics without explicit approval;
 6. keep both repositories clean and synchronized after each accepted checkpoint.
 
-The physical persistence, governed operator service, and thin local control-room slices now exist. M03 is not complete, and no production/public deployment is admitted.
+The physical persistence, governed operator service, thin local control-room harness, successor/replacement lineage, and executable hammer closure evidence now exist. No production/public deployment is admitted.
 
 ## Completed / Decided
 
