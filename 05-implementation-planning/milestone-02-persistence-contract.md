@@ -2,7 +2,7 @@
 
 ## Status
 
-Active — all planning artifacts and UD-01 through UD-12 decisions reconciled; M02 is ready for owner closure review and explicit M03 authorization.
+Complete — owner approved closure and authorized the bounded first M03 physical-design and persistence implementation package on 2026-07-19.
 
 ## Goal
 
@@ -107,4 +107,17 @@ Use all operational-database and **M02 Required SQLite-Specific Categories** in 
 
 ## Completion Record
 
-Complete when the exit gate is verified. Record date, evidence paths, deviations, and owner approval here.
+Completion date: 2026-07-19.
+
+Owner approval: M02 closure approved; bounded first M03 physical-design and persistence implementation package authorized.
+
+Evidence:
+
+- owner-approved 20-invariant adversarial matrix;
+- owner-approved operational persistence contract;
+- owner-approved lifecycle/state model;
+- owner-approved UD-01 through UD-12 decision record;
+- migration and hammer-execution plan;
+- D016, D019, D020, and D021.
+
+Accepted deviation/blocker carried into M03: the application directory remains intentionally non-Git under D017 until repository governance policies are separately owner-approved. No physical implementation began during M02.

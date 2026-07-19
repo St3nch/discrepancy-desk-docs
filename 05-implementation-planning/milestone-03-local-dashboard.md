@@ -2,7 +2,7 @@
 
 ## Status
 
-Not started.
+Active — M02 closed and first bounded package authorized; physical execution blocked at the repository-initialization entry gate pending owner-approved D017 governance policies.
 
 ## Goal
 

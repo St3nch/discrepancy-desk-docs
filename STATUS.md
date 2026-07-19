@@ -9,21 +9,21 @@ Planning and controlled platform-readiness work.
 ## Active Milestone
 
 ```text
-M02 — Persistence Contract and Hammer-Test Plan
+M03 — Local Control Room MVP
 ```
 
 ## Current Focus
 
-M01 is complete. The owner-approved M02 hammer-test doctrine is recorded. The independent Claude audit returned **PASS WITH CORRECTIONS**, and the accepted correction package was completed, committed, and pushed. The owner-approved 20-invariant adversarial matrix is the governing M02 baseline.
+M02 is complete. The owner approved closure and authorized the bounded first M03 physical-design and persistence implementation package. M03 is active, but physical execution is blocked at its repository-initialization entry gate because D017 still requires separate owner approval of repository governance policies before Git may be initialized in `C:\dev\x\discrepancy-desk`.
 
 Current sequence:
 
-1. preserve the owner-approved persistence contract, lifecycle model, and UD-01 through UD-12 decisions;
-2. preserve the reconciled migration and hammer-execution plan;
-3. obtain explicit owner approval to close M02 and authorize the bounded first M03 package;
-4. keep schema, migrations, SQLite creation, and persistence implementation blocked until that authorization.
+1. approve the D017 repository-governance package;
+2. initialize the application repository only after that approval;
+3. execute the bounded M03 physical-design and persistence package;
+4. preserve all M02 hammer, evidence, migration, backup, and fail-closed requirements.
 
-No database implementation is admitted during M02. The milestone is planning-only.
+No schema, migration, SQLite file, ORM, CRUD, or persistence code has been created yet because the M03 repository entry gate is not satisfied.
 
 ## Completed / Decided
 
@@ -100,11 +100,15 @@ No database implementation is admitted during M02. The milestone is planning-onl
 
 Work Packages A–D closed on 2026-07-19 with profile evidence, developer and billing controls, preserved read-only probe evidence, verified hashes, actual billed cost, analysis, and M02 handoff.
 
-### M02 — Active
+### M02 — Complete
 
 Owner clarification is satisfied. The independent audit correction package was committed and pushed as `85aca52`. The project-specific adversarial test matrix was owner-approved and committed as the governing baseline in `fb1410f`.
 
-The smallest operational persistence contract and lifecycle/state model are owner-approved, and UD-01 through UD-12 are closed. M02 may continue through migration/test planning, exit-gate verification, and M03 package bounding. It may not create schema, migrations, a SQLite database, application models, or persistence code until separately authorized.
+M02 closed on 2026-07-19 after owner approval of the persistence contract, lifecycle model, UD-01 through UD-12, adversarial baseline, migration/hammer plan, and bounded M03 package.
+
+### M03 — Active / Blocked at Entry Gate
+
+The owner authorized preparation and execution of the bounded first M03 package. Execution is blocked because `C:\dev\x\discrepancy-desk` is intentionally non-Git and D017 requires owner-approved repository governance before initialization. The exact required policy package is recorded in `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`.
 
 ## Not Started
 
@@ -143,4 +147,4 @@ No database implementation before M02 approval.
 
 ## Next Bounded Action
 
-Owner decision gate: approve M02 closure and authorize preparation/execution of the bounded first M03 physical-design and persistence implementation package defined in `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`. Until approved, do not begin schema, migrations, SQLite creation, ORM models, CRUD code, application persistence, or dashboard implementation.
+Owner decision gate: approve the repository-governance defaults in `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`. After approval, initialize the app repository and execute the already-authorized bounded M03 persistence package. No Git initialization or physical persistence work may occur before that policy approval.

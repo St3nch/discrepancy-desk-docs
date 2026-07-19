@@ -213,3 +213,14 @@ The accepted decisions govern canonical external-file evidence, immutable exact-
 The detailed accepted choices are recorded in `05-implementation-planning/m02-owner-approved-persistence-decisions.md`. UD-13 through UD-18 remain deferred within their stated later-milestone boundaries.
 
 This approval remains planning authority only. It does not authorize SQL schema, migration files, SQLite creation, ORM models, CRUD code, application persistence, dashboard implementation, or platform writes.
+
+
+## D021 — M02 Closed and Bounded M03 Package Authorized
+
+Accepted: 2026-07-19.
+
+The owner approved M02 closure and authorized preparation and execution of the bounded first M03 physical-design and persistence implementation package governed by `m02-migration-and-hammer-execution-plan.md`.
+
+M03 is active. Physical execution remains blocked at the repository-initialization entry gate because D017 separately reserved third-party-data, raw-evidence publication, ignore, binary, secret, and remote-governance decisions. Authorization to execute M03 does not silently waive D017.
+
+The next owner gate is the repository-governance package in `m03-work-package-a-repository-governance-and-bootstrap.md`.
