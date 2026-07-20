@@ -123,8 +123,9 @@ R-M06-03  Website, Feed, and Change Monitoring complete
 R-M06-04  Document Normalization and Provenance complete
 R-M06-05  Canonical Vault and Knowledge Model  complete
 R-M06-06  Identity, Versioning, Correction, and Deduplication complete
-R-M06-07  LLM Context Assembly and Governed Reasoning next
-R-M06-08 through R-M06-09                      not started
+R-M06-07  LLM Context Assembly and Governed Reasoning complete
+R-M06-08  Retrieval, Chunking, Graph, and Qdrant Readiness complete
+R-M06-09  Automation, Security, Backup, and Rebuild complete
 ```
 
-R-M06-01 is research material only. Its recommendations require architecture synthesis and owner acceptance before implementation.
+All nine reports are research material only. The owner must review and accept architecture options before synthesis becomes doctrine or implementation authority exists. Independent Claude review is prepared at `08-audits/claude-m06-research-program-independent-review-prompt.md`.

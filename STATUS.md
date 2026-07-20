@@ -18,7 +18,7 @@ M00 through M05 are owner-accepted and closed. Claude's independent post-M01 thr
 
 AC-01 is closed through application correction commit `17f40e3d18a58ac47b48933551a4044586d940aa`, application evidence-binding commit `6cbd036`, and docs closure commit `982bcf0`.
 
-The M06 nine-report research program is active:
+The M06 nine-report research program is complete:
 
 ```text
 R-M06-01  Source Universe and Admission Policy       complete
@@ -27,11 +27,12 @@ R-M06-03  Website, Feed, and Change Monitoring      complete
 R-M06-04  Document Normalization and Provenance     complete
 R-M06-05  Canonical Vault and Knowledge Model       complete
 R-M06-06  Identity, Versioning, Correction, and Deduplication complete
-R-M06-07  LLM Context Assembly and Governed Reasoning next
-R-M06-08 through R-M06-09                           not started
+R-M06-07  LLM Context Assembly and Governed Reasoning complete
+R-M06-08  Retrieval, Chunking, Graph, and Qdrant Readiness complete
+R-M06-09  Automation, Security, Backup, and Rebuild complete
 ```
 
-R-M06-02 recommends a manual-first YouTube workflow consisting of a URL plus a pasted or uploaded transcript, exact preservation, explicit provenance, normalized timestamps/segments, and human review. R-M06-03 compares paste-only webpage intake, bounded single-page retrieval, feeds, monitoring, provider-assisted extraction, and rendered-browser capture. R-M06-04 compares normalization and parser-provenance models. R-M06-05 defines candidate source, observation, artifact, entity, assertion, event, dossier, chronology, question, contradiction, and connection objects. R-M06-06 compares identity, immutable versions, correction lineage, duplicate relationships, account-policy versioning, and governed cross-account import packages. The separate multi-account policy note records the owner's requirement that shared research foundations support both claim-heavy and stricter accuracy-focused accounts without transferring conclusions or policy authority. None is selected or approved. Every option remains subject to owner review during architecture synthesis before implementation authority can exist.
+The research-leading directions include manual-first ingestion, exact original preservation, versioned normalized derivatives, separation of account policy from truth/support status and editorial usability, static structured LLM context packets, exact/lexical retrieval before semantic retrieval, Qdrant remaining deferred to M14, and canonical backup independent of providers and retrieval indexes. The multi-account note preserves the owner's requirement that claim-heavy and accuracy-focused accounts share system concepts without transferring conclusions, approvals, or uncertainty policy. None is selected or approved. Claude's independent research review is now the active gate before owner option review and architecture synthesis.
 
 M06 implementation, Qdrant, source monitors, media downloading, transcript-provider integration, and automated connectors remain blocked.
 
@@ -119,9 +120,10 @@ R-M06-02 research: e268fc8
 R-M06-03 research: 156519b
 R-M06-04 research: b576120
 R-M06-05 research: 2d31966
-R-M06-06 research and multi-account policy note: pending current commit
+R-M06-06 research and multi-account policy note: f1ce71f
+R-M06-07 through R-M06-09 and Claude review prompt: pending current commit
 ```
 
 ## Next Bounded Action
 
-Execute `R-M06-07 — LLM Context Assembly and Governed Reasoning`. Do not begin M06 implementation, crawling, monitoring, transcript-provider integration, media acquisition, parser selection, schema adoption, automated merging, cross-account import implementation, or Qdrant work.
+Run Claude's independent review from `08-audits/claude-m06-research-program-independent-review-prompt.md`. Record the report and corrections, then present the owner decision matrix. Do not begin M06 implementation, provider admission, parser selection, monitoring, cross-account transfer, LLM context implementation, Qdrant, or graph work.
