@@ -270,3 +270,60 @@ The synthesis must treat these four decisions as settled inputs:
 2. first-class events and chronologies are deferred from initial M06-A;
 3. the first parser scope is narrow and excludes OCR, scanned PDFs, office documents, and rendered capture;
 4. local lexical search and the deterministic chunk contract belong in M06-A, while embeddings and Qdrant remain deferred.
+
+## Decision Set 4 — Recovery, Automation, Retrieval Infrastructure, and LLM Boundary
+
+Owner approval recorded on 2026-07-20.
+
+### M06-D13 — Backup and restore boundary
+
+**Decision: APPROVED**
+
+M06-A must use per-account canonical backup generations containing:
+
+```text
+SQLite backup
+immutable original artifacts
+versioned normalized packages
+account policy versions
+audit and correction lineage
+manifest and hashes
+```
+
+A disposable restore proof is required. Qdrant data, graph derivatives, caches, rendered projections, lexical indexes, and other retrieval indexes remain rebuildable and non-canonical.
+
+The proven `age` path may remain the candidate encryption mechanism. Packaged key management remains deferred to M15 unless separately approved.
+
+### M06-D14 — Automation boundary
+
+**Decision: APPROVED**
+
+M06-A remains fully manual.
+
+It includes no scheduled jobs, feed monitoring, background ingestion, provider calls, recurring acquisition, or autonomous source discovery. Human-triggered connectors require later separately approved packages and admission gates.
+
+### M06-D15 — Qdrant and graph timing
+
+**Decision: APPROVED**
+
+Qdrant remains deferred to M14.
+
+Graph and GraphRAG work remain deferred until stable identity, merge/split, correction, chunking, and retrieval contracts have been proven. M06-A includes no Qdrant or graph experiment.
+
+### M06-D16 — Live LLM integration boundary
+
+**Decision: APPROVED**
+
+M06-A defines the static structured context-run schema and evaluation contract, but ships no live LLM or provider integration.
+
+Agent-neutral governed access belongs in M08 after the Vault, context contract, and authority boundaries are proven.
+
+## Decision Matrix Completion
+
+The owner has now approved all sixteen M06 architecture rulings required for synthesis:
+
+```text
+M06-D01 through M06-D16 — approved
+```
+
+These rulings authorize architecture synthesis only. They do not authorize M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, or cross-account transfer execution.
