@@ -16,14 +16,14 @@ M05 — Tauri Desktop Foundation and Product Parity
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized under the owner-accepted exact technical plan and 77-invariant adversarial matrix. The first Package A batch is now in the application working tree: token-gated versioned desktop API mode, account-scoped health/query endpoints, deny-by-default Tauri configuration and capabilities, React/Vite shell, Rust backend-supervisor skeleton, reproducible npm lock resolution, security contract, and 12 focused adversarial tests. Ruff passes, the full Python suite reports 79 passed, and the production frontend build passes. Native Cargo/Tauri compilation remains unverified because the approved repository tool does not expose Cargo. The batch is uncommitted pending owner review.
+M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized under the owner-accepted exact technical plan and 77-invariant adversarial matrix. The first Package A security-foundation batch is accepted, committed, and pushed at `a46d5fb`. The next lifecycle batch is now in the application working tree: executable desktop-backend entrypoint, environment-only loopback/token/path configuration, dynamic loopback port reservation, authenticated health polling, application-data database/evidence placement, packaged migration-resource path, early-exit/timeout refusal, desktop-exit child cleanup, and a real disposable subprocess proof. Ruff passes, 17 focused M05 tests pass, and the full Python suite reports 84 passed. Native Cargo/Tauri compilation remains unverified because the approved repository tool does not expose Cargo. The lifecycle batch is uncommitted pending owner review.
 
 Application repository truth:
 
 ```text
-HEAD 770a6bb — Bind M04 closure evidence to implementation
-Implementation evidence bound to 1455433ddee69d52b1dc67367a532b594a4a1a6c
-main synchronized with origin/main
+HEAD a46d5fb — Establish M05 desktop security foundation
+Accepted M05 plan checkpoint: 479a4b6 in the docs repository
+main synchronized with origin/main before the current lifecycle working-tree batch
 ```
 
 M03 validation:
@@ -104,8 +104,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is committed and pushed at `479a4b6`; the current docs working tree records the first Package A implementation batch pending review.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is committed and pushed at `479a4b6`; the accepted M05 security-foundation batch is pushed at `a46d5fb`. The current docs working tree records the lifecycle batch pending review.
 
 ## Next Bounded Action
 
-Review the first M05 Package A implementation batch. If accepted, checkpoint the application and synchronized docs changes, then continue with executable sidecar startup/health/shutdown and native-compilation validation.
+Review the M05 lifecycle batch. If accepted, checkpoint it before continuing to native Cargo/Tauri compilation and the remaining Package A closure gates.
