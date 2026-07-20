@@ -26,11 +26,12 @@ R-M06-02  YouTube and Audiovisual Ingestion         complete
 R-M06-03  Website, Feed, and Change Monitoring      complete
 R-M06-04  Document Normalization and Provenance     complete
 R-M06-05  Canonical Vault and Knowledge Model       complete
-R-M06-06  Identity, Versioning, Correction, and Deduplication next
-R-M06-07 through R-M06-09                           not started
+R-M06-06  Identity, Versioning, Correction, and Deduplication complete
+R-M06-07  LLM Context Assembly and Governed Reasoning next
+R-M06-08 through R-M06-09                           not started
 ```
 
-R-M06-02 recommends a manual-first YouTube workflow consisting of a URL plus a pasted or uploaded transcript, exact preservation, explicit provenance, normalized timestamps/segments, and human review. R-M06-03 compares paste-only webpage intake, bounded single-page retrieval, feeds, monitoring, provider-assisted extraction, and rendered-browser capture. R-M06-04 compares normalization and parser-provenance models. R-M06-05 defines candidate source, observation, artifact, entity, assertion, event, dossier, chronology, question, contradiction, and connection objects and compares Markdown-centric, relational, graph, event-sourced, and hybrid authority models. None is selected or approved. Every option remains subject to owner review during architecture synthesis before implementation authority can exist.
+R-M06-02 recommends a manual-first YouTube workflow consisting of a URL plus a pasted or uploaded transcript, exact preservation, explicit provenance, normalized timestamps/segments, and human review. R-M06-03 compares paste-only webpage intake, bounded single-page retrieval, feeds, monitoring, provider-assisted extraction, and rendered-browser capture. R-M06-04 compares normalization and parser-provenance models. R-M06-05 defines candidate source, observation, artifact, entity, assertion, event, dossier, chronology, question, contradiction, and connection objects. R-M06-06 compares identity, immutable versions, correction lineage, duplicate relationships, account-policy versioning, and governed cross-account import packages. The separate multi-account policy note records the owner's requirement that shared research foundations support both claim-heavy and stricter accuracy-focused accounts without transferring conclusions or policy authority. None is selected or approved. Every option remains subject to owner review during architecture synthesis before implementation authority can exist.
 
 M06 implementation, Qdrant, source monitors, media downloading, transcript-provider integration, and automated connectors remain blocked.
 
@@ -117,9 +118,10 @@ R-M06-01 research: d5d8b1d
 R-M06-02 research: e268fc8
 R-M06-03 research: 156519b
 R-M06-04 research: b576120
-R-M06-05 research: pending current commit
+R-M06-05 research: 2d31966
+R-M06-06 research and multi-account policy note: pending current commit
 ```
 
 ## Next Bounded Action
 
-Execute `R-M06-06 — Identity, Versioning, Correction, and Deduplication`. Do not begin M06 implementation, crawling, monitoring, transcript-provider integration, media acquisition, parser selection, schema adoption, entity merging, or Qdrant work.
+Execute `R-M06-07 — LLM Context Assembly and Governed Reasoning`. Do not begin M06 implementation, crawling, monitoring, transcript-provider integration, media acquisition, parser selection, schema adoption, automated merging, cross-account import implementation, or Qdrant work.
