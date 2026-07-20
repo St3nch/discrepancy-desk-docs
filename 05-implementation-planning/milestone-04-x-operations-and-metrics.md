@@ -268,4 +268,4 @@ Accepted deviation:
 
 Unresolved later work remains assigned to later milestones, including Tauri productization, capture helper, agent interface, Release Watch, Truth Social, dossiers, Qdrant, richer editorial workspaces, and hardening beyond the M04 boundary.
 
-M04 is technically complete. Final milestone closure requires explicit owner acceptance after repository synchronization is verified.
+M04 was explicitly accepted and closed by the owner on 2026-07-20. Closure authorizes M05 planning only; Tauri implementation remains blocked until an exact M05 technical plan, security boundary, and adversarial test matrix are prepared and owner-reviewed.

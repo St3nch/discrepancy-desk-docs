@@ -4,19 +4,19 @@
 
 ## Current Mode
 
-M04 implementation under the accepted exact work package.
+M05 planning and exact technical-package preparation.
 
 ## Active Milestone
 
 ```text
-M04 — Editorial Control Room and X Operating Workflow
+M05 — Tauri Desktop Foundation and Product Parity
 ```
 
 ## Current Focus
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 is technically complete and awaiting explicit owner closure acceptance. Packages A, the query layer, B, and C are accepted and pushed. Final application commits include `1455433` for the operating proof and `770a6bb` for the evidence-binding record. Ruff passes, the full suite reports 67 passed, and the executable hammer run reports 25 executed, 25 passed, 0 failed, with one inherited scope deferral. Final runtime evidence SHA-256 is `fcf6842ab088fa99adc4e6cc3ad2f9fb0c1330dff3a95ff614c8df0c1c54729c`, bound to implementation commit `1455433ddee69d52b1dc67367a532b594a4a1a6c`.
+M04 is owner-accepted and closed as of 2026-07-20. M05 planning is active. Tauri implementation is not yet authorized; the exact M05 technical plan, desktop security boundary, local-backend connection model, packaging/update boundary, and adversarial matrix must be prepared and owner-reviewed first.
 
 Application repository truth:
 
@@ -42,8 +42,8 @@ M00  Planning Foundation — complete
 M01  X Identity/Policy/API Probe — complete
 M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
-M04  Editorial Control Room and X Operating Workflow — technically complete; closure acceptance pending
-M05  Tauri Desktop Foundation and Product Parity
+M04  Editorial Control Room and X Operating Workflow — complete
+M05  Tauri Desktop Foundation and Product Parity — planning active
 M06  Records, Dossiers, and Anomaly Vault
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -108,4 +108,4 @@ The accepted roadmap/M03 closure package is committed and pushed at `c54706b2142
 
 ## Next Bounded Action
 
-Verify both repositories are clean and synchronized, then request explicit owner acceptance to close M04 and authorize M05 planning.
+Prepare the exact M05 Tauri technical plan, security boundary, packaging/update plan, and adversarial test matrix. Do not begin Tauri implementation until the owner accepts that package.
