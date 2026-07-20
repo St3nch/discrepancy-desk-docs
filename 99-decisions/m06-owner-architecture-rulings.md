@@ -167,3 +167,106 @@ The M06 synthesis must preserve these boundaries:
 2. versions and corrections are immutable lineage, not replacement;
 3. normalized JSON element packages are the common structured derivative;
 4. LLM reasoning begins with static, reconstructable context runs and no mutation authority.
+
+## Decision Set 3 — Identity, Scope, Parsing, and Retrieval
+
+Owner approval recorded on 2026-07-20.
+
+### M06-D09 — Entity merge and split authority
+
+**Decision: APPROVED**
+
+The system may propose entity merges or splits, but only a human may accept them.
+
+Accepted merges and splits must preserve:
+
+```text
+proposal identity
+supporting evidence
+actor
+review timestamp
+previous identity state
+resulting identity state
+reversal or split lineage
+```
+
+No parser, extractor, graph system, retrieval engine, or LLM may merge canonical entities automatically.
+
+### M06-D10 — Events and chronologies in the first M06-A implementation
+
+**Decision: APPROVED — DEFER**
+
+First-class events and chronologies are deferred from the first M06-A implementation package.
+
+The first implementation should focus on:
+
+```text
+sources
+source items
+occurrences
+observations
+acquisitions
+original artifacts
+document versions
+elements
+assertions
+dossiers
+```
+
+Event candidates and chronology views may be added only after the core Vault contract is proven stable and separately authorized.
+
+### M06-D11 — Initial parser scope
+
+**Decision: APPROVED**
+
+The initial M06-A parser scope is:
+
+```text
+plain text
+Markdown
+SRT
+VTT
+JSON
+RSS/Atom
+basic HTML files
+born-digital PDFs
+```
+
+The following remain excluded from the first M06-A implementation:
+
+```text
+OCR
+scanned PDFs
+office-document parsing
+rendered-browser capture
+```
+
+Each parser still requires an implementation-time admission record, fixture corpus, failure behavior, provenance contract, and owner authorization before use.
+
+### M06-D12 — Lexical search and chunk contract
+
+**Decision: APPROVED**
+
+M06-A will include local SQLite lexical/full-text search.
+
+M06-A must also define a deterministic chunk identity and invalidation contract covering at minimum:
+
+```text
+account identity
+document-version identity
+included element identities
+chunking strategy and version
+content hash
+supersession and correction invalidation
+```
+
+Embeddings, semantic retrieval, and Qdrant remain deferred to M14.
+
+## Consequences for synthesis
+
+The synthesis must treat these four decisions as settled inputs:
+
+1. entity merge/split proposals are human-approved only;
+2. first-class events and chronologies are deferred from initial M06-A;
+3. the first parser scope is narrow and excludes OCR, scanned PDFs, office documents, and rendered capture;
+4. local lexical search and the deterministic chunk contract belong in M06-A, while embeddings and Qdrant remain deferred.
