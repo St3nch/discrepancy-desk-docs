@@ -16,14 +16,14 @@ M05 — Tauri Desktop Foundation and Product Parity
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized under the owner-accepted exact technical plan and 77-invariant adversarial matrix. The security-foundation batch is accepted and pushed at `a46d5fb`; the executable backend-lifecycle batch is accepted and pushed at `37a1ec2`. A native-validation batch is now in the application working tree: required Windows icon resources, successful Tauri release compilation, Rust/Cargo/MSVC/WebView2 toolchain verification, three real Rust unit tests, generated-output exclusion tests, and an updated desktop security contract. Ruff passes, 21 focused M05 tests pass, the full Python suite reports 88 passed, `tauri build --no-bundle` passes, and Cargo reports 3 passed. NSIS installer and packaged sidecar execution remain unproven. The native-validation batch is uncommitted pending owner review.
+M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized under the owner-accepted exact technical plan and 77-invariant adversarial matrix. The security foundation is accepted and pushed at `a46d5fb`; backend lifecycle at `37a1ec2`; native validation at `f2ab6fe`; and the first desktop-parity slice at `5db447d`. The desktop now has token-gated capture, organization, tag, and scheduling mutations plus account-scoped Command Center refresh through React. Current validated baseline: Ruff passes, 90 Python tests pass, the React/Vite production build passes, Tauri release compilation passes, and 3 Rust tests pass. Package B implementation continues with calendar, work-detail, system-health, and remaining governed mutation parity. NSIS installer and packaged sidecar execution remain unproven.
 
 Application repository truth:
 
 ```text
-HEAD 37a1ec2 — Complete M05 backend lifecycle boundary
-Accepted M05 plan checkpoint: 479a4b6 in the docs repository
-main synchronized with origin/main before the current native-validation working-tree batch
+HEAD 5db447d — Add first M05 desktop parity slice
+Accepted native-validation checkpoint: f2ab6fe
+main synchronized with origin/main
 ```
 
 M03 validation:
@@ -104,8 +104,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is pushed at `479a4b6`; accepted M05 implementation checkpoints are pushed at `a46d5fb` and `37a1ec2`. The current docs working tree records the native-validation batch pending review.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is pushed at `479a4b6`; accepted M05 implementation checkpoints are pushed through `5db447d`. The current docs working tree records the accepted parity checkpoint and next active Package B slice.
 
 ## Next Bounded Action
 
-Review the M05 native-validation batch. If accepted, checkpoint it before beginning packaged Python sidecar construction, desktop mutation parity, and NSIS installer proof.
+Implement and validate account-scoped Calendar, Work detail, System health, reschedule/unschedule, and additional governed desktop parity without prioritizing visual polish. Preserve the M04 regression baseline and M05 native security boundary.
