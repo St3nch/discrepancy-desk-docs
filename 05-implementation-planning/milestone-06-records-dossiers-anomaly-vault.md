@@ -1,7 +1,7 @@
 # Milestone 06 — Records, Dossiers, and Anomaly Vault
 
 ## Status
-Not started.
+Architecture research active. M05 is owner-accepted and closed. M06 implementation remains blocked pending the post-M01-through-M05 independent audit, correction of accepted findings, completion of the nine-report Vault and ingestion research program, architecture synthesis, adversarial review, and explicit owner acceptance.
 
 ## Required Reading
 - `LLM_MAP.md`

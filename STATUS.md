@@ -4,19 +4,19 @@
 
 ## Current Mode
 
-M05 technical completion and owner closure review.
+Post-M05 independent audit and M06 Vault/ingestion architecture research.
 
 ## Active Milestone
 
 ```text
-M05 — Tauri Desktop Foundation and Product Parity
+M06 — Records, Dossiers, and Anomaly Vault (architecture research only)
 ```
 
 ## Current Focus
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 is owner-accepted and closed as of 2026-07-20. M05 Packages A through C are technically complete under the owner-accepted exact technical plan and 77-invariant adversarial matrix. Accepted checkpoints are pushed through `384cb03`; the complete desktop parity and packaging implementation is pushed at `31d7a70`; and the final evidence-binding record is pushed at `529052b`. The desktop now has token-gated M04 workflow parity, account-scoped Command Center/Calendar/Work/Records/Metrics/System surfaces, bounded native evidence import, a Rust-owned packaged Python backend, current-user NSIS packaging, installed launch/restart/shutdown/uninstall proof, and no updater or autonomous platform authority. Final validation reports Ruff passed, 97 Python tests passed, 3 Rust tests passed, the React/Vite production build passed, NSIS packaging passed, and executable hammer evidence reports 29 executed, 29 passed, 0 failed, with one inherited scope deferral. M05 awaits explicit owner closure acceptance before M06 planning begins.
+M04 and M05 are owner-accepted and closed as of 2026-07-20. M05 closure is bound to application commits `31d7a70` and `529052b` and docs commit `9b9d770`. The project is now in the owner-authorized M05-to-M06 transition: an independent Claude audit must inspect all accepted work since the preserved M01 audit, accepted findings must be corrected and revalidated, and a nine-report deep-research program must establish the governed Vault and manual-first/future-automated ingestion architecture. M06 implementation, Qdrant, source monitors, and automated connectors remain blocked. The controlling transition plan is `05-implementation-planning/m05-to-m06-transition-audit-and-research-plan.md`.
 
 Application repository truth:
 
@@ -44,8 +44,8 @@ M01  X Identity/Policy/API Probe — complete
 M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
-M05  Tauri Desktop Foundation and Product Parity — technically complete; owner closure pending
-M06  Records, Dossiers, and Anomaly Vault
+M05  Tauri Desktop Foundation and Product Parity — complete
+M06  Records, Dossiers, and Anomaly Vault — architecture research active; implementation blocked
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
 M09  Restricted Release Watch and Hermes Pilot
@@ -105,8 +105,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is pushed at `479a4b6`; all M05 implementation, packaging, installed lifecycle proof, and evidence-binding checkpoints are pushed through application commit `529052b`. The current docs working tree records M05 technical completion pending owner closure acceptance.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is pushed at `479a4b6`; all M05 implementation, packaging, installed lifecycle proof, and evidence-binding checkpoints are pushed through application commit `529052b`, with owner closure recorded in the current transition package. The docs working tree now establishes the mandatory independent audit and M06 dual-track deep-research program.
 
 ## Next Bounded Action
 
-Owner reviews and explicitly accepts M05 closure. After closure, prepare the exact M06 Records, Dossiers, and Anomaly Vault planning package without beginning M06 implementation.
+Run the independent Claude audit from `08-audits/claude-post-m01-through-m05-independent-audit-prompt.md`. Record and correct accepted findings, rerun affected validation, and then execute the nine-report M06 Vault and ingestion research program. Do not begin M06 implementation.

@@ -1,7 +1,7 @@
 # Milestone 05 — Tauri Desktop Foundation and Product Parity
 
 ## Status
-Implementation active. M04 is owner-accepted and closed. The owner accepted the exact M05 technical plan and 77-invariant adversarial matrix on 2026-07-20. Implementation must remain inside their fixed change surface, security boundary, packaging boundary, and stop conditions.
+Owner-accepted and closed on 2026-07-20. Packages A through C, full M04 desktop parity, packaged sidecar, Windows NSIS lifecycle proof, and executable hammer evidence are complete. Application closure commits are `31d7a70` and `529052b`; the canonical docs completion record is `9b9d770`.
 
 ## Required Reading
 - `LLM_MAP.md`
