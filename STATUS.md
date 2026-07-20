@@ -4,7 +4,7 @@
 
 ## Current Mode
 
-M05 planning and exact technical-package preparation.
+M05 technical completion and owner closure review.
 
 ## Active Milestone
 
@@ -16,13 +16,14 @@ M05 — Tauri Desktop Foundation and Product Parity
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized under the owner-accepted exact technical plan and 77-invariant adversarial matrix. The security foundation is accepted and pushed at `a46d5fb`; backend lifecycle at `37a1ec2`; native validation at `f2ab6fe`; and the first desktop-parity slice at `5db447d`. The desktop now has token-gated capture, organization, tag, and scheduling mutations plus account-scoped Command Center refresh through React. Current validated baseline: Ruff passes, 90 Python tests pass, the React/Vite production build passes, Tauri release compilation passes, and 3 Rust tests pass. Package B implementation continues with calendar, work-detail, system-health, and remaining governed mutation parity. NSIS installer and packaged sidecar execution remain unproven.
+M04 is owner-accepted and closed as of 2026-07-20. M05 Packages A through C are technically complete under the owner-accepted exact technical plan and 77-invariant adversarial matrix. Accepted checkpoints are pushed through `384cb03`; the complete desktop parity and packaging implementation is pushed at `31d7a70`; and the final evidence-binding record is pushed at `529052b`. The desktop now has token-gated M04 workflow parity, account-scoped Command Center/Calendar/Work/Records/Metrics/System surfaces, bounded native evidence import, a Rust-owned packaged Python backend, current-user NSIS packaging, installed launch/restart/shutdown/uninstall proof, and no updater or autonomous platform authority. Final validation reports Ruff passed, 97 Python tests passed, 3 Rust tests passed, the React/Vite production build passed, NSIS packaging passed, and executable hammer evidence reports 29 executed, 29 passed, 0 failed, with one inherited scope deferral. M05 awaits explicit owner closure acceptance before M06 planning begins.
 
 Application repository truth:
 
 ```text
-HEAD 5db447d — Add first M05 desktop parity slice
-Accepted native-validation checkpoint: f2ab6fe
+HEAD 529052b — Bind M05 closure evidence
+Implementation commit: 31d7a7001e72e7477e6a38cb2e7c3ee9d099197c
+Hammer evidence SHA-256: e3c59481d3fd7b8163828e5cc97f6f26ac359d086c481e41ec5cfb5bc2c6fc20
 main synchronized with origin/main
 ```
 
@@ -43,7 +44,7 @@ M01  X Identity/Policy/API Probe — complete
 M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
-M05  Tauri Desktop Foundation and Product Parity — planning active
+M05  Tauri Desktop Foundation and Product Parity — technically complete; owner closure pending
 M06  Records, Dossiers, and Anomaly Vault
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -104,8 +105,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is pushed at `479a4b6`; accepted M05 implementation checkpoints are pushed through `5db447d`. The current docs working tree records the accepted parity checkpoint and next active Package B slice.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is pushed at `479a4b6`; all M05 implementation, packaging, installed lifecycle proof, and evidence-binding checkpoints are pushed through application commit `529052b`. The current docs working tree records M05 technical completion pending owner closure acceptance.
 
 ## Next Bounded Action
 
-Implement and validate account-scoped Calendar, Work detail, System health, reschedule/unschedule, and additional governed desktop parity without prioritizing visual polish. Preserve the M04 regression baseline and M05 native security boundary.
+Owner reviews and explicitly accepts M05 closure. After closure, prepare the exact M06 Records, Dossiers, and Anomaly Vault planning package without beginning M06 implementation.
