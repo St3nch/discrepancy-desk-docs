@@ -33,7 +33,16 @@ M06-B — Bounded Static Webpage Retrieval
 
 The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. M06-B is a later separately gated network/SSRF package. Neither is authorized for implementation.
 
-The active work is owner option review for the before-synthesis architecture decisions. Architecture synthesis, M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
+The first foundational owner decision set is approved and recorded at `99-decisions/m06-owner-architecture-rulings.md`:
+
+```text
+M06-D01  Hybrid SQLite/filesystem canonical authority         approved
+M06-D02  Universal governed ingestion envelope                approved
+M06-D03  Separate physical Vaults with governed imports       approved
+M06-D04  Generated read-only Markdown/HTML projections        approved
+```
+
+The active work is owner option review for the remaining before-synthesis architecture decisions. Architecture synthesis, M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
 
 Application repository truth:
 
