@@ -24,11 +24,12 @@ The M06 nine-report research program is active:
 R-M06-01  Source Universe and Admission Policy       complete
 R-M06-02  YouTube and Audiovisual Ingestion         complete
 R-M06-03  Website, Feed, and Change Monitoring      complete
-R-M06-04  Document Normalization and Provenance     next
-R-M06-05 through R-M06-09                           not started
+R-M06-04  Document Normalization and Provenance     complete
+R-M06-05  Canonical Vault and Knowledge Model       next
+R-M06-06 through R-M06-09                           not started
 ```
 
-R-M06-02 recommends a manual-first YouTube workflow consisting of a URL plus a pasted or uploaded transcript, exact preservation, explicit provenance, normalized timestamps/segments, and human review. R-M06-03 compares paste-only webpage intake, bounded single-page retrieval, feeds, monitoring, provider-assisted extraction, and rendered-browser capture. None is selected or approved. Every option remains subject to owner review during architecture synthesis before implementation authority can exist.
+R-M06-02 recommends a manual-first YouTube workflow consisting of a URL plus a pasted or uploaded transcript, exact preservation, explicit provenance, normalized timestamps/segments, and human review. R-M06-03 compares paste-only webpage intake, bounded single-page retrieval, feeds, monitoring, provider-assisted extraction, and rendered-browser capture. R-M06-04 compares Markdown-first, common JSON element packages, parser-native outputs, database-only normalization, and a hybrid governed-package model. None is selected or approved. Every option remains subject to owner review during architecture synthesis before implementation authority can exist.
 
 M06 implementation, Qdrant, source monitors, media downloading, transcript-provider integration, and automated connectors remain blocked.
 
@@ -113,9 +114,10 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 AC-01 closure: 982bcf0
 R-M06-01 research: d5d8b1d
 R-M06-02 research: e268fc8
-R-M06-03 research: pending current commit
+R-M06-03 research: 156519b
+R-M06-04 research: pending current commit
 ```
 
 ## Next Bounded Action
 
-Execute `R-M06-04 — Document Normalization and Parser Provenance`. Do not begin M06 implementation, crawling, monitoring, transcript-provider integration, media acquisition, parser selection, or Qdrant work.
+Execute `R-M06-05 — Canonical Vault and Knowledge Model`. Do not begin M06 implementation, crawling, monitoring, transcript-provider integration, media acquisition, parser selection, schema adoption, or Qdrant work.

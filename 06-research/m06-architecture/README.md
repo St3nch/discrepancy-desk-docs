@@ -120,8 +120,9 @@ Independent Claude review and explicit owner acceptance are required before M06 
 R-M06-01  Source Universe and Admission Policy  complete
 R-M06-02  YouTube and Audiovisual Ingestion    complete
 R-M06-03  Website, Feed, and Change Monitoring complete
-R-M06-04  Document Normalization and Provenance next
-R-M06-05 through R-M06-09                      not started
+R-M06-04  Document Normalization and Provenance complete
+R-M06-05  Canonical Vault and Knowledge Model  next
+R-M06-06 through R-M06-09                      not started
 ```
 
 R-M06-01 is research material only. Its recommendations require architecture synthesis and owner acceptance before implementation.
