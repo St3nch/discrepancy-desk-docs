@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06 Vault and ingestion architecture research.
+M06 architecture synthesis review and AC-02 closure.
 
 ## Active Milestone
 
 ```text
-M06 — Records, Dossiers, and Anomaly Vault (architecture research only)
+M06 — Records, Dossiers, and Anomaly Vault (synthesis review; implementation blocked)
 ```
 
 ## Current Focus
@@ -54,7 +54,7 @@ M06-D15  Qdrant and graph work deferred                       approved
 M06-D16  No live LLM/provider integration in M06-A            approved
 ```
 
-The owner decision matrix is complete. The active work is AC-02 correction closure and M06 architecture synthesis for independent review. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
+The owner decision matrix is complete. The M06 architecture synthesis and roadmap reconciliation are prepared for independent review. AC-02 corrections are implemented in the synthesis but remain open until independent review and owner acceptance. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
 
 Application repository truth:
 
@@ -87,7 +87,8 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06  Records, Dossiers, and Anomaly Vault — architecture research active; implementation blocked
+M06-A  Local Manual Vault — synthesis review active; implementation blocked
+M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
 M09  Restricted Release Watch and Hermes Pilot
@@ -135,12 +136,13 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ```text
 AC-01 closure: 982bcf0
-R-M06-01 through R-M06-06 and multi-account note: d5d8b1d through f1ce71f
-R-M06-07 through R-M06-09: 7f44f9c
+M06 research program: d5d8b1d through 7f44f9c
 Audit-prompt boundary correction: 91146e4
-Claude M06 review, AC-02 correction package, and M06-A/M06-B split: pending current commit
+Claude M06 research review and AC-02 package: b675014
+Owner rulings M06-D01 through M06-D16: 44f5a57 through d8105e0
+M06 synthesis and roadmap reconciliation: pending current commit
 ```
 
 ## Next Bounded Action
 
-Conduct owner option review for the before-synthesis decisions in small groups. Record each ruling without beginning implementation. After the required rulings and AC-02 correction closure, author the M06 architecture synthesis for independent review. Do not begin M06-A or M06-B implementation.
+Submit `05-implementation-planning/m06-architecture-synthesis.md` and the reconciled roadmap/milestone package for independent Claude review outside the repository. Record the completed report in `08-audits/`, disposition findings, and obtain explicit owner acceptance before any M06-A implementation planning or code work.

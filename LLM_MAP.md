@@ -55,9 +55,9 @@ The docs repo defines what should be built. The app repo contains implementation
 
 ## Current Project Mode
 
-M00 through M05 are owner-accepted and closed. Claude's independent post-M01 through M05 audit returned `ACCEPT WITH CORRECTIONS` with no blocking authority or security defect. AC-01 is the active bounded correction package.
+M00 through M05 are owner-accepted and closed. AC-01 is closed. The complete nine-report M06 research program received independent review with verdict `RESEARCH PACKAGE READY WITH CORRECTIONS`; all sixteen owner architecture rulings are approved.
 
-M06 Vault and ingestion architecture research is authorized only after AC-01 closes. M06 implementation, source connectors, scheduled monitors, and Qdrant remain blocked pending the nine-report research program, synthesis, independent architecture review, and explicit owner approval. Read `STATUS.md`, the transition plan, and the roadmap before making milestone claims.
+The M06 architecture synthesis is prepared for independent review. M06 is split into M06-A Local Manual Vault and M06-B Bounded Static Webpage Retrieval. Neither package has implementation authority. M06-A remains local-only; M06-B is a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
 
 ## Read Order for LLMs
 
@@ -77,38 +77,42 @@ Read these first:
 12. `04-platform-rules/truth-social-account-rules.md`
 13. `04-platform-rules/truth-social-automation-boundaries.md`
 14. `05-implementation-planning/implementation-roadmap.md`
-15. `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
-16. `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
-17. `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
-18. `05-implementation-planning/m01-work-package-b-developer-cost-boundary.md`
-19. `05-implementation-planning/m01-work-package-b-redacted-configuration-record.md`
-20. `05-implementation-planning/m01-work-package-c-controlled-probe-procedure.md`
-21. `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`
-22. `03-system-design/data-model-planning.md`
-23. `05-implementation-planning/hammer-test-strategy.md`
-24. `05-implementation-planning/milestone-02-persistence-contract.md`
-25. `05-implementation-planning/m02-adversarial-test-matrix.md`
-26. `05-implementation-planning/m02-operational-persistence-contract.md`
-27. `05-implementation-planning/m02-lifecycle-state-model.md`
-28. `05-implementation-planning/m02-owner-approved-persistence-decisions.md`
-29. `05-implementation-planning/m02-unresolved-decision-register.md`
-30. `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`
-31. `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`
-32. `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`
-33. `05-implementation-planning/m03-work-package-c-idempotency-concurrency-and-reconciliation-return.md`
-34. `05-implementation-planning/m03-work-package-d-guarded-migrations-encrypted-archives-and-evidence-return.md`
-35. `05-implementation-planning/m03-work-package-e-recovery-authority-mismatch-and-evidence-return.md`
-36. `05-implementation-planning/m03-work-package-f-minimal-operator-service-loop-return.md`
-37. `05-implementation-planning/m03-work-package-g-thin-local-control-room-return.md`
-38. `05-implementation-planning/m03-work-package-h-successor-and-replacement-lineage-return.md`
-39. `05-implementation-planning/m03-work-package-i-hammer-closure-review-return.md`
-40. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
-41. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
-42. `05-implementation-planning/chrome-extension-plan.md`
-43. `06-research/truth-social-platform-research.md`
-44. `06-research/truth-social-capture-boundaries.md`
-45. `99-decisions/decision-log.md`
-46. `99-decisions/research-log.md`
+15. `05-implementation-planning/m06-architecture-synthesis.md`
+16. `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`
+17. `99-decisions/m06-owner-architecture-rulings.md`
+18. `08-audits/claude-m06-research-program-independent-review.md`
+19. `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+20. `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+21. `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+22. `05-implementation-planning/m01-work-package-b-developer-cost-boundary.md`
+23. `05-implementation-planning/m01-work-package-b-redacted-configuration-record.md`
+24. `05-implementation-planning/m01-work-package-c-controlled-probe-procedure.md`
+25. `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`
+26. `03-system-design/data-model-planning.md`
+27. `05-implementation-planning/hammer-test-strategy.md`
+28. `05-implementation-planning/milestone-02-persistence-contract.md`
+29. `05-implementation-planning/m02-adversarial-test-matrix.md`
+30. `05-implementation-planning/m02-operational-persistence-contract.md`
+31. `05-implementation-planning/m02-lifecycle-state-model.md`
+32. `05-implementation-planning/m02-owner-approved-persistence-decisions.md`
+33. `05-implementation-planning/m02-unresolved-decision-register.md`
+34. `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`
+35. `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`
+36. `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`
+37. `05-implementation-planning/m03-work-package-c-idempotency-concurrency-and-reconciliation-return.md`
+38. `05-implementation-planning/m03-work-package-d-guarded-migrations-encrypted-archives-and-evidence-return.md`
+39. `05-implementation-planning/m03-work-package-e-recovery-authority-mismatch-and-evidence-return.md`
+40. `05-implementation-planning/m03-work-package-f-minimal-operator-service-loop-return.md`
+41. `05-implementation-planning/m03-work-package-g-thin-local-control-room-return.md`
+42. `05-implementation-planning/m03-work-package-h-successor-and-replacement-lineage-return.md`
+43. `05-implementation-planning/m03-work-package-i-hammer-closure-review-return.md`
+44. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
+45. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
+46. `05-implementation-planning/chrome-extension-plan.md`
+47. `06-research/truth-social-platform-research.md`
+48. `06-research/truth-social-capture-boundaries.md`
+49. `99-decisions/decision-log.md`
+50. `99-decisions/research-log.md`
 ## Core Boundaries
 
 The system may:

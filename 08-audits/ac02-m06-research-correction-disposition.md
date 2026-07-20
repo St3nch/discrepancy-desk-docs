@@ -2,7 +2,7 @@
 
 ## Status
 
-Open correction package created 2026-07-20.
+Corrections implemented in the synthesis package on 2026-07-20; closure pending independent synthesis review and explicit owner acceptance.
 
 Independent review verdict:
 
@@ -10,7 +10,7 @@ Independent review verdict:
 RESEARCH PACKAGE READY WITH CORRECTIONS
 ```
 
-No critical or high findings were reported. Owner option review may proceed while the bounded documentation corrections are applied. Architecture synthesis remains blocked until this disposition is closed and the owner resolves the before-synthesis decisions.
+No critical or high findings were reported. Owner option review may proceed while the bounded documentation corrections are applied. The owner resolved all before-synthesis decisions. Architecture synthesis is prepared and now awaits independent review. AC-02 remains open until that review is dispositioned and the owner accepts the synthesis.
 
 ## Source review
 
@@ -120,6 +120,16 @@ AC-02 may close only when:
 5. an independent review confirms the synthesis is coherent;
 6. the owner explicitly accepts the synthesis.
 
+## Implementation record
+
+The accepted corrections are incorporated into:
+
+- `05-implementation-planning/m06-architecture-synthesis.md`;
+- `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`;
+- `05-implementation-planning/implementation-roadmap.md`;
+- `LLM_MAP.md`;
+- `STATUS.md`.
+
 ## Current block
 
-No M06-A or M06-B implementation authority exists.
+AC-02 is not closed until independent synthesis review and explicit owner acceptance. No M06-A or M06-B implementation authority exists.

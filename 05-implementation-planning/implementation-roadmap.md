@@ -212,11 +212,25 @@ The complete M04 operator loop works through Tauri without direct database acces
 
 ## M06 — Records, Dossiers, and Anomaly Vault
 
-Prepare governed research memory under accepted D024: one separate vault per account that needs research memory, with topic dossiers, chronology, entities, typed assertions, unresolved questions, related filings, and Obsidian-compatible records without creating a second uncontrolled truth store. Implementation remains subject to the M06 architecture review and entry gate.
+M06 is split into two separately gated packages:
+
+```text
+M06-A — Local Manual Vault
+M06-B — Bounded Static Webpage Retrieval
+```
+
+M06-A establishes the per-account governed research-memory foundation. M06-B adds one human-supplied public URL retrieval path only after M06-A is stable and owner-accepted. M06-B does not inherit implementation authority from M06-A.
 
 **Milestone file**
 
 - `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`
+
+**Architecture and package files**
+
+- `05-implementation-planning/m06-architecture-synthesis.md`
+- `05-implementation-planning/m06a-m06b-package-boundary.md`
+- `05-implementation-planning/m06-pre-synthesis-correction-specification.md`
+- `99-decisions/m06-owner-architecture-rulings.md`
 
 **Governing documents**
 
@@ -224,14 +238,39 @@ Prepare governed research memory under accepted D024: one separate vault per acc
 - `03-system-design/multi-account-model.md`
 - `05-implementation-planning/hammer-test-strategy.md`
 - `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
-- `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
-- M05 milestone completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
+- `06-research/m06-architecture/README.md`
+- all reports `R-M06-01` through `R-M06-09`
+- `06-research/m06-architecture/multi-account-research-and-editorial-policy-layer.md`
+- `08-audits/claude-m06-research-program-independent-review.md`
+- `08-audits/ac02-m06-research-correction-disposition.md`
+- M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
 - accepted D024 in `99-decisions/decision-log.md`
-- independent Claude AI vault-architecture review required at `08-audits/m06-vault-architecture-review.md` (must be created before M06 entry)
 
-**Required outcome**
+**M06-A required outcome**
 
-Every durable assertion has type, provenance, evidence linkage, and human promotion/correction behavior; vault/account isolation is proven; the complete proposal receives independent Claude AI review before owner acceptance.
+A useful local-only Vault exists with:
+
+- physically separate account Vaults;
+- SQLite authority plus immutable filesystem artifacts;
+- universal governed ingestion envelope;
+- admitted local parsers and versioned normalized JSON element packages;
+- typed assertions and dossiers;
+- separate research, editorial-use, and publication authority;
+- immutable correction/supersession lineage;
+- human-only entity merge/split acceptance;
+- SQLite lexical search and deterministic chunk contract;
+- generated read-only Markdown/HTML projections;
+- per-account backup, disposable restore, and tamper proof.
+
+M06-A excludes URL retrieval, providers, monitoring, OCR, live LLM integration, Qdrant, graph work, cross-account transfer execution, and first-class events/chronologies.
+
+**M06-B required outcome**
+
+One human-triggered public URL may be retrieved under a separately accepted SSRF/network contract with exact receipts, immutable response artifacts, response limits, redirect/DNS revalidation, policy/retention review, and adversarial proof. M06-B excludes crawling, monitoring, feeds, browser rendering, authentication, and provider-assisted extraction.
+
+**Entry and review gate**
+
+The M06 architecture synthesis must receive independent review and owner acceptance before M06-A implementation planning. Each package then requires its own exact plan, hammer matrix, owner review, and explicit implementation authorization.
 
 ## M07 — Human-Triggered X Capture Helper
 
@@ -459,7 +498,8 @@ Documented disaster drills succeed, modified evidence/backups fail closed, accou
 | Archive, Docket, Flash Release lanes | M04 |
 | Manual X publishing, reconciliation, manual metrics | M04 |
 | Tauri desktop product | M05 |
-| Per-account dossiers and Anomaly Vault under accepted D024 | M06, subject to M06 review and entry gate |
+| Per-account local dossiers and Anomaly Vault foundation | M06-A, subject to synthesis review and implementation gate |
+| Bounded static webpage retrieval | M06-B, after M06-A acceptance and separate SSRF/network gate |
 | Human-triggered X capture | M07 |
 | Governed agent API/MCP | M08 |
 | Hermes and official-source Release Watch | M09 |
@@ -507,13 +547,14 @@ A milestone closes only when:
 
 # Immediate Authorized Sequence
 
-1. M03 is accepted and closed;
-2. the roadmap revision, D023, and D024 are accepted;
-3. prepare the substantial M04 package and added adversarial matrix from the complete governing-document chain;
-4. obtain owner review of that exact M04 package before code implementation;
-5. implement M04 in a small number of coherent batches after authorization;
-6. validate and close M04;
-7. start Tauri M05.
+1. M00 through M05 are owner-accepted and closed;
+2. the nine-report M06 research program and independent research review are complete;
+3. owner rulings M06-D01 through M06-D16 are accepted;
+4. review and disposition the M06 architecture synthesis independently;
+5. obtain explicit owner acceptance of the final synthesis;
+6. prepare the exact M06-A physical-schema, parser-admission, backup/restore, and adversarial implementation package;
+7. obtain explicit owner authorization before M06-A code changes;
+8. defer M06-B planning until M06-A is stable and owner-accepted.
 
 # D024 Roadmap Reference
 

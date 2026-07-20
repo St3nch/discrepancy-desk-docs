@@ -285,3 +285,28 @@ Leading direction:
 - Qdrant remains derived, disposable, and deterministically rebuildable from governed canonical records and vaults.
 
 Before M06 vault architecture or M14 Qdrant architecture receives owner acceptance, Claude AI must independently review the complete proposal against live repository truth and current product capabilities. The review must challenge cross-account leakage, duplicate truth stores, collection topology, filters, deletion/reindex behavior, backup/rebuild assumptions, and recovery. The independent review is advisory; final authority remains with the owner.
+
+## D025 — M06 Governed Vault Architecture Direction
+
+Accepted by the owner on 2026-07-20 for architecture synthesis. Implementation remains blocked pending independent synthesis review, owner acceptance of the reviewed synthesis, and a separately authorized M06-A work package.
+
+The owner accepted M06-D01 through M06-D16 in `99-decisions/m06-owner-architecture-rulings.md`, including:
+
+- hybrid SQLite/filesystem canonical authority;
+- one universal governed ingestion envelope;
+- physically separate account Vaults with governed imports only;
+- generated read-only Markdown/HTML projections;
+- separate research admission, truth/support, editorial-use, and exact publication authority;
+- immutable correction and supersession lineage;
+- versioned normalized JSON element packages;
+- static structured LLM context-run contracts without live provider integration;
+- human-only entity merge/split acceptance;
+- deferral of first-class events and chronologies from the first M06-A package;
+- narrow local parser scope;
+- SQLite lexical search and deterministic chunk contract;
+- per-account canonical backup and disposable restore proof;
+- fully manual M06-A operation;
+- Qdrant and graph work deferred;
+- M06 split into M06-A Local Manual Vault and M06-B Bounded Static Webpage Retrieval.
+
+The controlling synthesis candidate is `05-implementation-planning/m06-architecture-synthesis.md`.
