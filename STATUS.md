@@ -1,157 +1,111 @@
 # Project Status — Discrepancy Desk
 
-*Last updated: 2026-07-19*
+*Last updated: 2026-07-20*
 
 ## Current Mode
 
-Planning and controlled platform-readiness work.
+M04 planning and exact work-package preparation.
 
 ## Active Milestone
 
 ```text
-M03 — Local Control Room MVP
+M04 — Editorial Control Room and X Operating Workflow
 ```
 
 ## Current Focus
 
-M02 is complete. M03 is technically complete and awaiting owner closure acceptance. The application repository is synchronized with `origin/main` at `08ce68212923bc903d12bb21ab301fb342c170b6`. Validation is 54 passing tests, clean Ruff checks, and an executable HT matrix with 19 in-scope invariants executed, 19 passed, zero failed, and HT-14 explicitly deferred by approved scope.
+M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-Current sequence:
+M04 planning is active. Code implementation is not yet authorized. The exact M04 work package and added adversarial matrix must be prepared and owner-reviewed before implementation begins.
 
-1. obtain owner acceptance or rejection of the M03 closure package;
-2. if accepted, mark M03 closed and prepare the next milestone plan;
-3. preserve the FastAPI/Jinja control room as disposable contract scaffolding rather than the product UI;
-4. plan any future Tauri client separately against the frozen service and authority contracts;
-5. do not widen into automation, public deployment, polling, mention classification, or analytics without explicit approval;
-6. keep both repositories clean and synchronized after each accepted checkpoint.
-
-The physical persistence, governed operator service, thin local control-room harness, successor/replacement lineage, and executable hammer closure evidence now exist. No production/public deployment is admitted.
-
-## Completed / Decided
-
-- M00 completed on 2026-07-19.
-- Docs Git repository initialized on `main`.
-- Initial planning baseline committed as `fc6d3de`.
-- M00 closeout and M01 activation committed as `d9696a4`.
-- Remote configured at `https://github.com/St3nch/discrepancy-desk-docs`.
-- Initial baseline pushed successfully.
-- Public brand selected: **The Discrepancy Desk**.
-- Exact `.com` domain purchased: `discrepancydesk.com`.
-- X account created and live.
-- X handle: `@DiscrepancyDesk`.
-- X display name: **Quinton Clearance**.
-- X bio: `Every anomaly becomes paperwork.`
-- X location: `Basement 1, Level 7`.
-- Persona selected: **Quinton Clearance**.
-- Lore location selected: **Basement 1, Level 7** / **B1-L7**.
-- Canon hobby selected: bread baking / sourdough.
-- Public tone selected: deadpan bureaucratic weird-history/conspiracy archive clerk.
-- Approved Quinton avatar created, saved in the main repo, applied to X, and visually accepted in the live profile crop.
-- Approved B1-L7 X banner created, saved in the main repo, applied to X, and visually accepted in the live profile crop.
-- M01 Work Package A completed on 2026-07-19.
-- First public post approved and manually published: `https://x.com/DiscrepancyDesk/status/2078860810688848010`.
-- Pinned post approved, manually published, and pinned: `https://x.com/DiscrepancyDesk/status/2078869974622392424`.
-- Pinned-post image included with alt text and visible `Made with AI` labeling.
-- Blue verification check confirmed from owner-supplied live profile evidence.
-- M01 Work Package B completed on 2026-07-19.
-- Active probe app: `Discrepancy Desk Read Probe`, App ID `33215850`, Development environment, read-only OAuth 1.0a User Context.
-- Four required OAuth 1.0a values stored in the owner's Bitwarden vault; no OAuth 2.0 probe credentials retained.
-- X API credits purchased: `$5.00`; billing-cycle spend cap: `$5.00`; auto-recharge off/unavailable.
-- Redacted completion record: `05-implementation-planning/m01-work-package-b-redacted-configuration-record.md`.
-- M01 Work Package C completed on 2026-07-19 under the approved P01–P04 boundary.
-- Attempt 001 stopped fail-closed on HTTP 401 and remains preserved.
-- Attempt 002 completed four read-only GET requests with HTTP 200 and zero automatic retries.
-- Successful evidence path: `C:\dev\x\discrepancy-desk\evidence\api-probes\x\m01\attempt-002\`.
-- Returned resources: one authenticated user, two owned posts, one mention, and two direct post lookups.
-- Runner-estimated attributable cost: `$0.023`; hard operational ceiling: `$0.10`.
-- Developer Console remaining balance after probe: `$4.98` from `$5.00`; actual billed cost recorded as `$0.02` after console rounding.
-- Evidence hash verification returned `HASHES_OK`.
-- M01 Work Package D analysis completed in `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`.
-- M01 completed on 2026-07-19 and M02 activated.
-- Owner-approved M02 hammer-test doctrine recorded on 2026-07-19 in `05-implementation-planning/hammer-test-strategy.md` and `05-implementation-planning/milestone-02-persistence-contract.md`.
-- Independent Claude audit completed with verdict `PASS WITH CORRECTIONS`; M02 planning remains admitted while physical schema and implementation remain blocked.
-- Accepted audit review recorded in `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`.
-- Root-level attempt-001 evidence and `attempt-002/` both passed explicit-manifest hash verification; preserved verifier output lives under `C:\dev\x\discrepancy-desk\evidence\api-probes\x\m01\verification\`.
-- The plaintext X environment file was moved by the owner from `C:\dev\x\local-secrets\` to `C:\Users\Stench\.discrepancy-desk\`; the old path no longer exists, the new path exists, and credential contents were not inspected.
-- D017 repository-governance defaults were owner-approved on 2026-07-19; the application repository was initialized locally on `main` with raw evidence, runtime databases, backups, restores, virtual environments, and secrets excluded from Git.
-- M02 now explicitly requires SQLite foreign-key, locking, idempotency, audit-integrity, cross-store evidence, dirty-migration, restore, and Unicode/text-mutation hammer categories.
-- The 20-invariant project-specific adversarial matrix at `05-implementation-planning/m02-adversarial-test-matrix.md` was owner-approved and committed as the governing M02 baseline in `fb1410f`.
-- The owner approved the smallest operational persistence contract, lifecycle/state model, and recommendations resolving UD-01 through UD-12 on 2026-07-19.
-- The accepted choices are recorded in `05-implementation-planning/m02-owner-approved-persistence-decisions.md`; UD-13 through UD-18 remain explicitly deferred.
-- The planning-only migration and hammer-execution plan now bounds real-engine fixtures, migration preflight, dirty-state recovery, audit proof, backup/restore proof, test evidence, and the first M03 package.
-- Approved image asset paths:
-  - `C:\dev\x\discrepancy-desk\assets\brand\quinton-clearance\master\quinton-clearance-avatar-master-v001.png`
-  - `C:\dev\x\discrepancy-desk\assets\brand\banners\master\discrepancy-desk-x-banner-master-v001.png`
-  - `C:\dev\x\discrepancy-desk\assets\brand\pinned-posts\master\discrepancy-desk-x-pinned-intake-master-v001.png`
-- Only owner-approved, manually saved image assets belong in the main repo; rejected generations are not retained.
-- Docs repo role: planning, doctrine, specs, research, and implementation instructions.
-- App repo role: actual coded project, approved production assets, and implementation evidence.
-- MCP helper repo path: `C:\dev\gpt-mcp`.
-- Initial technical direction: local-first, raw-first, human-approved.
-- Cross-system hammer-test strategy documented for SQLite, Anomaly Vault, No Coincidences, Qdrant, mock fixtures, and recovery; each subsystem contract must be refined during its milestone.
-- Platform sequence accepted: **X first**, then Truth Social only after the X workflow is operational and stable (D013).
-- Truth Social platform admission accepted as manual-only (D014).
-- Truth Social DOM/browser-extension capture is not admitted.
-- Chrome extension plan is X-only under the current decision.
-- Current official X policy/pricing/rate-limit verification recorded in `06-research/x-policy-api-verification-2026-07-19.md`.
-- The owner rejected adding `Commentary |` or similar wording to the display name. Do not reintroduce that suggestion as an accepted profile decision.
-
-## Milestone State
-
-### M01 — Complete
-
-Work Packages A–D closed on 2026-07-19 with profile evidence, developer and billing controls, preserved read-only probe evidence, verified hashes, actual billed cost, analysis, and M02 handoff.
-
-### M02 — Complete
-
-Owner clarification is satisfied. The independent audit correction package was committed and pushed as `85aca52`. The project-specific adversarial test matrix was owner-approved and committed as the governing baseline in `fb1410f`.
-
-M02 closed on 2026-07-19 after owner approval of the persistence contract, lifecycle model, UD-01 through UD-12, adversarial baseline, migration/hammer plan, and bounded M03 package.
-
-### M03 — Active
-
-The repository-governance entry gate is satisfied. The application repository was initialized on `main` and contains two local commits:
+Application repository truth:
 
 ```text
-8590399 — Initialize governed M03 persistence baseline
-6281f44 — Add migration integrity and restore proof
+HEAD 08ce68212923bc903d12bb21ab301fb342c170b6
+08ce682 — Add executable M03 hammer closure evidence
+main synchronized with origin/main
 ```
 
-Current validation is `14 passed` with clean Ruff checks. The full authorized persistence and HT-01 through HT-20 package remains in progress. No remote is configured for the application repository.
+M03 validation:
 
-## Not Started
+```text
+uv run ruff check .          → passed
+uv run pytest                → 54 passed
+scripts/run_ht_evidence.py   → 19 executed, 19 passed, 0 failed
+HT-14                        → deferred by approved scope
+```
 
-- Local dashboard.
-- Chrome extension build.
-- Truth Social manual-publishing workflow build.
-- Obsidian vault integration.
-- Qdrant integration.
-- Metrics ledger implementation.
-- No Coincidences implementation.
+## Accepted Roadmap
+
+```text
+M00  Planning Foundation — complete
+M01  X Identity/Policy/API Probe — complete
+M02  Persistence Contract/Hammer Plan — complete
+M03  Governed Local Control Room Foundation — complete
+M04  Editorial Control Room and X Operating Workflow — planning active
+M05  Tauri Desktop Foundation and Product Parity
+M06  Records, Dossiers, and Anomaly Vault
+M07  Human-Triggered X Capture Helper
+M08  Agent-Neutral Governed Interface
+M09  Restricted Release Watch and Hermes Pilot
+M10  Truth Social Secondary Manual Workflow
+M11  Metrics Ledger and Editorial Learning
+M12  Rich Editorial Workspaces
+M13  No Coincidences Pattern Candidates
+M14  Qdrant Semantic Retrieval
+M15  Hardening, Backup, Recovery, and Operator Runbook
+```
+
+Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-ruling.md`.
+
+## Accepted Product Direction
+
+- records-first editorial operation;
+- Archive, Docket, and Flash Release editorial lanes;
+- rolling 90-day active schedule;
+- first-class Unscheduled Reserve;
+- Command Center answering what matters now;
+- Ready-to-Post and anti-filler Need-a-Post;
+- functional web contract harness followed by product-grade Tauri;
+- bounded LLM context and candidate operations only;
+- no direct agent database access;
+- agent-neutral interface before Hermes;
+- one restricted Release Watch pilot before any broader agent role;
+- separate physical vault per account under D024;
+- account-scoped Qdrant collections and fail-closed retrieval under D024;
+- M06 and M14 implementation still require their named independent reviews and entry gates.
+
+## M03 Closure Evidence
+
+- physical SQLite/Alembic implementation;
+- guarded migrations and dirty-state recovery;
+- exact revision and approval binding;
+- verified evidence references;
+- idempotency and transaction behavior;
+- append-only hash-chained audit events;
+- manual-ready and publication reconciliation;
+- mismatch, successor revision, and replacement publication lineage;
+- manual metric observation states;
+- backup/restore and three-way reconciliation proof;
+- thin FastAPI/Jinja operator harness;
+- executable HT evidence bound to the implementation commit.
 
 ## Hard Boundaries
 
-No autonomous posting on X or Truth Social.
-No autonomous replies.
-No auto-likes.
-No auto-follows.
-No auto-reposts.
-No engagement pods.
-No undocumented/internal API endpoints.
-No credentials in Git, Markdown, screenshots, manifests, or raw evidence.
-No real-government impersonation.
-No claims of real classified access.
-No declaring speculation as confirmed truth.
-No database implementation before M02 approval.
+- No autonomous posting, replies, likes, follows, reposts, or DMs.
+- No undocumented/internal platform endpoints.
+- No credentials in Git, Markdown, screenshots, manifests, or evidence.
+- No real-government impersonation or claims of classified access.
+- No speculation promoted as confirmed truth.
+- No agent/LLM direct database access.
+- No agent self-approval, accepted-truth promotion, publication authority, or evidence deletion.
+- No provider/platform/source watcher admitted without its milestone gate and owner approval.
+- Truth Social remains manual-only under D014.
 
-## Recheck Items
+## Docs Working Tree
 
-- Recheck X Authenticity and Profile Labels policies before any later profile-policy decision that depends on them.
-- Recheck live X Developer Console prices immediately before buying credits.
-- Recheck relevant endpoint limits immediately before probe execution.
-- Recheck Truth Social's manual-only boundary by 2026-10-19 or earlier if official policy changes, written permission is received, or professional legal guidance is obtained.
-- Recheck Truth Social parody-account enforcement before its later launch milestone.
+The accepted roadmap package remains uncommitted and unstaged. Do not claim it is committed or pushed until staged-diff review, explicit commit approval, commit, and push are complete.
 
 ## Next Bounded Action
 
-Continue the authorized M03 persistence and hammer-test package from the implementation return in `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`. The next external owner input is the application repository's GitHub URL and visibility before any remote is configured or pushed.
+Prepare the exact substantial M04 implementation package and added adversarial matrix from the accepted governing-document chain. Do not begin M04 code implementation until that package is owner-reviewed.

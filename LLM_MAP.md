@@ -55,9 +55,9 @@ The docs repo defines what should be built. The app repo contains implementation
 
 ## Current Project Mode
 
-Planning mode.
+M03 is owner-accepted and closed. The application exists and passed its recorded M03 technical exit gate.
 
-No app implementation has started unless `STATUS.md` says otherwise.
+The owner accepted the full editorial-product roadmap revision covering M04–M15 on 2026-07-20. M04 planning is active, but code implementation remains blocked until the exact M04 work package and added adversarial matrix are prepared and owner-reviewed. Read `STATUS.md`, the roadmap, and the roadmap ruling before making milestone claims.
 
 ## Read Order for LLMs
 
@@ -77,36 +77,38 @@ Read these first:
 12. `04-platform-rules/truth-social-account-rules.md`
 13. `04-platform-rules/truth-social-automation-boundaries.md`
 14. `05-implementation-planning/implementation-roadmap.md`
-15. `05-implementation-planning/m01-work-package-b-developer-cost-boundary.md`
-16. `05-implementation-planning/m01-work-package-b-redacted-configuration-record.md`
-17. `05-implementation-planning/m01-work-package-c-controlled-probe-procedure.md`
-18. `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`
-19. `03-system-design/data-model-planning.md`
-20. `05-implementation-planning/hammer-test-strategy.md`
-21. `05-implementation-planning/milestone-02-persistence-contract.md`
-22. `05-implementation-planning/m02-adversarial-test-matrix.md`
-23. `05-implementation-planning/m02-operational-persistence-contract.md`
-24. `05-implementation-planning/m02-lifecycle-state-model.md`
-25. `05-implementation-planning/m02-owner-approved-persistence-decisions.md`
-26. `05-implementation-planning/m02-unresolved-decision-register.md`
-27. `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`
-28. `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`
-29. `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`
-30. `05-implementation-planning/m03-work-package-c-idempotency-concurrency-and-reconciliation-return.md`
-31. `05-implementation-planning/m03-work-package-d-guarded-migrations-encrypted-archives-and-evidence-return.md`
-32. `05-implementation-planning/m03-work-package-e-recovery-authority-mismatch-and-evidence-return.md`
-33. `05-implementation-planning/m03-work-package-f-minimal-operator-service-loop-return.md`
-34. `05-implementation-planning/m03-work-package-g-thin-local-control-room-return.md`
-35. `05-implementation-planning/m03-work-package-h-successor-and-replacement-lineage-return.md`
-36. `05-implementation-planning/m03-work-package-i-hammer-closure-review-return.md`
-37. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
-38. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
-39. `05-implementation-planning/chrome-extension-plan.md`
-40. `06-research/truth-social-platform-research.md`
-41. `06-research/truth-social-capture-boundaries.md`
-42. `99-decisions/decision-log.md`
-43. `99-decisions/research-log.md`
-
+15. `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+16. `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+17. `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+18. `05-implementation-planning/m01-work-package-b-developer-cost-boundary.md`
+19. `05-implementation-planning/m01-work-package-b-redacted-configuration-record.md`
+20. `05-implementation-planning/m01-work-package-c-controlled-probe-procedure.md`
+21. `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`
+22. `03-system-design/data-model-planning.md`
+23. `05-implementation-planning/hammer-test-strategy.md`
+24. `05-implementation-planning/milestone-02-persistence-contract.md`
+25. `05-implementation-planning/m02-adversarial-test-matrix.md`
+26. `05-implementation-planning/m02-operational-persistence-contract.md`
+27. `05-implementation-planning/m02-lifecycle-state-model.md`
+28. `05-implementation-planning/m02-owner-approved-persistence-decisions.md`
+29. `05-implementation-planning/m02-unresolved-decision-register.md`
+30. `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`
+31. `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`
+32. `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`
+33. `05-implementation-planning/m03-work-package-c-idempotency-concurrency-and-reconciliation-return.md`
+34. `05-implementation-planning/m03-work-package-d-guarded-migrations-encrypted-archives-and-evidence-return.md`
+35. `05-implementation-planning/m03-work-package-e-recovery-authority-mismatch-and-evidence-return.md`
+36. `05-implementation-planning/m03-work-package-f-minimal-operator-service-loop-return.md`
+37. `05-implementation-planning/m03-work-package-g-thin-local-control-room-return.md`
+38. `05-implementation-planning/m03-work-package-h-successor-and-replacement-lineage-return.md`
+39. `05-implementation-planning/m03-work-package-i-hammer-closure-review-return.md`
+40. `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
+41. `07-prompts/claude-project-audit-through-m01-hammer-focus.md`
+42. `05-implementation-planning/chrome-extension-plan.md`
+43. `06-research/truth-social-platform-research.md`
+44. `06-research/truth-social-capture-boundaries.md`
+45. `99-decisions/decision-log.md`
+46. `99-decisions/research-log.md`
 ## Core Boundaries
 
 The system may:
@@ -233,3 +235,27 @@ All accepted major decisions belong in:
 ```text
 99-decisions/decision-log.md
 ```
+
+
+## Editorial Control Room and Full Product Destination
+
+Canonical planning:
+
+- `05-implementation-planning/implementation-roadmap.md`
+- `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+- `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+- `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md` (research input, not doctrine)
+
+The web control room proves workflows and contracts. Tauri is the product-grade operator surface. Dossiers, capture, agent API, Hermes, Truth Social, metrics learning, rich editorial workspaces, No Coincidences, Qdrant, and recovery each have named milestone destinations and gates.
+
+## Connected LLM and Agent Boundary
+
+Connected LLMs receive bounded task/context packets and may produce candidates only. No LLM or agent may directly access SQLite or exercise human approval, accepted-truth promotion, publication, evidence deletion, account ownership, or autonomous social actions.
+
+The canonical future path is:
+
+```text
+LLM/agent → optional thin MCP wrapper → governed HTTP/service business operations → Desk persistence
+```
+
+Hermes is a possible replaceable sibling runtime admitted only after the agent-neutral interface passes its mock-agent and authority gates.

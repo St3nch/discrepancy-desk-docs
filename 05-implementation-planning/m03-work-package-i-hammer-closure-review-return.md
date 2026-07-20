@@ -57,9 +57,9 @@ M03 technical gates pass:
 
 The current FastAPI/Jinja interface remains disposable workflow scaffolding and is not the accepted product interface. The planned product direction is a deliberate Tauri desktop client after the service contract is frozen.
 
-## Remaining gate
+## Owner closure
 
-M03 closure now requires owner acceptance of the closure package. Closure does not authorize:
+The owner accepted and closed M03 on 2026-07-20. Closure does not authorize:
 
 - autonomous posting or engagement;
 - public deployment;

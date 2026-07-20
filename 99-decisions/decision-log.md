@@ -243,3 +243,45 @@ The application directory `C:\dev\x\discrepancy-desk` may operate as a Git repos
 - repository URL and visibility require owner confirmation before first remote push.
 
 This decision admitted repository initialization and the already-authorized M03 implementation package. It did not authorize raw-evidence publication or credential access.
+
+
+## D023 — Full Editorial Product Roadmap
+
+Accepted by the owner on 2026-07-20.
+
+The research report `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md` has been reviewed and retained as research rather than promoted wholesale into doctrine.
+
+The coordinated accepted ruling is recorded in `05-implementation-planning/editorial-control-room-roadmap-ruling.md`, with the complete destination and gates recorded in `05-implementation-planning/implementation-roadmap.md`.
+
+The accepted decisions are:
+
+- records-first editorial operation;
+- Archive, Docket, and Flash Release as editorial lanes rather than lifecycle states;
+- rolling 90-day active scheduling with a first-class Unscheduled Reserve;
+- Command Center focused on immediate operator action;
+- anti-filler behavior allowing an empty schedule slot;
+- FastAPI/Jinja web control room as functional contract harness;
+- Tauri as product-grade operator surface;
+- connected LLMs/agents limited to governed candidate operations;
+- no direct agent database access;
+- HTTP/service business operations as canonical, with optional thin MCP wrappers;
+- Hermes treated as a replaceable restricted sibling runtime after the agent-neutral interface passes its gate;
+- explicit milestone destinations for dossiers, capture, Release Watch, Truth Social, metrics learning, Replies, Articles, Assets, No Coincidences, Qdrant, and recovery.
+
+The owner accepted this roadmap direction on 2026-07-20. This acceptance authorizes coordinated planning and milestone sequencing. M04 code implementation remains blocked until the exact M04 work package and added adversarial matrix are prepared and owner-reviewed.
+
+## D024 — Multi-Account Vault and Qdrant Isolation Direction
+
+Accepted by the owner on 2026-07-20 as the governing direction for M06 and M14 planning. Implementation remains subject to the named milestone gates and independent reviews.
+
+Leading direction:
+
+- each account that needs research memory receives its own physical Obsidian-compatible vault;
+- account-specific interpretations, claims, conclusions, voice notes, and editorial memory remain isolated in that account's vault;
+- shared canonical evidence may be referenced from more than one vault without sharing account-specific interpretation;
+- the initial Qdrant proposal is one collection per account vault within a shared local Qdrant service;
+- ordinary retrieval defaults to one active account and fails closed when account scope is absent;
+- cross-account retrieval requires an explicit owner-admitted operation and permission;
+- Qdrant remains derived, disposable, and deterministically rebuildable from governed canonical records and vaults.
+
+Before M06 vault architecture or M14 Qdrant architecture receives owner acceptance, Claude AI must independently review the complete proposal against live repository truth and current product capabilities. The review must challenge cross-account leakage, duplicate truth stores, collection topology, filters, deletion/reindex behavior, backup/rebuild assumptions, and recovery. The independent review is advisory; final authority remains with the owner.

@@ -1,8 +1,8 @@
-# Milestone 03 — Local Control Room MVP
+# Milestone 03 — Governed Local Control Room Foundation
 
 ## Status
 
-Active — repository governance approved, application repository initialized, and initial persistence implementation committed locally. Full HT-01 through HT-20 execution and the local dashboard remain in progress.
+Complete. Owner accepted and closed M03 on 2026-07-20.
 
 ## Goal
 
@@ -18,58 +18,51 @@ Build the smallest complete, tested local workflow from capture through human-ap
 - `02-product/mvp-scope.md`
 - `02-product/workflow-overview.md`
 - `03-system-design/architecture-overview.md`
-- accepted persistence contract, hammer-test plan, and M01 schema implications
+- `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`
+- `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`
+- `05-implementation-planning/m03-work-package-c-idempotency-concurrency-and-reconciliation-return.md`
+- `05-implementation-planning/m03-work-package-d-guarded-migrations-encrypted-archives-and-evidence-return.md`
+- `05-implementation-planning/m03-work-package-e-recovery-authority-mismatch-and-evidence-return.md`
+- `05-implementation-planning/m03-work-package-f-minimal-operator-service-loop-return.md`
+- `05-implementation-planning/m03-work-package-g-thin-local-control-room-return.md`
+- `05-implementation-planning/m03-work-package-h-successor-and-replacement-lineage-return.md`
+- `05-implementation-planning/m03-work-package-i-hammer-closure-review-return.md`
 
-## Entry Gate
+## Delivered Scope
 
-- M02 completed and owner-approved.
-- Hammer-test contract recorded.
-- App repo initialized under `C:\dev\x\discrepancy-desk`.
+- FastAPI/Jinja local contract harness;
+- SQLite STRICT persistence and Alembic migrations;
+- governed capture, source, draft, review, approval, publication, reconciliation, correction, and manual-metrics operations;
+- exact-text approval binding;
+- idempotency and transaction behavior;
+- append-only hash-chained audit events;
+- guarded migrations, encrypted archives, backup, restore, and reconciliation;
+- successor revision and replacement publication lineage;
+- executable hammer-test closure evidence.
 
-## Scope
+## Exit-Gate Result
 
-- FastAPI
-- SQLite
-- Alembic
-- Jinja/HTMX
-- capture inbox
-- source records
-- drafts
-- human approve/reject flow
-- exact-text approval binding
-- manual published URL record
-- basic local status screen
-- migration, integrity, and hammer tests
+```text
+Application commit: 08ce68212923bc903d12bb21ab301fb342c170b6
+uv run ruff check .        → passed
+uv run pytest              → 54 passed
+run_ht_evidence.py         → 19 executed, 19 passed, 0 failed
+HT-14                      → deferred by approved scope
+```
 
-## Out of Scope
+Evidence and closure detail:
 
-- X write API
-- Truth Social integration
-- Chrome extension
-- Anomaly Vault
-- Qdrant
-- No Coincidences
-- complex analytics
-- React SPA
+- `05-implementation-planning/m03-work-package-i-hammer-closure-review-return.md`
+- application repo: `docs/ht-coverage-ledger.md`
+- application repo: `docs/m03-exit-gate-review.md`
+- application repo: `scripts/run_ht_evidence.py`
 
-## Required Evidence
+## Accepted Deviations and Boundaries
 
-- migration history
-- focused and full test results
-- hammer-test results against a real SQLite database
-- manual operator walkthrough
-- proof changed text invalidates prior approval
-- proof forbidden transitions fail closed
-- clean recovery from a deliberately failed migration/test fixture
+HT-14 mention classification remains deferred because no classifier exists in M03 and no classifier has approval or lifecycle authority.
 
-## Exit Gate
-
-- complete local loop works without autonomous platform action
-- database constraints and application rules are tested
-- no critical hammer-test failure remains
-- operator can create, review, approve/reject, and record a manual publication
-- docs and `STATUS.md` updated
+M03 closure does not authorize autonomous platform actions, public deployment, recurring polling, mention classification, broad analytics expansion, or M04 code implementation without an owner-reviewed exact work package.
 
 ## Completion Record
 
-Record date, commit, test commands/results, evidence paths, deviations, and follow-up work.
+Completed and owner-accepted on 2026-07-20. The next milestone is M04 planning and exact work-package preparation.

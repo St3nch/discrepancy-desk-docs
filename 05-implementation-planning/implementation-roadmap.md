@@ -2,209 +2,523 @@
 
 ## Purpose
 
-This roadmap is the execution spine for building a working project from planning through stable operation.
-
-A Project Steward LLM must not rely on this roadmap alone. Before starting or continuing a milestone, it must read that milestone file and every document listed under **Required Reading**.
+This roadmap is the execution spine for the complete product. It preserves the full destination while enforcing entry, authority, validation, documentation, and owner-acceptance gates.
 
 The roadmap controls sequence. Milestone files control bounded execution. Doctrine and accepted decisions control behavior.
 
-## Steward Operating Rules
+## Steward Execution Rule
 
-1. Sync from repo truth before making claims or edits.
-2. Read `LLM_MAP.md`, `STATUS.md`, this roadmap, the active milestone file, and all milestone-required planning docs.
-3. Do not start a milestone until its entry gate is satisfied.
-4. Do not silently expand scope. Record newly discovered work as a later milestone, research gap, or explicit amendment.
-5. Read before edit; search before create; inspect changes before commit.
-6. Preserve evidence for probes, migrations, tests, and milestone completion.
-7. Human approval remains mandatory for public publishing and any newly admitted external action.
-8. No autonomous posting, replying, liking, following, reposting, or direct messaging.
-9. Do not schema-from-vibes. Real payloads and real workflows must inform structured design.
-10. Update the active milestone file and `STATUS.md` when work completes, blocks, or materially changes.
-11. Record accepted project decisions in `99-decisions/decision-log.md`; record dated external findings in `99-decisions/research-log.md`.
-12. A milestone is not complete because code exists. It is complete only when its exit gate, tests, evidence, and documentation updates are satisfied.
+Plan broadly, implement substantial coherent capabilities, validate hard, and keep moving.
 
-## Mandatory Pre-Database Stop
+A work package should be large enough to deliver a complete operator capability and small enough to test, audit, and recover safely. Do not split ordinary related implementation into approval theater. Stop only for a real owner decision, new authority, new provider/platform, destructive action, unresolved contract, failed validation, or audit finding.
 
-Before any database schema, migration, persistence implementation, or database-backed feature work begins, the Project Steward must stop and ask the owner:
+## Mandatory Milestone Documentation Rule
 
-> You said you want hammer tests added before database work. What exact failure modes, invariants, adversarial cases, and evidence requirements do you want included for this project?
+Every milestone entry in this roadmap must reference:
 
-The current cross-system doctrine is preserved in `05-implementation-planning/hammer-test-strategy.md`. It covers the operational database, Anomaly Vault, No Coincidences, Qdrant, mock-data requirements, fail-closed behavior, and milestone evidence. M02 must still refine the database portion against the real persistence contract before implementation.
+1. its canonical milestone file;
+2. every governing doctrine, decision, architecture, research, audit, and prior-milestone handoff document required to execute it safely;
+3. any proposed decision that must be accepted before implementation;
+4. any external-policy or provider research that must be refreshed at entry;
+5. the evidence or completion record that closes the preceding dependency.
 
-No database implementation is admitted until the owner clarification and refined M02 hammer-test matrix are recorded in planning docs.
+The milestone file must repeat and may strengthen its own **Required Reading** list. It may not omit any roadmap-listed governing document. The roadmap and milestone file must be updated together whenever scope, order, gates, or governing documents change.
 
-## Milestone Sequence
+Unless a separate exact completion-record document is explicitly named, the canonical milestone file contains that milestone's completion record. References to a milestone completion record therefore use the exact canonical milestone-file path. Future governing documents must be assigned an exact canonical path and the milestone gate by which they must be created.
 
-### M00 — Planning Foundation and Repository Baseline
+A Project Steward may not begin milestone planning or implementation from the milestone title, summary, chat history, or this roadmap alone. It must read the milestone file and every document listed under that milestone's **Governing documents**. Missing, stale, contradictory, renamed, or superseded references are a blocking defect and must be corrected before work proceeds.
 
-**Goal:** establish a governed, readable planning repository.
+This rule exists to prevent downstream milestones from drifting into unstated assumptions or "vibes" as project context grows.
 
-**Milestone file:** `05-implementation-planning/milestone-00-foundation.md`
+## Non-Negotiable Boundaries
 
-**Required outcome:** docs repo initialized, reviewed, committed, and usable by a fresh Project Steward.
+- AI drafts; the human clears.
+- No autonomous posting, replying, liking, following, reposting, or direct messaging.
+- No agent or LLM may access the database directly.
+- External agents use governed business operations, never SQL/table operations.
+- Accepted truth, approvals, publication authority, evidence deletion, and account ownership remain human-controlled.
+- The web control room is a functional contract harness; Tauri is the product-grade operator surface.
+- All new operational contracts from M04 onward must be multi-account-capable even when the first operator experience defaults to one active account.
+- Major architecture proposals involving vault truth boundaries, semantic retrieval, agent authority, or other high-risk cross-system behavior require an independent Claude AI review before owner acceptance. The review is advisory and cannot replace owner authority.
+- A milestone closes only after its exit gate, tests, evidence, docs, clean diff, and explicit owner acceptance.
 
-### M01 — X Identity, Policy, and Read-Only API Probe
+# Full Milestone Sequence
 
-**Goal:** finish the X-facing identity and inspect real X API payloads before data-model decisions.
+## M00 — Planning Foundation and Repository Baseline — COMPLETE
 
-**Milestone file:** `05-implementation-planning/milestone-01-api-probe.md`
+Established doctrine, brand, repositories, platform boundaries, roadmap discipline, and steward synchronization.
 
-**Required outcome:** compliant account posture, bounded read-only probe evidence, payload inventory, and schema implications.
+**Milestone file**
 
-Truth Social remains secondary and must not delay M01.
+- `05-implementation-planning/milestone-00-foundation.md`
 
-### M02 — Persistence Contract and Hammer-Test Plan
+**Governing documents**
 
-**Goal:** define the smallest operational data contract and its adversarial test requirements before writing migrations.
+- `PROJECT_BRIEF.md`
+- `README.md`
+- `LLM_MAP.md`
+- `00-doctrine/operating-doctrine.md`
+- `00-doctrine/human-approval-policy.md`
+- `00-doctrine/account-rules-and-boundaries.md`
+- `01-brand/brand-identity.md`
+- `01-brand/quinton-clearance-persona.md`
+- `02-product/product-overview.md`
+- `03-system-design/architecture-overview.md`
+- `99-decisions/decision-log.md`
 
-**Milestone file:** `05-implementation-planning/milestone-02-persistence-contract.md`
+**Required outcome**
 
-**Required outcome:** owner-approved hammer-test contract, bounded data model, lifecycle rules, exact-text approval binding, and migration/test plan.
+A fresh Project Steward can reconstruct the project, authority boundaries, repository split, and next milestone from repository truth.
 
-No database implementation occurs in this milestone.
+## M01 — X Identity, Policy, and Controlled API Probe — COMPLETE
 
-### M03 — Local Control Room MVP
+Established the X account, developer boundary, preserved bounded read-only probe evidence, and recorded real payload/cost findings.
 
-**Goal:** build the first complete local capture-to-publication-record loop.
+**Milestone file**
 
-**Milestone file:** `05-implementation-planning/milestone-03-local-dashboard.md`
+- `05-implementation-planning/milestone-01-api-probe.md`
 
-**Required outcome:** tested FastAPI + SQLite + Alembic + Jinja/HTMX application supporting manual capture, sources, drafts, human review, and manual published-post recording.
+**Governing documents**
 
-This is the core MVP.
+- `04-platform-rules/x-account-rules.md`
+- `04-platform-rules/x-api-probe-plan.md`
+- `04-platform-rules/automation-boundaries.md`
+- `06-research/x-policy-api-verification-2026-07-19.md`
+- `05-implementation-planning/m01-work-package-b-developer-cost-boundary.md`
+- `05-implementation-planning/m01-work-package-b-redacted-configuration-record.md`
+- `05-implementation-planning/m01-work-package-c-controlled-probe-procedure.md`
+- `05-implementation-planning/m01-work-package-d-probe-analysis-and-m02-handoff.md`
+- `99-decisions/research-log.md`
+- `99-decisions/decision-log.md`
 
-### M04 — X Operating Workflow and Manual Metrics
+**Required outcome**
 
-**Goal:** operate the MVP against real X work without autonomous publishing.
+Bounded, preserved read-only X evidence and a documented handoff into persistence planning.
 
-**Milestone file:** `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+## M02 — Persistence Contract and Hammer-Test Plan — COMPLETE
 
-**Required outcome:** repeatable drafting/review/manual-publish workflow, owned-post records, manual metrics snapshots, and operating evidence.
+Approved lifecycle, exact-text authority, evidence, idempotency, audit, migration, recovery, and adversarial test contracts before implementation.
 
-### M05 — Anomaly Vault Foundation
+**Milestone file**
 
-**Goal:** add a governed Obsidian-compatible research-memory layer after the operational loop works.
+- `05-implementation-planning/milestone-02-persistence-contract.md`
 
-**Milestone file:** `05-implementation-planning/milestone-05-anomaly-vault.md`
+**Governing documents**
 
-**Required outcome:** source, claim, entity, topic, and research-note conventions with clear boundaries between Markdown research memory and SQLite operational truth.
+- `03-system-design/data-model-planning.md`
+- `03-system-design/multi-account-model.md`
+- `05-implementation-planning/hammer-test-strategy.md`
+- `05-implementation-planning/m02-adversarial-test-matrix.md`
+- `05-implementation-planning/m02-operational-persistence-contract.md`
+- `05-implementation-planning/m02-lifecycle-state-model.md`
+- `05-implementation-planning/m02-owner-approved-persistence-decisions.md`
+- `05-implementation-planning/m02-unresolved-decision-register.md`
+- `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`
+- `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
+- `99-decisions/decision-log.md`
 
-### M06 — Human-Triggered Capture Helper
+**Required outcome**
 
-**Goal:** reduce manual capture friction without becoming a scraper.
+An owner-approved persistence contract and adversarial baseline that admits physical implementation without schema-from-vibes.
 
-**Milestone file:** `05-implementation-planning/milestone-06-capture-helper.md`
+## M03 — Governed Local Control Room Foundation — COMPLETE
 
-**Required outcome:** an admitted, human-triggered X capture helper or a documented decision to retain URL/manual-note capture only.
+Implemented SQLite/Alembic persistence, governed service operations, exact approvals, publication reconciliation, successor/replacement lineage, recovery protections, thin FastAPI/Jinja UI, and executable hammer evidence.
 
-Truth Social capture remains excluded unless its active research and policy gate explicitly admit a narrow feature.
+**Milestone file**
 
-### M07 — Truth Social Secondary Launch
+- `05-implementation-planning/milestone-03-local-dashboard.md`
 
-**Goal:** extend the stable brand workflow to Truth Social without duplicating X assumptions.
+**Governing documents**
 
-**Milestone file:** `05-implementation-planning/milestone-07-truth-social-secondary.md`
+- `03-system-design/data-model-planning.md`
+- `03-system-design/multi-account-model.md`
+- `05-implementation-planning/hammer-test-strategy.md`
+- `05-implementation-planning/m02-adversarial-test-matrix.md`
+- `05-implementation-planning/m02-operational-persistence-contract.md`
+- `05-implementation-planning/m02-lifecycle-state-model.md`
+- `05-implementation-planning/m02-owner-approved-persistence-decisions.md`
+- `05-implementation-planning/m02-unresolved-decision-register.md`
+- `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`
+- `08-audits/claude-audit-through-m01-hammer-review-acceptance.md`
+- `99-decisions/decision-log.md`
+- `05-implementation-planning/m03-work-package-a-repository-governance-and-bootstrap.md`
+- `05-implementation-planning/m03-work-package-b-initial-persistence-implementation-return.md`
+- `05-implementation-planning/m03-work-package-c-idempotency-concurrency-and-reconciliation-return.md`
+- `05-implementation-planning/m03-work-package-d-guarded-migrations-encrypted-archives-and-evidence-return.md`
+- `05-implementation-planning/m03-work-package-e-recovery-authority-mismatch-and-evidence-return.md`
+- `05-implementation-planning/m03-work-package-f-minimal-operator-service-loop-return.md`
+- `05-implementation-planning/m03-work-package-g-thin-local-control-room-return.md`
+- `05-implementation-planning/m03-work-package-h-successor-and-replacement-lineage-return.md`
+- `05-implementation-planning/m03-work-package-i-hammer-closure-review-return.md`
+- application repo: `docs/ht-coverage-ledger.md`
+- application repo: `docs/m03-exit-gate-review.md`
+- application repo: `scripts/run_ht_evidence.py`
 
-**Required outcome:** manual publishing workflow, owned-post recordkeeping, platform-specific copy variants, and manual metrics. No undocumented API or automated capture.
+**Required outcome**
 
-Entry requires a stable X workflow.
+The technical closure evidence remains 54 tests passed, Ruff clean, 19/19 admitted HT invariants passed, and HT-14 deferred by approved scope. The owner accepted and closed M03 on 2026-07-20.
 
-### M08 — Metrics Ledger and Editorial Learning
+## M04 — Editorial Control Room and X Operating Workflow
 
-**Goal:** turn owned-post observations into human-reviewed editorial learning.
+Build the substantial functional web operating system: Command Center, rolling 90-day scheduler, Unscheduled Reserve, Archive/Docket/Flash Release lanes, WIP pipeline, Ready-to-Post, Need-a-Post, exact review, manual X publication/reconciliation, and manual metrics.
 
-**Milestone file:** `05-implementation-planning/milestone-08-metrics-ledger.md`
+**Milestone file**
 
-**Required outcome:** comparable-but-not-falsely-equated platform metrics, content tags, review cadence, and bounded recommendations.
+- `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
 
-### M09 — No Coincidences Prototype
+**Governing documents**
 
-**Goal:** flag explainable pattern candidates without declaring truth.
+- `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+- `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+- `02-product/product-overview.md`
+- `02-product/workflow-overview.md`
+- `02-product/module-map.md`
+- `03-system-design/architecture-overview.md`
+- `03-system-design/multi-account-model.md`
+- `04-platform-rules/x-account-rules.md`
+- `04-platform-rules/automation-boundaries.md`
+- `05-implementation-planning/hammer-test-strategy.md`
+- `05-implementation-planning/m03-work-package-i-hammer-closure-review-return.md`
+- application repo: `docs/m03-exit-gate-review.md`
+- accepted decisions D023 and D024 in `99-decisions/decision-log.md`
 
-**Milestone file:** `05-implementation-planning/milestone-09-no-coincidences.md`
+**Required outcome**
 
-**Required outcome:** exact/entity/date/source-overlap candidates, provenance, human review states, and non-detection/failure tests.
+The owner can plan and operate a realistic editorial week end-to-end without SQL, raw IDs, or ambiguous authority. Multi-account isolation is proven with at least two synthetic accounts even if the UI defaults to one active account.
 
-Not MVP.
+## M05 — Tauri Desktop Foundation and Product Parity
 
-### M10 — Qdrant Semantic Retrieval
+Build the real desktop product around proven M04 contracts: native shell, navigation, panes, command palette, file handling, secure local credentials, notifications, health, and core workflow parity.
 
-**Goal:** add semantic retrieval only after enough high-quality Anomaly Vault material exists.
+**Milestone file**
 
-**Milestone file:** `05-implementation-planning/milestone-10-qdrant-retrieval.md`
+- `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
 
-**Required outcome:** evaluated retrieval quality, provenance-preserving context assembly, deletion/reindex behavior, and fallback when vector retrieval fails.
+**Governing documents**
 
-Not MVP. Do not build merely because embeddings are shiny.
+- `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+- `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+- `03-system-design/architecture-overview.md`
+- `03-system-design/multi-account-model.md`
+- `02-product/workflow-overview.md`
+- M04 milestone completion record in `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+- application repo: `docs/m04-service-api-contract.md` (must be created before M05 entry)
+- accepted D023 in `99-decisions/decision-log.md`
 
-### M11 — Hardening, Backup, and Recovery
+**Required outcome**
 
-**Goal:** prove the project can survive failure and be safely operated.
+The complete M04 operator loop works through Tauri without direct database access, preserving account scope and authority boundaries.
 
-**Milestone file:** `05-implementation-planning/milestone-11-hardening-recovery.md`
+## M06 — Records, Dossiers, and Anomaly Vault
 
-**Required outcome:** backup/restore proof, secret review, migration recovery, evidence integrity, regression suite, and operator runbook.
+Prepare governed research memory under accepted D024: one separate vault per account that needs research memory, with topic dossiers, chronology, entities, typed assertions, unresolved questions, related filings, and Obsidian-compatible records without creating a second uncontrolled truth store. Implementation remains subject to the M06 architecture review and entry gate.
 
-## MVP Boundary
+**Milestone file**
 
-The MVP is complete at the end of **M04**, provided M00–M04 exit gates are satisfied.
+- `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`
 
-MVP includes:
+**Governing documents**
 
-- governed planning baseline
-- X identity and policy readiness
-- bounded X read-only payload research
-- owner-approved persistence and hammer-test contract
-- local Control Room
-- capture, source, draft, review, approval, rejection, and manual published-post records
-- exact-text approval binding
-- manual X publishing
-- manual owned-post metrics
+- `03-system-design/obsidian-qdrant-sqlite-plan.md`
+- `03-system-design/multi-account-model.md`
+- `05-implementation-planning/hammer-test-strategy.md`
+- `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+- `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+- M05 milestone completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
+- accepted D024 in `99-decisions/decision-log.md`
+- independent Claude AI vault-architecture review required at `08-audits/m06-vault-architecture-review.md` (must be created before M06 entry)
 
-MVP does not require:
+**Required outcome**
 
-- Truth Social launch
-- browser extension
-- Anomaly Vault
-- Qdrant
-- No Coincidences
-- autonomous platform actions
-- React, Postgres, Redis, Celery, or multi-agent orchestration
+Every durable assertion has type, provenance, evidence linkage, and human promotion/correction behavior; vault/account isolation is proven; the complete proposal receives independent Claude AI review before owner acceptance.
 
-## Milestone Completion Protocol
+## M07 — Human-Triggered X Capture Helper
 
-At completion of every milestone, the Project Steward must:
+Reduce intake friction with a narrow, human-triggered X capture helper or record a deliberate decision to retain manual URL/note intake.
 
-1. Verify every exit-gate item with evidence.
-2. Update the milestone document:
-   - status
-   - completion date
-   - evidence paths
-   - accepted deviations
-   - unresolved follow-up work
-3. Update `STATUS.md`:
-   - completed milestone
-   - active milestone
-   - current blockers
-   - next bounded action
-4. Update `LLM_MAP.md` if new canonical docs were added.
-5. Update decision/research logs when applicable.
-6. Run relevant tests and record exact commands/results.
-7. Inspect Git status and diff.
-8. Commit only with explicit owner approval.
-9. Never push unless explicitly asked.
+**Milestone file**
 
-## Roadmap Change Rule
+- `05-implementation-planning/milestone-07-human-triggered-x-capture.md`
 
-Changing milestone order, scope, entry gates, exit gates, or platform admission requires:
+**Governing documents**
 
-- a written rationale;
-- affected-doc review;
-- owner approval;
-- roadmap, milestone, status, and decision-log updates in the same bounded change.
+- `05-implementation-planning/chrome-extension-plan.md`
+- `04-platform-rules/x-account-rules.md`
+- `04-platform-rules/automation-boundaries.md`
+- `06-research/x-policy-api-verification-2026-07-19.md` or its current replacement
+- `03-system-design/multi-account-model.md`
+- M04 completion record in `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+- M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
+- `99-decisions/decision-log.md`
 
-## Final Rule
+**Required outcome**
 
-Build the smallest complete, tested, recoverable system first.
+Capture is attributable, explicit, policy-reviewed, account-scoped, non-recurring, and non-scraping—or manual URL/note intake is deliberately retained.
 
-The Desk does not need every drawer installed before it can file its first case.
+## M08 — Agent-Neutral Governed Interface
+
+Create the versioned HTTP/service business-operation surface, optional thin MCP wrapper, agent identities/scopes, provenance, idempotency, budgets, revocation, and mock-agent hammer tests.
+
+**Milestone file**
+
+- `05-implementation-planning/milestone-08-agent-neutral-interface.md`
+
+**Governing documents**
+
+- `00-doctrine/human-approval-policy.md`
+- `00-doctrine/account-rules-and-boundaries.md`
+- `03-system-design/architecture-overview.md`
+- `03-system-design/multi-account-model.md`
+- `05-implementation-planning/hammer-test-strategy.md`
+- `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+- `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+- M04 completion record in `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+- M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
+- accepted D023/D024 and later accepted agent-authority decisions in `99-decisions/decision-log.md`
+- independent Claude AI agent-interface architecture review at `08-audits/m08-agent-interface-architecture-review.md` (must be created before M08 entry)
+
+**Required outcome**
+
+A mock agent can submit account-scoped candidates but cannot reach human authority, another account's workspace, or direct persistence.
+
+## M09 — Restricted Release Watch and Hermes Pilot
+
+Connect one tightly restricted Hermes profile to one admitted official-source workflow. Fresh sessions, memory/skills constrained, candidate submission only, hard cost limit, red-team injection tests, and immediate revocation.
+
+**Milestone file**
+
+- `05-implementation-planning/milestone-09-hermes-release-watch-pilot.md`
+
+**Governing documents**
+
+- M08 completion record in `05-implementation-planning/milestone-08-agent-neutral-interface.md`
+- `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+- `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+- current official Hermes documentation/repository research package at `06-research/hermes-agent-capability-and-security-review.md` (must be created or refreshed before M09 entry)
+- independent Claude AI Hermes architecture/security review at `08-audits/m09-hermes-pilot-architecture-review.md` (must be created before M09 entry)
+- `04-platform-rules/automation-boundaries.md`
+- `03-system-design/multi-account-model.md`
+- accepted agent identity, memory, skill, source-admission, and cost decisions in `99-decisions/decision-log.md`
+
+**Required outcome**
+
+Hermes is proven suitable under restriction or deliberately rejected without affecting core operation. Every job is bound to one explicit account and candidate authority only.
+
+## M10 — Truth Social Secondary Manual Workflow
+
+Extend the stable workflow to Truth Social using manual publishing, owned-post records, platform-specific variants, and manual metrics only.
+
+**Milestone file**
+
+- `05-implementation-planning/milestone-10-truth-social-secondary.md`
+
+**Governing documents**
+
+- `06-research/truth-social-platform-research.md`
+- `06-research/truth-social-capture-boundaries.md`
+- `04-platform-rules/truth-social-account-rules.md`
+- `04-platform-rules/truth-social-automation-boundaries.md`
+- `04-platform-rules/automation-boundaries.md`
+- `03-system-design/multi-account-model.md`
+- D013 and D014 in `99-decisions/decision-log.md`
+- M04 completion record in `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+- M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
+- current Truth Social policy refresh at `06-research/truth-social-policy-refresh-current.md` (must be created or refreshed before M10 entry)
+
+**Required outcome**
+
+A complete human-cleared Truth Social loop with no undocumented API, scraping, or browser automation, and no cross-account/platform authority leakage.
+
+## M11 — Metrics Ledger and Editorial Learning
+
+Turn trustworthy owned-post observations into human-reviewed editorial learning, rolling 90-day monetization tracking, and bounded hypotheses/experiments without autonomous strategy.
+
+**Milestone file**
+
+- `05-implementation-planning/milestone-11-metrics-ledger-learning.md`
+
+**Governing documents**
+
+- `02-product/workflow-overview.md`
+- `02-product/module-map.md`
+- `03-system-design/multi-account-model.md`
+- `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+- `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+- current X monetization/policy research at `06-research/x-monetization-current.md` (must be created or refreshed before M11 entry)
+- M04 completion record in `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+- M10 completion record in `05-implementation-planning/milestone-10-truth-social-secondary.md` if Truth Social has been admitted
+- `99-decisions/research-log.md`
+- `99-decisions/decision-log.md`
+
+**Required outcome**
+
+Observations, correlations, hypotheses, experiments, and accepted conclusions remain distinct, account-scoped, and auditable.
+
+## M12 — Rich Editorial Workspaces
+
+Add deliberately admitted product packages: Reply Desk, Article Room, Asset Library, advanced calendar/pipeline interactions, richer search, saved views, and native operator productivity.
+
+**Milestone file**
+
+- `05-implementation-planning/milestone-12-rich-editorial-workspaces.md`
+
+**Governing documents**
+
+- `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
+- `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+- `02-product/module-map.md`
+- `02-product/workflow-overview.md`
+- `03-system-design/architecture-overview.md`
+- `03-system-design/multi-account-model.md`
+- M04 completion record in `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
+- M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
+- M06 completion record in `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md` where relevant
+- M11 completion record in `05-implementation-planning/milestone-11-metrics-ledger-learning.md`
+- `99-decisions/decision-log.md`
+
+**Required outcome**
+
+Each content package preserves account scope, exact approval, dependency, correction, publication, asset/evidence, and human-action boundaries.
+
+## M13 — No Coincidences Pattern Candidates
+
+Flag explainable entity/date/source/phrase/chronology overlaps without declaring truth.
+
+**Milestone file**
+
+- `05-implementation-planning/milestone-13-no-coincidences.md`
+
+**Governing documents**
+
+- `02-product/no-coincidences.md`
+- `03-system-design/obsidian-qdrant-sqlite-plan.md`
+- `05-implementation-planning/hammer-test-strategy.md`
+- M06 completion record in `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`
+- `03-system-design/multi-account-model.md`
+- D010 in `99-decisions/decision-log.md`
+- independent review at `08-audits/m13-no-coincidences-architecture-review.md` (must be created before accepting detector authority or cross-vault behavior)
+
+**Required outcome**
+
+Every candidate is explainable, provenance-bound, account-scoped, human-reviewed, and tested for false positives, non-detection, and detector failure.
+
+## M14 — Qdrant Semantic Retrieval
+
+Add semantic/hybrid retrieval only after a sufficient governed corpus and measured retrieval need exist.
+
+**Milestone file**
+
+- `05-implementation-planning/milestone-14-qdrant-retrieval.md`
+
+**Governing documents**
+
+- `03-system-design/obsidian-qdrant-sqlite-plan.md`
+- `03-system-design/multi-account-model.md`
+- `05-implementation-planning/hammer-test-strategy.md`
+- M06 completion record in `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`
+- accepted D024 in `99-decisions/decision-log.md`
+- current Qdrant official documentation/research package at `06-research/qdrant-capability-and-boundary-review.md` (must be created or refreshed before M14 entry)
+- fixed retrieval evaluation plan at `05-implementation-planning/m14-retrieval-evaluation-plan.md` and governed dataset at `05-implementation-planning/m14-retrieval-evaluation-dataset.md` (both must be created before M14 implementation)
+- independent Claude AI Qdrant architecture review at `08-audits/m14-qdrant-architecture-review.md` (must be created before M14 entry)
+
+**Required outcome**
+
+Retrieval quality is evaluated; every result traces to canonical records; account/vault isolation, deletion, correction, reindex, and fallback behavior are proven.
+
+## M15 — Hardening, Backup, Recovery, and Operator Runbook
+
+Prove whole-product recovery across SQLite, evidence, Tauri, capture, agent configuration, credentials, optional retrieval services, and any per-account vault architecture that has been owner-accepted and installed.
+
+**Milestone file**
+
+- `05-implementation-planning/milestone-15-hardening-recovery.md`
+
+**Governing documents**
+
+- `05-implementation-planning/hammer-test-strategy.md`
+- `05-implementation-planning/m02-migration-and-hammer-execution-plan.md`
+- `05-implementation-planning/m03-work-package-d-guarded-migrations-encrypted-archives-and-evidence-return.md`
+- `05-implementation-planning/m03-work-package-e-recovery-authority-mismatch-and-evidence-return.md`
+- completion records for installed components in their canonical milestone files: `05-implementation-planning/milestone-03-local-dashboard.md`, `05-implementation-planning/milestone-04-x-operations-and-metrics.md`, `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`, `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`, `05-implementation-planning/milestone-07-human-triggered-x-capture.md`, `05-implementation-planning/milestone-08-agent-neutral-interface.md`, `05-implementation-planning/milestone-09-hermes-release-watch-pilot.md`, `05-implementation-planning/milestone-10-truth-social-secondary.md`, `05-implementation-planning/milestone-11-metrics-ledger-learning.md`, `05-implementation-planning/milestone-12-rich-editorial-workspaces.md`, `05-implementation-planning/milestone-13-no-coincidences.md`, and `05-implementation-planning/milestone-14-qdrant-retrieval.md`
+- `03-system-design/multi-account-model.md`
+- accepted D024 in `99-decisions/decision-log.md`
+- current recovery research at `06-research/backup-recovery-current-options.md` and operating plan at `08-operations/m15-backup-recovery-operating-plan.md` (both must be created before M15 entry)
+- independent final recovery review at `08-audits/m15-recovery-readiness-review.md` (must be created before M15 closure)
+
+**Required outcome**
+
+Documented disaster drills succeed, modified evidence/backups fail closed, account boundaries survive restore, secrets remain protected, and the product operates without Hermes or Qdrant.
+
+# Feature Destination Map
+
+| Capability | Destination |
+|---|---|
+| Command Center, WIP, Ready-to-Post, Need-a-Post | M04; polished in M05/M12 |
+| Rolling 90-day scheduler and Reserve | M04; native drag/drop and advanced views M05/M12 |
+| Archive, Docket, Flash Release lanes | M04 |
+| Manual X publishing, reconciliation, manual metrics | M04 |
+| Tauri desktop product | M05 |
+| Per-account dossiers and Anomaly Vault under accepted D024 | M06, subject to M06 review and entry gate |
+| Human-triggered X capture | M07 |
+| Governed agent API/MCP | M08 |
+| Hermes and official-source Release Watch | M09 |
+| Truth Social | M10 |
+| Full metrics learning and monetization analysis | M11 |
+| Reply Desk, Article Room, Assets, advanced calendar/pipeline | M12 |
+| No Coincidences | M13 |
+| Account-scoped Qdrant retrieval under accepted D024 | M14, subject to M14 review and entry gate |
+| Full-system recovery | M15 |
+
+# Standard Entry Gate
+
+Before starting a milestone:
+
+1. previous required milestones are owner-accepted;
+2. the milestone file and every roadmap-listed governing document have been read;
+3. every listed path exists and superseded/stale references have been corrected;
+4. required research and policies are current;
+5. milestone scope and exclusions are explicit;
+6. authority, persistence, provider, platform, and destructive-action changes are owner-approved;
+7. hammer/adversarial requirements are defined for new durable state or authority;
+8. the repository is synchronized and the working tree is understood.
+
+# Standard Implementation Gate
+
+Before code changes:
+
+1. the coherent work package and files/components are identified;
+2. tests and evidence outputs are identified;
+3. newly discovered work is assigned to a named milestone or explicit amendment;
+4. no unrelated provider, platform, authority, or schema expansion is bundled silently;
+5. the milestone's Required Reading list still matches this roadmap.
+
+# Standard Exit Gate
+
+A milestone closes only when:
+
+1. the complete admitted operator capability works;
+2. happy-path and adversarial tests pass;
+3. authority bypass, malformed input, duplicate/retry, and failure behavior are proven;
+4. evidence is preserved and bound to the implementation commit;
+5. milestone, roadmap, status, map, decisions, and governing-document references are synchronized;
+6. Git status/diff are reviewed;
+7. the owner explicitly accepts closure.
+
+# Immediate Authorized Sequence
+
+1. M03 is accepted and closed;
+2. the roadmap revision, D023, and D024 are accepted;
+3. prepare the substantial M04 package and added adversarial matrix from the complete governing-document chain;
+4. obtain owner review of that exact M04 package before code implementation;
+5. implement M04 in a small number of coherent batches after authorization;
+6. validate and close M04;
+7. start Tauri M05.
+
+# D024 Roadmap Reference
+
+`D024 — Multi-Account Vault and Qdrant Isolation Direction` in `99-decisions/decision-log.md` is accepted as the governing direction for M06 and M14. Separate physical vaults per account, account-scoped collections, and fail-closed retrieval scope are accepted planning doctrine. Implementation remains blocked until each milestone's named independent review, exact design, hammer plan, and owner-controlled entry gate are satisfied.
+
+# Final Rule
+
+The complete product vision is preserved here. Sequencing is dependency control, not abandonment. Build meaningful capabilities, not ceremonial fragments, and never continue past a milestone boundary without its documented context chain.

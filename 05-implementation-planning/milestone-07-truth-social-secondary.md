@@ -1,36 +1,8 @@
-# Milestone 07 — Truth Social Secondary Launch
+# Superseded Milestone File
 
-## Status
-Not started.
+Superseded by the 2026-07-20 roadmap revision.
 
-## Goal
-Extend the stable Discrepancy Desk workflow to Truth Social without importing X assumptions.
+- M07 is now Human-Triggered X Capture: `milestone-07-human-triggered-x-capture.md`
+- Truth Social secondary workflow moved to M10: `milestone-10-truth-social-secondary.md`
 
-## Required Reading
-- `LLM_MAP.md`
-- `STATUS.md`
-- `05-implementation-planning/implementation-roadmap.md`
-- `06-research/truth-social-platform-research.md`
-- `06-research/truth-social-capture-boundaries.md`
-- `04-platform-rules/truth-social-account-rules.md`
-- `04-platform-rules/truth-social-automation-boundaries.md`
-- `01-brand/voice-and-style-guide.md`
-- M04 completion record
-
-## Entry Gate
-X workflow is stable; owner approves secondary launch; current Truth Social primary-source checks are complete.
-
-## Scope
-Account setup, platform-specific profile disclosure, human-reviewed post variants, manual official-UI/share-composer publishing, owned-post URL/ID records, manual metrics.
-
-## Out of Scope
-Undocumented APIs, Truth API licensing, automated reads/writes, scraping, third-party DOM extraction, bulk archival, synchronized engagement manipulation.
-
-## Required Evidence
-Policy checklist, account/profile review, manual publishing walkthrough, owned-post record proof, metrics-entry proof, rollback/stop procedure.
-
-## Exit Gate
-Truth Social can be operated manually without weakening X operations or project safety boundaries.
-
-## Completion Record
-Record date, evidence, deviations, recheck dates, and next action.
+Do not execute this legacy file.
