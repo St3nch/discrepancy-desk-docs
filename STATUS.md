@@ -16,7 +16,7 @@ M05 — Tauri Desktop Foundation and Product Parity
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized. The owner accepted `05-implementation-planning/m05-exact-tauri-technical-plan.md` and `05-implementation-planning/m05-adversarial-test-matrix.md` on 2026-07-20. Application work must remain inside their exact change surface, 77-invariant baseline, desktop security boundary, loopback sidecar model, Windows packaging/update boundary, and stop conditions.
+M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized under the owner-accepted exact technical plan and 77-invariant adversarial matrix. The first Package A batch is now in the application working tree: token-gated versioned desktop API mode, account-scoped health/query endpoints, deny-by-default Tauri configuration and capabilities, React/Vite shell, Rust backend-supervisor skeleton, reproducible npm lock resolution, security contract, and 12 focused adversarial tests. Ruff passes, the full Python suite reports 79 passed, and the production frontend build passes. Native Cargo/Tauri compilation remains unverified because the approved repository tool does not expose Cargo. The batch is uncommitted pending owner review.
 
 Application repository truth:
 
@@ -104,8 +104,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The current docs working tree contains only the prepared M05 technical package and its synchronized status references.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is committed and pushed at `479a4b6`; the current docs working tree records the first Package A implementation batch pending review.
 
 ## Next Bounded Action
 
-Owner review of `05-implementation-planning/m05-exact-tauri-technical-plan.md` and `05-implementation-planning/m05-adversarial-test-matrix.md`. Do not begin Tauri implementation until both are explicitly accepted.
+Review the first M05 Package A implementation batch. If accepted, checkpoint the application and synchronized docs changes, then continue with executable sidecar startup/health/shutdown and native-compilation validation.
