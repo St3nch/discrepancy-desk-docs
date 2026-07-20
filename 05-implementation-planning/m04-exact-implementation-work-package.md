@@ -59,6 +59,9 @@ The package must let the owner organize, schedule, review, manually publish, rec
 - `src/discrepancy_desk/templates/work_item.html`
 - `src/discrepancy_desk/templates/error.html`
 - `tests/conftest.py`
+- `tests/test_migration_archive_evidence.py` (owner-authorized amendment on 2026-07-20 for Alembic head `0004` regression expectation)
+- `tests/test_operator_service_loop.py` (owner-authorized amendment on 2026-07-20 for Alembic head `0004` regression expectation)
+- `tests/test_web_control_room.py` (owner-authorized amendment on 2026-07-20 for Alembic head `0004` health-page expectation)
 - `scripts/run_ht_evidence.py`
 - `docs/ht-coverage-ledger.md`
 

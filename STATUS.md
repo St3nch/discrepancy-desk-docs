@@ -16,7 +16,7 @@ M04 — Editorial Control Room and X Operating Workflow
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 implementation is authorized. The owner accepted `05-implementation-planning/m04-exact-implementation-work-package.md` and `05-implementation-planning/m04-adversarial-test-matrix.md` on 2026-07-20. Application work must remain inside their exact change surface, 60-invariant baseline, and stop conditions.
+M04 implementation is authorized. The owner accepted `05-implementation-planning/m04-exact-implementation-work-package.md` and `05-implementation-planning/m04-adversarial-test-matrix.md` on 2026-07-20. Package A now has a first implementation batch in the application working tree: migration `0004`, editorial organization, normalized tags, append-preserving schedule lineage, 90-day enforcement, dated targets, manual publication/reconciliation/metrics wrappers, and focused real-SQLite tests. Ruff passes and the full suite reports 60 passed. The batch remains uncommitted pending review. Application work must remain inside the accepted exact change surface, owner-authorized amendments, 60-invariant baseline, and stop conditions.
 
 Application repository truth:
 
@@ -104,8 +104,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is being checkpointed before application implementation begins.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. The current docs working tree records the owner-authorized Package A test-path amendment and live implementation status; it is uncommitted pending batch review.
 
 ## Next Bounded Action
 
-Checkpoint the accepted M04 planning package, then begin Package A implementation in the application repository within the exact accepted change surface and stop conditions.
+Review the first Package A implementation batch, including the owner-authorized regression-test amendment. If accepted, checkpoint the application and synchronized docs changes before continuing to the remaining M04 packages.
