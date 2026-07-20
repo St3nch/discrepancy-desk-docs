@@ -129,3 +129,5 @@ R-M06-09  Automation, Security, Backup, and Rebuild complete
 ```
 
 All nine reports are research material only. The owner must review and accept architecture options before synthesis becomes doctrine or implementation authority exists. Live audit prompts are supplied outside the repositories under `00-doctrine/audit-artifact-boundary.md`; only completed reports and dispositions belong in `08-audits/`.
+
+Independent review returned `RESEARCH PACKAGE READY WITH CORRECTIONS`. See `08-audits/claude-m06-research-program-independent-review.md`, `08-audits/ac02-m06-research-correction-disposition.md`, and `05-implementation-planning/m06-pre-synthesis-correction-specification.md`. The owner has accepted the M06-A local-only / M06-B bounded-web-retrieval package split; remaining architecture options are still open.

@@ -117,9 +117,9 @@ Qdrant stores points consisting of vectors plus optional payload metadata inside
 
 Qdrant generally recommends payload-based partitioning for many tenants and notes that separate collections can provide stronger isolation when the tenant count is limited, at greater resource cost.
 
-**ACCEPTED PROJECT DIRECTION**
+**ACCEPTED DECISION D024 — LEADING ISOLATION DIRECTION; FINAL M06 ARCHITECTURE PENDING OWNER SYNTHESIS**
 
-D024 favors separate physical Vaults and account-scoped Qdrant collections.
+D024 favors separate physical Vaults and account-scoped Qdrant collections. It does not by itself finalize the complete M06 retrieval or Qdrant architecture.
 
 **PROJECT RECOMMENDATION — OPTION FOR OWNER REVIEW**
 

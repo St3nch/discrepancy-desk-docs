@@ -14,27 +14,26 @@ M06 — Records, Dossiers, and Anomaly Vault (architecture research only)
 
 ## Current Focus
 
-M00 through M05 are owner-accepted and closed. Claude's independent post-M01 through M05 audit returned `ACCEPT WITH CORRECTIONS` with no blocking authority, account-isolation, loopback/token, audit-integrity, installer-preservation, or secret-hygiene defect.
+M00 through M05 are owner-accepted and closed. AC-01 is closed through application correction commit `17f40e3d18a58ac47b48933551a4044586d940aa`, application evidence-binding commit `6cbd036`, and docs closure commit `982bcf0`.
 
-AC-01 is closed through application correction commit `17f40e3d18a58ac47b48933551a4044586d940aa`, application evidence-binding commit `6cbd036`, and docs closure commit `982bcf0`.
-
-The M06 nine-report research program is complete:
+The complete nine-report M06 research program received independent Claude review with verdict:
 
 ```text
-R-M06-01  Source Universe and Admission Policy       complete
-R-M06-02  YouTube and Audiovisual Ingestion         complete
-R-M06-03  Website, Feed, and Change Monitoring      complete
-R-M06-04  Document Normalization and Provenance     complete
-R-M06-05  Canonical Vault and Knowledge Model       complete
-R-M06-06  Identity, Versioning, Correction, and Deduplication complete
-R-M06-07  LLM Context Assembly and Governed Reasoning complete
-R-M06-08  Retrieval, Chunking, Graph, and Qdrant Readiness complete
-R-M06-09  Automation, Security, Backup, and Rebuild complete
+RESEARCH PACKAGE READY WITH CORRECTIONS
 ```
 
-The research-leading directions include manual-first ingestion, exact original preservation, versioned normalized derivatives, separation of account policy from truth/support status and editorial usability, static structured LLM context packets, exact/lexical retrieval before semantic retrieval, Qdrant remaining deferred to M14, and canonical backup independent of providers and retrieval indexes. The multi-account note preserves the owner's requirement that claim-heavy and accuracy-focused accounts share system concepts without transferring conclusions, approvals, or uncertainty policy. None is selected or approved. Claude's independent research review is now the active gate before owner option review and architecture synthesis.
+No critical or high findings were reported. The review is preserved at `08-audits/claude-m06-research-program-independent-review.md`. AC-02 records nine bounded pre-synthesis corrections at `08-audits/ac02-m06-research-correction-disposition.md`, with the consolidated correction specification at `05-implementation-planning/m06-pre-synthesis-correction-specification.md`.
 
-M06 implementation, Qdrant, source monitors, media downloading, transcript-provider integration, and automated connectors remain blocked.
+The owner accepted one package-boundary decision:
+
+```text
+M06-A — Local Manual Vault
+M06-B — Bounded Static Webpage Retrieval
+```
+
+The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. M06-B is a later separately gated network/SSRF package. Neither is authorized for implementation.
+
+The active work is owner option review for the before-synthesis architecture decisions. Architecture synthesis, M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
 
 Application repository truth:
 
@@ -46,7 +45,7 @@ Hammer evidence SHA-256: baaba75a25125e9dde53bbf8255e13d1c4a6e4df66c20985b3857ba
 main synchronized with origin/main
 ```
 
-Current AC-01 correction baseline:
+Current AC-01 correction baseline remains documentary project evidence:
 
 ```text
 uv run ruff check .                                      → passed
@@ -115,16 +114,12 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ```text
 AC-01 closure: 982bcf0
-R-M06-01 research: d5d8b1d
-R-M06-02 research: e268fc8
-R-M06-03 research: 156519b
-R-M06-04 research: b576120
-R-M06-05 research: 2d31966
-R-M06-06 research and multi-account policy note: f1ce71f
+R-M06-01 through R-M06-06 and multi-account note: d5d8b1d through f1ce71f
 R-M06-07 through R-M06-09: 7f44f9c
-Audit prompt removed from repository by owner direction: pending current commit
+Audit-prompt boundary correction: 91146e4
+Claude M06 review, AC-02 correction package, and M06-A/M06-B split: pending current commit
 ```
 
 ## Next Bounded Action
 
-Provide the M06 independent-review assignment to Claude outside the repositories. Store only Claude's completed report and the resulting disposition records in `08-audits/`, following `00-doctrine/audit-artifact-boundary.md`. Do not begin M06 implementation, provider admission, parser selection, monitoring, cross-account transfer, LLM context implementation, Qdrant, or graph work.
+Conduct owner option review for the before-synthesis decisions in small groups. Record each ruling without beginning implementation. After the required rulings and AC-02 correction closure, author the M06 architecture synthesis for independent review. Do not begin M06-A or M06-B implementation.

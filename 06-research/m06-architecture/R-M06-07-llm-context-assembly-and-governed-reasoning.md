@@ -641,9 +641,9 @@ A tool call result may be operationally trusted as a response from the named too
 
 ## 9.1 Separate physical Vaults remain the baseline doctrine
 
-**ACCEPTED PROJECT DIRECTION**
+**ACCEPTED DECISION D024 — LEADING ISOLATION DIRECTION; FINAL M06 ARCHITECTURE PENDING OWNER SYNTHESIS**
 
-D024 favors separate physical Vaults and account-scoped retrieval.
+D024 favors separate physical Vaults and account-scoped retrieval. It does not by itself finalize the complete M06 Vault and context architecture.
 
 **PROJECT RECOMMENDATION**
 
