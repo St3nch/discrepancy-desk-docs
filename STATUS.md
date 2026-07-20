@@ -16,7 +16,7 @@ M05 — Tauri Desktop Foundation and Product Parity
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 is owner-accepted and closed as of 2026-07-20. M05 planning is active. Tauri implementation is not yet authorized; the exact M05 technical plan, desktop security boundary, local-backend connection model, packaging/update boundary, and adversarial matrix must be prepared and owner-reviewed first.
+M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized. The owner accepted `05-implementation-planning/m05-exact-tauri-technical-plan.md` and `05-implementation-planning/m05-adversarial-test-matrix.md` on 2026-07-20. Application work must remain inside their exact change surface, 77-invariant baseline, desktop security boundary, loopback sidecar model, Windows packaging/update boundary, and stop conditions.
 
 Application repository truth:
 
@@ -104,8 +104,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`; the current docs working tree records the final technical completion state pending explicit owner closure.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The current docs working tree contains only the prepared M05 technical package and its synchronized status references.
 
 ## Next Bounded Action
 
-Prepare the exact M05 Tauri technical plan, security boundary, packaging/update plan, and adversarial test matrix. Do not begin Tauri implementation until the owner accepts that package.
+Owner review of `05-implementation-planning/m05-exact-tauri-technical-plan.md` and `05-implementation-planning/m05-adversarial-test-matrix.md`. Do not begin Tauri implementation until both are explicitly accepted.

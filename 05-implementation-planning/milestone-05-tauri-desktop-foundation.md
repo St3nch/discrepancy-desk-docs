@@ -1,7 +1,7 @@
 # Milestone 05 — Tauri Desktop Foundation and Product Parity
 
 ## Status
-Planning active. M04 is owner-accepted and closed. Tauri implementation remains blocked until the exact M05 technical plan, security boundary, and adversarial test matrix are prepared and owner-reviewed.
+Implementation active. M04 is owner-accepted and closed. The owner accepted the exact M05 technical plan and 77-invariant adversarial matrix on 2026-07-20. Implementation must remain inside their fixed change surface, security boundary, packaging boundary, and stop conditions.
 
 ## Required Reading
 - `LLM_MAP.md`
