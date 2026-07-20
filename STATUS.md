@@ -4,7 +4,7 @@
 
 ## Current Mode
 
-Post-M05 independent audit and M06 Vault/ingestion architecture research.
+M06 Vault and ingestion architecture research.
 
 ## Active Milestone
 
@@ -14,24 +14,36 @@ M06 — Records, Dossiers, and Anomaly Vault (architecture research only)
 
 ## Current Focus
 
-M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
+M00 through M05 are owner-accepted and closed. Claude's independent post-M01 through M05 audit returned `ACCEPT WITH CORRECTIONS` with no blocking authority, account-isolation, loopback/token, audit-integrity, installer-preservation, or secret-hygiene defect.
 
-M04 and M05 are owner-accepted and closed as of 2026-07-20. M05 closure is bound to application commits `31d7a70` and `529052b` and docs commit `9b9d770`. The project is now in the owner-authorized M05-to-M06 transition: an independent Claude audit must inspect all accepted work since the preserved M01 audit, accepted findings must be corrected and revalidated, and a nine-report deep-research program must establish the governed Vault and manual-first/future-automated ingestion architecture. M06 implementation, Qdrant, source monitors, and automated connectors remain blocked. The controlling transition plan is `05-implementation-planning/m05-to-m06-transition-audit-and-research-plan.md`.
+AC-01 is closed through application correction commit `17f40e3d18a58ac47b48933551a4044586d940aa`, application evidence-binding commit `6cbd036`, and docs closure commit `982bcf0`.
+
+The M06 nine-report research program is active:
+
+```text
+R-M06-01  Source Universe and Admission Policy       complete
+R-M06-02  YouTube and Audiovisual Ingestion         complete
+R-M06-03  Website, Feed, and Change Monitoring      next
+R-M06-04 through R-M06-09                           not started
+```
+
+R-M06-02 recommends a manual-first workflow consisting of a YouTube URL plus a pasted or uploaded transcript, exact preservation of the supplied artifact, explicit transcript provenance, normalized timestamps/segments, and human admission review. Official YouTube metadata, transcript SaaS, local speech-to-text, channel notifications, visual analysis, and automated acquisition remain separate future instruments requiring individual admission gates.
+
+M06 implementation, Qdrant, source monitors, media downloading, transcript-provider integration, and automated connectors remain blocked.
 
 Application repository truth:
 
 ```text
-HEAD 529052b — Bind M05 closure evidence
-Implementation commit: 31d7a7001e72e7477e6a38cb2e7c3ee9d099197c
-Hammer evidence SHA-256: e3c59481d3fd7b8163828e5cc97f6f26ac359d086c481e41ec5cfb5bc2c6fc20
+HEAD 6cbd036 — Bind AC-01 correction evidence
+AC-01 implementation commit: 17f40e3d18a58ac47b48933551a4044586d940aa
+Full-suite evidence SHA-256: 78fc6073c087eb35f404b57030137d8a2c9e51b28f8da4c903812f2a64b40796
+Hammer evidence SHA-256: baaba75a25125e9dde53bbf8255e13d1c4a6e4df66c20985b3857bad1c898dbf
 main synchronized with origin/main
 ```
 
 Current AC-01 correction baseline:
 
 ```text
-Application implementation commit                       → 17f40e3d18a58ac47b48933551a4044586d940aa
-Application evidence-binding commit                     → 6cbd036
 uv run ruff check .                                      → passed
 uv run pytest -o addopts= --disable-warnings -q          → 104 passed
 Rust tests                                               → 3 passed
@@ -39,8 +51,6 @@ frontend production build                               → passed
 packaged sidecar build                                   → passed
 scripts/run_ht_evidence.py                               → 31 executed, 31 passed, 0 failed
 HT-14                                                    → deferred by approved scope
-full-suite evidence SHA-256                              → 78fc6073c087eb35f404b57030137d8a2c9e51b28f8da4c903812f2a64b40796
-hammer evidence SHA-256                                  → baaba75a25125e9dde53bbf8255e13d1c4a6e4df66c20985b3857bad1c898dbf
 ```
 
 ## Accepted Roadmap
@@ -83,21 +93,6 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - account-scoped Qdrant collections and fail-closed retrieval under D024;
 - M06 and M14 implementation still require their named independent reviews and entry gates.
 
-## M03 Closure Evidence
-
-- physical SQLite/Alembic implementation;
-- guarded migrations and dirty-state recovery;
-- exact revision and approval binding;
-- verified evidence references;
-- idempotency and transaction behavior;
-- append-only hash-chained audit events;
-- manual-ready and publication reconciliation;
-- mismatch, successor revision, and replacement publication lineage;
-- manual metric observation states;
-- backup/restore and three-way reconciliation proof;
-- thin FastAPI/Jinja operator harness;
-- executable HT evidence bound to the implementation commit.
-
 ## Hard Boundaries
 
 - No autonomous posting, replies, likes, follows, reposts, or DMs.
@@ -108,12 +103,17 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - No agent/LLM direct database access.
 - No agent self-approval, accepted-truth promotion, publication authority, or evidence deletion.
 - No provider/platform/source watcher admitted without its milestone gate and owner approval.
+- No arbitrary YouTube media downloading or generic caption scraping.
 - Truth Social remains manual-only under D014.
 
-## Docs Working Tree
+## Docs Repository Truth
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is pushed at `479a4b6`; all M05 implementation, packaging, installed lifecycle proof, and evidence-binding checkpoints are pushed through application commit `529052b`, with owner closure recorded in the current transition package. The docs working tree now establishes the mandatory independent audit and M06 dual-track deep-research program.
+```text
+AC-01 closure: 982bcf0
+R-M06-01 research: d5d8b1d
+R-M06-02 research: pending current commit
+```
 
 ## Next Bounded Action
 
-Run the independent Claude audit from `08-audits/claude-post-m01-through-m05-independent-audit-prompt.md`. Record and correct accepted findings, rerun affected validation, and then execute the nine-report M06 Vault and ingestion research program. Do not begin M06 implementation.
+Execute `R-M06-03 — Website, Feed, and Change Monitoring`. Do not begin M06 implementation, crawling, monitoring, transcript-provider integration, media acquisition, or Qdrant work.

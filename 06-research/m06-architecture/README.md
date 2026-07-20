@@ -47,7 +47,7 @@ The same governed ingestion package must support manual acquisition now and auto
 
 ```text
 R-M06-01-source-universe-and-admission-policy.md — completed 2026-07-20
-R-M06-02-youtube-audiovisual-ingestion.md
+R-M06-02-youtube-audiovisual-ingestion.md — completed 2026-07-20
 R-M06-03-website-feed-and-change-monitoring.md
 R-M06-04-document-normalization-and-parser-provenance.md
 R-M06-05-canonical-vault-knowledge-model.md
@@ -118,8 +118,9 @@ Independent Claude review and explicit owner acceptance are required before M06 
 
 ```text
 R-M06-01  Source Universe and Admission Policy  complete
-R-M06-02  YouTube and Audiovisual Ingestion    next
-R-M06-03 through R-M06-09                      not started
+R-M06-02  YouTube and Audiovisual Ingestion    complete
+R-M06-03  Website, Feed, and Change Monitoring next
+R-M06-04 through R-M06-09                      not started
 ```
 
 R-M06-01 is research material only. Its recommendations require architecture synthesis and owner acceptance before implementation.
