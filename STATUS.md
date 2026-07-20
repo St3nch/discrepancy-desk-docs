@@ -4,7 +4,7 @@
 
 ## Current Mode
 
-M04 planning and exact work-package preparation.
+M04 implementation under the accepted exact work package.
 
 ## Active Milestone
 
@@ -16,7 +16,7 @@ M04 — Editorial Control Room and X Operating Workflow
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 planning is active. Code implementation is not yet authorized. The exact M04 work package and added adversarial matrix must be prepared and owner-reviewed before implementation begins.
+M04 implementation is authorized. The owner accepted `05-implementation-planning/m04-exact-implementation-work-package.md` and `05-implementation-planning/m04-adversarial-test-matrix.md` on 2026-07-20. Application work must remain inside their exact change surface, 60-invariant baseline, and stop conditions.
 
 Application repository truth:
 
@@ -42,7 +42,7 @@ M00  Planning Foundation — complete
 M01  X Identity/Policy/API Probe — complete
 M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
-M04  Editorial Control Room and X Operating Workflow — planning active
+M04  Editorial Control Room and X Operating Workflow — implementation active
 M05  Tauri Desktop Foundation and Product Parity
 M06  Records, Dossiers, and Anomaly Vault
 M07  Human-Triggered X Capture Helper
@@ -104,8 +104,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap package remains uncommitted and unstaged. Do not claim it is committed or pushed until staged-diff review, explicit commit approval, commit, and push are complete.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is being checkpointed before application implementation begins.
 
 ## Next Bounded Action
 
-Prepare the exact substantial M04 implementation package and added adversarial matrix from the accepted governing-document chain. Do not begin M04 code implementation until that package is owner-reviewed.
+Checkpoint the accepted M04 planning package, then begin Package A implementation in the application repository within the exact accepted change surface and stop conditions.

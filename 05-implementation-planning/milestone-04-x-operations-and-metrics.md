@@ -2,7 +2,7 @@
 
 ## Status
 
-Planning active. The roadmap ruling is owner-accepted and M03 is closed. Code implementation remains blocked until the exact M04 work package and added adversarial matrix are prepared and owner-reviewed.
+Implementation active. The owner accepted the exact M04 work package and 60-invariant adversarial matrix on 2026-07-20. Work may proceed only within those accepted documents and their stop conditions.
 
 ## Goal
 
@@ -28,6 +28,8 @@ Deliver a substantial functional editorial operating system in the existing Fast
 - `05-implementation-planning/m03-work-package-i-hammer-closure-review-return.md`
 - application repo: `docs/m03-exit-gate-review.md`
 - accepted D023 and D024 in `99-decisions/decision-log.md`
+- `05-implementation-planning/m04-exact-implementation-work-package.md`
+- `05-implementation-planning/m04-adversarial-test-matrix.md`
 
 ## Entry Gate
 
