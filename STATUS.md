@@ -27,13 +27,20 @@ Hammer evidence SHA-256: e3c59481d3fd7b8163828e5cc97f6f26ac359d086c481e41ec5cfb5
 main synchronized with origin/main
 ```
 
-M03 validation:
+Current AC-01 correction baseline:
 
 ```text
-uv run ruff check .          → passed
-uv run pytest                → 54 passed
-scripts/run_ht_evidence.py   → 19 executed, 19 passed, 0 failed
-HT-14                        → deferred by approved scope
+Application implementation commit                       → 17f40e3d18a58ac47b48933551a4044586d940aa
+Application evidence-binding commit                     → 6cbd036
+uv run ruff check .                                      → passed
+uv run pytest -o addopts= --disable-warnings -q          → 104 passed
+Rust tests                                               → 3 passed
+frontend production build                               → passed
+packaged sidecar build                                   → passed
+scripts/run_ht_evidence.py                               → 31 executed, 31 passed, 0 failed
+HT-14                                                    → deferred by approved scope
+full-suite evidence SHA-256                              → 78fc6073c087eb35f404b57030137d8a2c9e51b28f8da4c903812f2a64b40796
+hammer evidence SHA-256                                  → baaba75a25125e9dde53bbf8255e13d1c4a6e4df66c20985b3857bad1c898dbf
 ```
 
 ## Accepted Roadmap
@@ -44,7 +51,7 @@ M01  X Identity/Policy/API Probe — complete
 M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
-M05  Tauri Desktop Foundation and Product Parity — complete
+M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
 M06  Records, Dossiers, and Anomaly Vault — architecture research active; implementation blocked
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface

@@ -2,13 +2,13 @@
 
 ## Status
 
-Owner-approved conceptual lifecycle model as of 2026-07-19. No physical schema or implementation is authorized.
+Owner-approved lifecycle doctrine, reconciled to the accepted implementation after the post-M05 independent audit on 2026-07-20. The implemented transition table is the current operational contract; dedicated governed operations remain required for approval, manual-ready, publication, and publication-mismatch authority.
 
 ## Purpose
 
 Define the smallest lifecycle required to move a captured Discrepancy Desk item through drafting, exact human approval, manual publication, and later metric observation without allowing illegal jumps, stale approval, silent mutation, or ambiguous failure.
 
-State names are conceptual. They do not approve database values, enums, tables, columns, constraints, triggers, application code, or UI behavior.
+State names originated as conceptual planning vocabulary. After M03–M05 implementation and owner acceptance, the legal transition set below now records the accepted operational behavior. Any future change requires an explicit decision, matching implementation, adversarial tests, and documentation update.
 
 ## Governing Rules
 
@@ -109,62 +109,62 @@ The underlying historical state remains auditable, but progression is blocked un
 
 ## Legal Work-Item Transitions
 
-The minimal legal transition set is:
+The accepted implemented transition set is:
 
 ```text
 captured → research_needed
 captured → research_ready
 captured → drafting
+captured → withdrawn
 
 research_needed → research_ready
 research_needed → withdrawn
 
 research_ready → drafting
-research_ready → research_needed
 research_ready → withdrawn
 
 drafting → human_review_needed
-drafting → research_needed
 drafting → withdrawn
 
 human_review_needed → approved
 human_review_needed → rejected
 human_review_needed → drafting
-human_review_needed → research_needed
 human_review_needed → evidence_blocked
 
 approved → manual_ready
 approved → human_review_needed
-approved → withdrawn
 approved → evidence_blocked
+approved → withdrawn
 
 manual_ready → published
 manual_ready → human_review_needed
-manual_ready → withdrawn
 manual_ready → publication_mismatch
 manual_ready → evidence_blocked
+manual_ready → withdrawn
 
 rejected → drafting
-rejected → research_needed
-rejected → withdrawn
+withdrawn → drafting
 
 publication_mismatch → human_review_needed
-publication_mismatch → evidence_blocked
-publication_mismatch → withdrawn
 
-evidence_blocked → prior valid non-published state after explicit reconciliation
-evidence_blocked → withdrawn
+evidence_blocked → human_review_needed
+evidence_blocked → drafting
 ```
 
-A transition out of `evidence_blocked` must record:
+Authority-bearing targets remain unavailable through the generic transition operation:
 
-- the blocking condition;
-- reconciliation evidence;
-- the human or governed process authorizing release;
-- the exact restored state;
-- a new audit event.
+```text
+approved
+manual_ready
+published
+publication_mismatch
+```
 
-The system must not guess the prior valid state.
+Those targets require their dedicated governed operations and prerequisites. The previously documented but unimplemented fallback transitions to `research_needed` and `withdrawn` were removed from doctrine during the post-M05 reconciliation rather than being silently added to code. The inert `publication_mismatch → published` table entry was removed from implementation because a mismatch cannot become a successful publication without a new governed correction/revision path.
+
+`captured → withdrawn` is explicitly accepted: the owner may end a newly captured item before research or drafting without fabricating intermediate work.
+
+A future generalized reconciliation operation for `evidence_blocked` is not admitted. The only current recovery paths return to `human_review_needed` or `drafting`, with audit history preserved.
 
 ## Published-State Rules
 

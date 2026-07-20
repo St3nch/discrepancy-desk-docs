@@ -55,9 +55,9 @@ The docs repo defines what should be built. The app repo contains implementation
 
 ## Current Project Mode
 
-M03 is owner-accepted and closed. The application exists and passed its recorded M03 technical exit gate.
+M00 through M05 are owner-accepted and closed. Claude's independent post-M01 through M05 audit returned `ACCEPT WITH CORRECTIONS` with no blocking authority or security defect. AC-01 is the active bounded correction package.
 
-The owner accepted the full editorial-product roadmap revision covering M04–M15 on 2026-07-20. M04 planning is active, but code implementation remains blocked until the exact M04 work package and added adversarial matrix are prepared and owner-reviewed. Read `STATUS.md`, the roadmap, and the roadmap ruling before making milestone claims.
+M06 Vault and ingestion architecture research is authorized only after AC-01 closes. M06 implementation, source connectors, scheduled monitors, and Qdrant remain blocked pending the nine-report research program, synthesis, independent architecture review, and explicit owner approval. Read `STATUS.md`, the transition plan, and the roadmap before making milestone claims.
 
 ## Read Order for LLMs
 
@@ -167,7 +167,7 @@ Docs:
 
 ### Anomaly Vault
 
-Research memory layer. Likely Obsidian-compatible. Stores sources, claims, entities, notes, topic trails, and future post ideas.
+Research memory layer. Governed research-memory subsystem. Its exact canonical formats, ingestion boundary, projections, and future retrieval contract are under M06 research; Obsidian is not an architectural requirement.
 
 Docs:
 
@@ -219,7 +219,7 @@ A separate helper repo, `C:\dev\gpt-mcp`, is planned to expose safe filesystem/G
 
 Docs:
 
-- `08-operations/mcp-tooling-plan.md`
+- `09-operations/mcp-tooling-plan.md`
 - `07-prompts/claude-mcp-research-prompt.md`
 
 ## Important Implementation Rule

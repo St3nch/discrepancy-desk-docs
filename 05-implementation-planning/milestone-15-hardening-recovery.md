@@ -14,7 +14,7 @@ Not started.
 - completion records for installed components in their canonical milestone files: `05-implementation-planning/milestone-03-local-dashboard.md`, `05-implementation-planning/milestone-04-x-operations-and-metrics.md`, `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`, `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`, `05-implementation-planning/milestone-07-human-triggered-x-capture.md`, `05-implementation-planning/milestone-08-agent-neutral-interface.md`, `05-implementation-planning/milestone-09-hermes-release-watch-pilot.md`, `05-implementation-planning/milestone-10-truth-social-secondary.md`, `05-implementation-planning/milestone-11-metrics-ledger-learning.md`, `05-implementation-planning/milestone-12-rich-editorial-workspaces.md`, `05-implementation-planning/milestone-13-no-coincidences.md`, and `05-implementation-planning/milestone-14-qdrant-retrieval.md`
 - `03-system-design/multi-account-model.md`
 - accepted D024 in `99-decisions/decision-log.md`
-- `06-research/backup-recovery-current-options.md` and `08-operations/m15-backup-recovery-operating-plan.md` (both must be created or refreshed before M15 entry)
+- `06-research/backup-recovery-current-options.md` and `09-operations/m15-backup-recovery-operating-plan.md` (both must be created or refreshed before M15 entry)
 - `08-audits/m15-recovery-readiness-review.md` (must be created before closure)
 
 ## Goal
