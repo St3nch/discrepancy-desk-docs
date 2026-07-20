@@ -16,14 +16,14 @@ M04 — Editorial Control Room and X Operating Workflow
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 implementation is authorized. The owner accepted `05-implementation-planning/m04-exact-implementation-work-package.md` and `05-implementation-planning/m04-adversarial-test-matrix.md` on 2026-07-20. Package A now has a first implementation batch in the application working tree: migration `0004`, editorial organization, normalized tags, append-preserving schedule lineage, 90-day enforcement, dated targets, manual publication/reconciliation/metrics wrappers, and focused real-SQLite tests. Ruff passes and the full suite reports 60 passed. The batch remains uncommitted pending review. Application work must remain inside the accepted exact change surface, owner-authorized amendments, 60-invariant baseline, and stop conditions.
+M04 implementation is authorized. The owner accepted `05-implementation-planning/m04-exact-implementation-work-package.md` and `05-implementation-planning/m04-adversarial-test-matrix.md` on 2026-07-20. Package A’s persistence/service batch is committed and pushed at `95fb1ef`; the read-only derived-query layer is committed and pushed at `bd2efdb`. A larger Package B web-control-room batch is now in the application working tree: account-scoped Command Center, schedule and pipeline views, Unscheduled Reserve, Ready-to-Post and Need-a-Post presentation, editorial organization/tagging/scheduling controls, state-aware work-item detail, and trustworthy operator errors. Ruff passes and the full suite reports 66 passed. The Package B batch remains uncommitted pending review. Application work must remain inside the accepted exact change surface, owner-authorized amendments, 60-invariant baseline, and stop conditions.
 
 Application repository truth:
 
 ```text
-HEAD 08ce68212923bc903d12bb21ab301fb342c170b6
-08ce682 — Add executable M03 hammer closure evidence
-main synchronized with origin/main
+HEAD bd2efdb — Add M04 editorial query layer
+Prior accepted M04 persistence/service checkpoint: 95fb1ef
+main synchronized with origin/main before the current Package B working-tree batch
 ```
 
 M03 validation:
