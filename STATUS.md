@@ -16,14 +16,14 @@ M05 — Tauri Desktop Foundation and Product Parity
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized under the owner-accepted exact technical plan and 77-invariant adversarial matrix. The first Package A security-foundation batch is accepted, committed, and pushed at `a46d5fb`. The next lifecycle batch is now in the application working tree: executable desktop-backend entrypoint, environment-only loopback/token/path configuration, dynamic loopback port reservation, authenticated health polling, application-data database/evidence placement, packaged migration-resource path, early-exit/timeout refusal, desktop-exit child cleanup, and a real disposable subprocess proof. Ruff passes, 17 focused M05 tests pass, and the full Python suite reports 84 passed. Native Cargo/Tauri compilation remains unverified because the approved repository tool does not expose Cargo. The lifecycle batch is uncommitted pending owner review.
+M04 is owner-accepted and closed as of 2026-07-20. M05 implementation is authorized under the owner-accepted exact technical plan and 77-invariant adversarial matrix. The security-foundation batch is accepted and pushed at `a46d5fb`; the executable backend-lifecycle batch is accepted and pushed at `37a1ec2`. A native-validation batch is now in the application working tree: required Windows icon resources, successful Tauri release compilation, Rust/Cargo/MSVC/WebView2 toolchain verification, three real Rust unit tests, generated-output exclusion tests, and an updated desktop security contract. Ruff passes, 21 focused M05 tests pass, the full Python suite reports 88 passed, `tauri build --no-bundle` passes, and Cargo reports 3 passed. NSIS installer and packaged sidecar execution remain unproven. The native-validation batch is uncommitted pending owner review.
 
 Application repository truth:
 
 ```text
-HEAD a46d5fb — Establish M05 desktop security foundation
+HEAD 37a1ec2 — Complete M05 backend lifecycle boundary
 Accepted M05 plan checkpoint: 479a4b6 in the docs repository
-main synchronized with origin/main before the current lifecycle working-tree batch
+main synchronized with origin/main before the current native-validation working-tree batch
 ```
 
 M03 validation:
@@ -104,8 +104,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is committed and pushed at `479a4b6`; the accepted M05 security-foundation batch is pushed at `a46d5fb`. The current docs working tree records the lifecycle batch pending review.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`. The accepted M05 planning package is pushed at `479a4b6`; accepted M05 implementation checkpoints are pushed at `a46d5fb` and `37a1ec2`. The current docs working tree records the native-validation batch pending review.
 
 ## Next Bounded Action
 
-Review the M05 lifecycle batch. If accepted, checkpoint it before continuing to native Cargo/Tauri compilation and the remaining Package A closure gates.
+Review the M05 native-validation batch. If accepted, checkpoint it before beginning packaged Python sidecar construction, desktop mutation parity, and NSIS installer proof.
