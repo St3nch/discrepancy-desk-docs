@@ -233,4 +233,39 @@ All tests and admitted hammer evidence pass; docs and status are synchronized; r
 
 ## Completion Record
 
-Record date, implementation commit, test commands/results, hammer evidence path/hash, accepted deviations, unresolved later work, and owner acceptance.
+Prepared on 2026-07-20.
+
+Application implementation commits:
+
+```text
+95fb1ef — Implement M04 editorial scheduling contract
+bd2efdb — Add M04 editorial query layer
+55a276e — Build M04 functional control room
+1455433 — Prove M04 editorial operating workflow
+770a6bb — Bind M04 closure evidence to implementation
+```
+
+Final technical validation:
+
+```text
+uv run ruff check .                         passed
+uv run pytest -q                            67 passed
+uv run python scripts/run_ht_evidence.py    25 executed, 25 passed, 0 failed
+Inherited HT-14 scope deferral              1
+```
+
+Final runtime evidence:
+
+```text
+runtime/ht-evidence/latest-ht-evidence.json
+SHA-256 fcf6842ab088fa99adc4e6cc3ad2f9fb0c1330dff3a95ff614c8df0c1c54729c
+Bound implementation commit 1455433ddee69d52b1dc67367a532b594a4a1a6c
+```
+
+Accepted deviation:
+
+- HT-14 remains an inherited scope deferral because mention classification is not admitted in M04.
+
+Unresolved later work remains assigned to later milestones, including Tauri productization, capture helper, agent interface, Release Watch, Truth Social, dossiers, Qdrant, richer editorial workspaces, and hardening beyond the M04 boundary.
+
+M04 is technically complete. Final milestone closure requires explicit owner acceptance after repository synchronization is verified.

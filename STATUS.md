@@ -16,14 +16,14 @@ M04 — Editorial Control Room and X Operating Workflow
 
 M03 is owner-accepted and closed. The full editorial-product roadmap, D023, and D024 were accepted by the owner on 2026-07-20.
 
-M04 implementation is authorized. The owner accepted `05-implementation-planning/m04-exact-implementation-work-package.md` and `05-implementation-planning/m04-adversarial-test-matrix.md` on 2026-07-20. Package A’s persistence/service batch is committed and pushed at `95fb1ef`; the read-only derived-query layer is committed and pushed at `bd2efdb`. A larger Package B web-control-room batch is now in the application working tree: account-scoped Command Center, schedule and pipeline views, Unscheduled Reserve, Ready-to-Post and Need-a-Post presentation, editorial organization/tagging/scheduling controls, state-aware work-item detail, and trustworthy operator errors. Ruff passes and the full suite reports 66 passed. The Package B batch remains uncommitted pending review. Application work must remain inside the accepted exact change surface, owner-authorized amendments, 60-invariant baseline, and stop conditions.
+M04 is technically complete and awaiting explicit owner closure acceptance. Packages A, the query layer, B, and C are accepted and pushed. Final application commits include `1455433` for the operating proof and `770a6bb` for the evidence-binding record. Ruff passes, the full suite reports 67 passed, and the executable hammer run reports 25 executed, 25 passed, 0 failed, with one inherited scope deferral. Final runtime evidence SHA-256 is `fcf6842ab088fa99adc4e6cc3ad2f9fb0c1330dff3a95ff614c8df0c1c54729c`, bound to implementation commit `1455433ddee69d52b1dc67367a532b594a4a1a6c`.
 
 Application repository truth:
 
 ```text
-HEAD bd2efdb — Add M04 editorial query layer
-Prior accepted M04 persistence/service checkpoint: 95fb1ef
-main synchronized with origin/main before the current Package B working-tree batch
+HEAD 770a6bb — Bind M04 closure evidence to implementation
+Implementation evidence bound to 1455433ddee69d52b1dc67367a532b594a4a1a6c
+main synchronized with origin/main
 ```
 
 M03 validation:
@@ -42,7 +42,7 @@ M00  Planning Foundation — complete
 M01  X Identity/Policy/API Probe — complete
 M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
-M04  Editorial Control Room and X Operating Workflow — implementation active
+M04  Editorial Control Room and X Operating Workflow — technically complete; closure acceptance pending
 M05  Tauri Desktop Foundation and Product Parity
 M06  Records, Dossiers, and Anomaly Vault
 M07  Human-Triggered X Capture Helper
@@ -104,8 +104,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 
 ## Docs Working Tree
 
-The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. The current docs working tree records the owner-authorized Package A test-path amendment and live implementation status; it is uncommitted pending batch review.
+The accepted roadmap/M03 closure package is committed and pushed at `c54706b214249313c0dda9aae18d2d5fb6efebb5`. The accepted M04 planning package is committed and pushed at `ca99dcf`. All M04 implementation and evidence-binding checkpoints are pushed through `770a6bb`; the current docs working tree records the final technical completion state pending explicit owner closure.
 
 ## Next Bounded Action
 
-Review the first Package A implementation batch, including the owner-authorized regression-test amendment. If accepted, checkpoint the application and synchronized docs changes before continuing to the remaining M04 packages.
+Verify both repositories are clean and synchronized, then request explicit owner acceptance to close M04 and authorize M05 planning.
