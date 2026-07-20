@@ -128,4 +128,4 @@ R-M06-08  Retrieval, Chunking, Graph, and Qdrant Readiness complete
 R-M06-09  Automation, Security, Backup, and Rebuild complete
 ```
 
-All nine reports are research material only. The owner must review and accept architecture options before synthesis becomes doctrine or implementation authority exists. Independent Claude review is prepared at `08-audits/claude-m06-research-program-independent-review-prompt.md`.
+All nine reports are research material only. The owner must review and accept architecture options before synthesis becomes doctrine or implementation authority exists. Live audit prompts are supplied outside the repositories under `00-doctrine/audit-artifact-boundary.md`; only completed reports and dispositions belong in `08-audits/`.

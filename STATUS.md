@@ -121,9 +121,10 @@ R-M06-03 research: 156519b
 R-M06-04 research: b576120
 R-M06-05 research: 2d31966
 R-M06-06 research and multi-account policy note: f1ce71f
-R-M06-07 through R-M06-09 and Claude review prompt: pending current commit
+R-M06-07 through R-M06-09: 7f44f9c
+Audit prompt removed from repository by owner direction: pending current commit
 ```
 
 ## Next Bounded Action
 
-Run Claude's independent review from `08-audits/claude-m06-research-program-independent-review-prompt.md`. Record the report and corrections, then present the owner decision matrix. Do not begin M06 implementation, provider admission, parser selection, monitoring, cross-account transfer, LLM context implementation, Qdrant, or graph work.
+Provide the M06 independent-review assignment to Claude outside the repositories. Store only Claude's completed report and the resulting disposition records in `08-audits/`, following `00-doctrine/audit-artifact-boundary.md`. Do not begin M06 implementation, provider admission, parser selection, monitoring, cross-account transfer, LLM context implementation, Qdrant, or graph work.
