@@ -23,11 +23,12 @@ The M06 nine-report research program is active:
 ```text
 R-M06-01  Source Universe and Admission Policy       complete
 R-M06-02  YouTube and Audiovisual Ingestion         complete
-R-M06-03  Website, Feed, and Change Monitoring      next
-R-M06-04 through R-M06-09                           not started
+R-M06-03  Website, Feed, and Change Monitoring      complete
+R-M06-04  Document Normalization and Provenance     next
+R-M06-05 through R-M06-09                           not started
 ```
 
-R-M06-02 recommends a manual-first workflow consisting of a YouTube URL plus a pasted or uploaded transcript, exact preservation of the supplied artifact, explicit transcript provenance, normalized timestamps/segments, and human admission review. Official YouTube metadata, transcript SaaS, local speech-to-text, channel notifications, visual analysis, and automated acquisition remain separate future instruments requiring individual admission gates.
+R-M06-02 recommends a manual-first YouTube workflow consisting of a URL plus a pasted or uploaded transcript, exact preservation, explicit provenance, normalized timestamps/segments, and human review. R-M06-03 compares paste-only webpage intake, bounded single-page retrieval, feeds, monitoring, provider-assisted extraction, and rendered-browser capture. None is selected or approved. Every option remains subject to owner review during architecture synthesis before implementation authority can exist.
 
 M06 implementation, Qdrant, source monitors, media downloading, transcript-provider integration, and automated connectors remain blocked.
 
@@ -111,9 +112,10 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 ```text
 AC-01 closure: 982bcf0
 R-M06-01 research: d5d8b1d
-R-M06-02 research: pending current commit
+R-M06-02 research: e268fc8
+R-M06-03 research: pending current commit
 ```
 
 ## Next Bounded Action
 
-Execute `R-M06-03 — Website, Feed, and Change Monitoring`. Do not begin M06 implementation, crawling, monitoring, transcript-provider integration, media acquisition, or Qdrant work.
+Execute `R-M06-04 — Document Normalization and Parser Provenance`. Do not begin M06 implementation, crawling, monitoring, transcript-provider integration, media acquisition, parser selection, or Qdrant work.
