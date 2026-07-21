@@ -2,11 +2,11 @@
 
 ## Status
 
-Preparation authorized on 2026-07-21. Planning only; implementation remains blocked.
+Completed and owner-accepted on 2026-07-21 through D028. This is a planning baseline only; implementation remains blocked pending separate explicit authorization.
 
 ## Required Planning Artifacts
 
-The exact M06-A planning package must contain:
+The owner-accepted M06-A planning package contains:
 
 1. **Physical schema proposal**
    - account-scoped SQLite object families;
@@ -22,7 +22,7 @@ The exact M06-A planning package must contain:
    - compatibility with existing M00-M05 data.
 
 3. **Vault filesystem and package layout**
-   - one physical Vault root per account;
+   - one physical Vault root per editorial/public brand identity, with platform-owned accounts bound centrally;
    - immutable originals;
    - normalized JSON element packages;
    - manifests, hashes, projections, temp paths, and backup generations;
@@ -66,10 +66,23 @@ The exact M06-A planning package must contain:
 ```text
 prepare exact planning package
 → validate internal consistency
-→ independent Claude review
-→ disposition findings
-→ owner review
-→ explicit implementation authorization
+→ independent technical review and owner rulings
+→ independent Claude resolved-package review
+→ correct and disposition R-01 through R-06
+→ focused correction verification
+→ owner acceptance through D028
+→ close R-06 navigation and planning correction cycle
+→ separate explicit implementation authorization still required
+```
+
+## Accepted Artifact Set
+
+```text
+05-implementation-planning/m06a-local-manual-vault-canonical-plan.md
+05-implementation-planning/m06a-parser-admission-plan.md
+05-implementation-planning/m06a-adversarial-closure-matrix.md
+08-audits/m06a-planning-correction-disposition.md
+08-audits/m06a-planning-correction-closure.md
 ```
 
 ## Hard Block

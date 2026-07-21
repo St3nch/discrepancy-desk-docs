@@ -2,9 +2,9 @@
 
 ## Status
 
-The corrected M06 architecture synthesis is owner-accepted. AC-02 is closed. Preparation of the exact M06-A planning package is authorized under `05-implementation-planning/m06a-planning-authorization.md`.
+The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 records the owner-resolved design decisions; D028 records planning acceptance.
 
-M06-A implementation remains blocked pending completion and independent review of the exact planning package, owner review, and explicit implementation authorization. M06-B planning and implementation remain blocked.
+M06-A implementation remains blocked pending a separate explicit owner authorization for an exact bounded implementation package. Planning acceptance does not authorize code, migrations, databases, Vault creation, parser work, dependencies, tests, or runtime changes. M06-B planning and implementation remain blocked.
 
 ## Package Sequence
 
@@ -25,6 +25,11 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `05-implementation-planning/m06-pre-synthesis-correction-specification.md`
 - `05-implementation-planning/m06a-planning-authorization.md`
 - `05-implementation-planning/m06a-planning-package-outline.md`
+- `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`
+- `05-implementation-planning/m06a-parser-admission-plan.md`
+- `05-implementation-planning/m06a-adversarial-closure-matrix.md`
+- `08-audits/m06a-planning-correction-disposition.md`
+- `08-audits/m06a-planning-correction-closure.md`
 - `03-system-design/obsidian-qdrant-sqlite-plan.md`
 - `03-system-design/multi-account-model.md`
 - `05-implementation-planning/hammer-test-strategy.md`
@@ -38,18 +43,18 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `08-audits/claude-m06-architecture-synthesis-review.md`
 - `99-decisions/m06-owner-architecture-rulings.md`
 - M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
-- accepted D024 in `99-decisions/decision-log.md`
+- accepted D024, D027, and D028 in `99-decisions/decision-log.md`
 
 ## Goal
 
-Create a governed, per-account, local research-memory foundation that preserves exact originals, parser provenance, typed assertions, dossiers, correction lineage, lexical retrieval, and recoverability without creating a second truth store.
+Create a governed, brand-level local research-memory foundation that preserves exact originals, parser provenance, typed assertions, dossiers, correction lineage, lexical retrieval, and recoverability without creating a second truth store.
 
 ## Accepted Architecture
 
 - SQLite owns identity, account scope, workflow, review state, policy bindings, assertions, dossiers, and manifests.
 - The governed filesystem owns immutable originals and versioned normalized JSON element packages.
 - Markdown/HTML projections are generated and read-only.
-- Each account has a physically separate Vault.
+- Each editorial/public brand identity has one physically separate Vault; platform-owned accounts remain central records bound explicitly to that Vault.
 - Every source class converges on one universal governed ingestion envelope.
 - Research admission, truth/support assessment, editorial-use ruling, and exact publication approval are separate authority layers.
 - Corrections and supersessions are immutable lineage.
@@ -73,7 +78,7 @@ Create a governed, per-account, local research-memory foundation that preserves 
 - local lexical/full-text search;
 - deterministic chunk and invalidation contract;
 - generated read-only Markdown/HTML projections;
-- per-account canonical backup and disposable restore proof.
+- per-Vault canonical backup and disposable restore proof.
 
 ## M06-A Exclusions
 
@@ -98,16 +103,18 @@ It requires a fresh bounded plan, explicit owner approval, policy/retention revi
 
 M06-B excludes crawling, monitoring, feeds, browser rendering, authenticated retrieval, and provider-assisted extraction unless separately admitted later.
 
-## Entry Gate
+## M06-A Implementation Entry Gate
 
 Before M06-A implementation:
 
-1. independent review of `m06-architecture-synthesis.md` is complete;
-2. accepted findings are corrected or dispositioned;
-3. AC-02 is closed;
-4. the exact physical schema, migrations, file layout, package schema, parser admission records, backup procedure, and adversarial matrix are prepared;
-5. the coherent implementation package is owner-reviewed;
-6. the owner explicitly authorizes implementation.
+1. independent review of `m06-architecture-synthesis.md` is complete — satisfied;
+2. accepted architecture and planning findings are corrected or dispositioned — satisfied;
+3. AC-02 and the M06-A planning correction cycle are closed — satisfied;
+4. the exact physical schema, migrations, file layout, package schema, parser admission records, backup procedure, and adversarial matrix are prepared and owner-accepted — satisfied;
+5. the exact bounded implementation package for the proposed phase is identified and owner-reviewed — not yet authorized;
+6. the owner explicitly authorizes implementation — not yet authorized.
+
+Current result: planning is accepted, but implementation entry remains closed at items 5 and 6.
 
 ## M06-A Exit Gate
 
@@ -120,11 +127,11 @@ Before M06-A implementation:
 - generated projections rebuild and never become authority;
 - two synthetic account Vaults prove physical and logical isolation;
 - logs, traces, caches, temp paths, and restore operations do not leak account data;
-- per-account backup/restore and tamper detection pass in a disposable location;
+- per-Vault backup/restore and tamper detection pass in a disposable location;
 - evidence is bound to the implementation commit;
 - docs, roadmap, status, map, decisions, and completion records are synchronized;
 - the owner explicitly accepts closure.
 
 ## M06-B Entry Gate
 
-M06-A must be stable and owner-accepted. M06-B requires its own plan, SSRF/network contract, hammer matrix, policy review, and explicit owner authorization.
+M06-A implementation must be stable and milestone closure must be owner-accepted. M06-B then requires its own plan, SSRF/network contract, hammer matrix, policy review, and explicit owner authorization. Planning acceptance alone does not open M06-B.

@@ -55,9 +55,9 @@ The docs repo defines what should be built. The app repo contains implementation
 
 ## Current Project Mode
 
-M00 through M05 are owner-accepted and closed. AC-01 is closed. The complete nine-report M06 research program received independent review with verdict `RESEARCH PACKAGE READY WITH CORRECTIONS`; all sixteen owner architecture rulings are approved.
+M00 through M05 are owner-accepted and closed. AC-01 and AC-02 are closed. The M06 architecture synthesis and all sixteen owner architecture rulings are accepted.
 
-The corrected M06 architecture synthesis is owner-accepted and AC-02 is closed. Preparation of the exact M06-A Local Manual Vault planning package is authorized; implementation is not. M06-B Bounded Static Webpage Retrieval remains a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, cross-account transfer execution, and all application code or migration changes remain blocked.
+The resolved M06-A Local Manual Vault planning baseline is owner-accepted through D028, and its planning correction cycle is closed. D027 fixes one editorial/public brand identity per physical Vault, one SQLite database per Vault, and rejection of timed-deletion material in first M06-A. No parser is admitted and no implementation authority exists. M06-B Bounded Static Webpage Retrieval remains a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, cross-Vault transfer execution, and all application code or migration changes remain blocked.
 
 ## Read Order for LLMs
 
@@ -78,6 +78,16 @@ Read these first:
 13. `04-platform-rules/truth-social-automation-boundaries.md`
 14. `05-implementation-planning/implementation-roadmap.md`
 15. `05-implementation-planning/m06-architecture-synthesis.md`
+
+   Then read the owner-accepted M06-A planning continuation in this exact order:
+
+   - `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`
+   - `05-implementation-planning/m06a-parser-admission-plan.md`
+   - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
+   - `08-audits/m06a-planning-correction-disposition.md`
+   - `08-audits/m06a-planning-correction-closure.md`
+   - D027 and D028 in `99-decisions/decision-log.md`
+
 16. `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`
 17. `99-decisions/m06-owner-architecture-rulings.md`
 18. `08-audits/claude-m06-research-program-independent-review.md`
@@ -171,10 +181,14 @@ Docs:
 
 ### Anomaly Vault
 
-Research memory layer. Governed research-memory subsystem. Its exact canonical formats, ingestion boundary, projections, and future retrieval contract are under M06 research; Obsidian is not an architectural requirement.
+Research memory layer. Its M06-A local-only canonical formats, ingestion boundary, projections, parser-admission contract, and recovery plan are defined in the owner-accepted M06-A planning baseline. Obsidian is not an architectural requirement. Implementation remains blocked pending separate owner authorization.
 
 Docs:
 
+- `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`
+- `05-implementation-planning/m06a-parser-admission-plan.md`
+- `05-implementation-planning/m06a-adversarial-closure-matrix.md`
+- `08-audits/m06a-planning-correction-closure.md`
 - `03-system-design/obsidian-qdrant-sqlite-plan.md`
 - `02-product/module-map.md`
 

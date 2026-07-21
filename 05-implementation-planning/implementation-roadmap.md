@@ -219,7 +219,7 @@ M06-A — Local Manual Vault
 M06-B — Bounded Static Webpage Retrieval
 ```
 
-M06-A establishes the per-account governed research-memory foundation. M06-B adds one human-supplied public URL retrieval path only after M06-A is stable and owner-accepted. M06-B does not inherit implementation authority from M06-A.
+M06-A establishes the governed research-memory foundation for one editorial/public brand identity per physical Vault, with platform-owned accounts bound centrally. The M06-A planning baseline is owner-accepted, but implementation remains blocked pending separate explicit authorization. M06-B adds one human-supplied public URL retrieval path only after M06-A implementation is stable and milestone closure is owner-accepted. M06-B does not inherit implementation authority from M06-A.
 
 **Milestone file**
 
@@ -231,6 +231,12 @@ M06-A establishes the per-account governed research-memory foundation. M06-B add
 - `05-implementation-planning/m06a-m06b-package-boundary.md`
 - `05-implementation-planning/m06-pre-synthesis-correction-specification.md`
 - `99-decisions/m06-owner-architecture-rulings.md`
+- `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`
+- `05-implementation-planning/m06a-parser-admission-plan.md`
+- `05-implementation-planning/m06a-adversarial-closure-matrix.md`
+- `08-audits/m06a-planning-correction-disposition.md`
+- `08-audits/m06a-planning-correction-closure.md`
+- D027 and D028 in `99-decisions/decision-log.md`
 
 **Governing documents**
 
@@ -250,7 +256,8 @@ M06-A establishes the per-account governed research-memory foundation. M06-B add
 
 A useful local-only Vault exists with:
 
-- physically separate account Vaults;
+- one physically separate Vault per editorial/public brand identity;
+- explicit central bindings from that Vault to one or more platform-owned accounts;
 - SQLite authority plus immutable filesystem artifacts;
 - universal governed ingestion envelope;
 - admitted local parsers and versioned normalized JSON element packages;
@@ -260,7 +267,7 @@ A useful local-only Vault exists with:
 - human-only entity merge/split acceptance;
 - SQLite lexical search and deterministic chunk contract;
 - generated read-only Markdown/HTML projections;
-- per-account backup, disposable restore, and tamper proof.
+- per-Vault backup, disposable restore, and tamper proof.
 
 M06-A excludes URL retrieval, providers, monitoring, OCR, live LLM integration, Qdrant, graph work, cross-account transfer execution, and first-class events/chronologies.
 
@@ -270,7 +277,7 @@ One human-triggered public URL may be retrieved under a separately accepted SSRF
 
 **Entry and review gate**
 
-The M06 architecture synthesis must receive independent review and owner acceptance before M06-A implementation planning. Each package then requires its own exact plan, hammer matrix, owner review, and explicit implementation authorization.
+The M06 architecture synthesis and exact M06-A planning package have completed independent review, correction, focused verification, and owner acceptance. That planning acceptance grants no code authority. Before any M06-A application change, the owner must separately authorize an exact bounded implementation package tied to the accepted phase, migration, parser, backup, and adversarial contracts.
 
 ## M07 — Human-Triggered X Capture Helper
 
@@ -467,7 +474,7 @@ Retrieval quality is evaluated; every result traces to canonical records; accoun
 
 ## M15 — Hardening, Backup, Recovery, and Operator Runbook
 
-Prove whole-product recovery across SQLite, evidence, Tauri, capture, agent configuration, credentials, optional retrieval services, and any per-account vault architecture that has been owner-accepted and installed.
+Prove whole-product recovery across SQLite, evidence, Tauri, capture, agent configuration, credentials, optional retrieval services, and any per-Vault brand-level architecture that has been owner-accepted and installed.
 
 **Milestone file**
 
@@ -498,7 +505,7 @@ Documented disaster drills succeed, modified evidence/backups fail closed, accou
 | Archive, Docket, Flash Release lanes | M04 |
 | Manual X publishing, reconciliation, manual metrics | M04 |
 | Tauri desktop product | M05 |
-| Per-account local dossiers and Anomaly Vault foundation | M06-A, subject to synthesis review and implementation gate |
+| Brand-level local dossiers and Anomaly Vault foundation | M06-A planning owner-accepted; implementation subject to separate explicit gate |
 | Bounded static webpage retrieval | M06-B, after M06-A acceptance and separate SSRF/network gate |
 | Human-triggered X capture | M07 |
 | Governed agent API/MCP | M08 |
@@ -548,17 +555,17 @@ A milestone closes only when:
 # Immediate Authorized Sequence
 
 1. M00 through M05 are owner-accepted and closed;
-2. the nine-report M06 research program and independent research review are complete;
-3. owner rulings M06-D01 through M06-D16 are accepted;
-4. review and disposition the M06 architecture synthesis independently;
-5. obtain explicit owner acceptance of the final synthesis;
-6. prepare the exact M06-A physical-schema, parser-admission, backup/restore, and adversarial implementation package;
-7. obtain explicit owner authorization before M06-A code changes;
-8. defer M06-B planning until M06-A is stable and owner-accepted.
+2. the M06 research program, architecture synthesis, and AC-02 correction cycle are complete;
+3. M06-D01 through M06-D16 and D027 are accepted;
+4. the exact M06-A core plan, parser-admission plan, and 108-invariant adversarial matrix are owner-accepted through D028;
+5. the M06-A planning correction cycle and R-06 navigation reconciliation are closed;
+6. obtain separate explicit owner authorization for an exact bounded M06-A implementation package before any application change;
+7. execute only the owner-authorized phase and return with real implementation evidence;
+8. defer M06-B planning until M06-A implementation is stable and milestone closure is owner-accepted.
 
 # D024 Roadmap Reference
 
-`D024 — Multi-Account Vault and Qdrant Isolation Direction` in `99-decisions/decision-log.md` is accepted as the governing direction for M06 and M14. Separate physical vaults per account, account-scoped collections, and fail-closed retrieval scope are accepted planning doctrine. Implementation remains blocked until each milestone's named independent review, exact design, hammer plan, and owner-controlled entry gate are satisfied.
+D024 remains the broad multi-account and Qdrant isolation direction. D027 refines M06-A to one physical Vault per editorial/public brand identity, with one or more platform-owned accounts bound centrally; it does not alter the later M14 requirement for fail-closed account-scoped semantic retrieval. M06-A planning is accepted through D028, while implementation remains blocked until a separate exact owner-controlled entry authorization.
 
 # Final Rule
 

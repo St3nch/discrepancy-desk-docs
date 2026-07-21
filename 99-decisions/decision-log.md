@@ -336,3 +336,74 @@ Consequences:
 - preparation of the exact M06-A planning package is authorized under `05-implementation-planning/m06a-planning-authorization.md`;
 - M06-A implementation remains blocked pending the completed planning package, independent review, owner review, and explicit implementation authorization;
 - M06-B planning and implementation remain blocked.
+
+
+## D027 — Resolve M06-A Vault Grain, SQLite Topology, and Retention Boundary
+
+Accepted by the owner on 2026-07-21.
+
+The owner resolved OD-1 through OD-3 for the M06-A corrected planning candidate.
+
+Vault grain:
+
+```text
+one editorial/public brand identity per Vault
+```
+
+For the current project, one physical Vault represents **The Discrepancy Desk**. Platform-specific owned accounts remain separate central control-room records and may be explicitly bound to that Vault. An X account, future Truth Social account, or later platform-owned account does not automatically receive a separate physical Vault.
+
+SQLite topology:
+
+```text
+central control-room SQLite database
++
+one SQLite database per physical Vault
+```
+
+The central database remains authoritative for platform-owned accounts, exact revision approvals, publication records and attempts, metrics, and the central Vault registry and bindings. Each physical Vault owns its own SQLite authority database, audit chain, operation-key ledger, migration state, backup-generation history, and canonical research and dossier records. Cross-database operations are not atomic and must use correlation receipts and reconciliation.
+
+Retention boundary:
+
+```text
+reject material requiring timed deletion in first M06-A
+destructive purge authority deferred
+```
+
+M06-A may record rights and retention metadata and operation-specific restrictions, but timed-deletion-required or unknown-retention material must fail before canonical byte admission. M06-A gains no automatic deletion, deadline scheduler, destructive purge operation, or promise to delete later. Any future purge authority requires a separately planned, independently reviewed, owner-authorized package.
+
+These rulings resolve the planning decisions only. The corrected M06-A planning candidate remains unaccepted, independent resolved-package review is still required, M06-A implementation remains blocked, and M06-B planning and implementation remain blocked.
+
+
+## D028 — Accept Resolved M06-A Planning Baseline
+
+Accepted by the owner on 2026-07-21.
+
+The owner accepted the resolved M06-A planning package after:
+
+- preservation of the original planning report and independent technical review;
+- resolution of OD-1 through OD-3 in D027;
+- preparation of the corrected core plan, parser-admission plan, and 108-invariant adversarial matrix;
+- independent Claude review with verdict `M06-A RESOLVED PLAN READY WITH CORRECTIONS`;
+- correction of R-01 through R-05 and explicit deferral of R-06 to the acceptance/navigation package;
+- focused verification with verdict `M06-A FOCUSED CORRECTIONS VERIFIED — READY FOR OWNER ACCEPTANCE`.
+
+The owner-accepted controlling M06-A planning baseline is:
+
+```text
+05-implementation-planning/m06a-local-manual-vault-canonical-plan.md
+05-implementation-planning/m06a-parser-admission-plan.md
+05-implementation-planning/m06a-adversarial-closure-matrix.md
+08-audits/m06a-planning-correction-disposition.md
+08-audits/m06a-planning-correction-closure.md
+```
+
+Consequences:
+
+- the M06-A planning correction cycle is closed;
+- D027 remains the governing Vault-grain, SQLite-topology, and retention-boundary decision;
+- R-06 navigation and roadmap reconciliation is included in the same acceptance package;
+- no parser is admitted;
+- no matrix test is claimed to exist or to have executed;
+- no application code, migration, database, Vault, dependency, parser, or runtime implementation is authorized;
+- M06-A implementation remains blocked pending a separate explicit owner authorization;
+- M06-B planning and implementation remain blocked.

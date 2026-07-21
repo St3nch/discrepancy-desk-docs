@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06-A exact planning package preparation.
+M06-A planning baseline owner-accepted; implementation authorization not granted.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (exact planning authorized; implementation blocked)
+M06-A — Local Manual Vault (planning owner-accepted; implementation blocked)
 ```
 
 ## Current Focus
@@ -48,13 +48,13 @@ M06-D09  Human-only entity merge/split acceptance             approved
 M06-D10  Events and chronologies deferred from first M06-A    approved
 M06-D11  Narrow initial parser scope                           approved
 M06-D12  SQLite lexical search plus chunk contract            approved
-M06-D13  Per-account canonical backup and restore proof       approved
+M06-D13  Per-Vault canonical backup and restore proof         approved
 M06-D14  M06-A remains fully manual                           approved
 M06-D15  Qdrant and graph work deferred                       approved
 M06-D16  No live LLM/provider integration in M06-A            approved
 ```
 
-The owner accepted the corrected M06 architecture synthesis, closed AC-02, and authorized preparation of the exact M06-A planning package. Planning may now prepare the schema, migrations, Vault layout, parser admission records, backup/restore plan, adversarial matrix, and bounded implementation package. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
+The owner accepted the resolved M06-A planning baseline after the preserved independent review, D027 owner rulings, Claude resolved-package review, bounded corrections, and focused verification. D028 records acceptance, and `08-audits/m06a-planning-correction-closure.md` closes the correction cycle. The accepted package contains the core plan, parser-admission plan, and 108-invariant adversarial matrix. No parser is admitted and no matrix test is claimed to have executed. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
 
 Application repository truth:
 
@@ -87,7 +87,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — exact planning authorized; implementation blocked
+M06-A  Local Manual Vault — planning owner-accepted; implementation blocked
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -115,9 +115,9 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - no direct agent database access;
 - agent-neutral interface before Hermes;
 - one restricted Release Watch pilot before any broader agent role;
-- separate physical vault per account under D024;
+- one physical Vault per editorial/public brand identity under D027, with platform-owned accounts bound centrally;
 - account-scoped Qdrant collections and fail-closed retrieval under D024;
-- M06 and M14 implementation still require their named independent reviews and entry gates.
+- M06-A implementation still requires a separate explicit owner authorization; M14 retains its named review and entry gate.
 
 ## Hard Boundaries
 
@@ -142,9 +142,12 @@ Claude M06 research review and AC-02 package: b675014
 Owner rulings M06-D01 through M06-D16: 44f5a57 through d8105e0
 M06 synthesis and roadmap reconciliation: c90f1af
 M06 synthesis audit corrections: 191fc8a
-AC-02 closure and M06-A planning authorization: pending current commit
+AC-02 closure and M06-A audit preservation: fb3b865
+M06-A owner rulings: D027
+M06-A planning owner acceptance: D028
+M06-A planning correction closure: `08-audits/m06a-planning-correction-closure.md`
 ```
 
 ## Next Bounded Action
 
-Prepare the exact M06-A planning package defined by `05-implementation-planning/m06a-planning-package-outline.md`. The package must include physical schema, migration/rollback, Vault layout, parser admission, backup/restore, adversarial matrix, exact app-repo change set, validation/evidence plan, and independent review. Do not modify application code or begin M06-B planning.
+Await a separate explicit owner authorization for an exact bounded M06-A implementation package. Until that authorization exists, do not modify application code, create migrations or databases, create a Vault root, implement or admit parsers, install dependencies, execute M06-A matrix work, or begin M06-B planning.
