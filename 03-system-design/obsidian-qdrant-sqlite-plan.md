@@ -1,3 +1,17 @@
+# Status — Historical Research and Superseded Architecture
+
+This document is retained as historical research and early planning context. It is **not** the controlling M06 architecture.
+
+The accepted architecture is governed by:
+
+- `05-implementation-planning/m06-architecture-synthesis.md`;
+- `99-decisions/m06-owner-architecture-rulings.md`;
+- `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`.
+
+Where this document describes editable Obsidian notes, Markdown-centered authority, shared Vault behavior, or earlier Qdrant assumptions, the accepted M06 rulings supersede it. Markdown and HTML are generated read-only projections in M06-A; SQLite and governed filesystem records remain canonical; Qdrant remains deferred to M14.
+
+---
+
 # Obsidian + Qdrant + SQLite Plan
 
 ## Core Model

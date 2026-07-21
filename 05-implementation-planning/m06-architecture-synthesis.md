@@ -88,6 +88,7 @@ admission stage
   automated_admitted
   suspended
   retired
+  revoked
   prohibited
 
 permitted methods
@@ -95,6 +96,22 @@ permitted methods
 ```
 
 A method is not authorized merely because a source is admitted. Automation, recurrence, provider use, and network retrieval remain separately gated.
+
+Terminal and interruption semantics are distinct:
+
+```text
+suspended
+  temporary operational stop; prior authority remains recorded but cannot be exercised
+
+retired
+  intentionally ended; historical authority and evidence remain preserved
+
+revoked
+  previously granted authority explicitly withdrawn by governance action
+
+prohibited
+  source or method is ineligible for admission unless a later owner ruling changes doctrine
+```
 
 ## 6. M06-A Intake Scope
 
@@ -110,6 +127,8 @@ M06-A accepts only local, human-triggered intake:
 - basic HTML files supplied locally;
 - born-digital PDF files supplied locally;
 - YouTube URL recorded as identity/context plus a human-supplied transcript file or pasted transcript.
+
+Video, transcript, caption, timing, speaker-label, and audiovisual metadata fields are source-specific extensions of the universal evidence-packet contract. They do not create a parallel authority or context model.
 
 M06-A excludes:
 
@@ -189,12 +208,14 @@ publication approval
 
 An LLM may propose an editorial-use assessment. Only a human may create the governed ruling. An editorial-use ruling is a prerequisite/input to publication review where policy requires it; it never approves exact post text.
 
+A new account-policy version creates an explicit impact set for dependent editorial-use rulings and publication approvals. Affected records are flagged for re-evaluation and may not silently inherit authority from the superseded policy version.
+
 ## 10. Identity, Correction, and Deduplication
 
 - Internal IDs are stable and account-scoped.
 - External IDs are typed evidence, not primary authority.
 - Duplicate detection creates relationships; it does not delete or collapse records automatically.
-- Entity merges and splits may be proposed by the system but accepted only by a human.
+- Entity merges and splits may be proposed by the system but accepted only by a human. Acceptance records the actor, supporting evidence, decision time, and reversible lineage.
 - Corrections and supersessions create immutable lineage.
 - No original, parser output, assertion, policy version, or approved revision is silently rewritten.
 
@@ -288,7 +309,7 @@ Each generation has a unique immutable manifest and no-overwrite semantics.
 
 Qdrant, graph data, caches, indexes, and projections are rebuildable and non-canonical.
 
-Closure requires a disposable restore into a separate location proving account identity, hash reconciliation, no orphan canonical records, policy availability, projection regeneration, and fail-closed detection of at least one modified manifest or artifact. The existing `age` mechanism may protect archives; packaged key-management UX remains M15.
+Closure requires a disposable restore into a separate location proving account identity, hash reconciliation, no orphan canonical records, no omitted required original artifacts, policy availability, projection regeneration, no cross-account contamination in rebuilt indexes or other derivatives, and fail-closed detection of at least one modified manifest or artifact. The existing `age` mechanism may protect archives; packaged key-management UX remains M15.
 
 ## 17. M06-B Boundary
 
@@ -343,6 +364,9 @@ The implementation plan must include at minimum:
 - claim-without-known-contradiction context failure;
 - unsupported citation validation failure;
 - backup omission, tamper, wrong-account restore, and dirty recovery;
+- local parser network-egress attempts fail closed;
+- manual edits to generated projections cannot become authority and are detected or overwritten on regeneration;
+- parser partial output without an explicit warning/failure state fails closed;
 - account leakage through search, logs, cache keys, projections, and temp files;
 - detector non-detection and detector-error fail-closed cases.
 

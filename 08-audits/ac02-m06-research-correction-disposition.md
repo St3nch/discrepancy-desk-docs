@@ -2,7 +2,7 @@
 
 ## Status
 
-Corrections implemented in the synthesis package on 2026-07-20; closure pending independent synthesis review and explicit owner acceptance.
+Independent synthesis review completed with verdict `SYNTHESIS READY WITH CORRECTIONS`. The bounded review corrections are implemented in the current docs package. Closure remains pending explicit owner acceptance.
 
 Independent review verdict:
 
@@ -10,7 +10,7 @@ Independent review verdict:
 RESEARCH PACKAGE READY WITH CORRECTIONS
 ```
 
-No critical or high findings were reported. Owner option review may proceed while the bounded documentation corrections are applied. The owner resolved all before-synthesis decisions. Architecture synthesis is prepared and now awaits independent review. AC-02 remains open until that review is dispositioned and the owner accepts the synthesis.
+No critical or high findings were reported. Owner option review may proceed while the bounded documentation corrections are applied. The owner resolved all before-synthesis decisions. Independent synthesis review is preserved at `08-audits/claude-m06-architecture-synthesis-review.md`. AC-02 remains open until the owner accepts the corrected synthesis.
 
 ## Source review
 
@@ -132,4 +132,4 @@ The accepted corrections are incorporated into:
 
 ## Current block
 
-AC-02 is not closed until independent synthesis review and explicit owner acceptance. No M06-A or M06-B implementation authority exists.
+AC-02 is not closed until explicit owner acceptance of the corrected synthesis. No M06-A or M06-B implementation authority exists.

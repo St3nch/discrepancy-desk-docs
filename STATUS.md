@@ -54,7 +54,7 @@ M06-D15  Qdrant and graph work deferred                       approved
 M06-D16  No live LLM/provider integration in M06-A            approved
 ```
 
-The owner decision matrix is complete. The M06 architecture synthesis and roadmap reconciliation are prepared for independent review. AC-02 corrections are implemented in the synthesis but remain open until independent review and owner acceptance. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
+The owner decision matrix is complete. Independent review of the M06 architecture synthesis returned `SYNTHESIS READY WITH CORRECTIONS` with no critical or high findings. The bounded corrections are implemented. AC-02 now awaits explicit owner acceptance of the corrected synthesis. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
 
 Application repository truth:
 
@@ -87,7 +87,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — synthesis review active; implementation blocked
+M06-A  Local Manual Vault — corrected synthesis awaits owner acceptance; implementation blocked
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -140,9 +140,9 @@ M06 research program: d5d8b1d through 7f44f9c
 Audit-prompt boundary correction: 91146e4
 Claude M06 research review and AC-02 package: b675014
 Owner rulings M06-D01 through M06-D16: 44f5a57 through d8105e0
-M06 synthesis and roadmap reconciliation: pending current commit
+M06 synthesis and roadmap reconciliation: c90f1af
 ```
 
 ## Next Bounded Action
 
-Submit `05-implementation-planning/m06-architecture-synthesis.md` and the reconciled roadmap/milestone package for independent Claude review outside the repository. Record the completed report in `08-audits/`, disposition findings, and obtain explicit owner acceptance before any M06-A implementation planning or code work.
+Present the corrected M06 architecture synthesis and Claude review disposition for explicit owner acceptance. After acceptance, close AC-02 and prepare the exact M06-A planning package. Do not begin M06-A or M06-B implementation.
