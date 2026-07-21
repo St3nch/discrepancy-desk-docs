@@ -2,9 +2,9 @@
 
 ## Status
 
-Architecture synthesis prepared. M05 is owner-accepted and closed. The nine-report research program and independent Claude review are complete. Owner rulings M06-D01 through M06-D16 are accepted.
+The corrected M06 architecture synthesis is owner-accepted. AC-02 is closed. Preparation of the exact M06-A planning package is authorized under `05-implementation-planning/m06a-planning-authorization.md`.
 
-M06 implementation remains blocked pending independent review and owner acceptance of `m06-architecture-synthesis.md`, closure of AC-02, exact M06-A implementation planning, and explicit owner authorization.
+M06-A implementation remains blocked pending completion and independent review of the exact planning package, owner review, and explicit implementation authorization. M06-B planning and implementation remain blocked.
 
 ## Package Sequence
 
@@ -23,6 +23,8 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `05-implementation-planning/m06-architecture-synthesis.md`
 - `05-implementation-planning/m06a-m06b-package-boundary.md`
 - `05-implementation-planning/m06-pre-synthesis-correction-specification.md`
+- `05-implementation-planning/m06a-planning-authorization.md`
+- `05-implementation-planning/m06a-planning-package-outline.md`
 - `03-system-design/obsidian-qdrant-sqlite-plan.md`
 - `03-system-design/multi-account-model.md`
 - `05-implementation-planning/hammer-test-strategy.md`
@@ -32,6 +34,8 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `06-research/m06-architecture/multi-account-research-and-editorial-policy-layer.md`
 - `08-audits/claude-m06-research-program-independent-review.md`
 - `08-audits/ac02-m06-research-correction-disposition.md`
+- `08-audits/ac02-m06-research-correction-closure.md`
+- `08-audits/claude-m06-architecture-synthesis-review.md`
 - `99-decisions/m06-owner-architecture-rulings.md`
 - M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
 - accepted D024 in `99-decisions/decision-log.md`
