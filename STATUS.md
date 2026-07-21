@@ -1,15 +1,15 @@
 # Project Status — Discrepancy Desk
 
-*Last updated: 2026-07-20*
+*Last updated: 2026-07-21*
 
 ## Current Mode
 
-M06 architecture synthesis review and AC-02 closure.
+M06-A exact planning package preparation.
 
 ## Active Milestone
 
 ```text
-M06 — Records, Dossiers, and Anomaly Vault (synthesis review; implementation blocked)
+M06-A — Local Manual Vault (exact planning authorized; implementation blocked)
 ```
 
 ## Current Focus
@@ -54,7 +54,7 @@ M06-D15  Qdrant and graph work deferred                       approved
 M06-D16  No live LLM/provider integration in M06-A            approved
 ```
 
-The owner decision matrix is complete. Independent review of the M06 architecture synthesis returned `SYNTHESIS READY WITH CORRECTIONS` with no critical or high findings. The bounded corrections are implemented. AC-02 now awaits explicit owner acceptance of the corrected synthesis. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
+The owner accepted the corrected M06 architecture synthesis, closed AC-02, and authorized preparation of the exact M06-A planning package. Planning may now prepare the schema, migrations, Vault layout, parser admission records, backup/restore plan, adversarial matrix, and bounded implementation package. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
 
 Application repository truth:
 
@@ -87,7 +87,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — corrected synthesis awaits owner acceptance; implementation blocked
+M06-A  Local Manual Vault — exact planning authorized; implementation blocked
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -141,8 +141,10 @@ Audit-prompt boundary correction: 91146e4
 Claude M06 research review and AC-02 package: b675014
 Owner rulings M06-D01 through M06-D16: 44f5a57 through d8105e0
 M06 synthesis and roadmap reconciliation: c90f1af
+M06 synthesis audit corrections: 191fc8a
+AC-02 closure and M06-A planning authorization: pending current commit
 ```
 
 ## Next Bounded Action
 
-Present the corrected M06 architecture synthesis and Claude review disposition for explicit owner acceptance. After acceptance, close AC-02 and prepare the exact M06-A planning package. Do not begin M06-A or M06-B implementation.
+Prepare the exact M06-A planning package defined by `05-implementation-planning/m06a-planning-package-outline.md`. The package must include physical schema, migration/rollback, Vault layout, parser admission, backup/restore, adversarial matrix, exact app-repo change set, validation/evidence plan, and independent review. Do not modify application code or begin M06-B planning.

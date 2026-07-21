@@ -57,7 +57,7 @@ The docs repo defines what should be built. The app repo contains implementation
 
 M00 through M05 are owner-accepted and closed. AC-01 is closed. The complete nine-report M06 research program received independent review with verdict `RESEARCH PACKAGE READY WITH CORRECTIONS`; all sixteen owner architecture rulings are approved.
 
-The M06 architecture synthesis is prepared for independent review. M06 is split into M06-A Local Manual Vault and M06-B Bounded Static Webpage Retrieval. Neither package has implementation authority. M06-A remains local-only; M06-B is a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, and cross-account transfer execution remain blocked.
+The corrected M06 architecture synthesis is owner-accepted and AC-02 is closed. Preparation of the exact M06-A Local Manual Vault planning package is authorized; implementation is not. M06-B Bounded Static Webpage Retrieval remains a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, cross-account transfer execution, and all application code or migration changes remain blocked.
 
 ## Read Order for LLMs
 

@@ -310,3 +310,29 @@ The owner accepted M06-D01 through M06-D16 in `99-decisions/m06-owner-architectu
 - M06 split into M06-A Local Manual Vault and M06-B Bounded Static Webpage Retrieval.
 
 The controlling synthesis candidate is `05-implementation-planning/m06-architecture-synthesis.md`.
+
+
+## D026 — Accept Corrected M06 Synthesis and Authorize M06-A Planning
+
+Accepted by the owner on 2026-07-21.
+
+The owner accepted the corrected M06 architecture synthesis after independent review and correction commit:
+
+```text
+191fc8a — Apply M06 synthesis audit corrections
+```
+
+The owner directed:
+
+```text
+close AC-02
+authorize preparation of the exact M06-A planning package
+```
+
+Consequences:
+
+- `05-implementation-planning/m06-architecture-synthesis.md` is the accepted M06 architecture baseline;
+- AC-02 is closed through `08-audits/ac02-m06-research-correction-closure.md`;
+- preparation of the exact M06-A planning package is authorized under `05-implementation-planning/m06a-planning-authorization.md`;
+- M06-A implementation remains blocked pending the completed planning package, independent review, owner review, and explicit implementation authorization;
+- M06-B planning and implementation remain blocked.
