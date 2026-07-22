@@ -4,7 +4,7 @@
 
 The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 records the owner-resolved design decisions; D028 records planning acceptance; D029 clarifies editorial identity; D030 authorizes Phase 1 implementation; D031 makes Tauri the sole supported operator interface; D032 records the deferred-audit timing decision; D033 accepts Phase 1 closure and opens exact Phase 2 package review.
 
-M06-A Phase 1 implementation and clean commit-bound evidence are complete through application commits `8fe3be4` and `5f0f9ae`. The independent Claude audit returned `M06-A PHASE 1 INDEPENDENTLY VERIFIED` with no blocking findings, and D033 closes Phase 1. The exact Phase 2 package is prepared at `05-implementation-planning/m06a-phase2-exact-implementation-package.md` for owner review. Phase 2 application work and Phases 3 through 6 remain blocked pending separate explicit authorization. No parser is admitted. M06-B planning and implementation remain blocked.
+M06-A Phase 1 implementation and clean commit-bound evidence are complete through application commits `8fe3be4` and `5f0f9ae`. The independent Claude audit returned `M06-A PHASE 1 INDEPENDENTLY VERIFIED` with no blocking findings, and D033 closes Phase 1. D034 authorizes the exact Phase 2 package at `05-implementation-planning/m06a-phase2-exact-implementation-package.md` and its 33-invariant implementation profile. Phases 3 through 6 remain blocked pending separate explicit authorization. No parser is admitted. M06-B planning and implementation remain blocked.
 
 ## Package Sequence
 
@@ -119,7 +119,7 @@ Before M06-A implementation:
 5. the exact bounded implementation package for Phase 1 is identified and owner-reviewed — satisfied through the accepted canonical phase definition;
 6. the owner explicitly authorizes Phase 1 implementation — satisfied through D030.
 
-Current result: Phase 1 implementation, clean commit-bound evidence, independent implementation review, and owner closure are complete through D033. The exact Phase 2 owner-review candidate is prepared, but Phase 2 application work and Phases 3 through 6 remain closed until separately authorized.
+Current result: Phase 1 implementation, clean commit-bound evidence, independent implementation review, and owner closure are complete through D033. D034 authorizes the exact Phase 2 package and its 33-invariant profile for implementation. Phases 3 through 6 remain closed until separately authorized.
 
 ## M06-A Exit Gate
 

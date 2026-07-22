@@ -3,9 +3,9 @@
 ## Status
 
 ```text
-Package status: owner-review candidate
+Package status: owner-accepted and implementation-authorized through D034
 Phase 1: independently verified and owner-accepted for closure
-Phase 2 implementation authority: none until explicit owner authorization
+Phase 2 implementation authority: exact package and 33-invariant profile authorized
 Parser admission: none
 M06-B authority: none
 ```
@@ -565,15 +565,18 @@ Stop before implementation or commit when:
 - a finding changes the accepted architecture;
 - application changes escape the exact admitted surface without owner amendment.
 
-## Owner Authorization Required
+## Owner Authorization
 
-To authorize implementation, the owner must explicitly accept this package and the exact Phase 2 hammer profile. Until then:
+The owner explicitly accepted this package and its exact 33-invariant profile through D034 on 2026-07-22.
 
 ```text
-Phase 2 application edits: blocked
-V0002 creation: blocked
-manual artifact intake: blocked
-backup/restore execution: blocked
+Phase 2 application edits: authorized within this exact package
+V0002 creation: authorized
+manual artifact intake: authorized
+foundational backup/restore execution: authorized
 parser work: blocked
+Phase 3 through Phase 6: blocked
 M06-B: blocked
 ```
+
+Implementation authority ends at this package boundary. Phase 2 closure still requires clean commit-bound evidence, independent review, finding disposition, and explicit owner acceptance.

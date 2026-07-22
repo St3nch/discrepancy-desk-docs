@@ -535,3 +535,23 @@ Consequences:
 - Phase 2 application code, `V0002`, intake, artifact storage, backup, and restore remain blocked until the owner explicitly accepts the exact Phase 2 package;
 - parsers and Phase 3+, M06-B, network retrieval, providers, monitoring, live LLM integration, Qdrant, graph work, purge, and automated publishing remain blocked;
 - this decision closes Phase 1 and opens the Phase 2 authorization review only; it is not Phase 2 implementation authority.
+
+
+## D034 — Authorize M06-A Phase 2 Implementation
+
+Accepted by the owner on 2026-07-22.
+
+The owner explicitly approved `05-implementation-planning/m06a-phase2-exact-implementation-package.md` and its exact 33-invariant Phase 2 profile for implementation.
+
+Consequences:
+
+- application implementation is authorized only for the exact Phase 2 observation, acquisition, immutable artifact, rights/retention, foundational backup/restore, Tauri-only operator, evidence-hardening, and bounded Phase 1 hardening surface defined in the accepted package;
+- Vault migration `V0002_ingestion_artifacts_policy_and_backup.py` is authorized;
+- the exact Phase 2 profile consists of 28 Phase 2 closure invariants plus 5 inherited authority/recovery regressions;
+- the legacy and Phase 1 suites must remain independently green;
+- the 64 MiB server-owned intake ceiling is accepted for this package;
+- no parser implementation or admission is authorized;
+- no Phase 3 through Phase 6 implementation is authorized;
+- M06-B, network retrieval, providers, monitoring, live LLM integration, Qdrant, graph work, purge, and automated publishing remain blocked;
+- implementation must receive clean commit-bound evidence, independent Claude review, finding disposition, and explicit owner closure before Phase 2 closes or Phase 3 may be considered;
+- application paths outside the exact package surface require an explicit owner-approved amendment.

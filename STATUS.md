@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06-A Phase 1 implementation, clean commit-bound evidence, independent Claude audit, and owner closure are complete through D033. The exact Phase 2 implementation package is prepared for owner review; Phase 2 application work remains blocked until explicit package acceptance.
+M06-A Phase 1 implementation, clean commit-bound evidence, independent Claude audit, and owner closure are complete through D033. D034 authorizes the exact Phase 2 observation/acquisition/artifact/retention/foundational-recovery package and its 33-invariant profile for implementation. Parser work and all later phases remain blocked.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (Phase 1 independently verified and owner-closed; exact Phase 2 package prepared for owner review)
+M06-A — Local Manual Vault (Phase 2 implementation authorized through D034; exact package and 33-invariant profile active)
 ```
 
 ## Current Focus
@@ -135,7 +135,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — Phase 1 independently verified and owner-closed; exact Phase 2 package prepared for owner review
+M06-A  Local Manual Vault — Phase 2 implementation authorized through D034; exact package and 33-invariant profile active
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -167,7 +167,7 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - one restricted Release Watch pilot before any broader agent role;
 - one physical Vault per editorial/public brand identity under D027, with platform-owned accounts bound centrally;
 - account-scoped Qdrant collections and fail-closed retrieval under D024;
-- M06-A Phase 1 is independently verified and owner-closed through D033; the exact Phase 2 package is prepared for owner review, but application work remains blocked until explicit acceptance; M14 retains its named review and entry gate.
+- M06-A Phase 1 is independently verified and owner-closed through D033; D034 authorizes the exact Phase 2 package and 33-invariant implementation profile; parser work and all later phases remain blocked; M14 retains its named review and entry gate.
 
 ## Hard Boundaries
 

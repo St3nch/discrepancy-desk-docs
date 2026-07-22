@@ -5,11 +5,11 @@
 ```text
 Status: owner-accepted planning baseline
 Phase 1 rows: implemented, clean-evidence-bound, independently verified, and owner-closed
-Phase 2 row profile: extracted into exact owner-review package; not authorized for execution
+Phase 2 row profile: exact 33-invariant implementation profile authorized through D034
 Later-phase rows: planning only
 ```
 
-This is the executable-plan matrix. At D028 acceptance no listed test was claimed to exist or have executed. D030 authorized implementation and execution of the exact Phase 1 row set, completed with clean evidence bound to application commit `8fe3be4`. The audit deferred under D032 is complete with verdict `M06-A PHASE 1 INDEPENDENTLY VERIFIED`, and D033 accepts Phase 1 closure. The exact Phase 2 closure and inherited regression row set is extracted into `05-implementation-planning/m06a-phase2-exact-implementation-package.md` for owner review. Every later row must be implemented, collected, executed, and bound to commit-matched evidence before its corresponding phase can close.
+This is the executable-plan matrix. At D028 acceptance no listed test was claimed to exist or have executed. D030 authorized implementation and execution of the exact Phase 1 row set, completed with clean evidence bound to application commit `8fe3be4`. The audit deferred under D032 is complete with verdict `M06-A PHASE 1 INDEPENDENTLY VERIFIED`, and D033 accepts Phase 1 closure. D034 authorizes the exact Phase 2 closure and inherited regression row set in `05-implementation-planning/m06a-phase2-exact-implementation-package.md` for implementation. Every later row must be implemented, collected, executed, and bound to commit-matched evidence before its corresponding phase can close.
 
 Governing references:
 
@@ -303,16 +303,16 @@ Before Phase 6 closure:
 ```text
 Status: owner-accepted planning baseline
 Phase 1 rows: implemented, clean-evidence-bound, independently verified, and owner-closed
-Phase 2 exact profile: 28 closure invariants + 5 inherited regressions prepared for owner review
+Phase 2 exact profile: 28 closure invariants + 5 inherited regressions authorized through D034
 Later-phase implementation authority: none
 
 The 31 required Phase 1 invariants executed and passed against the clean
 implementation commit with no Phase 1 deferral. The independent audit is
 complete, D032 is satisfied, and D033 closes Phase 1.
 
-The Phase 2 package identifies the exact 33-invariant execution profile but
-does not authorize execution or application changes. This matrix does not
-authorize Phase 2 through 6 application work, parser implementation or
-admission, new dependencies, M06-B work, or any other deferred capability.
+D034 authorizes execution of the exact 33-invariant Phase 2 profile and the
+corresponding application surface in the accepted Phase 2 package. This matrix
+does not authorize Phase 3 through 6 application work, parser implementation
+or admission, new dependencies, M06-B work, or any other deferred capability.
 Those actions require their separate governing gates.
 ```

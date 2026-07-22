@@ -7,7 +7,7 @@ Status: owner-accepted planning baseline
 Phase 1 implementation/evidence: complete through application commits 8fe3be4 and 5f0f9ae
 Independent implementation audit: complete; verdict M06-A PHASE 1 INDEPENDENTLY VERIFIED
 Phase 1 owner closure: accepted through D033
-Phase 2 exact package: prepared for owner review; implementation not authorized
+Phase 2 exact package: implementation authorized through D034
 Later phases: blocked pending separate authorization
 ```
 
@@ -1584,10 +1584,10 @@ candidate reconciled to the owner-resolved design
 → D032 deferred the independent Claude implementation audit without waiving it
 → independent audit completed with verdict M06-A PHASE 1 INDEPENDENTLY VERIFIED
 → D033 accepted Phase 1 closure and opened exact Phase 2 package review
-→ Phase 2 remains blocked until `m06a-phase2-exact-implementation-package.md` is explicitly accepted
+→ D034 authorized `m06a-phase2-exact-implementation-package.md` and its 33-invariant profile
 ```
 
-No prompt is committed. No parser is admitted. The exact Phase 2 package is prepared for owner review, but Phase 2 through 6 migrations, intake, parser, search, dossier, backup, and later runtime work remain unauthorized until their separate gates are accepted.
+No prompt is committed. No parser is admitted. D034 authorizes only the exact Phase 2 migration, intake, artifact, retention, foundational backup/restore, Tauri, and evidence boundary. Phase 3 through 6 parser, search, dossier, projection, and later runtime work remain unauthorized until their separate gates are accepted.
 
 ---
 
@@ -1598,23 +1598,24 @@ Status: owner-accepted planning baseline
 Phase 1 implementation/evidence: complete through 8fe3be4 and 5f0f9ae
 Independent implementation audit: complete and accepted
 Phase 1 owner closure: D033
-Phase 2 exact package: prepared for owner review
+Phase 2 exact package: implementation authorized through D034
 Later-phase implementation authority: none
 
 M06 architecture and this resolved M06-A planning baseline are owner-accepted.
 OD-1 through OD-3 are resolved. The correction cycle is closed.
 D029 and D031 clarify editorial identity and the supported operator surface.
 D032 records the deferred-audit timing decision; the audit is now complete.
-D033 accepts Phase 1 closure and authorizes Phase 2 package review only.
+D033 accepts Phase 1 closure and authorizes Phase 2 package review.
+D034 accepts the exact Phase 2 package and 33-invariant profile for implementation.
 
 Focused correction verification completed with verdict:
 M06-A FOCUSED CORRECTIONS VERIFIED — READY FOR OWNER ACCEPTANCE.
 Owner planning acceptance is recorded in D028 and the closure record.
 
 D030 authorized the exact Phase 1 application package. That package, clean
-evidence, independent review, and owner closure are complete. The exact Phase
-2 package exists at `m06a-phase2-exact-implementation-package.md`, but no
-authority exists for Phase 2 application edits until explicit owner acceptance.
-No authority exists for Phase 3 through 6, parser admission, new dependencies,
-M06-B work, or any other deferred capability.
+evidence, independent review, and owner closure are complete. D034 authorizes
+only the exact Phase 2 application surface in
+`m06a-phase2-exact-implementation-package.md`. No authority exists for Phase 3
+through 6, parser admission, new dependencies, M06-B work, or any other
+deferred capability.
 ```
