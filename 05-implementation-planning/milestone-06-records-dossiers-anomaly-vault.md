@@ -2,9 +2,9 @@
 
 ## Status
 
-The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 records the owner-resolved design decisions; D028 records planning acceptance; D029 clarifies editorial identity; D030 authorizes Phase 1 implementation; D031 makes Tauri the sole supported operator interface.
+The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 records the owner-resolved design decisions; D028 records planning acceptance; D029 clarifies editorial identity; D030 authorizes Phase 1 implementation; D031 makes Tauri the sole supported operator interface; D032 defers the independent implementation audit without waiving it.
 
-M06-A Phase 1 implementation is authorized and currently pending independent implementation review and commit-bound closure evidence. M06-A Phases 2 through 6 remain blocked pending separate explicit authorization. No parser is admitted. M06-B planning and implementation remain blocked.
+M06-A Phase 1 implementation and clean commit-bound evidence are complete through application commits `8fe3be4` and `5f0f9ae`. The independent Claude audit remains pending and must be resolved before Phase 2 authorization. M06-A Phases 2 through 6 remain blocked pending separate explicit authorization. No parser is admitted. M06-B planning and implementation remain blocked.
 
 ## Package Sequence
 
@@ -44,7 +44,7 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `08-audits/claude-m06-architecture-synthesis-review.md`
 - `99-decisions/m06-owner-architecture-rulings.md`
 - M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
-- accepted D024 and D027 through D031 in `99-decisions/decision-log.md`
+- accepted D024 and D027 through D032 in `99-decisions/decision-log.md`
 
 ## Goal
 
@@ -116,7 +116,7 @@ Before M06-A implementation:
 5. the exact bounded implementation package for Phase 1 is identified and owner-reviewed — satisfied through the accepted canonical phase definition;
 6. the owner explicitly authorizes Phase 1 implementation — satisfied through D030.
 
-Current result: Phase 1 implementation entry is open. Phases 2 through 6 remain closed. Phase 1 must complete independent implementation review, correction, commit-bound evidence, and owner closure before Phase 2.
+Current result: Phase 1 implementation and clean commit-bound evidence are complete. D032 defers the independent implementation review, which remains required with any findings resolved before Phase 2. Phases 2 through 6 remain closed.
 
 ## M06-A Exit Gate
 

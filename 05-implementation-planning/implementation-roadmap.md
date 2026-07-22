@@ -221,7 +221,7 @@ M06-A — Local Manual Vault
 M06-B — Bounded Static Webpage Retrieval
 ```
 
-M06-A establishes the governed research-memory foundation for one editorial/public brand identity per physical Vault, with platform-owned accounts bound centrally. The M06-A planning baseline is owner-accepted. D030 authorizes Phase 1 implementation only; Phases 2 through 6 remain blocked pending separate authorization. D031 makes Tauri the sole supported operator interface while retaining FastAPI as the governed loopback backend/API. M06-B adds one human-supplied public URL retrieval path only after M06-A implementation is stable and milestone closure is owner-accepted. M06-B does not inherit implementation authority from M06-A.
+M06-A establishes the governed research-memory foundation for one editorial/public brand identity per physical Vault, with platform-owned accounts bound centrally. The M06-A planning baseline is owner-accepted. D030 authorized Phase 1 implementation, which is complete with clean commit-bound evidence through application commits `8fe3be4` and `5f0f9ae`. D031 makes Tauri the sole supported operator interface while retaining FastAPI as the governed loopback backend/API. D032 defers the independent Claude implementation audit without waiving it; that audit and any corrections must close before Phase 2. Phases 2 through 6 remain blocked pending separate authorization. M06-B adds one human-supplied public URL retrieval path only after M06-A implementation is stable and milestone closure is owner-accepted. M06-B does not inherit implementation authority from M06-A.
 
 **Milestone file**
 
@@ -238,7 +238,7 @@ M06-A establishes the governed research-memory foundation for one editorial/publ
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
-- D027 through D031 in `99-decisions/decision-log.md`
+- D027 through D032 in `99-decisions/decision-log.md`
 
 **Governing documents**
 
@@ -280,7 +280,7 @@ One human-triggered public URL may be retrieved under a separately accepted SSRF
 
 **Entry and review gate**
 
-The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. D030 satisfies the separate implementation gate for Phase 1 only. Each later phase still requires its own exact bounded authorization tied to the accepted migration, parser, backup, and adversarial contracts. Phase 1 must complete independent implementation review, correction, commit-bound evidence, and owner closure before Phase 2.
+The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. D030 satisfied the separate implementation gate for Phase 1, and application commits `8fe3be4` and `5f0f9ae` complete its implementation and clean evidence package. D032 defers the independent implementation audit without representing it as passed; that audit and any corrections must close before Phase 2. Each later phase still requires its own exact bounded authorization tied to the accepted migration, parser, backup, and adversarial contracts.
 
 ## M07 — Human-Triggered X Capture Helper
 
@@ -562,13 +562,13 @@ A milestone closes only when:
 3. M06-D01 through M06-D16 and D027 are accepted;
 4. the exact M06-A core plan, parser-admission plan, and 108-invariant adversarial matrix are owner-accepted through D028;
 5. D029 clarifies editorial identity; D030 authorizes the exact Phase 1 implementation package; D031 makes Tauri the sole supported operator interface;
-6. complete Phase 1 validation and independent implementation review against the live uncommitted tree;
-7. correct findings, obtain owner commit authorization, then produce clean commit-bound evidence and owner closure;
+6. Phase 1 implementation and clean commit-bound evidence are complete through application commits `8fe3be4` and `5f0f9ae`;
+7. D032 defers the independent Claude implementation audit; resume it later and correct/evidence-bind any findings before Phase 2 authorization;
 8. keep Phases 2 through 6 and M06-B blocked until their separate gates are satisfied.
 
 # D024 Roadmap Reference
 
-D024 remains the broad multi-account and Qdrant isolation direction. D027 refines M06-A to one physical Vault per editorial/public brand identity, with one or more platform-owned accounts bound centrally; it does not alter the later M14 requirement for fail-closed account-scoped semantic retrieval. M06-A planning is accepted through D028, and Phase 1 implementation is authorized through D030. Later phases remain blocked.
+D024 remains the broad multi-account and Qdrant isolation direction. D027 refines M06-A to one physical Vault per editorial/public brand identity, with one or more platform-owned accounts bound centrally; it does not alter the later M14 requirement for fail-closed account-scoped semantic retrieval. M06-A planning is accepted through D028; Phase 1 implementation and evidence are complete under D030/D032. The deferred audit and any corrections must close before Phase 2, and later phases remain blocked.
 
 # Final Rule
 

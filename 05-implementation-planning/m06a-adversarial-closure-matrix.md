@@ -4,11 +4,12 @@
 
 ```text
 Status: owner-accepted planning baseline
-Implementation authority: Phase 1 rows only under D030
+Phase 1 rows: implemented and clean-evidence-bound to application commit 8fe3be4
+Independent Phase 1 audit: deferred under D032; required before Phase 2
 Later-phase rows: planning only
 ```
 
-This is the executable-plan matrix. At D028 acceptance no listed test was claimed to exist or have executed. D030 authorizes implementation and execution of the exact Phase 1 row set only. Every row must be implemented, collected, executed, and bound to commit-matched evidence before its corresponding phase can close.
+This is the executable-plan matrix. At D028 acceptance no listed test was claimed to exist or have executed. D030 authorized implementation and execution of the exact Phase 1 row set, now completed with clean evidence bound to application commit `8fe3be4`. D032 defers the independent Phase 1 audit without claiming it passed. Every later row must be implemented, collected, executed, and bound to commit-matched evidence before its corresponding phase can close.
 
 Governing references:
 
@@ -16,7 +17,7 @@ Governing references:
 - `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`;
 - `05-implementation-planning/m06a-parser-admission-plan.md`;
 - `08-audits/m06a-local-manual-vault-planning-package-independent-review.md`;
-- D030 and D031 in `99-decisions/decision-log.md`.
+- D030 through D032 in `99-decisions/decision-log.md`.
 
 ---
 
@@ -298,14 +299,16 @@ Before Phase 6 closure:
 
 ```text
 Status: owner-accepted planning baseline
-Implementation authority: exact Phase 1 row set under D030
+Phase 1 rows: implemented and clean-evidence-bound through 8fe3be4 and 5f0f9ae
+Independent implementation audit: deferred under D032; not claimed complete
 Later-phase implementation authority: none
 
-Phase 1 tests and provisional dirty-tree evidence may exist, but Phase 1
-cannot close until independent review, correction, commit-bound execution,
-and explicit owner closure are complete.
+The 31 required Phase 1 invariants executed and passed against the clean
+implementation commit with no Phase 1 deferral. D032 preserves the later
+independent-audit requirement and blocks Phase 2 until findings, if any,
+are corrected and evidence-bound.
 
 This matrix does not authorize Phase 2 through 6 application work, parser
-implementation or admission, new dependencies, M06-B work, staging, commit,
-or push. Those actions require their separate governing gates.
+implementation or admission, new dependencies, M06-B work, or any other
+deferred capability. Those actions require their separate governing gates.
 ```

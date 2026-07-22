@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06-A Phase 1 implementation authorized under D030; local uncommitted implementation is being aligned to the Tauri-only D031 boundary and prepared for independent review.
+M06-A Phase 1 implementation and clean commit-bound evidence are complete. D032 defers the independent Claude implementation audit without waiving it; Phase 2 remains blocked until that later audit and any corrections are resolved.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (Phase 1 implementation authorized; uncommitted review candidate in progress)
+M06-A — Local Manual Vault (Phase 1 implementation and evidence complete; independent audit deferred; Phase 2 blocked)
 ```
 
 ## Current Focus
@@ -56,23 +56,23 @@ M06-D16  No live LLM/provider integration in M06-A            approved
 
 The owner accepted the resolved M06-A planning baseline after the preserved independent review, D027 owner rulings, Claude resolved-package review, bounded corrections, and focused verification. D028 records acceptance, and `08-audits/m06a-planning-correction-closure.md` closes the correction cycle. The accepted package contains the core plan, parser-admission plan, and 108-invariant adversarial matrix.
 
-D030 authorizes the exact Phase 1 identity, actor, migration, registry, routing, selected-Vault health, reconciliation, and Phase 1 adversarial package. A local uncommitted implementation candidate exists and is being revalidated after the D031 Tauri-only correction. No parser is admitted. Phases 2 through 6, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
+D030 authorized the exact Phase 1 identity, actor, migration, registry, routing, selected-Vault health, reconciliation, and adversarial package. Application commit `8fe3be4cc9da3183da88cee4bf4b19e2979b901d` implements that boundary, and evidence-binding commit `5f0f9ae` preserves the clean commit-bound closure record. No parser is admitted. Phases 2 through 6, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
 
 D029 records the owner clarification that The Discrepancy Desk is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication product. Clearly labeled speculative, disputed, conspiratorial, folkloric, implausible, anomalous, and unresolved material may be archived and published without a universal prove-or-disprove requirement. Provenance, source/Desk-inference separation, correction lineage, exact human approval, manual publication, and the non-fabrication boundary remain unchanged. The controlling doctrine is `00-doctrine/editorial-anomaly-archive-direction.md`.
 
 D031 makes Tauri the sole supported human operator interface. FastAPI remains the token-gated loopback backend/API and packaged sidecar host. Existing Jinja pages remain frozen historical regression scaffolding only; no new M06 browser features or browser/Tauri parity work is admitted.
 
+D032 records the owner decision to continue the Phase 1 commit and clean-evidence path after Claude MCP/client failures and subscription usage limits prevented the immediate independent implementation audit. The audit is deferred, not waived, and must be completed with any findings resolved before Phase 2 authorization.
+
 Application repository truth:
 
 ```text
-HEAD/origin: 6cbd0366e55bfba0c9687201615b72e70bf485d5
-Commit:      Bind AC-01 correction evidence
+HEAD/origin: 5f0f9ae
+Implementation commit: 8fe3be4cc9da3183da88cee4bf4b19e2979b901d
+Evidence-binding commit: 5f0f9ae
 Branch:      main
 Remote:      synchronized with origin/main
-Working tree: dirty by design with 39 exact M06-A Phase 1 source/test/migration paths
-Staged:      none
-Committed:   no Phase 1 commit
-Pushed:      no Phase 1 push
+Working tree: clean
 ```
 
 The accepted AC-01 baseline remains documentary project evidence:
@@ -82,7 +82,7 @@ Full-suite evidence SHA-256: 78fc6073c087eb35f404b57030137d8a2c9e51b28f8da4c9038
 Hammer evidence SHA-256: baaba75a25125e9dde53bbf8255e13d1c4a6e4df66c20985b3857bad1c898dbf
 ```
 
-Current uncommitted M06-A Phase 1 validation after the D031 correction:
+Clean commit-bound M06-A Phase 1 validation:
 
 ```text
 uv run ruff check .                                      → passed
@@ -95,10 +95,14 @@ Rust tests                                                → 3 passed
 packaged sidecar build                                    → passed
 packaged loopback smoke                                   → central 0005; Vault V0001; audit valid
 new /vaults browser product route                         → absent / 404
-sidecar SHA-256                                           → bb8bc3496195b0a58759eb8b17c8727b79726c0d072b29d5f4edfd919bc01c02
+duplicate-root path leakage                               → absent
+full-suite evidence SHA-256                               → 81b91a84e4acae96e31bb1e1236338f4d32cf9c034a4507a5241d01afc716b2b
+Phase 1 hammer evidence SHA-256                           → 34896d63cdaafc2b71f9742354c43c844ed0bf58a2bf86d0e533a00839643647
+legacy hammer evidence SHA-256                            → 6bb8dde95ea9c0c542e600ee6b31e60644709810e63c3267caa8d628f2da25b8
+packaged sidecar artifact SHA-256                         → 3c589baee8a2bebc534c167fa334371386c59dfbab6fe4b76a62e253c01021b1
 ```
 
-These are provisional dirty-tree results. They are not commit-bound Phase 1 closure evidence.
+All full-suite and hammer evidence identifies implementation commit `8fe3be4cc9da3183da88cee4bf4b19e2979b901d` and records `working_tree_dirty: false`. The application closure record is `docs/m06a-phase1-implementation-closure.md`.
 
 ## Accepted Roadmap
 
@@ -109,7 +113,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — Phase 1 implementation authorized; review candidate in progress
+M06-A  Local Manual Vault — Phase 1 implementation/evidence complete; independent audit deferred; Phase 2 blocked
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -141,7 +145,7 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - one restricted Release Watch pilot before any broader agent role;
 - one physical Vault per editorial/public brand identity under D027, with platform-owned accounts bound centrally;
 - account-scoped Qdrant collections and fail-closed retrieval under D024;
-- M06-A Phase 1 is authorized under D030; later phases still require separate explicit owner authorization; M14 retains its named review and entry gate.
+- M06-A Phase 1 implementation and clean evidence are complete under D030/D032; the deferred independent audit and any corrections must close before Phase 2 authorization; M14 retains its named review and entry gate.
 
 ## Hard Boundaries
 
@@ -174,9 +178,13 @@ M06-A planning owner acceptance: D028
 Editorial anomaly archive clarification: D029 and `00-doctrine/editorial-anomaly-archive-direction.md` (docs commit `740cc22`)
 M06-A Phase 1 implementation authorization: D030
 Tauri-only supported operator interface: D031
+Deferred independent-audit timing decision: D032
+M06-A Phase 1 implementation commit: `8fe3be4cc9da3183da88cee4bf4b19e2979b901d`
+M06-A Phase 1 evidence-binding commit: `5f0f9ae`
+Application closure record: `docs/m06a-phase1-implementation-closure.md`
 M06-A planning correction closure: `08-audits/m06a-planning-correction-closure.md`
 ```
 
 ## Next Bounded Action
 
-Complete validation of the D031 Tauri-only correction against the uncommitted M06-A Phase 1 implementation candidate, then obtain independent implementation review of the exact live application tree. Correct any findings before owner authorization to commit. Do not begin Phase 2, admit parsers, add intake/artifact/search/dossier/backup capability, or begin M06-B planning.
+Resume the deferred independent Claude audit against application commits `8fe3be4` and `5f0f9ae` when MCP access and usage permit. Correct and evidence-bind any findings before Phase 2 authorization. Until then, do not begin Phase 2, admit parsers, add intake/artifact/search/dossier/projection/backup capability, or begin M06-B planning.

@@ -4,13 +4,14 @@
 
 ```text
 Status: owner-accepted planning baseline
-Implementation authority: Phase 1 only under D030
+Phase 1 implementation/evidence: complete through application commits 8fe3be4 and 5f0f9ae
+Independent implementation audit: deferred under D032; required before Phase 2
 Later phases: blocked pending separate authorization
 ```
 
 Correction cycle: closed through `08-audits/m06a-planning-correction-closure.md`.
 
-This document is the load-bearing, owner-accepted technical planning baseline for M06-A. It implements the accepted M06 architecture and D027, with later governing clarifications and authority recorded in D029 through D031, while correcting the defects identified in the preserved independent and Claude reviews. It supersedes the preserved Claude planning report only as the controlling implementation-planning baseline; all historical reports remain preserved as audit evidence.
+This document is the load-bearing, owner-accepted technical planning baseline for M06-A. It implements the accepted M06 architecture and D027, with later governing clarifications and authority recorded in D029 through D032, while correcting the defects identified in the preserved independent and Claude reviews. It supersedes the preserved Claude planning report only as the controlling implementation-planning baseline; all historical reports remain preserved as audit evidence.
 
 Governing inputs:
 
@@ -1573,7 +1574,10 @@ candidate reconciled to the owner-resolved design
 → acceptance/navigation package closed R-06 and the correction cycle
 → owner authorized exact Phase 1 implementation through D030
 → D031 narrowed new operator work to Tauri over the governed loopback API
-→ Phase 1 implementation review, correction, commit-bound evidence, and owner closure pending
+→ Phase 1 implementation committed as 8fe3be4
+→ clean commit-bound evidence preserved through 5f0f9ae
+→ D032 deferred the independent Claude implementation audit without waiving it
+→ Phase 2 remains blocked until that audit and any corrections close
 ```
 
 No prompt is committed. No parser is admitted. Phase 2 through 6 migrations, intake, parser, search, dossier, backup, and later runtime work remain unauthorized.
@@ -1584,19 +1588,21 @@ No prompt is committed. No parser is admitted. Phase 2 through 6 migrations, int
 
 ```text
 Status: owner-accepted planning baseline
-Implementation authority: exact Phase 1 package under D030
+Phase 1 implementation/evidence: complete through 8fe3be4 and 5f0f9ae
+Independent implementation audit: deferred under D032; not claimed complete
 Later-phase implementation authority: none
 
 M06 architecture and this resolved M06-A planning baseline are owner-accepted.
 OD-1 through OD-3 are resolved. The correction cycle is closed.
 D029 and D031 clarify editorial identity and the supported operator surface.
+D032 changes review timing only and preserves the independent-audit requirement before Phase 2.
 
 Focused correction verification completed with verdict:
 M06-A FOCUSED CORRECTIONS VERIFIED — READY FOR OWNER ACCEPTANCE.
 Owner planning acceptance is recorded in D028 and the closure record.
 
-D030 authorizes Phase 1 application code, central and per-Vault migration
-foundations, Vault creation/routing, Phase 1 tests, and provisional evidence.
-It does not authorize staging, commit, push, Phase 2 through 6 work, parser
-implementation or admission, dependencies, M06-B work, or owner closure.
+D030 authorized the exact Phase 1 application package. That package and its
+clean evidence are committed. No authority exists for Phase 2 through 6,
+parser implementation or admission, new dependencies, M06-B work, or any
+other deferred capability.
 ```

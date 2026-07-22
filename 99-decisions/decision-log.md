@@ -498,3 +498,21 @@ Consequences:
 - security and authority proof must instead establish `Tauri client → authenticated loopback API → governed service → persistence` with no direct frontend database access or independent frontend authority decisions;
 - roadmap sequencing, M06 object model, human approval, manual publication, provenance, audit, and recovery boundaries are unchanged;
 - this ruling does not remove FastAPI, authorize remote API exposure, authorize autonomous behavior, or weaken existing regression tests.
+
+
+## D032 — Defer Independent Phase 1 Audit Without Blocking the Commit Path
+
+Accepted by the owner on 2026-07-22.
+
+Claude MCP/client failures and Claude subscription usage limits prevented the planned independent implementation review from completing before the M06-A Phase 1 commit gate. The owner directed the project to continue rather than leave the validated implementation indefinitely uncommitted.
+
+Consequences:
+
+- the Project Steward may commit, produce clean commit-bound evidence for, and push the exact authorized M06-A Phase 1 implementation;
+- the absence of the immediate Claude review is recorded explicitly and must not be represented as an independent-review pass;
+- the independent Claude implementation audit is deferred, not permanently waived;
+- the audit must review the committed Phase 1 implementation and any evidence-binding follow-up when Claude access and usage permit;
+- any later Claude findings must be corrected and evidence-bound before M06-A Phase 2 may be authorized;
+- Phase 2 and all later M06-A phases remain blocked;
+- parser admission, intake/artifact/search/dossier/projection/backup capability, M06-B, network retrieval, providers, monitoring, live LLM integration, Qdrant, graph work, destructive purge, and automated publishing remain blocked;
+- this decision changes review timing only and grants no additional product, schema, platform, provider, automation, or publication authority.
