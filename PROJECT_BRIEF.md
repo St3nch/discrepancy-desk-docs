@@ -2,7 +2,9 @@
 
 ## One-Liner
 
-**The Discrepancy Desk** is a fictional/parody public brand plus a local human-approved research/drafting/control system for weird history, conspiracy lore, anomalies, and hidden-timeline content.
+**The Discrepancy Desk** is a fictional/parody public brand plus a local human-approved anomaly archive, research, drafting, and editorial-control system for weird history, conspiracy lore, disputed claims, anomalies, and hidden-timeline content.
+
+The Desk may preserve and publish clearly labeled speculative, folkloric, implausible, disputed, and unresolved material. It is not required to prove or disprove every theory. It must preserve where material came from, distinguish source material from Desk inference where material, and never fabricate the supporting record. See `00-doctrine/editorial-anomaly-archive-direction.md`.
 
 ## Public Account Concept
 
@@ -71,6 +73,9 @@ This is not:
 - a government impersonation account
 - a generic SEO dashboard
 - a scraper farm
+- a formal fact-checking service or truth-rating system
+- a court of final factual authority
+- a system that must resolve every claim before editorial use
 - a full strategy engine
 - a React-heavy project before need exists
 - a Postgres-first architecture before local proof

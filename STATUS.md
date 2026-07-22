@@ -1,6 +1,6 @@
 # Project Status — Discrepancy Desk
 
-*Last updated: 2026-07-21*
+*Last updated: 2026-07-22*
 
 ## Current Mode
 
@@ -56,6 +56,8 @@ M06-D16  No live LLM/provider integration in M06-A            approved
 
 The owner accepted the resolved M06-A planning baseline after the preserved independent review, D027 owner rulings, Claude resolved-package review, bounded corrections, and focused verification. D028 records acceptance, and `08-audits/m06a-planning-correction-closure.md` closes the correction cycle. The accepted package contains the core plan, parser-admission plan, and 108-invariant adversarial matrix. No parser is admitted and no matrix test is claimed to have executed. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
 
+D029 records the owner clarification that The Discrepancy Desk is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication product. Clearly labeled speculative, disputed, conspiratorial, folkloric, implausible, anomalous, and unresolved material may be archived and published without a universal prove-or-disprove requirement. Provenance, source/Desk-inference separation, correction lineage, exact human approval, manual publication, and the non-fabrication boundary remain unchanged. The controlling doctrine is `00-doctrine/editorial-anomaly-archive-direction.md`.
+
 Application repository truth:
 
 ```text
@@ -105,6 +107,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 ## Accepted Product Direction
 
 - records-first editorial operation;
+- editorial anomaly archive under D029: record the crazy, label what it is, connect what emerges, never fabricate the file;
+- unresolved or speculative material may be editorially useful without a mandatory final conclusion;
 - Archive, Docket, and Flash Release editorial lanes;
 - rolling 90-day active schedule;
 - first-class Unscheduled Reserve;
@@ -126,6 +130,8 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - No credentials in Git, Markdown, screenshots, manifests, or evidence.
 - No real-government impersonation or claims of classified access.
 - No speculation promoted as confirmed truth.
+- No fabricated sources, documents, quotations, screenshots, evidence, or corroboration.
+- No hiding the difference between source material and Desk-created inference.
 - No agent/LLM direct database access.
 - No agent self-approval, accepted-truth promotion, publication authority, or evidence deletion.
 - No provider/platform/source watcher admitted without its milestone gate and owner approval.
@@ -145,6 +151,7 @@ M06 synthesis audit corrections: 191fc8a
 AC-02 closure and M06-A audit preservation: fb3b865
 M06-A owner rulings: D027
 M06-A planning owner acceptance: D028
+Editorial anomaly archive clarification: D029 and `00-doctrine/editorial-anomaly-archive-direction.md`
 M06-A planning correction closure: `08-audits/m06a-planning-correction-closure.md`
 ```
 

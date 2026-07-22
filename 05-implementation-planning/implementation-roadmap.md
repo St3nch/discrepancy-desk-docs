@@ -33,6 +33,7 @@ This rule exists to prevent downstream milestones from drifting into unstated as
 ## Non-Negotiable Boundaries
 
 - AI drafts; the human clears.
+- Record the crazy; label what it is; connect what emerges; never fabricate the file. Clearly labeled unresolved or speculative material may be archived and published without a universal prove-or-disprove requirement.
 - No autonomous posting, replying, liking, following, reposting, or direct messaging.
 - No agent or LLM may access the database directly.
 - External agents use governed business operations, never SQL/table operations.
@@ -58,6 +59,7 @@ Established doctrine, brand, repositories, platform boundaries, roadmap discipli
 - `README.md`
 - `LLM_MAP.md`
 - `00-doctrine/operating-doctrine.md`
+- `00-doctrine/editorial-anomaly-archive-direction.md`
 - `00-doctrine/human-approval-policy.md`
 - `00-doctrine/account-rules-and-boundaries.md`
 - `01-brand/brand-identity.md`
@@ -236,10 +238,11 @@ M06-A establishes the governed research-memory foundation for one editorial/publ
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
-- D027 and D028 in `99-decisions/decision-log.md`
+- D027, D028, and D029 in `99-decisions/decision-log.md`
 
 **Governing documents**
 
+- `00-doctrine/editorial-anomaly-archive-direction.md`
 - `03-system-design/obsidian-qdrant-sqlite-plan.md`
 - `03-system-design/multi-account-model.md`
 - `05-implementation-planning/hammer-test-strategy.md`
@@ -261,8 +264,8 @@ A useful local-only Vault exists with:
 - SQLite authority plus immutable filesystem artifacts;
 - universal governed ingestion envelope;
 - admitted local parsers and versioned normalized JSON element packages;
-- typed assertions and dossiers;
-- separate research, editorial-use, and publication authority;
+- typed assertions and dossiers that may preserve allegations, folklore, speculation, contradictions, unknowns, and unresolved questions without requiring a final conclusion;
+- separate research, optional truth/support assessment, editorial-use, and publication authority;
 - immutable correction/supersession lineage;
 - human-only entity merge/split acceptance;
 - SQLite lexical search and deterministic chunk contract;

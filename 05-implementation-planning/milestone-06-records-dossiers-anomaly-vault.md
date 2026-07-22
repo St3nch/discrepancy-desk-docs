@@ -19,6 +19,7 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 
 - `LLM_MAP.md`
 - `STATUS.md`
+- `00-doctrine/editorial-anomaly-archive-direction.md`
 - `05-implementation-planning/implementation-roadmap.md`
 - `05-implementation-planning/m06-architecture-synthesis.md`
 - `05-implementation-planning/m06a-m06b-package-boundary.md`
@@ -43,11 +44,11 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `08-audits/claude-m06-architecture-synthesis-review.md`
 - `99-decisions/m06-owner-architecture-rulings.md`
 - M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
-- accepted D024, D027, and D028 in `99-decisions/decision-log.md`
+- accepted D024, D027, D028, and D029 in `99-decisions/decision-log.md`
 
 ## Goal
 
-Create a governed, brand-level local research-memory foundation that preserves exact originals, parser provenance, typed assertions, dossiers, correction lineage, lexical retrieval, and recoverability without creating a second truth store.
+Create a governed, brand-level local anomaly archive and research-memory foundation that preserves exact originals, parser provenance, typed assertions, dossiers, correction lineage, lexical retrieval, and recoverability without creating a second truth store. The Vault preserves the trail and supports editorial connections; it is not a formal fact-checking or truth-adjudication system.
 
 ## Accepted Architecture
 
@@ -56,7 +57,7 @@ Create a governed, brand-level local research-memory foundation that preserves e
 - Markdown/HTML projections are generated and read-only.
 - Each editorial/public brand identity has one physically separate Vault; platform-owned accounts remain central records bound explicitly to that Vault.
 - Every source class converges on one universal governed ingestion envelope.
-- Research admission, truth/support assessment, editorial-use ruling, and exact publication approval are separate authority layers.
+- Research admission, optional truth/support assessment, editorial-use ruling, and exact publication approval are separate authority layers. Speculative or unresolved status does not by itself block admission or editorial use.
 - Corrections and supersessions are immutable lineage.
 - Entity merges/splits require human acceptance.
 - Static LLM context-run contracts are defined, but no live LLM/provider integration ships in M06-A.
@@ -71,7 +72,7 @@ Create a governed, brand-level local research-memory foundation that preserves e
 - immutable originals and acquisition receipts;
 - versioned normalized element packages with exact locators;
 - source/item/occurrence/observation/artifact/document-version/element records;
-- typed assertions, unresolved questions, and dossiers;
+- typed assertions, allegations, source claims, folklore, Desk inferences, contradictions, unresolved questions, and dossiers;
 - account-policy and editorial-use bindings;
 - immutable correction/supersession lineage;
 - proposal-only entity merge/split candidates;
@@ -118,8 +119,8 @@ Current result: planning is accepted, but implementation entry remains closed at
 
 ## M06-A Exit Gate
 
-- every durable assertion is typed, attributable, evidence-linked, account-scoped, and correctable;
-- no candidate promotes to accepted conclusion or editorial ruling without human authority;
+- every durable assertion is typed, attributable, source/provenance-linked as applicable, account-scoped, and correctable; the link proves where the statement came from, not automatically that the underlying proposition is true;
+- no candidate promotes to a final support assessment, accepted conclusion, or editorial ruling without human authority; unresolved material may remain editorially usable without such promotion;
 - originals, packages, manifests, and database records reconcile exactly;
 - parser reruns and corrections preserve prior versions;
 - entity merge/split bypass fails closed;

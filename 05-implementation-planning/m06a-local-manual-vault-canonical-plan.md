@@ -13,6 +13,7 @@ This document is the load-bearing, owner-accepted technical planning baseline fo
 
 Governing inputs:
 
+- `00-doctrine/editorial-anomaly-archive-direction.md`;
 - `05-implementation-planning/m06-architecture-synthesis.md`;
 - `05-implementation-planning/m06a-planning-authorization.md`;
 - `05-implementation-planning/m06a-planning-package-outline.md`;
@@ -25,7 +26,7 @@ Governing inputs:
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`;
 - `08-audits/m06a-planning-correction-disposition.md`;
 - `08-audits/m06a-planning-correction-closure.md`;
-- D027 and D028 in `99-decisions/decision-log.md`.
+- D027, D028, and D029 in `99-decisions/decision-log.md`.
 
 ---
 
@@ -39,7 +40,7 @@ M06-A establishes a governed, local-only research-memory Vault that can:
 - preserve exact original bytes or exact supplied text;
 - record source, observation, acquisition, actor, policy, and parser provenance;
 - normalize admitted formats into versioned deterministic JSON element packages;
-- support typed assertions, unresolved questions, entities, and dossiers;
+- support typed source claims, allegations, folklore, observations, Desk inferences, relationship candidates, contradictions, unresolved questions, entities, and dossiers;
 - support local SQLite full-text search, deterministic chunks, and generated read-only projections;
 - preserve immutable correction and supersession lineage;
 - produce canonical per-Vault backup generations and prove disposable restore;
@@ -1068,7 +1069,9 @@ editorial-use ruling
 publication approval
 ```
 
-An epistemic type named `accepted_conclusion` does not grant authority by itself. A final support assessment requires a verified human operation and evidence. Account/public labels are policy-defined records, not a hard-coded universal evidence enum.
+An epistemic type named `accepted_conclusion` does not grant authority by itself. A final support assessment requires a verified human operation and evidence, but creating that assessment is optional unless the system is making a final support judgment. It is not a universal prerequisite for archive admission, dossier membership, editorial usefulness, or publication. Account/public labels are policy-defined records, not a hard-coded universal evidence enum.
+
+The Vault may preserve allegations, repeated online claims, folklore, speculation, implausible theories, contradictions, relationship candidates, Desk inferences, and unknowns. Their unresolved status does not by itself make them inadmissible or editorially unusable. Provenance links establish what source or actor supplied the statement; they do not automatically prove the underlying proposition.
 
 ## 16.2 Evidence and interpretation
 
@@ -1080,11 +1083,11 @@ Mentions produce entity candidates. System/model actors may propose merges or sp
 
 ## 16.4 Questions and dossiers
 
-`unresolved_questions` is a first-class canonical object with state, text/version hash, actor, evidence links, correction lineage, and resolution reference when later answered. Dossiers organize typed references without duplicating source bytes or evidence authority.
+`unresolved_questions` is a first-class canonical object with state, text/version hash, actor, evidence links, correction lineage, and resolution reference when later answered. Dossiers organize typed references without duplicating source bytes or evidence authority. A dossier may remain open indefinitely and is not required to produce an accepted conclusion.
 
 ## 16.5 Editorial use and publication
 
-An editorial-use ruling is Vault-owned, Vault-policy-bound, human-created, and may allow, restrict, require framing, or block research use. It never approves exact post bytes. Exact-content approval and publication remain in M00–M05 central authority.
+An editorial-use ruling is Vault-owned, Vault-policy-bound, human-created, and may allow, restrict, require framing, or block research use. It may allow unresolved, disputed, speculative, conspiratorial, folkloric, or implausible material when attribution, labels, warnings, or required framing preserve what the material is. Lack of a final support assessment is not by itself a prohibition. The ruling never approves exact post bytes. Exact-content approval and publication remain in M00–M05 central authority.
 
 ## 16.6 Policy impact
 

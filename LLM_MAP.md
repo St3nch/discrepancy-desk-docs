@@ -6,7 +6,9 @@ Do not treat this project as a generic social media bot, SEO dashboard, conspira
 
 ## Project Summary
 
-The Discrepancy Desk is a human-approved, AI-assisted research, drafting, review, and publishing support system for a fictional/parody public account centered on weird history, conspiracy lore, anomalies, hidden timelines, and bureaucratic deadpan storytelling.
+The Discrepancy Desk is a human-approved, AI-assisted anomaly archive, research, drafting, review, and publishing-support system for a fictional/parody public account centered on weird history, conspiracy lore, disputed claims, anomalies, hidden timelines, and bureaucratic deadpan storytelling.
+
+The Desk may archive and publish clearly labeled speculative, disputed, conspiratorial, folkloric, implausible, and unresolved material. It is not a formal fact-checking or truth-adjudication product and does not need to prove or disprove every theory. It must preserve provenance, distinguish source material from Desk inference where material, and never fabricate the supporting record. The controlling clarification is `00-doctrine/editorial-anomaly-archive-direction.md` and D029.
 
 Public persona:
 
@@ -57,7 +59,7 @@ The docs repo defines what should be built. The app repo contains implementation
 
 M00 through M05 are owner-accepted and closed. AC-01 and AC-02 are closed. The M06 architecture synthesis and all sixteen owner architecture rulings are accepted.
 
-The resolved M06-A Local Manual Vault planning baseline is owner-accepted through D028, and its planning correction cycle is closed. D027 fixes one editorial/public brand identity per physical Vault, one SQLite database per Vault, and rejection of timed-deletion material in first M06-A. No parser is admitted and no implementation authority exists. M06-B Bounded Static Webpage Retrieval remains a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, cross-Vault transfer execution, and all application code or migration changes remain blocked.
+The resolved M06-A Local Manual Vault planning baseline is owner-accepted through D028, and its planning correction cycle is closed. D027 fixes one editorial/public brand identity per physical Vault, one SQLite database per Vault, and rejection of timed-deletion material in first M06-A. D029 clarifies that the Vault is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication system; clearly labeled unresolved or speculative material may remain editorially useful without a mandatory final support assessment. No parser is admitted and no implementation authority exists. M06-B Bounded Static Webpage Retrieval remains a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, cross-Vault transfer execution, and all application code or migration changes remain blocked.
 
 ## Read Order for LLMs
 
@@ -66,6 +68,7 @@ Read these first:
 1. `PROJECT_BRIEF.md`
 2. `STATUS.md`
 3. `00-doctrine/operating-doctrine.md`
+   - then `00-doctrine/editorial-anomaly-archive-direction.md`
 4. `00-doctrine/human-approval-policy.md`
 5. `00-doctrine/account-rules-and-boundaries.md`
 6. `01-brand/brand-identity.md`
@@ -138,6 +141,8 @@ The system may:
 - track performance metrics
 - help find related source material
 - flag pattern candidates for human review
+- archive and publish clearly labeled speculative, disputed, folkloric, conspiratorial, anomalous, or unresolved material
+- connect recurring people, organizations, places, dates, claims, records, symbols, language, and timelines without treating the connection as automatic proof
 
 The system must not:
 
@@ -152,6 +157,8 @@ The system must not:
 - impersonate a real government employee
 - claim real classified access
 - present speculation as confirmed fact
+- fabricate sources, documents, quotations, screenshots, evidence, or corroboration
+- hide the difference between source material and Desk-created inference
 - run “wake up sheeple” panic content as doctrine
 
 ## Major Components
@@ -181,7 +188,7 @@ Docs:
 
 ### Anomaly Vault
 
-Research memory layer. Its M06-A local-only canonical formats, ingestion boundary, projections, parser-admission contract, and recovery plan are defined in the owner-accepted M06-A planning baseline. Obsidian is not an architectural requirement. Implementation remains blocked pending separate owner authorization.
+Research memory layer and editorial connection engine. It is an archive and provenance system, not a truth machine. It may preserve unresolved allegations, folklore, speculation, contradictions, and pattern candidates when their source and status are represented honestly. Its M06-A local-only canonical formats, ingestion boundary, projections, parser-admission contract, and recovery plan are defined in the owner-accepted M06-A planning baseline. Obsidian is not an architectural requirement. Implementation remains blocked pending separate owner authorization.
 
 Docs:
 

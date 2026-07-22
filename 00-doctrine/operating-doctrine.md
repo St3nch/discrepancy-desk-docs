@@ -36,6 +36,14 @@ Any public output must be reviewed and approved by the user.
 
 Approval is bound to exact final text/content. If the approved content changes, approval is invalidated and review must happen again.
 
+## Editorial Anomaly Archive Rule
+
+> Record the crazy. Label what it is. Connect what emerges. Never fabricate the file.
+
+The Desk may archive and publish clearly labeled speculative, disputed, conspiratorial, folkloric, anomalous, and unresolved material. Claim clarity preserves meaning and provenance; it does not require every item to be proven, disproven, or resolved before editorial use.
+
+See `00-doctrine/editorial-anomaly-archive-direction.md`.
+
 ## Fun Without Brain Rot
 
 The public account may cover strange, disputed, speculative, and conspiracy-adjacent topics, but it must maintain claim clarity.
@@ -43,6 +51,8 @@ The public account may cover strange, disputed, speculative, and conspiracy-adja
 Crumbs are not conclusions.
 Patterns are not proof.
 Speculation is not confirmation.
+
+These rules prohibit presenting speculation as confirmation. They do not prohibit storing or publishing speculation with truthful attribution and framing.
 
 ## Running Rules
 

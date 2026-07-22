@@ -407,3 +407,35 @@ Consequences:
 - no application code, migration, database, Vault, dependency, parser, or runtime implementation is authorized;
 - M06-A implementation remains blocked pending a separate explicit owner authorization;
 - M06-B planning and implementation remain blocked.
+
+
+## D029 — Clarify Editorial Anomaly Archive Direction
+
+Accepted by the owner on 2026-07-22.
+
+The owner established the governing editorial rule:
+
+```text
+Record the crazy.
+Label what it is.
+Connect what emerges.
+Never fabricate the file.
+```
+
+The controlling doctrine is `00-doctrine/editorial-anomaly-archive-direction.md`.
+
+Consequences:
+
+- The Discrepancy Desk may archive and publish clearly labeled speculative, disputed, conspiratorial, folkloric, anomalous, implausible, and unresolved material.
+- Editorial use does not require proving or disproving every claim, settling every allegation, or completing a full investigation before an interesting fragment may be used.
+- Source statements, public-record contents, allegations, secondhand reports, repeated online claims, folklore, Desk observations or inferences, and unknowns remain distinguishable where the distinction matters.
+- A source or provenance link proves where material came from; it does not automatically prove the underlying proposition.
+- Connections and recurring patterns may be editorially useful without proving causation, intent, or a complete theory.
+- Truth/support assessment remains a separate optional authority layer. A verified human operation is required when a final support assessment is recorded, but such an assessment is not a universal prerequisite for storage, dossier membership, editorial usefulness, or publication.
+- Editorial-use rulings may allow unresolved or speculative material with attribution, labels, warnings, or required framing.
+- The fictional agency and Quinton Clearance remain presentation devices and do not authorize invented sources, documents, quotations, screenshots, evidence, or corroboration.
+- The database and Vault are an archive, memory, provenance, relationship, editorial-support, publication-history, and metrics-history system—not a formal fact-checking service or truth machine.
+- Provenance, immutable originals, source/Desk-inference separation, correction lineage, audit history, human approval, exact-content binding, manual publishing, and anti-fabrication safeguards remain unchanged.
+- Roadmap sequencing, the M06 object model, source-admission policy, manual-publication workflow, and metrics workflow are unchanged by this clarification.
+
+This decision concerns editorial identity only. It grants no new platform, automation, implementation, parser, provider, publication, deletion, or destructive-migration authority.

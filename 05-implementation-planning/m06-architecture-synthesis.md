@@ -190,6 +190,8 @@ Review state and account-specific editorial usability are separate from epistemi
 
 Public labels such as `Documented`, `Plausible`, `Disputed`, `Folklore`, `Speculative`, or `Brain Soup` are presentation policy, not canonical evidence classes.
 
+The assertion model is designed to preserve claims and their status, not to exclude unresolved material. Allegations, folklore, repeated online claims, implausible theories, contradictions, Desk inferences, and unknowns may remain durable and editorially useful when attribution and provenance are represented honestly. A dossier is not required to reach an accepted conclusion.
+
 ## 9. Separate Authority Workflows
 
 ```text
@@ -207,6 +209,8 @@ publication approval
 ```
 
 An LLM may propose an editorial-use assessment. Only a human may create the governed ruling. An editorial-use ruling is a prerequisite/input to publication review where policy requires it; it never approves exact post text.
+
+Truth/support assessment is optional unless the system is recording a final support judgment. It is not a universal prerequisite for archive admission, dossier membership, editorial usefulness, or publication. Editorial-use rulings may allow unresolved, disputed, speculative, conspiratorial, or folkloric material with attribution, labels, warnings, or required framing. Rights, retention, source/method policy, provenance integrity, and exact-content approval remain independent gates.
 
 A new account-policy version creates an explicit impact set for dependent editorial-use rulings and publication approvals. Affected records are flagged for re-evaluation and may not silently inherit authority from the superseded policy version.
 
@@ -405,4 +409,4 @@ Requires:
 
 ## 21. Authority Statement
 
-The system records what was observed and what sources claim. It preserves uncertainty, contradictions, and editorial usefulness without converting them into truth. AI proposes; humans admit, rule, approve, merge, correct, and publish.
+The system records what was observed and what sources claim. It preserves uncertainty, contradictions, folklore, speculation, and editorial usefulness without converting them into truth. Unresolved material may be published with honest attribution and framing; the system is not required to settle every file. AI proposes; humans admit, rule, approve, merge, correct, and publish. No actor may fabricate the supporting record.
