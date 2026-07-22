@@ -7,13 +7,14 @@ Status: owner-accepted planning baseline
 Phase 1 implementation/evidence: complete through application commits 8fe3be4 and 5f0f9ae
 Independent implementation audit: complete; verdict M06-A PHASE 1 INDEPENDENTLY VERIFIED
 Phase 1 owner closure: accepted through D033
-Phase 2 exact package: implementation authorized through D034
+Phase 2 implementation/evidence/review/correction: complete
+Phase 2 owner closure: accepted through D035
 Later phases: blocked pending separate authorization
 ```
 
 Correction cycle: closed through `08-audits/m06a-planning-correction-closure.md`.
 
-This document is the load-bearing, owner-accepted technical planning baseline for M06-A. It implements the accepted M06 architecture and D027, with later governing clarifications and authority recorded in D029 through D033, while correcting the defects identified in the preserved independent and Claude reviews. It supersedes the preserved Claude planning report only as the controlling implementation-planning baseline; all historical reports remain preserved as audit evidence.
+This document is the load-bearing, owner-accepted technical planning baseline for M06-A. It implements the accepted M06 architecture and D027, with later governing clarifications and authority recorded in D029 through D035, while correcting the defects identified in the preserved independent and Claude reviews. It supersedes the preserved Claude planning report only as the controlling implementation-planning baseline; all historical reports remain preserved as audit evidence.
 
 Governing inputs:
 

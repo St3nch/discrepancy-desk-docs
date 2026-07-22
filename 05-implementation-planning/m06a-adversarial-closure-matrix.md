@@ -5,11 +5,11 @@
 ```text
 Status: owner-accepted planning baseline
 Phase 1 rows: implemented, clean-evidence-bound, independently verified, and owner-closed
-Phase 2 row profile: exact 33-invariant implementation profile authorized through D034
+Phase 2 rows: 33/33 executed and passed; corrected implementation owner-closed through D035
 Later-phase rows: planning only
 ```
 
-This is the executable-plan matrix. At D028 acceptance no listed test was claimed to exist or have executed. D030 authorized implementation and execution of the exact Phase 1 row set, completed with clean evidence bound to application commit `8fe3be4`. The audit deferred under D032 is complete with verdict `M06-A PHASE 1 INDEPENDENTLY VERIFIED`, and D033 accepts Phase 1 closure. D034 authorizes the exact Phase 2 closure and inherited regression row set in `05-implementation-planning/m06a-phase2-exact-implementation-package.md` for implementation. Every later row must be implemented, collected, executed, and bound to commit-matched evidence before its corresponding phase can close.
+This is the executable-plan matrix. At D028 acceptance no listed test was claimed to exist or have executed. D030 authorized implementation and execution of the exact Phase 1 row set, completed with clean evidence bound to application commit `8fe3be4`. The audit deferred under D032 is complete with verdict `M06-A PHASE 1 INDEPENDENTLY VERIFIED`, and D033 accepts Phase 1 closure. D034 authorized the exact Phase 2 closure and inherited regression row set. The profile executed 33/33 against the original and corrected Phase 2 commits; the required independent review completed; both Low findings were corrected; and D035 closes Phase 2. Every later row must be implemented, collected, executed, and bound to commit-matched evidence before its corresponding phase can close.
 
 Governing references:
 
@@ -20,7 +20,9 @@ Governing references:
 - `08-audits/m06a-local-manual-vault-planning-package-independent-review.md`;
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`;
 - `08-audits/m06a-phase1-independent-review-disposition.md`;
-- D030 through D033 in `99-decisions/decision-log.md`.
+- `08-audits/claude-m06a-phase2-independent-implementation-review.md`;
+- `08-audits/m06a-phase2-correction-and-closure.md`;
+- D030 through D035 in `99-decisions/decision-log.md`.
 
 ---
 

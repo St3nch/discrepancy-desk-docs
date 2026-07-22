@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06-A Phase 1 implementation, clean commit-bound evidence, independent Claude audit, and owner closure are complete through D033. D034 authorizes the exact Phase 2 observation/acquisition/artifact/retention/foundational-recovery package and its 33-invariant profile for implementation. Parser work and all later phases remain blocked.
+M06-A Phases 1 and 2 are implemented, independently reviewed, corrected, clean-evidence-bound, owner-accepted, and closed through D035. The optional second Claude spot review of the two corrected Low findings is deferred because of subscription usage limits; the required full Phase 2 independent audit completed and satisfied D034. Parser work, Phase 3 through Phase 6, and M06-B remain blocked pending separate authorization.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (Phase 2 implementation authorized through D034; exact package and 33-invariant profile active)
+M06-A — Local Manual Vault (Phases 1 and 2 owner-accepted and closed through D035; Phase 3 blocked pending a separate exact package)
 ```
 
 ## Current Focus
@@ -31,7 +31,7 @@ M06-A — Local Manual Vault
 M06-B — Bounded Static Webpage Retrieval
 ```
 
-The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. D030 authorizes Phase 1 implementation only; Phases 2 through 6 remain blocked. M06-B is a later separately gated network/SSRF package and is not authorized for planning or implementation.
+The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. Phases 1 and 2 are complete and closed through D035. Phases 3 through 6 remain blocked. M06-B is a later separately gated network/SSRF package and is not authorized for planning or implementation.
 
 All four owner decision sets are approved and recorded at `99-decisions/m06-owner-architecture-rulings.md`:
 
@@ -56,7 +56,11 @@ M06-D16  No live LLM/provider integration in M06-A            approved
 
 The owner accepted the resolved M06-A planning baseline after the preserved independent review, D027 owner rulings, Claude resolved-package review, bounded corrections, and focused verification. D028 records acceptance, and `08-audits/m06a-planning-correction-closure.md` closes the correction cycle. The accepted package contains the core plan, parser-admission plan, and 108-invariant adversarial matrix.
 
-D030 authorized the exact Phase 1 identity, actor, migration, registry, routing, selected-Vault health, reconciliation, and adversarial package. Application commit `8fe3be4cc9da3183da88cee4bf4b19e2979b901d` implements that boundary, and evidence-binding commit `5f0f9ae` preserves the clean commit-bound closure record. The independent Claude audit returned `M06-A PHASE 1 INDEPENDENTLY VERIFIED` with no Critical, High, or Medium findings. D033 accepts Phase 1 closure and authorizes preparation and review of the exact Phase 2 package. No parser is admitted. Phase 2 application work, Phases 3 through 6, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
+D030 authorized the exact Phase 1 identity, actor, migration, registry, routing, selected-Vault health, reconciliation, and adversarial package. Application commit `8fe3be4cc9da3183da88cee4bf4b19e2979b901d` implements that boundary, and evidence-binding commit `5f0f9ae` preserves the clean commit-bound closure record. The independent Claude audit returned `M06-A PHASE 1 INDEPENDENTLY VERIFIED`, and D033 closed Phase 1.
+
+D034 authorized the exact Phase 2 observation, acquisition, immutable-artifact, rights/retention, foundational backup/restore, Tauri-only, and 33-invariant package. Application commit `eaf7b5dcd46c61654ec0320e9db19aec0a3fe962` implemented it. The required independent Claude review returned `M06-A PHASE 2 INDEPENDENTLY VERIFIED`, reported no Critical, High, or Medium findings, and concluded that D034's review gate was satisfied. The two Low findings were reproduced and corrected through exact five-path commit `1e8cba8f0ef88c2e05b9617956872be26753993e`. D035 accepts the correction, defers only the optional second spot review, and closes Phase 2.
+
+No parser is admitted. Phase 3 through Phase 6, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
 
 D029 records the owner clarification that The Discrepancy Desk is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication product. Clearly labeled speculative, disputed, conspiratorial, folkloric, implausible, anomalous, and unresolved material may be archived and published without a universal prove-or-disprove requirement. Provenance, source/Desk-inference separation, correction lineage, exact human approval, manual publication, and the non-fabrication boundary remain unchanged. The controlling doctrine is `00-doctrine/editorial-anomaly-archive-direction.md`.
 
@@ -67,11 +71,13 @@ D032 records the owner decision to continue the Phase 1 commit and clean-evidenc
 Application repository truth:
 
 ```text
-HEAD/origin: 5f0f9ae
-Implementation commit: 8fe3be4cc9da3183da88cee4bf4b19e2979b901d
-Evidence-binding commit: 5f0f9ae
-Branch:      main
-Remote:      synchronized with origin/main
+HEAD/origin: 1e8cba8f0ef88c2e05b9617956872be26753993e
+Phase 1 implementation: 8fe3be4cc9da3183da88cee4bf4b19e2979b901d
+Phase 1 evidence binding: 5f0f9ae
+Phase 2 implementation: eaf7b5dcd46c61654ec0320e9db19aec0a3fe962
+Phase 2 correction: 1e8cba8f0ef88c2e05b9617956872be26753993e
+Branch: main
+Remote: synchronized with origin/main
 Working tree: clean
 ```
 
@@ -118,13 +124,27 @@ Owner closure: accepted through D033
 
 The two Low observations are a defense-in-depth reparse-chain recheck before canonical byte work and explicit audit-event column selection. They do not reopen Phase 1. The next exact package also requires immutable commit-SHA-named aggregate evidence copies so later test runs cannot replace the only local copy of closure evidence.
 
-Phase 2 owner-review candidate:
+M06-A Phase 2 closure:
 
 ```text
-05-implementation-planning/m06a-phase2-exact-implementation-package.md
+Required independent verdict: M06-A PHASE 2 INDEPENDENTLY VERIFIED
+Original implementation: eaf7b5dcd46c61654ec0320e9db19aec0a3fe962
+Corrected implementation: 1e8cba8f0ef88c2e05b9617956872be26753993e
+Critical findings: 0
+High findings: 0
+Medium findings: 0
+Low findings: 2, both corrected
+Optional correction spot review: deferred due Claude usage limits
+Owner closure: accepted through D035
 ```
 
-It covers manual observation/acquisition, immutable content-addressed artifact storage, pre-byte rights/retention admission, foundational per-Vault backup/disposable restore, Tauri-only operation, 33 exact Phase 2/regression invariants, and evidence hardening. It grants no implementation authority by itself.
+Preserved evidence:
+
+- `08-audits/claude-m06a-phase2-independent-implementation-review.md`;
+- `08-audits/m06a-phase2-correction-and-closure.md`;
+- `05-implementation-planning/m06a-phase2-exact-implementation-package.md`.
+
+Clean corrected validation includes 183 Python tests, Phase 2 33/33, Phase 1 31/31, legacy 31/31 plus the approved HT-14 deferral, Tauri 4/4, Rust 3/3, exact migration heads `0005`/`V0002`, sidecar build, packaged nested-control tamper refusal, no path leakage, and no proof residue.
 
 ## Accepted Roadmap
 
@@ -135,7 +155,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — Phase 2 implementation authorized through D034; exact package and 33-invariant profile active
+M06-A  Local Manual Vault — Phases 1 and 2 owner-accepted and closed through D035; Phase 3 separately gated
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -167,7 +187,7 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - one restricted Release Watch pilot before any broader agent role;
 - one physical Vault per editorial/public brand identity under D027, with platform-owned accounts bound centrally;
 - account-scoped Qdrant collections and fail-closed retrieval under D024;
-- M06-A Phase 1 is independently verified and owner-closed through D033; D034 authorizes the exact Phase 2 package and 33-invariant implementation profile; parser work and all later phases remain blocked; M14 retains its named review and entry gate.
+- M06-A Phases 1 and 2 are independently verified, corrected, and owner-closed through D035; Phase 3 and parser admission remain separately gated and blocked; M14 retains its named review and entry gate.
 
 ## Hard Boundaries
 
@@ -202,15 +222,21 @@ M06-A Phase 1 implementation authorization: D030
 Tauri-only supported operator interface: D031
 Deferred independent-audit timing decision: D032
 M06-A Phase 1 owner closure and Phase 2 package-review opening: D033
+M06-A Phase 2 implementation authorization: D034
+M06-A Phase 2 corrected owner closure: D035
 M06-A Phase 1 implementation commit: `8fe3be4cc9da3183da88cee4bf4b19e2979b901d`
 M06-A Phase 1 evidence-binding commit: `5f0f9ae`
 Application closure record: `docs/m06a-phase1-implementation-closure.md`
 Independent Phase 1 review: `08-audits/claude-m06a-phase1-independent-implementation-review.md`
 Independent-review disposition: `08-audits/m06a-phase1-independent-review-disposition.md`
-Phase 2 exact owner-review candidate: `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
+Phase 2 exact package: `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
+Independent Phase 2 review: `08-audits/claude-m06a-phase2-independent-implementation-review.md`
+Phase 2 correction and closure: `08-audits/m06a-phase2-correction-and-closure.md`
+Phase 2 implementation commit: `eaf7b5dcd46c61654ec0320e9db19aec0a3fe962`
+Phase 2 correction commit: `1e8cba8f0ef88c2e05b9617956872be26753993e`
 M06-A planning correction closure: `08-audits/m06a-planning-correction-closure.md`
 ```
 
 ## Next Bounded Action
 
-Owner-review `05-implementation-planning/m06a-phase2-exact-implementation-package.md`. If explicitly accepted, implement only its V0002 observation/acquisition/artifact/retention/foundational-backup boundary, preserve Tauri-only operation, run the exact 33-invariant Phase 2 profile plus full regressions, obtain independent implementation review, and bind clean commit-specific evidence. Until explicit acceptance, do not begin Phase 2 application edits, admit parsers, add search/dossier/projection capability, or begin M06-B planning.
+Answer the owner's pending questions. Do not begin Phase 3 application work. Any later continuation must first prepare and owner-review a separately bounded Phase 3 package and exact adversarial profile. Parser admission, search/dossier/projection capability, M06-B, providers, monitoring, live LLM integration, Qdrant, graph work, purge, and automated publishing remain blocked.

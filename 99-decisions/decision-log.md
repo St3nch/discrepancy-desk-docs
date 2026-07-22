@@ -555,3 +555,31 @@ Consequences:
 - M06-B, network retrieval, providers, monitoring, live LLM integration, Qdrant, graph work, purge, and automated publishing remain blocked;
 - implementation must receive clean commit-bound evidence, independent Claude review, finding disposition, and explicit owner closure before Phase 2 closes or Phase 3 may be considered;
 - application paths outside the exact package surface require an explicit owner-approved amendment.
+
+
+## D035 — Accept Corrected M06-A Phase 2 Closure and Defer Optional Spot Review
+
+Accepted by the owner on 2026-07-22.
+
+The owner accepted the verified five-path correction package, deferred the optional second Claude spot review because Claude subscription usage limits were reached, and closed M06-A Phase 2.
+
+Governing facts:
+
+- the required full independent Phase 2 implementation audit completed against application commit `eaf7b5dcd46c61654ec0320e9db19aec0a3fe962` with verdict `M06-A PHASE 2 INDEPENDENTLY VERIFIED`;
+- the audit reported no Critical, High, or Medium findings and concluded that D034's independent-review obligation was satisfied;
+- L-03 and L-04 were independently reproduced by the Project Steward;
+- the owner authorized an exact five-path correction package;
+- application correction commit `1e8cba8f0ef88c2e05b9617956872be26753993e` corrected both findings and was pushed to `origin/main`;
+- the correction produced 183 passing Python tests, Phase 2 33/33, Phase 1 31/31, legacy 31/31 plus the approved HT-14 deferral, successful native/package validation, and clean commit-bound evidence;
+- the second Claude spot review applied only to the already-corrected Low findings and was optional additional assurance, not the required independent Phase 2 audit.
+
+Consequences:
+
+- M06-A Phase 2 is owner-accepted and closed;
+- L-03 and L-04 are resolved and do not remain open hardening backlog items;
+- the optional correction spot review is deferred and must not be represented as completed;
+- the deferred spot review may be performed later but does not block Phase 2 closure;
+- Phase 3 remains unauthorized and requires a separately prepared exact package, adversarial profile, owner acceptance, implementation evidence, and review gate;
+- parser implementation or admission remains blocked;
+- M06-B, network retrieval, providers, monitoring, live LLM integration, Qdrant, graph work, purge, cross-Vault transfer execution, and automated publishing remain blocked;
+- this decision closes Phase 2 only and grants no later-phase authority.

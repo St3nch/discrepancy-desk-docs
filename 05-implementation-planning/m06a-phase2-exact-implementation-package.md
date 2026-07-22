@@ -3,9 +3,11 @@
 ## Status
 
 ```text
-Package status: owner-accepted and implementation-authorized through D034
-Phase 1: independently verified and owner-accepted for closure
-Phase 2 implementation authority: exact package and 33-invariant profile authorized
+Package status: implemented, independently verified, corrected, and owner-closed through D035
+Phase 1: independently verified and owner-closed
+Phase 2 implementation: eaf7b5dcd46c61654ec0320e9db19aec0a3fe962
+Phase 2 correction: 1e8cba8f0ef88c2e05b9617956872be26753993e
+Phase 2 hammer: 33/33 passed
 Parser admission: none
 M06-B authority: none
 ```
@@ -18,8 +20,10 @@ Application repository:
 
 ```text
 C:\dev\x\discrepancy-desk
-HEAD/origin: 5f0f9ae139a6c2dece123b503a90a656c13671fe
+HEAD/origin after corrected closure: 1e8cba8f0ef88c2e05b9617956872be26753993e
 Phase 1 implementation: 8fe3be4cc9da3183da88cee4bf4b19e2979b901d
+Phase 2 implementation: eaf7b5dcd46c61654ec0320e9db19aec0a3fe962
+Phase 2 correction: 1e8cba8f0ef88c2e05b9617956872be26753993e
 ```
 
 Documentation repository baseline before this package:
