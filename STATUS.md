@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06-A Phases 1 and 2 are implemented, independently reviewed, corrected, clean-evidence-bound, owner-accepted, and closed through D035. The optional second Claude spot review of the two corrected Low findings is deferred because of subscription usage limits; the required full Phase 2 independent audit completed and satisfied D034. Parser work, Phase 3 through Phase 6, and M06-B remain blocked pending separate authorization.
+M06-A Phases 1 and 2 are implemented, independently reviewed, corrected, clean-evidence-bound, owner-accepted, and closed through D035. The optional second Claude spot review of the two corrected Low findings is deferred because of subscription usage limits; the required full Phase 2 independent audit completed and satisfied D034. An exact Phase 3A candidate package for the common parser framework plus plain text in `under_test` state is prepared for owner review. It has no implementation or parser-admission authority. Phase 3 through Phase 6 and M06-B remain blocked pending separate authorization.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (Phases 1 and 2 owner-accepted and closed through D035; Phase 3 blocked pending a separate exact package)
+M06-A — Local Manual Vault (Phases 1 and 2 owner-accepted and closed through D035; exact Phase 3A candidate package prepared for owner review; implementation and parser admission blocked)
 ```
 
 ## Current Focus
@@ -155,7 +155,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — Phases 1 and 2 owner-accepted and closed through D035; Phase 3 separately gated
+M06-A  Local Manual Vault — Phases 1 and 2 owner-accepted and closed through D035; Phase 3A candidate package prepared for owner review; implementation and admission separately gated
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -230,6 +230,7 @@ Application closure record: `docs/m06a-phase1-implementation-closure.md`
 Independent Phase 1 review: `08-audits/claude-m06a-phase1-independent-implementation-review.md`
 Independent-review disposition: `08-audits/m06a-phase1-independent-review-disposition.md`
 Phase 2 exact package: `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
+Phase 3A exact package candidate: `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` (owner review pending; no authority)
 Independent Phase 2 review: `08-audits/claude-m06a-phase2-independent-implementation-review.md`
 Phase 2 correction and closure: `08-audits/m06a-phase2-correction-and-closure.md`
 Phase 2 implementation commit: `eaf7b5dcd46c61654ec0320e9db19aec0a3fe962`
@@ -239,4 +240,4 @@ M06-A planning correction closure: `08-audits/m06a-planning-correction-closure.m
 
 ## Next Bounded Action
 
-Answer the owner's pending questions. Do not begin Phase 3 application work. Any later continuation must first prepare and owner-review a separately bounded Phase 3 package and exact adversarial profile. Parser admission, search/dossier/projection capability, M06-B, providers, monitoring, live LLM integration, Qdrant, graph work, purge, and automated publishing remain blocked.
+Owner-review `05-implementation-planning/m06a-phase3a-exact-implementation-package.md`. Do not begin Phase 3 application work until the owner explicitly accepts that exact package in the decision log. Package acceptance would authorize only the common parser framework and `m06a.text.v1` in `under_test` state; parser admission, canonical parsing, SRT/VTT/JSON, Phase 3B, search/dossier/projection capability, M06-B, providers, monitoring, live LLM integration, Qdrant, graph work, purge, and automated publishing remain separately blocked.

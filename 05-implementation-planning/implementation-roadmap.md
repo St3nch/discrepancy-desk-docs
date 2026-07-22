@@ -237,6 +237,7 @@ M06-A establishes the governed research-memory foundation for one editorial/publ
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
+- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — candidate prepared for owner review; no authority until accepted
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
@@ -285,7 +286,7 @@ One human-triggered public URL may be retrieved under a separately accepted SSRF
 
 **Entry and review gate**
 
-The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. Phase 1 is closed through D033. D034 authorized the exact Phase 2 package; commits `eaf7b5d` and `1e8cba8` implement and correct it; the required independent audit is preserved; and D035 closes Phase 2. Each later phase still requires its own exact bounded authorization tied to the accepted migration, parser, backup, and adversarial contracts.
+The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. Phase 1 is closed through D033. D034 authorized the exact Phase 2 package; commits `eaf7b5d` and `1e8cba8` implement and correct it; the required independent audit is preserved; and D035 closes Phase 2. An exact Phase 3A candidate package is prepared for owner review, limited to the common parser framework plus `m06a.text.v1` in `under_test` state. It grants no implementation or parser-admission authority until separately accepted. Each later phase still requires its own exact bounded authorization tied to the accepted migration, parser, backup, and adversarial contracts.
 
 ## M07 — Human-Triggered X Capture Helper
 

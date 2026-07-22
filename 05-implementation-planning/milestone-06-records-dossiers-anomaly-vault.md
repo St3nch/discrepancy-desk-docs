@@ -2,9 +2,9 @@
 
 ## Status
 
-The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 through D033 resolve planning, editorial identity, the Tauri-only boundary, and Phase 1 closure. D034 authorized the exact Phase 2 package. D035 accepts the corrected Phase 2 implementation and closes Phase 2.
+The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 through D035 govern the accepted planning baseline, editorial identity, Tauri-only boundary, Phase 1 closure, exact Phase 2 authorization, and corrected Phase 2 closure.
 
-M06-A Phase 1 is closed through application commits `8fe3be4` and `5f0f9ae` plus D033. Phase 2 is implemented through `eaf7b5d`, independently verified, corrected through `1e8cba8`, and owner-closed through D035. The optional second correction spot review is deferred, while the required Phase 2 audit is complete. Phases 3 through 6 remain blocked pending separate explicit authorization. No parser is admitted. M06-B planning and implementation remain blocked.
+M06-A Phase 1 is closed through application commits `8fe3be4` and `5f0f9ae` plus D033. Phase 2 is implemented through `eaf7b5d`, independently verified, corrected through `1e8cba8`, and owner-closed through D035. The optional second correction spot review is deferred, while the required Phase 2 audit is complete. An exact Phase 3A candidate package is prepared for owner review, limited to the common parser framework plus `m06a.text.v1` in `under_test` state. It has no implementation or parser-admission authority. Phases 3 through 6 remain blocked pending separate explicit authorization. No parser is admitted. M06-B planning and implementation remain blocked.
 
 ## Package Sequence
 
@@ -30,6 +30,7 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
+- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — review candidate only until owner acceptance
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
@@ -47,7 +48,7 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `08-audits/claude-m06-architecture-synthesis-review.md`
 - `99-decisions/m06-owner-architecture-rulings.md`
 - M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
-- accepted D024 and D027 through D033 in `99-decisions/decision-log.md`
+- accepted D024 and D027 through D035 in `99-decisions/decision-log.md`
 
 ## Goal
 
@@ -119,7 +120,7 @@ Before M06-A implementation:
 5. the exact bounded implementation package for Phase 1 is identified and owner-reviewed — satisfied through the accepted canonical phase definition;
 6. the owner explicitly authorizes Phase 1 implementation — satisfied through D030.
 
-Current result: Phases 1 and 2 implementation, clean commit-bound evidence, required independent reviews, correction disposition, and owner closure are complete through D035. Phases 3 through 6 remain closed until separately authorized.
+Current result: Phases 1 and 2 implementation, clean commit-bound evidence, required independent reviews, correction disposition, and owner closure are complete through D035. The exact Phase 3A candidate package is prepared but not accepted. Phase 3 implementation and every parser admission remain closed until separately authorized.
 
 ## M06-A Exit Gate
 

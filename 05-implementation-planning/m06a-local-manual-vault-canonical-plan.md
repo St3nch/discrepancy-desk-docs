@@ -34,7 +34,7 @@ Governing inputs:
 - `08-audits/m06a-planning-correction-closure.md`;
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`;
 - `08-audits/m06a-phase1-independent-review-disposition.md`;
-- D027 through D033 in `99-decisions/decision-log.md`.
+- D027 through D035 in `99-decisions/decision-log.md`.
 
 ---
 
@@ -808,7 +808,7 @@ Any operation depending on a current central approval must query the central gov
 
 ## 12.1 Exact resolved layout
 
-Under resolved OD-1 and OD-2:
+Under resolved OD-1 and OD-2, the following is the long-range migration map. Only files already present in the application repository or named by an owner-accepted exact implementation package are authoritative. Names from `V0003` onward are reserved planning labels, not proof that a file exists, not authority to create it, and not permission to execute the associated phase.
 
 ```text
 migrations/
@@ -843,7 +843,7 @@ Existing migrations 0001–0004 are never edited.
 | Phase 5 | no new central revision | `V0005_assertions_entities_dossiers.py` | assertions, typed evidence, entities, questions, dossiers, policy impact, editorial-use, and static context-run records |
 | Phase 6 | no foundational schema deferred here | `V0006_closure_support.py` | closure-only evidence/reconciliation support not required by Phases 1–5; no foundational backup table first appears in Phase 6 |
 
-A phase may not execute an operation whose schema revision has not already been applied and verified. In particular, Phase 2 backup execution is blocked unless `backup_generations`, `backup_generation_files`, and start/final receipt structures from `V0002` are present. `V0006` may add closure-accounting support only; it cannot introduce tables required for foundational Phase 2 backup.
+A phase may not execute an operation whose schema revision has not already been applied and verified. A future migration filename in this table becomes controlling only when an exact implementation package names it and the owner accepts that package. In particular, Phase 2 backup execution is blocked unless `backup_generations`, `backup_generation_files`, and start/final receipt structures from `V0002` are present. `V0006` may add closure-accounting support only; it cannot introduce tables required for foundational Phase 2 backup.
 
 ## 12.3 Version and local helper table names
 
@@ -1345,9 +1345,9 @@ Timed-deletion-required or unknown-retention material remains inadmissible throu
 
 ---
 
-# 22. Exact Application Change Surface Candidate
+# 22. Non-Authoritative Future Change-Surface Map
 
-The following is the likely implementation surface under the resolved topology. It is a planning estimate, not authority to edit.
+The following is a long-range responsibility map only. It is not an exact package, not an allowlist, not evidence that a named file exists, and not authority to edit any path. For each phase, the owner-accepted exact implementation package controls the actual change surface and may narrow, rename, consolidate, or omit these prospective paths without weakening the responsibilities. When this map conflicts with an accepted exact package, the exact package governs that phase.
 
 ## 22.1 Existing Python files likely modified
 
@@ -1586,9 +1586,11 @@ candidate reconciled to the owner-resolved design
 → independent audit completed with verdict M06-A PHASE 1 INDEPENDENTLY VERIFIED
 → D033 accepted Phase 1 closure and opened exact Phase 2 package review
 → D034 authorized `m06a-phase2-exact-implementation-package.md` and its 33-invariant profile
+→ Phase 2 implementation, required independent review, and exact Low-finding corrections completed
+→ D035 accepted the corrected Phase 2 implementation and closed Phase 2
 ```
 
-No prompt is committed. No parser is admitted. D034 authorizes only the exact Phase 2 migration, intake, artifact, retention, foundational backup/restore, Tauri, and evidence boundary. Phase 3 through 6 parser, search, dossier, projection, and later runtime work remain unauthorized until their separate gates are accepted.
+No prompt is committed. No parser is admitted. D035 closes only the corrected Phase 2 migration, intake, artifact, retention, foundational backup/restore, Tauri, and evidence boundary. Phase 3 through 6 parser, search, dossier, projection, and later runtime work remain unauthorized until their separate exact packages are accepted.
 
 ---
 
@@ -1596,27 +1598,24 @@ No prompt is committed. No parser is admitted. D034 authorizes only the exact Ph
 
 ```text
 Status: owner-accepted planning baseline
-Phase 1 implementation/evidence: complete through 8fe3be4 and 5f0f9ae
-Independent implementation audit: complete and accepted
-Phase 1 owner closure: D033
-Phase 2 exact package: implementation authorized through D034
+Phase 1 implementation/evidence/review: complete and owner-closed through D033
+Phase 2 implementation/evidence/review/correction: complete and owner-closed through D035
+Current application baseline: 1e8cba8f0ef88c2e05b9617956872be26753993e
+Parser admission: none
 Later-phase implementation authority: none
 
 M06 architecture and this resolved M06-A planning baseline are owner-accepted.
-OD-1 through OD-3 are resolved. The correction cycle is closed.
+OD-1 through OD-3 are resolved. The planning correction cycle is closed.
 D029 and D031 clarify editorial identity and the supported operator surface.
-D032 records the deferred-audit timing decision; the audit is now complete.
-D033 accepts Phase 1 closure and authorizes Phase 2 package review.
-D034 accepts the exact Phase 2 package and 33-invariant profile for implementation.
+D032's deferred Phase 1 audit obligation was later satisfied.
+D033 closes Phase 1.
+D034 authorized the exact Phase 2 package and 33-invariant profile.
+D035 accepts the corrected Phase 2 implementation and closes Phase 2.
 
-Focused correction verification completed with verdict:
-M06-A FOCUSED CORRECTIONS VERIFIED — READY FOR OWNER ACCEPTANCE.
-Owner planning acceptance is recorded in D028 and the closure record.
+The future filenames and path lists in this canonical plan are non-authoritative
+planning maps. An exact phase package must be separately owner-accepted before
+any corresponding file is created or modified.
 
-D030 authorized the exact Phase 1 application package. That package, clean
-evidence, independent review, and owner closure are complete. D034 authorizes
-only the exact Phase 2 application surface in
-`m06a-phase2-exact-implementation-package.md`. No authority exists for Phase 3
-through 6, parser admission, new dependencies, M06-B work, or any other
-deferred capability.
+No authority exists for Phase 3 through 6 implementation, parser admission,
+new parser dependencies, M06-B work, or any other deferred capability.
 ```

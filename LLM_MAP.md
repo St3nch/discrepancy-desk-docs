@@ -59,7 +59,7 @@ The docs repo defines what should be built. The app repo contains implementation
 
 M00 through M05 are owner-accepted and closed. AC-01 and AC-02 are closed. The M06 architecture synthesis and all sixteen owner architecture rulings are accepted.
 
-The resolved M06-A Local Manual Vault planning baseline is owner-accepted through D028, and its planning correction cycle is closed. D027 fixes one editorial/public brand identity per physical Vault, one SQLite database per Vault, and rejection of timed-deletion material in first M06-A. D029 clarifies the editorial anomaly archive. D030 through D033 implement, independently verify, and close Phase 1. D034 authorized the exact Phase 2 package and 33-invariant profile. Application commit `eaf7b5d` implemented Phase 2; the required independent Claude review returned `M06-A PHASE 2 INDEPENDENTLY VERIFIED`; exact five-path commit `1e8cba8` corrected both Low findings. D035 accepts the correction, defers only the optional second spot review due usage limits, and closes Phase 2. No parser is admitted. Phase 3 and M06-B remain separately gated. Providers, monitoring, live LLM integration, Qdrant, graph work, purge, publication automation, and cross-Vault transfer execution remain blocked.
+The resolved M06-A Local Manual Vault planning baseline is owner-accepted through D028, and its planning correction cycle is closed. D027 fixes one editorial/public brand identity per physical Vault, one SQLite database per Vault, and rejection of timed-deletion material in first M06-A. D029 clarifies the editorial anomaly archive. D030 through D033 implement, independently verify, and close Phase 1. D034 authorized the exact Phase 2 package and 33-invariant profile. Application commit `eaf7b5d` implemented Phase 2; the required independent Claude review returned `M06-A PHASE 2 INDEPENDENTLY VERIFIED`; exact five-path commit `1e8cba8` corrected both Low findings. D035 accepts the correction, defers only the optional second spot review due usage limits, and closes Phase 2. An exact Phase 3A candidate package now exists for owner review, limited to the common parser framework plus `m06a.text.v1` in `under_test` state. It has no implementation or admission authority. No parser is admitted. Phase 3 and M06-B remain separately gated. Providers, monitoring, live LLM integration, Qdrant, graph work, purge, publication automation, and cross-Vault transfer execution remain blocked.
 
 ## Read Order for LLMs
 
@@ -188,7 +188,7 @@ Docs:
 
 ### Anomaly Vault
 
-Research memory layer and editorial connection engine. It is an archive and provenance system, not a truth machine. It may preserve unresolved allegations, folklore, speculation, contradictions, and pattern candidates when their source and status are represented honestly. Its M06-A local-only canonical formats, ingestion boundary, projections, parser-admission contract, and recovery plan are defined in the owner-accepted M06-A planning baseline. Obsidian is not an architectural requirement. Phases 1 and 2 are independently verified and owner-closed through D035. Phase 3, parser work, and every later capability remain blocked until separately authorized.
+Research memory layer and editorial connection engine. It is an archive and provenance system, not a truth machine. It may preserve unresolved allegations, folklore, speculation, contradictions, and pattern candidates when their source and status are represented honestly. Its M06-A local-only canonical formats, ingestion boundary, projections, parser-admission contract, and recovery plan are defined in the owner-accepted M06-A planning baseline. Obsidian is not an architectural requirement. Phases 1 and 2 are independently verified and owner-closed through D035. The Phase 3A exact package is a review candidate only and grants no implementation or parser admission. Phase 3, parser work, and every later capability remain blocked until separately authorized.
 
 Docs:
 
@@ -196,6 +196,7 @@ Docs:
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
+- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
 - `08-audits/m06a-phase1-independent-review-disposition.md`
