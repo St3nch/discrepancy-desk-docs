@@ -4,17 +4,19 @@
 
 ```text
 Status: owner-accepted planning baseline
-Implementation authority: none
+Implementation authority: Phase 1 rows only under D030
+Later-phase rows: planning only
 ```
 
-This is an executable-plan matrix. It does not claim that any listed test exists or has executed. Every row must be implemented, collected, executed, and bound to evidence before the corresponding phase can close.
+This is the executable-plan matrix. At D028 acceptance no listed test was claimed to exist or have executed. D030 authorizes implementation and execution of the exact Phase 1 row set only. Every row must be implemented, collected, executed, and bound to commit-matched evidence before its corresponding phase can close.
 
 Governing references:
 
 - `05-implementation-planning/hammer-test-strategy.md`;
 - `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`;
 - `05-implementation-planning/m06a-parser-admission-plan.md`;
-- `08-audits/m06a-local-manual-vault-planning-package-independent-review.md`.
+- `08-audits/m06a-local-manual-vault-planning-package-independent-review.md`;
+- D030 and D031 in `99-decisions/decision-log.md`.
 
 ---
 
@@ -243,7 +245,7 @@ runtime/ht-evidence/latest-m06a-ht-evidence.json
 | M06A-HT-105 | R-02; core §4.1; parser §§2.6,4 | 2/3A | unadmitted worker/intake bytes remain operation-scoped under temporary quarantine and are admitted or destroyed before closure | temporary bytes are searchable, backed up, linked as canonical, survive clean closure, or escape the operation root | `tests/test_m06a_parser_framework.py::test_m06a_ht_105_temporary_quarantine_is_noncanonical_and_reconciled` | Vault SQLite + FS + worker | operation remains blocked; no canonical link/backup/search result; unsafe path rejected | `M06A-HT-105.json` | Phase 2/3A and final |
 | M06A-HT-106 | R-02; core §§4.1,8,19 | 3A/4 | governed `quarantined` state references ordinary immutable object/package/projection paths | service creates or trusts a second canonical `quarantine/` store or moves bytes there as authority | `tests/test_m06a_projections.py::test_m06a_ht_106_database_quarantine_creates_no_second_truth_store` | Vault SQLite + FS | second-store operation rejected; ordinary path plus database state remains sole contract | `M06A-HT-106.json` | Phase 3A/4 and final |
 | M06A-HT-107 | R-04; core §§22–23 | 6 | runner invariant, pytest node, `tests/conftest.py` evidence destination, result ID, counts, and commit SHA agree | plugin writes wrong path/ID/SHA or runner summary diverges from plugin evidence | `tests/test_m06a_hammer_runner.py::test_m06a_ht_107_pytest_plugin_and_runner_evidence_agree` | pytest runner + Git + FS | nonzero exit; mismatched evidence cannot close invariant | `M06A-HT-107.json` | Phase 6 |
-| M06A-HT-108 | R-04; core §§14.7,22.5 | 1–6 | browser and desktop invoke the same service operation and produce identical actor/Vault/policy/publication authority result | either surface bypasses or independently implements an authority decision | `tests/test_m06a_operator_surface_parity.py::test_m06a_ht_108_web_and_desktop_authority_parity` | FastAPI/Jinja + desktop API + Vault SQLite | divergent/bypassing surface fails; no mutation outside the shared service contract | `M06A-HT-108.json` | each UI phase and final |
+| M06A-HT-108 | R-04; D031; core §§14.7,22.5 | 1–6 | Tauri client invokes the token-gated desktop API, which delegates to the governed Vault service with server-resolved actor/Vault authority | Tauri bypasses the API, frontend reaches persistence directly, desktop API trusts request-supplied human identity, or a new browser mutation route duplicates authority | `tests/test_m06a_desktop_workflow.py::test_m06a_ht_108_tauri_api_uses_governed_service` | Tauri client source + FastAPI desktop API + governed service + Vault SQLite | bypassing/duplicated authority fails; no mutation outside the governed service path | `M06A-HT-108.json` | each desktop UI phase and final |
 
 ---
 
@@ -296,12 +298,14 @@ Before Phase 6 closure:
 
 ```text
 Status: owner-accepted planning baseline
-Implementation authority: none
+Implementation authority: exact Phase 1 row set under D030
+Later-phase implementation authority: none
 
-This matrix is an executable test plan only. No listed test is claimed to
-exist or to have executed.
+Phase 1 tests and provisional dirty-tree evidence may exist, but Phase 1
+cannot close until independent review, correction, commit-bound execution,
+and explicit owner closure are complete.
 
-It does not authorize application code, migrations, database creation,
-Vault creation, parser implementation, dependency installation, runtime
-changes, staging, commit, push, M06-B work, or implementation.
+This matrix does not authorize Phase 2 through 6 application work, parser
+implementation or admission, new dependencies, M06-B work, staging, commit,
+or push. Those actions require their separate governing gates.
 ```

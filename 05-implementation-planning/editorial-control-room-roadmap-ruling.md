@@ -58,11 +58,14 @@ The home surface must answer within five seconds:
 
 ### Product surfaces
 
-- FastAPI/Jinja web UI: functional workflow and contract harness.
-- Tauri: product-grade daily operator interface.
+- Tauri: sole supported human operator interface and product-grade daily workspace.
+- FastAPI loopback backend: governed local API/service host required by Tauri and the packaged sidecar.
+- Legacy FastAPI/Jinja pages: frozen historical regression scaffolding only; no new product features or browser/Tauri feature-parity requirement.
 - Connected LLMs/agents: candidate-producing assistants behind governed business operations.
 - SQLite/service layer: durable operational truth and authority enforcement.
 - Hermes: possible replaceable sibling runtime, never trusted memory or control plane.
+
+D031 records this clarified product-surface boundary. Existing M03/M04 browser routes may remain for inherited regression coverage, but all new operator capability is implemented through Tauri consuming governed loopback API operations.
 
 ### LLM operating model
 

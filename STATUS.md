@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06-A planning baseline owner-accepted; implementation authorization not granted.
+M06-A Phase 1 implementation authorized under D030; local uncommitted implementation is being aligned to the Tauri-only D031 boundary and prepared for independent review.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (planning owner-accepted; implementation blocked)
+M06-A — Local Manual Vault (Phase 1 implementation authorized; uncommitted review candidate in progress)
 ```
 
 ## Current Focus
@@ -31,7 +31,7 @@ M06-A — Local Manual Vault
 M06-B — Bounded Static Webpage Retrieval
 ```
 
-The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. M06-B is a later separately gated network/SSRF package. Neither is authorized for implementation.
+The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. D030 authorizes Phase 1 implementation only; Phases 2 through 6 remain blocked. M06-B is a later separately gated network/SSRF package and is not authorized for planning or implementation.
 
 All four owner decision sets are approved and recorded at `99-decisions/m06-owner-architecture-rulings.md`:
 
@@ -54,31 +54,51 @@ M06-D15  Qdrant and graph work deferred                       approved
 M06-D16  No live LLM/provider integration in M06-A            approved
 ```
 
-The owner accepted the resolved M06-A planning baseline after the preserved independent review, D027 owner rulings, Claude resolved-package review, bounded corrections, and focused verification. D028 records acceptance, and `08-audits/m06a-planning-correction-closure.md` closes the correction cycle. The accepted package contains the core plan, parser-admission plan, and 108-invariant adversarial matrix. No parser is admitted and no matrix test is claimed to have executed. M06-A implementation, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
+The owner accepted the resolved M06-A planning baseline after the preserved independent review, D027 owner rulings, Claude resolved-package review, bounded corrections, and focused verification. D028 records acceptance, and `08-audits/m06a-planning-correction-closure.md` closes the correction cycle. The accepted package contains the core plan, parser-admission plan, and 108-invariant adversarial matrix.
+
+D030 authorizes the exact Phase 1 identity, actor, migration, registry, routing, selected-Vault health, reconciliation, and Phase 1 adversarial package. A local uncommitted implementation candidate exists and is being revalidated after the D031 Tauri-only correction. No parser is admitted. Phases 2 through 6, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
 
 D029 records the owner clarification that The Discrepancy Desk is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication product. Clearly labeled speculative, disputed, conspiratorial, folkloric, implausible, anomalous, and unresolved material may be archived and published without a universal prove-or-disprove requirement. Provenance, source/Desk-inference separation, correction lineage, exact human approval, manual publication, and the non-fabrication boundary remain unchanged. The controlling doctrine is `00-doctrine/editorial-anomaly-archive-direction.md`.
+
+D031 makes Tauri the sole supported human operator interface. FastAPI remains the token-gated loopback backend/API and packaged sidecar host. Existing Jinja pages remain frozen historical regression scaffolding only; no new M06 browser features or browser/Tauri parity work is admitted.
 
 Application repository truth:
 
 ```text
-HEAD 6cbd036 — Bind AC-01 correction evidence
-AC-01 implementation commit: 17f40e3d18a58ac47b48933551a4044586d940aa
-Full-suite evidence SHA-256: 78fc6073c087eb35f404b57030137d8a2c9e51b28f8da4c903812f2a64b40796
-Hammer evidence SHA-256: baaba75a25125e9dde53bbf8255e13d1c4a6e4df66c20985b3857bad1c898dbf
-main synchronized with origin/main
+HEAD/origin: 6cbd0366e55bfba0c9687201615b72e70bf485d5
+Commit:      Bind AC-01 correction evidence
+Branch:      main
+Remote:      synchronized with origin/main
+Working tree: dirty by design with 39 exact M06-A Phase 1 source/test/migration paths
+Staged:      none
+Committed:   no Phase 1 commit
+Pushed:      no Phase 1 push
 ```
 
-Current AC-01 correction baseline remains documentary project evidence:
+The accepted AC-01 baseline remains documentary project evidence:
+
+```text
+Full-suite evidence SHA-256: 78fc6073c087eb35f404b57030137d8a2c9e51b28f8da4c903812f2a64b40796
+Hammer evidence SHA-256: baaba75a25125e9dde53bbf8255e13d1c4a6e4df66c20985b3857bad1c898dbf
+```
+
+Current uncommitted M06-A Phase 1 validation after the D031 correction:
 
 ```text
 uv run ruff check .                                      → passed
-uv run pytest -o addopts= --disable-warnings -q          → 104 passed
-Rust tests                                               → 3 passed
-frontend production build                               → passed
-packaged sidecar build                                   → passed
-scripts/run_ht_evidence.py                               → 31 executed, 31 passed, 0 failed
-HT-14                                                    → deferred by approved scope
+uv run pytest -o addopts= --disable-warnings -q          → 139 passed
+M06-A Phase 1 hammer                                     → 31/31 passed, 0 deferred
+Legacy hammer                                             → 31/31 passed, HT-14 approved deferral
+Tauri Vitest                                              → 2 passed
+Tauri production build                                    → passed
+Rust tests                                                → 3 passed
+packaged sidecar build                                    → passed
+packaged loopback smoke                                   → central 0005; Vault V0001; audit valid
+new /vaults browser product route                         → absent / 404
+sidecar SHA-256                                           → bb8bc3496195b0a58759eb8b17c8727b79726c0d072b29d5f4edfd919bc01c02
 ```
+
+These are provisional dirty-tree results. They are not commit-bound Phase 1 closure evidence.
 
 ## Accepted Roadmap
 
@@ -89,7 +109,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — planning owner-accepted; implementation blocked
+M06-A  Local Manual Vault — Phase 1 implementation authorized; review candidate in progress
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -114,14 +134,14 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - first-class Unscheduled Reserve;
 - Command Center answering what matters now;
 - Ready-to-Post and anti-filler Need-a-Post;
-- functional web contract harness followed by product-grade Tauri;
+- Tauri as the sole supported operator interface, with FastAPI retained as the governed loopback backend/API and legacy Jinja pages frozen as regression scaffolding;
 - bounded LLM context and candidate operations only;
 - no direct agent database access;
 - agent-neutral interface before Hermes;
 - one restricted Release Watch pilot before any broader agent role;
 - one physical Vault per editorial/public brand identity under D027, with platform-owned accounts bound centrally;
 - account-scoped Qdrant collections and fail-closed retrieval under D024;
-- M06-A implementation still requires a separate explicit owner authorization; M14 retains its named review and entry gate.
+- M06-A Phase 1 is authorized under D030; later phases still require separate explicit owner authorization; M14 retains its named review and entry gate.
 
 ## Hard Boundaries
 
@@ -151,10 +171,12 @@ M06 synthesis audit corrections: 191fc8a
 AC-02 closure and M06-A audit preservation: fb3b865
 M06-A owner rulings: D027
 M06-A planning owner acceptance: D028
-Editorial anomaly archive clarification: D029 and `00-doctrine/editorial-anomaly-archive-direction.md`
+Editorial anomaly archive clarification: D029 and `00-doctrine/editorial-anomaly-archive-direction.md` (docs commit `740cc22`)
+M06-A Phase 1 implementation authorization: D030
+Tauri-only supported operator interface: D031
 M06-A planning correction closure: `08-audits/m06a-planning-correction-closure.md`
 ```
 
 ## Next Bounded Action
 
-Await a separate explicit owner authorization for an exact bounded M06-A implementation package. Until that authorization exists, do not modify application code, create migrations or databases, create a Vault root, implement or admit parsers, install dependencies, execute M06-A matrix work, or begin M06-B planning.
+Complete validation of the D031 Tauri-only correction against the uncommitted M06-A Phase 1 implementation candidate, then obtain independent implementation review of the exact live application tree. Correct any findings before owner authorization to commit. Do not begin Phase 2, admit parsers, add intake/artifact/search/dossier/backup capability, or begin M06-B planning.

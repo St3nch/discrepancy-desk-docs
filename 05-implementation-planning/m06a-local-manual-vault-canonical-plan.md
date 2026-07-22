@@ -4,12 +4,13 @@
 
 ```text
 Status: owner-accepted planning baseline
-Implementation authority: none
+Implementation authority: Phase 1 only under D030
+Later phases: blocked pending separate authorization
 ```
 
 Correction cycle: closed through `08-audits/m06a-planning-correction-closure.md`.
 
-This document is the load-bearing, owner-accepted technical planning baseline for M06-A. It implements the accepted M06 architecture and the owner rulings in D027 while correcting the defects identified in the preserved independent and Claude reviews. It supersedes the preserved Claude planning report only as the controlling implementation-planning baseline; all historical reports remain preserved as audit evidence.
+This document is the load-bearing, owner-accepted technical planning baseline for M06-A. It implements the accepted M06 architecture and D027, with later governing clarifications and authority recorded in D029 through D031, while correcting the defects identified in the preserved independent and Claude reviews. It supersedes the preserved Claude planning report only as the controlling implementation-planning baseline; all historical reports remain preserved as audit evidence.
 
 Governing inputs:
 
@@ -26,7 +27,7 @@ Governing inputs:
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`;
 - `08-audits/m06a-planning-correction-disposition.md`;
 - `08-audits/m06a-planning-correction-closure.md`;
-- D027, D028, and D029 in `99-decisions/decision-log.md`.
+- D027 through D031 in `99-decisions/decision-log.md`.
 
 ---
 
@@ -976,17 +977,18 @@ Health reports central integrity/head plus each selected Vault's identity, integ
 
 ## 14.7 UI/API implications
 
-The M06-A operator workflow must remain available through both the existing local FastAPI/Jinja browser application and the packaged desktop shell. The desktop is not a separate authority implementation; it consumes the same governed service operations and refusal semantics exposed by the local backend.
+The packaged Tauri desktop client is the sole supported M06-A human operator interface under D031. FastAPI remains the governed loopback API/service host required by Tauri and the packaged sidecar; it is not a second operator product. Existing FastAPI/Jinja pages may remain as frozen historical regression scaffolding, but M06-A adds no browser product features and carries no browser/Tauri feature-parity requirement.
 
 Required changes include:
 
-- Vault list and selected-Vault API types;
-- selected Vault state separate from account state;
-- Vault health, intake, search, dossier, and backup views in both browser templates and desktop views;
-- opaque `vault_id` on Vault API and browser routes;
-- safe native file import into a selected Vault temp intake boundary, with a browser-mode local-file/paste path using the same admission service;
-- identical refusal messages and authority outcomes for wrong binding, unavailable Vault, dirty migration, unresolved policy, rejected retention, parser non-admission, and publication-boundary checks;
-- route and UI tests proving browser and desktop surfaces cannot bypass actor, Vault, policy, or central publication authority.
+- Vault list and selected-Vault desktop API types;
+- selected Vault state separate from platform-account state;
+- Vault health, intake, search, dossier, and backup views in Tauri;
+- opaque `vault_id` on desktop API routes;
+- safe native file import into a selected Vault temporary intake boundary;
+- stable backend refusal semantics for wrong binding, unavailable Vault, dirty migration, unresolved policy, rejected retention, parser non-admission, and publication-boundary checks;
+- tests proving the Tauri client and token-gated desktop API cannot bypass actor, Vault, policy, or central publication authority;
+- no direct frontend database access and no independent lifecycle, retention, actor, parser, or publication decisions in Tauri.
 
 The Rust backend launcher may remain unchanged only if the Vault base is safely derived from the existing application-data root and proven by tests. Otherwise it must pass a trusted `DISCREPANCY_DESK_DESKTOP_VAULT_BASE` environment value. The launch token still authenticates only the local backend process, not human identity.
 
@@ -1417,9 +1419,16 @@ uv.lock
   changed only for individually admitted external parser dependencies
 ```
 
-## 22.5 Operator surfaces
+## 22.5 Operator surface and loopback API
 
-The same governed M06-A workflow remains available in local browser mode and in the packaged desktop shell.
+The supported operator path is:
+
+```text
+Tauri client
+→ token-gated FastAPI loopback desktop API
+→ governed service operations
+→ central or selected-Vault persistence
+```
 
 ### Packaged desktop
 
@@ -1433,18 +1442,18 @@ desktop/src-tauri/src/commands.rs for bounded selected-Vault file intake if requ
 desktop contract, security, lifecycle, and packaging tests
 ```
 
-### Local FastAPI/Jinja browser application
+### Governed local backend
 
 ```text
 src/discrepancy_desk/web.py
-src/discrepancy_desk/templates/base.html
-src/discrepancy_desk/templates/command_center.html or a bounded Vault landing template
-src/discrepancy_desk/templates/health.html
-new or revised Vault intake, search, dossier, backup, and refusal templates
-browser route, template, actor-authority, Vault-routing, and parity tests
+  retain token-gated desktop API routing, health, and packaged sidecar startup
+  add no new M06 Jinja operator routes or templates
+
+src/discrepancy_desk/vault_service.py and related service modules
+  own actor, Vault, migration, policy, reconciliation, and persistence decisions
 ```
 
-Browser forms and desktop API calls must invoke the same service-layer operations and produce the same authority outcomes. Neither surface may implement independent lifecycle, retention, actor, parser, or publication decisions.
+Tauri may present and request operations, but it cannot implement independent lifecycle, retention, actor, parser, publication, or database decisions. Existing Jinja pages and their historical regression tests may remain unchanged where useful; they are not a supported M06 operator surface and receive no feature parity work.
 
 ## 22.6 Tests
 
@@ -1469,8 +1478,7 @@ tests/test_m06a_policy_context.py
 tests/test_m06a_backup_restore.py
 tests/test_m06a_hammer_runner.py
 tests/test_m06a_desktop_contract.py
-tests/test_m06a_web_workflow.py
-tests/test_m06a_operator_surface_parity.py
+tests/test_m06a_desktop_workflow.py
 tests/test_m06a_packaging.py
 ```
 
@@ -1563,10 +1571,12 @@ candidate reconciled to the owner-resolved design
 → focused correction verification completed with no remaining findings
 → owner accepted the resolved M06-A planning baseline
 → acceptance/navigation package closed R-06 and the correction cycle
-→ separate explicit implementation authorization still required
+→ owner authorized exact Phase 1 implementation through D030
+→ D031 narrowed new operator work to Tauri over the governed loopback API
+→ Phase 1 implementation review, correction, commit-bound evidence, and owner closure pending
 ```
 
-No prompt is committed. No parser is admitted. No migration, database, Vault, dependency, runtime, or application change is authorized.
+No prompt is committed. No parser is admitted. Phase 2 through 6 migrations, intake, parser, search, dossier, backup, and later runtime work remain unauthorized.
 
 ---
 
@@ -1574,16 +1584,19 @@ No prompt is committed. No parser is admitted. No migration, database, Vault, de
 
 ```text
 Status: owner-accepted planning baseline
-Implementation authority: none
+Implementation authority: exact Phase 1 package under D030
+Later-phase implementation authority: none
 
 M06 architecture and this resolved M06-A planning baseline are owner-accepted.
 OD-1 through OD-3 are resolved. The correction cycle is closed.
+D029 and D031 clarify editorial identity and the supported operator surface.
 
 Focused correction verification completed with verdict:
 M06-A FOCUSED CORRECTIONS VERIFIED — READY FOR OWNER ACCEPTANCE.
-Owner acceptance is recorded in D028 and the closure record.
+Owner planning acceptance is recorded in D028 and the closure record.
 
-This document does not authorize staging, commit, push, application code,
-migrations, database creation, Vault creation, parser implementation,
-dependency installation, runtime changes, M06-B work, or implementation.
+D030 authorizes Phase 1 application code, central and per-Vault migration
+foundations, Vault creation/routing, Phase 1 tests, and provisional evidence.
+It does not authorize staging, commit, push, Phase 2 through 6 work, parser
+implementation or admission, dependencies, M06-B work, or owner closure.
 ```

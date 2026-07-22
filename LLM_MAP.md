@@ -59,7 +59,7 @@ The docs repo defines what should be built. The app repo contains implementation
 
 M00 through M05 are owner-accepted and closed. AC-01 and AC-02 are closed. The M06 architecture synthesis and all sixteen owner architecture rulings are accepted.
 
-The resolved M06-A Local Manual Vault planning baseline is owner-accepted through D028, and its planning correction cycle is closed. D027 fixes one editorial/public brand identity per physical Vault, one SQLite database per Vault, and rejection of timed-deletion material in first M06-A. D029 clarifies that the Vault is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication system; clearly labeled unresolved or speculative material may remain editorially useful without a mandatory final support assessment. No parser is admitted and no implementation authority exists. M06-B Bounded Static Webpage Retrieval remains a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, cross-Vault transfer execution, and all application code or migration changes remain blocked.
+The resolved M06-A Local Manual Vault planning baseline is owner-accepted through D028, and its planning correction cycle is closed. D027 fixes one editorial/public brand identity per physical Vault, one SQLite database per Vault, and rejection of timed-deletion material in first M06-A. D029 clarifies that the Vault is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication system; clearly labeled unresolved or speculative material may remain editorially useful without a mandatory final support assessment. D030 authorizes M06-A Phase 1 implementation only; Phases 2 through 6 remain blocked. D031 makes Tauri the sole supported operator interface while retaining FastAPI as the governed loopback backend/API and freezing legacy Jinja pages as historical regression scaffolding. No parser is admitted. Phase 1 is pending independent implementation review and commit-bound closure evidence. M06-B Bounded Static Webpage Retrieval remains a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
 
 ## Read Order for LLMs
 
@@ -188,7 +188,7 @@ Docs:
 
 ### Anomaly Vault
 
-Research memory layer and editorial connection engine. It is an archive and provenance system, not a truth machine. It may preserve unresolved allegations, folklore, speculation, contradictions, and pattern candidates when their source and status are represented honestly. Its M06-A local-only canonical formats, ingestion boundary, projections, parser-admission contract, and recovery plan are defined in the owner-accepted M06-A planning baseline. Obsidian is not an architectural requirement. Implementation remains blocked pending separate owner authorization.
+Research memory layer and editorial connection engine. It is an archive and provenance system, not a truth machine. It may preserve unresolved allegations, folklore, speculation, contradictions, and pattern candidates when their source and status are represented honestly. Its M06-A local-only canonical formats, ingestion boundary, projections, parser-admission contract, and recovery plan are defined in the owner-accepted M06-A planning baseline. Obsidian is not an architectural requirement. Phase 1 implementation is authorized under D030 and pending review; later phases remain blocked.
 
 Docs:
 
@@ -271,7 +271,7 @@ Canonical planning:
 - `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
 - `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md` (research input, not doctrine)
 
-The web control room proves workflows and contracts. Tauri is the product-grade operator surface. Dossiers, capture, agent API, Hermes, Truth Social, metrics learning, rich editorial workspaces, No Coincidences, Qdrant, and recovery each have named milestone destinations and gates.
+Tauri is the sole supported human operator interface. FastAPI remains the token-gated loopback backend/API and packaged sidecar host. Legacy Jinja pages remain frozen historical regression scaffolding and receive no new product features or parity requirements. Dossiers, capture, agent API, Hermes, Truth Social, metrics learning, rich editorial workspaces, No Coincidences, Qdrant, and recovery each have named milestone destinations and gates.
 
 ## Connected LLM and Agent Boundary
 

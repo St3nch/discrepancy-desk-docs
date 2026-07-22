@@ -2,9 +2,9 @@
 
 ## Status
 
-The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 records the owner-resolved design decisions; D028 records planning acceptance.
+The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 records the owner-resolved design decisions; D028 records planning acceptance; D029 clarifies editorial identity; D030 authorizes Phase 1 implementation; D031 makes Tauri the sole supported operator interface.
 
-M06-A implementation remains blocked pending a separate explicit owner authorization for an exact bounded implementation package. Planning acceptance does not authorize code, migrations, databases, Vault creation, parser work, dependencies, tests, or runtime changes. M06-B planning and implementation remain blocked.
+M06-A Phase 1 implementation is authorized and currently pending independent implementation review and commit-bound closure evidence. M06-A Phases 2 through 6 remain blocked pending separate explicit authorization. No parser is admitted. M06-B planning and implementation remain blocked.
 
 ## Package Sequence
 
@@ -44,7 +44,7 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `08-audits/claude-m06-architecture-synthesis-review.md`
 - `99-decisions/m06-owner-architecture-rulings.md`
 - M05 completion record in `05-implementation-planning/milestone-05-tauri-desktop-foundation.md`
-- accepted D024, D027, D028, and D029 in `99-decisions/decision-log.md`
+- accepted D024 and D027 through D031 in `99-decisions/decision-log.md`
 
 ## Goal
 
@@ -62,6 +62,7 @@ Create a governed, brand-level local anomaly archive and research-memory foundat
 - Entity merges/splits require human acceptance.
 - Static LLM context-run contracts are defined, but no live LLM/provider integration ships in M06-A.
 - SQLite lexical search is included; deterministic chunks are defined; Qdrant and graph work remain deferred.
+- Tauri is the sole supported human operator interface. FastAPI remains the governed loopback API/service host; legacy Jinja pages receive no new M06 feature work.
 
 ## M06-A Scope — Local Manual Vault
 
@@ -112,10 +113,10 @@ Before M06-A implementation:
 2. accepted architecture and planning findings are corrected or dispositioned — satisfied;
 3. AC-02 and the M06-A planning correction cycle are closed — satisfied;
 4. the exact physical schema, migrations, file layout, package schema, parser admission records, backup procedure, and adversarial matrix are prepared and owner-accepted — satisfied;
-5. the exact bounded implementation package for the proposed phase is identified and owner-reviewed — not yet authorized;
-6. the owner explicitly authorizes implementation — not yet authorized.
+5. the exact bounded implementation package for Phase 1 is identified and owner-reviewed — satisfied through the accepted canonical phase definition;
+6. the owner explicitly authorizes Phase 1 implementation — satisfied through D030.
 
-Current result: planning is accepted, but implementation entry remains closed at items 5 and 6.
+Current result: Phase 1 implementation entry is open. Phases 2 through 6 remain closed. Phase 1 must complete independent implementation review, correction, commit-bound evidence, and owner closure before Phase 2.
 
 ## M06-A Exit Gate
 

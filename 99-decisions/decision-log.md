@@ -439,3 +439,62 @@ Consequences:
 - Roadmap sequencing, the M06 object model, source-admission policy, manual-publication workflow, and metrics workflow are unchanged by this clarification.
 
 This decision concerns editorial identity only. It grants no new platform, automation, implementation, parser, provider, publication, deletion, or destructive-migration authority.
+
+
+## D030 — Authorize M06-A Phase 1 Implementation
+
+Accepted by the owner on 2026-07-22.
+
+The owner authorized the exact bounded M06-A Phase 1 implementation package identified in the owner-accepted canonical plan:
+
+```text
+identity
+actors
+central and per-Vault migration foundations
+Vault registry and platform-account bindings
+safe Vault create/open routing
+selected-Vault health
+cross-database receipts and reconciliation
+Phase 1 adversarial tests and evidence runner mappings
+```
+
+Consequences:
+
+- application changes are authorized only for M06-A Phase 1;
+- M06-A Phases 2 through 6 remain blocked pending separate phase authorization;
+- no intake artifacts, parser implementation or admission, search, chunks, projections, assertions, dossiers, backup execution, live LLM integration, M06-B network work, Qdrant, graph work, monitoring, provider calls, automated publishing, or destructive purge authority is granted;
+- Phase 1 must preserve existing M00–M05 regression authority and produce real SQLite/filesystem adversarial evidence;
+- Phase 1 implementation remains subject to independent review, correction, commit-bound evidence, and explicit owner closure before Phase 2;
+- planning acceptance D028 remains the governing technical baseline, as clarified by D029 and D031.
+
+
+## D031 — Tauri Is the Sole Supported Operator Interface
+
+Accepted by the owner on 2026-07-22.
+
+The owner directed the project to stop spending implementation time on parallel browser-interface development and focus on the packaged Tauri desktop client.
+
+The governing product-surface boundary is:
+
+```text
+Tauri desktop client
+  sole supported human operator interface
+
+FastAPI loopback backend
+  retained governed local API/service host required by Tauri
+
+legacy FastAPI/Jinja pages
+  frozen historical regression scaffolding only
+  no new product features
+  no browser/Tauri feature-parity requirement
+```
+
+Consequences:
+
+- new M06 and later operator capabilities are implemented through Tauri consuming the token-gated loopback API and governed service operations;
+- FastAPI remains required for local desktop API routing, health, authority enforcement, and packaged sidecar operation;
+- existing M03/M04 Jinja routes and tests may remain where useful as inherited regression coverage, but they are not a supported daily operator product and receive no new feature parity work;
+- new browser forms, Vault pages, browser file-intake workflows, browser search/dossier/backup views, and browser/Tauri parity tests are removed from M06-A scope;
+- security and authority proof must instead establish `Tauri client → authenticated loopback API → governed service → persistence` with no direct frontend database access or independent frontend authority decisions;
+- roadmap sequencing, M06 object model, human approval, manual publication, provenance, audit, and recovery boundaries are unchanged;
+- this ruling does not remove FastAPI, authorize remote API exposure, authorize autonomous behavior, or weaken existing regression tests.
