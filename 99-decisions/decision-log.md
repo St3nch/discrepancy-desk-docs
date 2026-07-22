@@ -516,3 +516,22 @@ Consequences:
 - Phase 2 and all later M06-A phases remain blocked;
 - parser admission, intake/artifact/search/dossier/projection/backup capability, M06-B, network retrieval, providers, monitoring, live LLM integration, Qdrant, graph work, destructive purge, and automated publishing remain blocked;
 - this decision changes review timing only and grants no additional product, schema, platform, provider, automation, or publication authority.
+
+
+## D033 — Accept M06-A Phase 1 Closure and Open Phase 2 Package Review
+
+Accepted by the owner on 2026-07-22.
+
+After the committed Phase 1 implementation, clean commit-bound evidence, deferred independent audit, Project Steward verification, and disposition of the two non-blocking Low observations, the owner directed the project to proceed.
+
+Consequences:
+
+- M06-A Phase 1 is owner-accepted and closed;
+- the independent verdict `M06-A PHASE 1 INDEPENDENTLY VERIFIED` satisfies the obligation deferred under D032;
+- no Critical, High, or Medium findings require correction;
+- L-01 reparse-chain recheck and L-02 explicit audit-column selection remain bounded hardening candidates and do not reopen Phase 1;
+- the mutable `latest` evidence-file observation becomes a required evidence-hardening item in the next implementation package;
+- preparation, review, validation, commit, and push of the exact Phase 2 implementation package are authorized as documentation work;
+- Phase 2 application code, `V0002`, intake, artifact storage, backup, and restore remain blocked until the owner explicitly accepts the exact Phase 2 package;
+- parsers and Phase 3+, M06-B, network retrieval, providers, monitoring, live LLM integration, Qdrant, graph work, purge, and automated publishing remain blocked;
+- this decision closes Phase 1 and opens the Phase 2 authorization review only; it is not Phase 2 implementation authority.

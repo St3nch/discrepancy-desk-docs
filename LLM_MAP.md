@@ -59,7 +59,7 @@ The docs repo defines what should be built. The app repo contains implementation
 
 M00 through M05 are owner-accepted and closed. AC-01 and AC-02 are closed. The M06 architecture synthesis and all sixteen owner architecture rulings are accepted.
 
-The resolved M06-A Local Manual Vault planning baseline is owner-accepted through D028, and its planning correction cycle is closed. D027 fixes one editorial/public brand identity per physical Vault, one SQLite database per Vault, and rejection of timed-deletion material in first M06-A. D029 clarifies that the Vault is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication system; clearly labeled unresolved or speculative material may remain editorially useful without a mandatory final support assessment. D030 authorized M06-A Phase 1 implementation, completed through application commits `8fe3be4` and `5f0f9ae`. D031 makes Tauri the sole supported operator interface while retaining FastAPI as the governed loopback backend/API and freezing legacy Jinja pages as historical regression scaffolding. D032 defers the independent Claude implementation audit without waiving it. No parser is admitted. Phase 2 and later phases remain blocked until that audit and any corrections close. M06-B Bounded Static Webpage Retrieval remains a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
+The resolved M06-A Local Manual Vault planning baseline is owner-accepted through D028, and its planning correction cycle is closed. D027 fixes one editorial/public brand identity per physical Vault, one SQLite database per Vault, and rejection of timed-deletion material in first M06-A. D029 clarifies that the Vault is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication system; clearly labeled unresolved or speculative material may remain editorially useful without a mandatory final support assessment. D030 authorized M06-A Phase 1 implementation, completed through application commits `8fe3be4` and `5f0f9ae`. D031 makes Tauri the sole supported operator interface while retaining FastAPI as the governed loopback backend/API and freezing legacy Jinja pages as historical regression scaffolding. The independent audit deferred by D032 is complete with verdict `M06-A PHASE 1 INDEPENDENTLY VERIFIED`; D033 accepts Phase 1 closure and opens owner review of the exact Phase 2 package. No parser is admitted. Phase 2 application work remains blocked pending explicit acceptance of `05-implementation-planning/m06a-phase2-exact-implementation-package.md`. M06-B remains a later separately gated network/SSRF package. Providers, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
 
 ## Read Order for LLMs
 
@@ -188,14 +188,17 @@ Docs:
 
 ### Anomaly Vault
 
-Research memory layer and editorial connection engine. It is an archive and provenance system, not a truth machine. It may preserve unresolved allegations, folklore, speculation, contradictions, and pattern candidates when their source and status are represented honestly. Its M06-A local-only canonical formats, ingestion boundary, projections, parser-admission contract, and recovery plan are defined in the owner-accepted M06-A planning baseline. Obsidian is not an architectural requirement. Phase 1 implementation and clean evidence are complete under D030/D032; the deferred independent audit and any corrections must close before Phase 2, and later phases remain blocked.
+Research memory layer and editorial connection engine. It is an archive and provenance system, not a truth machine. It may preserve unresolved allegations, folklore, speculation, contradictions, and pattern candidates when their source and status are represented honestly. Its M06-A local-only canonical formats, ingestion boundary, projections, parser-admission contract, and recovery plan are defined in the owner-accepted M06-A planning baseline. Obsidian is not an architectural requirement. Phase 1 is independently verified and owner-closed under D033. The exact Phase 2 observation/acquisition/artifact/backup package is prepared for owner review; implementation and every later phase remain blocked until separately authorized.
 
 Docs:
 
 - `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
+- `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
 - `08-audits/m06a-planning-correction-closure.md`
+- `08-audits/claude-m06a-phase1-independent-implementation-review.md`
+- `08-audits/m06a-phase1-independent-review-disposition.md`
 - `03-system-design/obsidian-qdrant-sqlite-plan.md`
 - `02-product/module-map.md`
 
