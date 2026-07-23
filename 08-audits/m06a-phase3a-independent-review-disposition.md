@@ -10,7 +10,7 @@ Corrected application commit: 1337b5ac450ae82664aa1ad9667a85af41c4351e
 Correction evidence: complete and clean commit-bound
 Parser admission: not granted
 Canonical parsing: unavailable
-Owner closure: pending
+Owner closure: accepted through D038
 ```
 
 The independent report is preserved at `08-audits/claude-m06a-phase3a-independent-static-review.md`. The Project Steward reproduced every material finding before implementation and applied the exact D037 correction package without widening Phase 3A.
@@ -152,6 +152,6 @@ The Phase 3A aggregate records V0004, security profile `m06a.parser-worker.windo
 
 ## Closure Recommendation
 
-All independently reported and Project-Steward-reproduced findings are corrected and clean-evidence-bound. Phase 3A may now return to the owner for explicit closure.
+All independently reported and Project-Steward-reproduced findings are corrected and clean-evidence-bound. D038 accepts the disposition and closes Phase 3A.
 
-Closure still does not admit `m06a.text.v1`, authorize canonical parsing, authorize Phase 3B or later M06-A phases, or authorize M06-B.
+D038 closure does not admit `m06a.text.v1`, authorize canonical parsing, authorize Phase 3B or later M06-A phases, or authorize M06-B.

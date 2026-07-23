@@ -645,3 +645,31 @@ D037 does **not** authorize:
 - dependency changes, central migrations, or edits to prior Vault migrations.
 
 Phase 3A remains open. Successful correction requires clean evidence, synchronized governance records, independent finding disposition, and explicit owner closure. Parser admission remains a separate future owner gate.
+
+
+## D038 — Accept M06-A Phase 3A Closure
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+The owner accepted the M06-A Phase 3A independent review disposition and the corrected application implementation at `1337b5ac450ae82664aa1ad9667a85af41c4351e`.
+
+Governing facts:
+
+- D036 authorized the exact Phase 3A parser-framework package and 35-invariant profile;
+- application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implemented the original package;
+- independent static review returned `M06-A PHASE 3A REQUIRES CORRECTION`;
+- D037 authorized the exact Phase 3A-C1 correction package;
+- application commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` corrected every reproduced material finding;
+- clean commit-bound evidence records 215 passing Python tests, 55 focused tests, Phase 3A 35/35 invariants with 53/53 mapped tests, Phase 2 33/33, Phase 1 31/31, legacy 31/31 executed plus the approved HT-14 deferral, Tauri 4/4, Rust 3/3, and migration heads `0005`/`V0004`;
+- the corrected product state remains `under_test`, contains zero production `owner_admitted` parser records, and exposes no canonical parser by default.
+
+Consequences:
+
+- M06-A Phase 3A is owner-accepted and closed;
+- the independent-review and correction obligations under D036 and D037 are satisfied;
+- `m06a.text.v1` remains unadmitted and unavailable for canonical parsing;
+- parser admission remains a separate future owner gate;
+- Phase 3B, Phases 4 through 6, and M06-B remain unauthorized;
+- additional parser formats, providers, network retrieval, monitoring, live LLM integration, Qdrant, graph work, purge, cross-Vault transfer execution, and publication automation remain blocked;
+- D038 closes Phase 3A only and grants no implementation authority for the next phase.

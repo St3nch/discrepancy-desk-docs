@@ -3,7 +3,7 @@
 ## Status
 
 ```text
-Package status: independently reviewed, corrected through D037, and clean-evidence-bound; owner closure pending
+Package status: independently reviewed, corrected through D037, clean-evidence-bound, and owner-closed through D038
 Implementation authority: exact Phase 3A package and 35-invariant profile only
 Original implementation commit: 251b3ca841af46e63485b9ab5bf292cbae55a418
 Corrected implementation commit: 1337b5ac450ae82664aa1ad9667a85af41c4351e
@@ -1177,7 +1177,7 @@ Stop and return to owner review if:
 # 18. Owner Review and Authority Block
 
 ```text
-Current package state: independently reviewed, corrected at 1337b5ac450ae82664aa1ad9667a85af41c4351e, and clean-evidence-bound; explicit owner closure pending
+Current package state: independently reviewed, corrected at 1337b5ac450ae82664aa1ad9667a85af41c4351e, clean-evidence-bound, and owner-closed through D038
 Implementation authority: exact Phase 3A package and 35-invariant profile only
 V0003 creation authority: exercised within D036 boundary
 Plain-text candidate implementation authority: exercised in under_test state only
@@ -1208,4 +1208,4 @@ M06-B: blocked
 providers/network/monitoring/live LLM/Qdrant/graph/purge/publication automation: blocked
 ```
 
-D036 records the original implementation authority. Independent review required correction, and D037 authorized the exact correction package. Application implementation is corrected and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`; findings are dispositioned and explicit owner closure remains required. No review or closure result may be interpreted as parser admission.
+D036 records the original implementation authority. Independent review required correction, and D037 authorized the exact correction package. Application implementation is corrected and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`; D038 accepts the disposition and closes Phase 3A. No review or closure result may be interpreted as parser admission.

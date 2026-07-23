@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06-A Phases 1 and 2 are owner-accepted and closed through D035. D036 Phase 3A was implemented at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`. D037 authorized the exact correction package, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. All independent findings are reproduced, corrected, and dispositioned. Explicit owner closure is pending. Parser admission, canonical parsing, Phase 3B, later M06-A phases, and M06-B remain blocked.
+M06-A Phases 1 and 2 are owner-accepted and closed through D035. D036 Phase 3A was implemented at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`. D037 authorized the exact correction package, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the independent review disposition and closes Phase 3A. Parser admission, canonical parsing, Phase 3B, later M06-A phases, and M06-B remain blocked.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (Phases 1 and 2 owner-closed; Phase 3A corrected and clean-evidence-bound at `1337b5a`, explicit owner closure pending; parser admission and canonical parsing blocked)
+M06-A — Local Manual Vault (Phases 1 through 3A owner-closed through D038; parser admission, canonical parsing, and later phases blocked)
 ```
 
 ## Current Focus
@@ -31,7 +31,7 @@ M06-A — Local Manual Vault
 M06-B — Bounded Static Webpage Retrieval
 ```
 
-The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. Phases 1 and 2 are complete and closed through D035. D036 authorized Phase 3A; D037 authorized the independently required correction. Application commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` is the corrected clean-evidence-bound implementation. All review findings are dispositioned; explicit owner closure remains required. Phase 3B, Phases 4 through 6, parser admission, canonical parsing, and M06-B remain blocked.
+The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. Phases 1 and 2 are complete and closed through D035. D036 authorized Phase 3A; D037 authorized the independently required correction; D038 accepts the corrected implementation at `1337b5ac450ae82664aa1ad9667a85af41c4351e` and closes Phase 3A. Phase 3B, Phases 4 through 6, parser admission, canonical parsing, and M06-B remain blocked.
 
 All four owner decision sets are approved and recorded at `99-decisions/m06-owner-architecture-rulings.md`:
 
@@ -60,7 +60,7 @@ D030 authorized the exact Phase 1 identity, actor, migration, registry, routing,
 
 D034 authorized the exact Phase 2 observation, acquisition, immutable-artifact, rights/retention, foundational backup/restore, Tauri-only, and 33-invariant package. Application commit `eaf7b5dcd46c61654ec0320e9db19aec0a3fe962` implemented it. The required independent Claude review returned `M06-A PHASE 2 INDEPENDENTLY VERIFIED`, reported no Critical, High, or Medium findings, and concluded that D034's review gate was satisfied. The two Low findings were reproduced and corrected through exact five-path commit `1e8cba8f0ef88c2e05b9617956872be26753993e`. D035 accepts the correction, defers only the optional second spot review, and closes Phase 2.
 
-D036 authorized the Phase 3A common parser framework, V0003, plain-text `under_test` candidate, package recovery, read-only status surface, and 35-invariant profile. Application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implemented it. Independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`; D037 authorized the exact correction package. Commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` adds V0004, current-head inherited proof, worker security profile v2, locator-reconciled coverage, tuple-versioned identity, exact package/document lineage, and fail-closed packaged identity verification. Clean evidence records 215/215 full-suite tests, 55/55 focused tests, Phase 3A 35/35 invariants with 53/53 mapped tests, Phase 2 33/33, Phase 1 31/31, legacy 31/31 executed plus the approved HT-14 deferral, Tauri 4/4, Rust 3/3, heads `0005`/`V0004`, packaged-sidecar proof, zero production `owner_admitted` rows, and canonical parsing unavailable. The implementation return and finding disposition are preserved under `08-audits/`. Explicit owner closure remains pending.
+D036 authorized the Phase 3A common parser framework, V0003, plain-text `under_test` candidate, package recovery, read-only status surface, and 35-invariant profile. Application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implemented it. Independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`; D037 authorized the exact correction package. Commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` adds V0004, current-head inherited proof, worker security profile v2, locator-reconciled coverage, tuple-versioned identity, exact package/document lineage, and fail-closed packaged identity verification. Clean evidence records 215/215 full-suite tests, 55/55 focused tests, Phase 3A 35/35 invariants with 53/53 mapped tests, Phase 2 33/33, Phase 1 31/31, legacy 31/31 executed plus the approved HT-14 deferral, Tauri 4/4, Rust 3/3, heads `0005`/`V0004`, packaged-sidecar proof, zero production `owner_admitted` rows, and canonical parsing unavailable. D038 accepts the independent review disposition and closes Phase 3A. The implementation return, finding disposition, and closure record are preserved under `08-audits/`.
 
 No parser is admitted. Phase 3B, Phases 4 through 6, M06-B planning, provider admission, parser admission, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
 
@@ -159,7 +159,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — Phases 1 and 2 owner-accepted and closed through D035; Phase 3A corrected and clean-evidence-bound at `1337b5a`, explicit owner closure pending; parser admission and canonical parsing separately gated
+M06-A  Local Manual Vault — Phases 1 through 3A owner-accepted and closed through D038; parser admission, canonical parsing, Phase 3B, and later phases separately gated
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -191,7 +191,7 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - one restricted Release Watch pilot before any broader agent role;
 - one physical Vault per editorial/public brand identity under D027, with platform-owned accounts bound centrally;
 - account-scoped Qdrant collections and fail-closed retrieval under D024;
-- M06-A Phases 1 and 2 are independently verified, corrected, and owner-closed through D035; Phase 3A is independently reviewed, corrected, and clean-evidence-bound at `1337b5a`, with explicit owner closure pending; parser admission, Phase 3B, and later phases remain separately gated and blocked; M14 retains its named review and entry gate.
+- M06-A Phases 1 through 3A are independently reviewed, corrected as required, and owner-closed through D038; parser admission, canonical parsing, Phase 3B, and later phases remain separately gated and blocked; M14 retains its named review and entry gate.
 
 ## Hard Boundaries
 

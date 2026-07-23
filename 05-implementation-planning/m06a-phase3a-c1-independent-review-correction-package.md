@@ -3,7 +3,7 @@
 ## Status
 
 ```text
-Package status: implemented and clean-evidence-bound; owner closure pending
+Package status: implemented, clean-evidence-bound, and owner-closed through D038
 Base application commit: 251b3ca841af46e63485b9ab5bf292cbae55a418
 Corrected application commit: 1337b5ac450ae82664aa1ad9667a85af41c4351e
 Correction authority: D037
@@ -165,7 +165,7 @@ editing V0001, V0002, or V0003
 
 ## Closure Gate
 
-Phase 3A-C1 requires clean commit-bound evidence, independent finding disposition, documentation synchronization, and explicit owner closure. Successful correction does not admit `m06a.text.v1`.
+Phase 3A-C1 received clean commit-bound evidence, independent finding disposition, documentation synchronization, and explicit owner closure through D038. Closure does not admit `m06a.text.v1`.
 
 
 ## Implementation Result
@@ -174,4 +174,4 @@ Application commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` implements the exa
 
 Clean validation records 215 full-suite tests, 55 focused tests, Phase 3A 35/35 invariants with 53/53 mapped tests, Phase 2 33/33, Phase 1 31/31, legacy 31/31 executed with the approved HT-14 deferral, Tauri 4/4, Rust 3/3, heads `0005`/`V0004`, packaged-sidecar proof, zero production admissions, and canonical parsing unavailable.
 
-Explicit owner closure remains required. Parser admission remains a separate future gate.
+D038 grants explicit Phase 3A closure. Parser admission remains a separate future gate.

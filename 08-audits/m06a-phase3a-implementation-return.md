@@ -9,13 +9,13 @@ Correction authority: D037
 Corrected implementation: 1337b5ac450ae82664aa1ad9667a85af41c4351e
 Clean commit-bound evidence: complete
 Independent findings: reproduced, corrected, and dispositioned
-Owner closure: pending
+Owner closure: accepted through D038
 Parser admission: not granted
 Canonical parsing: unavailable
 Phase 3B and later authority: none
 ```
 
-This record returns the corrected D036/D037 Phase 3A implementation for explicit owner closure. It does not close Phase 3A or admit `m06a.text.v1`.
+D038 accepts this corrected D036/D037 Phase 3A implementation and closes Phase 3A. The closure does not admit `m06a.text.v1`.
 
 ## Corrected Boundary
 
