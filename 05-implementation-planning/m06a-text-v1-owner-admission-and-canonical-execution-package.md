@@ -1,15 +1,16 @@
-# M06-A `m06a.text.v1` Owner Admission and Canonical Execution — Exact Implementation Package Candidate
+# M06-A `m06a.text.v1` Owner Admission and Canonical Execution — Exact Implementation Package
 
 ## Status
 
 ```text
-Package status: candidate prepared for exact owner review
-Implementation authority: none
-Parser admission authority: none until exact owner acceptance
-Canonical parsing authority: none until exact owner acceptance
+Package status: owner-accepted for exact implementation through D039
+Implementation authority: exact package and exact 28-invariant profile only
+Parser admission authority: exact per-Vault human ceremony for the recorded tuple only
+Canonical parsing authority: human-triggered plain-text execution only
 Application baseline: 1337b5ac450ae82664aa1ad9667a85af41c4351e
-Docs baseline: 437b735
+Docs authorization baseline: 728d7d9
 Phase 3A closure: D038
+Authorization: D039
 Phase 3B or later authority: none
 M06-B authority: none
 ```

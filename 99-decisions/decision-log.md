@@ -673,3 +673,32 @@ Consequences:
 - Phase 3B, Phases 4 through 6, and M06-B remain unauthorized;
 - additional parser formats, providers, network retrieval, monitoring, live LLM integration, Qdrant, graph work, purge, cross-Vault transfer execution, and publication automation remain blocked;
 - D038 closes Phase 3A only and grants no implementation authority for the next phase.
+
+
+## D039 — Authorize `m06a.text.v1` Owner Admission and Canonical Execution
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+The owner approved the exact `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md` package and its exact 28-invariant profile.
+
+D039 authorizes only:
+
+- correction of the supported Tauri Vault gate and migration text from stale `V0003` assumptions to the live `V0004` head;
+- one explicit human-only, per-physical-Vault owner-admission ceremony for the exact `m06a.text.v1` tuple and exact evidence manifest recorded in the package;
+- creation of one immutable `owner_admitted` successor to the exact current `under_test` admission row, without updating or deleting the predecessor;
+- human-triggered canonical plain-text parsing of one already admitted, retention-eligible, same-Vault artifact at a time;
+- append-only parser execution, deterministic package storage/reuse, initial document version, elements, regions, audit, idempotency, backup/restore, reconciliation, packaged-sidecar, and exact 28-invariant evidence proof;
+- the exact application change surface and validation contract stated in the accepted package.
+
+D039 does **not** authorize:
+
+- automatic, startup, migration, package-install, bulk, cross-Vault, or every-Vault parser admission;
+- parser configuration editing or parser lifecycle controls beyond the exact admission successor;
+- automatic, background, scheduled, watcher, agent, provider, or post-intake parsing;
+- SRT, VTT, JSON, Markdown, RSS/Atom, HTML, PDF, OCR, FTS, chunks, projections, assertions, dossiers, or later parser modules;
+- Phase 3B, Phases 4 through 6, or M06-B;
+- providers, network retrieval, monitoring, live LLM integration, Qdrant, graph work, purge, or publication automation;
+- any migration, dependency, parser implementation, parser contract, resource-manifest, package-schema, or security-profile change.
+
+Implementation must stop and return to owner review if the exact parser tuple or evidence hashes change, if V0004 proves insufficient, if a forbidden path must change, or if safe canonical execution requires document supersession authority. Successful implementation does not admit the parser in every Vault; each physical Vault still requires its own explicit human admission action. Independent review, finding disposition, clean evidence, and explicit owner closure remain required.

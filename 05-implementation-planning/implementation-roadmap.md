@@ -238,7 +238,7 @@ M06-A establishes the governed research-memory foundation for one editorial/publ
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
 - `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — owner-closed through D038 at corrected commit `1337b5a`
-- `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md` — exact next candidate; owner review pending; no implementation authority
+- `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md` — authorized through D039 for exact implementation; no other parser or later-phase authority
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
