@@ -3,9 +3,11 @@
 ## Status
 
 ```text
-Package status: owner-authorized through D040
+Package status: implemented and clean-evidence-bound; independent review deferred, not waived
 Implementation authority: exact package and exact 24-invariant profile only
 Application baseline: 7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9
+Implementation commit: 529165c19da30185dd9833fab608d6dc28dfed88
+Implementation return: 08-audits/m06a-srt-v1-implementation-return.md
 Documentation baseline: 9f43e1a
 D039 independent review: deferred by timing, not waived
 SRT owner admission authority: none

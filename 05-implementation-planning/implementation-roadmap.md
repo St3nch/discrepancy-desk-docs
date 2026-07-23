@@ -239,7 +239,7 @@ M06-A establishes the governed research-memory foundation for one editorial/publ
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
 - `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — owner-closed through D038 at corrected commit `1337b5a`
 - `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md` — implemented at `7980b1e`; review deferred but not waived through D040; owner closure pending
-- `05-implementation-planning/m06a-srt-v1-under-test-candidate-package.md` — exact SRT under-test implementation authorized through D040; no SRT admission/canonical or later-parser authority
+- `05-implementation-planning/m06a-srt-v1-under-test-candidate-package.md` — implemented and clean-evidence-bound at `529165c`; review deferred but not waived; no SRT admission/canonical or later-parser authority
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
@@ -293,7 +293,7 @@ One human-triggered public URL may be retrieved under a separately accepted SSRF
 
 **Entry and review gate**
 
-The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. Phase 1 is closed through D033. D034/D035 authorize, independently review, correct, and close Phase 2. D036 authorized Phase 3A; independent review required correction. D037 authorized the exact Phase 3A-C1 package, and application commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` implements the corrected V0004/security/coverage/lineage boundary with clean evidence. D038 accepts the disposition and closes Phase 3A. D039 authorized the exact plain-text owner-admission and canonical-execution package; application commit `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9` implements it with clean evidence. D040 defers but does not waive its independent review and owner closure, and authorizes the exact SRT under-test candidate package only. SRT admission/canonical execution and every other parser or later phase still require their own exact bounded authorization.
+The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. Phase 1 is closed through D033. D034/D035 authorize, independently review, correct, and close Phase 2. D036 authorized Phase 3A; independent review required correction. D037 authorized the exact Phase 3A-C1 package, and application commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` implements the corrected V0004/security/coverage/lineage boundary with clean evidence. D038 accepts the disposition and closes Phase 3A. D039 authorized the exact plain-text owner-admission and canonical-execution package; application commit `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9` implements it with clean evidence. D040 defers but does not waive D039 independent review and owner closure, and authorized only the exact SRT under-test candidate package. Application commit `529165c19da30185dd9833fab608d6dc28dfed88` implements it with clean evidence; SRT review is likewise deferred, not waived. SRT admission/canonical execution and every other parser or later phase still require their own exact bounded authorization.
 
 ## M07 — Human-Triggered X Capture Helper
 
