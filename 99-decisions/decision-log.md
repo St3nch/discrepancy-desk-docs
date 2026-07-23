@@ -743,3 +743,27 @@ D040 does **not** authorize:
 - closure or waiver of D039 or any later independent-review obligation.
 
 Implementation must stop and return to owner review if the exact D039 tuple would change, an unlisted path is needed, a migration/dependency is required, the plain-text worker/contract must change, or safe SRT structure cannot be represented inside the exact parser-scoped package.
+
+## D041 — Replace Unstable Claude Review with Project-Steward Self-Review and Authorize D040-C1
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+Repeated Claude AI review sessions crashed, reset, and consumed usage without producing a complete verdict. The owner directed: `We need to do this our self.`
+
+D041 records that:
+
+- the Project Steward may perform the current D039/D040 adversarial reviews directly against live repository truth;
+- those records must be labeled Project-Steward self-review and must not be represented as independent;
+- D039 self-review found no material finding and preserves owner closure as a separate decision;
+- D040 self-review reproduced two Medium closure-blocking findings;
+- the exact `05-implementation-planning/m06a-srt-v1-c1-self-review-correction-package.md` package and exact eight-invariant correction profile are authorized for implementation.
+
+The authorized correction is limited to:
+
+- full exact D040 packaged resource-tuple validation;
+- rejection of coherent or partial config/schema/manifest/dependency/implementation tamper;
+- safe per-parser status isolation so SRT resource failure cannot hide healthy D039 status;
+- exact focused, packaged, inherited, and clean commit-bound evidence.
+
+D041 does **not** authorize SRT owner admission, canonical SRT execution, existing-Vault retrofit, VTT, JSON, Phase 3B, later M06 phases, providers, agents, live LLM integration, Qdrant, graph work, purge, or publication automation.

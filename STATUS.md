@@ -9,7 +9,7 @@ M06-A Phases 1 and 2 are owner-accepted and closed through D035. D036 Phase 3A w
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (D039 and D040 review debt preserved; SRT under-test candidate implemented at `529165c`; next parser package not yet authorized)
+M06-A — Local Manual Vault (D039 self-review verified with no findings; D040 self-review requires exact C1 correction; no later parser authorized)
 ```
 
 ## Current Focus
@@ -253,4 +253,4 @@ M06-A planning correction closure: `08-audits/m06a-planning-correction-closure.m
 
 ## Next Bounded Action
 
-Prepare the exact `m06a.vtt.v1` under-test candidate package for owner review as the next stdlib-first parser step. Do not implement VTT until that exact package is accepted. Preserve the open D039 and D040 independent-review ledger; do not admit SRT, expose canonical SRT execution, add JSON, enter Phase 3B, or infer closure from clean evidence.
+Implement only `05-implementation-planning/m06a-srt-v1-c1-self-review-correction-package.md` under D041. Correct full packaged resource-tuple verification and SRT-status isolation. Do not change parser resources, parser implementations, D039 authority, migrations, dependencies, or add any SRT admission/canonical or later-parser capability.

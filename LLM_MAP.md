@@ -201,6 +201,9 @@ Docs:
 - `08-audits/m06a-text-v1-implementation-return.md`
 - `05-implementation-planning/m06a-srt-v1-under-test-candidate-package.md`
 - `08-audits/m06a-srt-v1-implementation-return.md`
+- `08-audits/m06a-d039-project-steward-self-review.md`
+- `08-audits/m06a-d040-project-steward-self-review.md`
+- `05-implementation-planning/m06a-srt-v1-c1-self-review-correction-package.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
 - `08-audits/m06a-phase1-independent-review-disposition.md`
