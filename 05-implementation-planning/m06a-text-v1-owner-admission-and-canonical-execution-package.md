@@ -3,11 +3,13 @@
 ## Status
 
 ```text
-Package status: owner-accepted for exact implementation through D039
+Package status: implemented and clean-evidence-bound; independent review and owner closure pending
 Implementation authority: exact package and exact 28-invariant profile only
 Parser admission authority: exact per-Vault human ceremony for the recorded tuple only
 Canonical parsing authority: human-triggered plain-text execution only
 Application baseline: 1337b5ac450ae82664aa1ad9667a85af41c4351e
+Implementation commit: 7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9
+Implementation return: 08-audits/m06a-text-v1-implementation-return.md
 Docs authorization baseline: 728d7d9
 Phase 3A closure: D038
 Authorization: D039
@@ -17,7 +19,7 @@ M06-B authority: none
 
 This package is the separate parser-admission gate required after the owner-closed Phase 3A framework. It does not reopen Phase 3A and does not inherit implementation authority from D036, D037, or D038.
 
-Owner acceptance of this exact package would authorize only:
+D039 authorizes only:
 
 1. correction of the stale V0003 desktop Vault gate to the live V0004 head;
 2. an explicit human-only, per-Vault `m06a.text.v1` admission ceremony for the exact proven tuple below;
