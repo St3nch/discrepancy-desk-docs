@@ -702,3 +702,44 @@ D039 does **not** authorize:
 - any migration, dependency, parser implementation, parser contract, resource-manifest, package-schema, or security-profile change.
 
 Implementation must stop and return to owner review if the exact parser tuple or evidence hashes change, if V0004 proves insufficient, if a forbidden path must change, or if safe canonical execution requires document supersession authority. Successful implementation does not admit the parser in every Vault; each physical Vault still requires its own explicit human admission action. Independent review, finding disposition, clean evidence, and explicit owner closure remain required.
+
+## D040 — Defer D039 Independent Review and Authorize `m06a.srt.v1` Under-Test Candidate
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+Because Claude AI usage limits currently prevent the planned D039 independent review, the owner authorized continued bounded work without treating that review as waived or satisfied.
+
+D040 records that:
+
+- D039 remains implemented and clean-evidence-bound at `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9`;
+- D039 independent review, finding disposition, and explicit owner closure remain open obligations;
+- review may be attempted later when independent-review capacity returns;
+- later findings must be reproduced against live repository truth and corrected or explicitly dispositioned;
+- no document may describe D039 as independently verified before that review occurs.
+
+D040 also authorizes preparation and implementation of the exact `05-implementation-planning/m06a-srt-v1-under-test-candidate-package.md` package and its exact 24-invariant profile.
+
+D040 authorizes only:
+
+- parser-scoped immutable SRT resources that do not change the exact D039 plain-text tuple;
+- one strict internal `m06a.srt.v1` parser implementation;
+- a separate fixed SRT source/packaged worker entrypoint using the proven denial controls;
+- synthetic fixtures, deterministic candidate/package proof, and exact source/packaged receipts;
+- immutable `under_test` SRT candidate installation in fresh V0004 Vaults;
+- read-only SRT candidate status;
+- clean commit-bound evidence for the exact 24-invariant profile and all inherited regressions.
+
+D040 does **not** authorize:
+
+- SRT owner admission or canonical SRT execution;
+- existing-Vault SRT retrofit;
+- automatic, background, bulk, scheduled, watcher, agent, or provider parsing;
+- VTT, JSON, Markdown, RSS/Atom, HTML, PDF, OCR, or Phase 3B;
+- Phase 4 through 6 or M06-B;
+- dependency or migration changes;
+- changes to the exact plain-text parser implementation, contract, worker, resource manifest, config, schema, admission material, or canonical route behavior;
+- providers, network retrieval, monitoring, live LLM integration, Qdrant, graph work, purge, or publication automation;
+- closure or waiver of D039 or any later independent-review obligation.
+
+Implementation must stop and return to owner review if the exact D039 tuple would change, an unlisted path is needed, a migration/dependency is required, the plain-text worker/contract must change, or safe SRT structure cannot be represented inside the exact parser-scoped package.

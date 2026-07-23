@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06-A Phases 1 and 2 are owner-accepted and closed through D035. D036 Phase 3A was implemented at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`. D037 authorized the exact correction package, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the independent review disposition and closes Phase 3A. D039 authorized the exact `m06a.text.v1` owner-admission and canonical-execution package and its exact 28-invariant profile. Application commit `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9` implements that package and is clean-evidence-bound. Independent review and owner closure are pending. Automatic or bulk admission, other parsers, Phase 3B, later M06-A phases, and M06-B remain blocked.
+M06-A Phases 1 and 2 are owner-accepted and closed through D035. D036 Phase 3A was implemented at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`. D037 authorized the exact correction package, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the independent review disposition and closes Phase 3A. D039 authorized the exact `m06a.text.v1` owner-admission and canonical-execution package and its exact 28-invariant profile. Application commit `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9` implements that package and is clean-evidence-bound. D040 defers its independent review because Claude usage limits currently block that review; the obligation is not waived and owner closure remains pending. D040 also authorizes the exact `m06a.srt.v1` under-test candidate package and exact 24-invariant profile. SRT admission/canonical execution, VTT, JSON, Phase 3B, later M06-A phases, and M06-B remain blocked.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (Phases 1 through 3A owner-closed; exact plain-text admission/canonical package implemented at `7980b1e`, independent review and owner closure pending)
+M06-A — Local Manual Vault (D039 review debt preserved through D040; exact `m06a.srt.v1` under-test candidate package authorized for implementation)
 ```
 
 ## Current Focus
@@ -62,7 +62,7 @@ D034 authorized the exact Phase 2 observation, acquisition, immutable-artifact, 
 
 D036 authorized the Phase 3A common parser framework, V0003, plain-text `under_test` candidate, package recovery, read-only status surface, and 35-invariant profile. Application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implemented it. Independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`; D037 authorized the exact correction package. Commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` adds V0004, current-head inherited proof, worker security profile v2, locator-reconciled coverage, tuple-versioned identity, exact package/document lineage, and fail-closed packaged identity verification. Clean evidence records 215/215 full-suite tests, 55/55 focused tests, Phase 3A 35/35 invariants with 53/53 mapped tests, Phase 2 33/33, Phase 1 31/31, legacy 31/31 executed plus the approved HT-14 deferral, Tauri 4/4, Rust 3/3, heads `0005`/`V0004`, packaged-sidecar proof, zero production `owner_admitted` rows, and canonical parsing unavailable. D038 accepts the independent review disposition and closes Phase 3A. The implementation return, finding disposition, and closure record are preserved under `08-audits/`.
 
-D039 implementation is complete at `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9`. Fresh Vaults remain `under_test`; implementation creates no production `owner_admitted` row, and each physical Vault still requires the explicit human ceremony before canonical plain-text use. Independent review and owner closure are pending. Phase 3B, Phases 4 through 6, M06-B planning, other parser admission, automatic/background parsing, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
+D039 implementation is complete at `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9`. Fresh Vaults remain `under_test`; implementation creates no production `owner_admitted` row, and each physical Vault still requires the explicit human ceremony before canonical plain-text use. D040 preserves but defers D039 independent review and owner closure, and authorizes only the exact `m06a.srt.v1` under-test candidate package. SRT admission/canonical execution, VTT, JSON, Phase 3B, Phases 4 through 6, M06-B planning, automatic/background parsing, monitoring, live LLM integration, Qdrant, graph work, and cross-Vault transfer execution remain blocked.
 
 D029 records the owner clarification that The Discrepancy Desk is an editorial anomaly archive rather than a formal fact-checking or truth-adjudication product. Clearly labeled speculative, disputed, conspiratorial, folkloric, implausible, anomalous, and unresolved material may be archived and published without a universal prove-or-disprove requirement. Provenance, source/Desk-inference separation, correction lineage, exact human approval, manual publication, and the non-fabrication boundary remain unchanged. The controlling doctrine is `00-doctrine/editorial-anomaly-archive-direction.md`.
 
@@ -160,7 +160,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — Phases 1 through 3A owner-accepted and closed through D038; exact plain-text admission/canonical package implemented at `7980b1e`, independent review and owner closure pending; all other parsers and later phases separately gated
+M06-A  Local Manual Vault — D039 implemented at `7980b1e`; independent review deferred but not waived through D040; exact SRT under-test candidate authorized; all parser admission and later phases separately gated
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface
@@ -192,7 +192,7 @@ Canonical ruling: `05-implementation-planning/editorial-control-room-roadmap-rul
 - one restricted Release Watch pilot before any broader agent role;
 - one physical Vault per editorial/public brand identity under D027, with platform-owned accounts bound centrally;
 - account-scoped Qdrant collections and fail-closed retrieval under D024;
-- M06-A Phases 1 through 3A are independently reviewed, corrected as required, and owner-closed through D038; D039 plain-text admission/canonical execution is implemented and clean-evidence-bound at `7980b1e` but awaits independent review and owner closure; all other parsers and later phases remain separately gated and blocked; M14 retains its named review and entry gate.
+- M06-A Phases 1 through 3A are independently reviewed, corrected as required, and owner-closed through D038; D039 plain-text admission/canonical execution is implemented and clean-evidence-bound at `7980b1e`, with independent review deferred but not waived through D040; D040 authorizes only the SRT under-test candidate; all parser admission and later phases remain separately gated and blocked; M14 retains its named review and entry gate.
 
 ## Hard Boundaries
 
@@ -233,6 +233,7 @@ M06-A Phase 3A implementation authorization: D036
 M06-A Phase 3A correction authorization: D037
 M06-A Phase 3A owner closure: D038
 Plain-text admission/canonical implementation authorization: D039
+Deferred D039 review and SRT under-test authorization: D040
 M06-A Phase 1 implementation commit: `8fe3be4cc9da3183da88cee4bf4b19e2979b901d`
 M06-A Phase 1 evidence-binding commit: `5f0f9ae`
 Application closure record: `docs/m06a-phase1-implementation-closure.md`
@@ -251,4 +252,4 @@ M06-A planning correction closure: `08-audits/m06a-planning-correction-closure.m
 
 ## Next Bounded Action
 
-Perform independent static review of application commit `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9` against D039 and `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md`. Reproduce and disposition any findings before explicit owner closure. Do not authorize another parser, Phase 3B, automatic/bulk admission, background parsing, M06-B, providers, agents, live LLM integration, Qdrant, graph work, purge, or automated publishing.
+Implement only `05-implementation-planning/m06a-srt-v1-under-test-candidate-package.md` under D040. Preserve every exact D039 tuple input byte-for-byte. Do not admit SRT, expose canonical SRT execution, retrofit existing Vaults, add VTT/JSON, enter Phase 3B, or waive the deferred D039 independent-review obligation.
