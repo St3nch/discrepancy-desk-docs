@@ -3,7 +3,7 @@
 ## Status
 
 ```text
-Package status: implemented at a96928f482f7b6c308da81061f0e8f64c6ef2966; Rust 3/3 passed; D045 self-review requires C1 correction
+Package status: corrected at 0f0717eac27442c8706c9031aa8cff5031761493; final Rust validation and owner closure pending
 Preparation authority: D044
 Implementation authority: D045 — exact package and exact 28-invariant profile only
 Application baseline: 6a8082253a52a601291efaf3ed85ee411b04be20
@@ -15,7 +15,7 @@ VTT owner admission authority: none
 VTT canonical execution authority: none
 SRT authority change: none
 JSON/Phase 3B authority: none
-Review claim: Project-Steward self-review only; D045 REQUIRES CORRECTION
+Review claim: Project-Steward self-review only; all three findings corrected, final verdict pending Rust
 ```
 
 This package defined the stdlib-first VTT candidate implemented through D045. D045-SR-01 through D045-SR-03 now block closure. The package still does not authorize admission, canonical parsing, existing-Vault retrofit, JSON, or Phase 3B.

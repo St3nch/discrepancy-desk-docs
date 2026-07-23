@@ -12,10 +12,11 @@ Implementation state: complete inside exact package surface
 Commit-bound Python/parser/packaged evidence: complete
 Frontend tests/build: complete
 Rust validation: owner-executed, 3/3 passed, 0 failed
-Adversarial implementation review: complete — D045 REQUIRES CORRECTION
+Adversarial implementation review: complete — findings corrected at 0f0717eac27442c8706c9031aa8cff5031761493
 Review: 08-audits/m06a-d045-project-steward-self-review.md
 Correction package: 05-implementation-planning/m06a-vtt-v1-c1-self-review-correction-package.md
-Owner closure: blocked pending correction
+Correction return: 08-audits/m06a-vtt-v1-c1-correction-return.md
+Owner closure: pending final Rust validation and explicit owner closure
 VTT owner admission authority: none
 VTT canonical execution authority: none
 Existing-Vault retrofit authority: none

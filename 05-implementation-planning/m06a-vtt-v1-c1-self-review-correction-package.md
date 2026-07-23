@@ -3,9 +3,11 @@
 ## Status
 
 ```text
-Package status: owner-accepted for exact implementation through D047
+Package status: implemented and clean-evidence-bound at 0f0717eac27442c8706c9031aa8cff5031761493; final Rust validation and owner closure pending
 Review source: 08-audits/m06a-d045-project-steward-self-review.md
 Application baseline: a96928f482f7b6c308da81061f0e8f64c6ef2966
+Correction commit: 0f0717eac27442c8706c9031aa8cff5031761493
+Correction return: 08-audits/m06a-vtt-v1-c1-correction-return.md
 Findings: D045-SR-01 through D045-SR-03 only
 Correction implementation authority: D047 — exact package and exact nine-invariant profile only
 VTT admission authority: none
