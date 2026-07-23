@@ -3,10 +3,12 @@
 ## Status
 
 ```text
-Package status: owner-accepted for exact implementation
+Package status: implemented at a96928f482f7b6c308da81061f0e8f64c6ef2966; Rust validation, adversarial review, and owner closure pending
 Preparation authority: D044
 Implementation authority: D045 — exact package and exact 28-invariant profile only
 Application baseline: 6a8082253a52a601291efaf3ed85ee411b04be20
+Implementation commit: a96928f482f7b6c308da81061f0e8f64c6ef2966
+Implementation return: 08-audits/m06a-vtt-v1-implementation-return.md
 Documentation baseline: 344a3e6
 Parser state if later implemented: under_test only
 VTT owner admission authority: none
