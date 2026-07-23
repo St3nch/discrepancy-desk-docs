@@ -9,6 +9,7 @@ Not started.
 - `05-implementation-planning/implementation-roadmap.md`
 - `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
 - `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+- `06-research/deferred-humalike-quinton-reply-evaluation.md`
 - `02-product/module-map.md`
 - `02-product/workflow-overview.md`
 - `03-system-design/architecture-overview.md`
@@ -31,6 +32,12 @@ Tauri in stable daily use; core publication contracts proven; each subpackage se
 - Asset Library: rights, dimensions, variants, crops, alt text, reuse history; evidence remains immutable
 - advanced Calendar/Pipeline: drag/drop, multi-select, heatmaps, swimlanes, aging, richer saved views, keyboard-first operation
 - richer search and native operator productivity
+
+## Deferred Post-Launch Evaluation Candidate
+
+Humalike may be evaluated after launch and demonstrated Reply Desk usage maturity as an optional advisory behavior layer for Quinton-style X reply candidates. The controlling research note is `06-research/deferred-humalike-quinton-reply-evaluation.md`.
+
+That evaluation is not an admitted M12 implementation requirement. It requires a provider-neutral Quinton Reply Voice Contract, an offline baseline comparison, fresh X/provider-policy verification, minimized public-comment inputs, a separate provider-admission and spending package, exact human approval, and manual posting. Direct Hermes plugin installation, persistent social memory, automatic monitoring, and autonomous replies are not implied.
 
 ## Out of Scope
 Autonomous engagement, approval bypass, assets overwriting evidence, hidden dependency mutation, features without demonstrated operator need.

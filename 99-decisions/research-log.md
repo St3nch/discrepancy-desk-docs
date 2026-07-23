@@ -104,3 +104,19 @@ Source: `06-research/x-policy-api-verification-2026-07-19.md`.
 Confidence: High for read and owned-read pricing; Moderate for irrelevant write pricing.
 
 Recheck by: immediately before buying credits and before probe execution.
+
+## R008 — Humalike Preserved as a Deferred Quinton Reply Evaluation Candidate
+
+Accepted: 2026-07-23.
+
+Humalike is preserved as a future research candidate for the M12 Reply Desk, not as an approved provider or current implementation dependency. The narrow proposed use is to test whether a bounded advisory behavior layer improves conversational naturalness and Quinton Clearance voice fidelity for candidate replies to public comments on owned X posts.
+
+The project-owned Quinton Reply Voice Contract, factual/context grounding, exact human approval, manual posting, and reconciliation remain authoritative. Humalike may not define facts, redefine Quinton, access X credentials, publish replies, create persistent social memory by default, or exercise direct SQLite/Vault authority.
+
+Evaluation may begin only after project launch and demonstrated usage maturity, with an offline baseline comparison, minimized public-comment inputs, fresh X and provider-policy verification, a separate provider-admission and spending package, and explicit owner authorization. Direct installation of the Humalike Hermes plugin is not authorized by this research entry.
+
+Source and evaluation design: `06-research/deferred-humalike-quinton-reply-evaluation.md`.
+
+Confidence: Moderate that the capability category is relevant to Reply Desk experimentation; unknown whether Humalike will outperform the provider-neutral baseline in real Desk usage.
+
+Recheck by: immediately before any Humalike account creation, API experiment, spending, plugin review, or M12 provider-admission package.

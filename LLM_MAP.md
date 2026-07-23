@@ -276,6 +276,7 @@ Canonical planning:
 - `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
 - `05-implementation-planning/milestone-04-x-operations-and-metrics.md`
 - `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md` (research input, not doctrine)
+- `06-research/deferred-humalike-quinton-reply-evaluation.md` (deferred M12 Reply Desk experiment; no provider or implementation authority)
 
 Tauri is the sole supported human operator interface. FastAPI remains the token-gated loopback backend/API and packaged sidecar host. Legacy Jinja pages remain frozen historical regression scaffolding and receive no new product features or parity requirements. Dossiers, capture, agent API, Hermes, Truth Social, metrics learning, rich editorial workspaces, No Coincidences, Qdrant, and recovery each have named milestone destinations and gates.
 

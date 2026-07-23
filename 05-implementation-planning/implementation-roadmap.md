@@ -428,6 +428,7 @@ Add deliberately admitted product packages: Reply Desk, Article Room, Asset Libr
 
 - `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
 - `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
+- `06-research/deferred-humalike-quinton-reply-evaluation.md` — deferred post-launch Reply Desk provider experiment only; no current authority
 - `02-product/module-map.md`
 - `02-product/workflow-overview.md`
 - `03-system-design/architecture-overview.md`
