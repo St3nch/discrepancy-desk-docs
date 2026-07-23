@@ -923,3 +923,29 @@ D046 authorizes documentation-only preservation of the review and preparation of
 
 D046 does **not** authorize correction implementation, VTT admission, canonical VTT execution, existing-Vault
 retrofit, JSON, Phase 3B, later M06 work, or any other authority expansion.
+
+## D047 — Authorize Exact `m06a.vtt.v1` C1 Correction Implementation
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+The owner accepts the D045 Project-Steward adversarial self-review as a self-review, not an independent review, and accepts the exact `m06a.vtt.v1` C1 Project-Steward Review Correction package and its exact nine-invariant profile.
+
+Implementation authority is limited to the package's exact changed-path surface at application baseline:
+
+```text
+a96928f482f7b6c308da81061f0e8f64c6ef2966
+```
+
+Authorized corrections only:
+
+```text
+ASCII-only timestamp and recognized numeric-setting grammar
+independent line/count/line-ending/warning reconciliation
+expanded deterministic fixture corpus and exact evidence mappings
+source and packaged full-tuple tamper proof
+repinned VTT implementation and parser-scoped manifest hashes
+exact nine-invariant VTT C1 evidence profile
+```
+
+D047 does not admit VTT, authorize canonical VTT parsing, authorize existing-Vault retrofit, automatic/background/bulk parsing, SRT admission or canonical execution, JSON, Phase 3B or later M06 phases, M06-B, providers, agents, live LLM integration, Qdrant, graph work, purge, or publication automation.

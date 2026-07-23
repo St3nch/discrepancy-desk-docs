@@ -3,11 +3,11 @@
 ## Status
 
 ```text
-Package status: prepared for owner review
+Package status: owner-accepted for exact implementation through D047
 Review source: 08-audits/m06a-d045-project-steward-self-review.md
 Application baseline: a96928f482f7b6c308da81061f0e8f64c6ef2966
 Findings: D045-SR-01 through D045-SR-03 only
-Correction implementation authority: none
+Correction implementation authority: D047 — exact package and exact nine-invariant profile only
 VTT admission authority: none
 VTT canonical authority: none
 JSON/Phase 3B authority: none
