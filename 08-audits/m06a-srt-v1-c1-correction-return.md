@@ -11,7 +11,7 @@ Review type: Project-Steward adversarial self-review
 Independent review claim: none
 D040-SR-01: corrected
 D040-SR-02: corrected
-Owner closure: pending
+Owner closure: granted through D042
 SRT owner admission: not authorized
 SRT canonical execution: not authorized
 ```

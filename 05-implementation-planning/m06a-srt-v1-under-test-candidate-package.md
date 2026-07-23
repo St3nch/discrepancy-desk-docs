@@ -3,7 +3,7 @@
 ## Status
 
 ```text
-Package status: implemented and clean-evidence-bound; independent review deferred, not waived
+Package status: owner-accepted and closed as corrected through D042
 Implementation authority: exact package and exact 24-invariant profile only
 Application baseline: 7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9
 Implementation commit: 529165c19da30185dd9833fab608d6dc28dfed88
@@ -12,13 +12,13 @@ Correction commit: 6a8082253a52a601291efaf3ed85ee411b04be20
 Correction return: 08-audits/m06a-srt-v1-c1-correction-return.md
 Project-Steward disposition: 08-audits/m06a-d040-project-steward-self-review-disposition.md
 Documentation baseline: 9f43e1a
-D039 independent review: deferred by timing, not waived
+D039/D040 review basis: Project-Steward adversarial self-review accepted through D042; no independent-review claim
 SRT owner admission authority: none
 SRT canonical execution authority: none
 VTT/JSON/Phase 3B authority: none
 ```
 
-This package continues the accepted stdlib-first parser sequence after plain text while preserving the unresolved D039 independent-review obligation. It does not close D039, admit SRT, or authorize any higher-risk parser.
+This package continued the accepted stdlib-first parser sequence after plain text. D042 closes D039 and corrected D040 on the disclosed Project-Steward self-review basis. It does not admit SRT or authorize any higher-risk parser.
 
 ---
 
@@ -37,11 +37,11 @@ Therefore SRT must use a parser-scoped immutable resource manifest and a separat
 
 ---
 
-# 2. Deferred Review Ruling
+# 2. Historical Deferred Review Ruling and D042 Resolution
 
 Claude usage limits currently prevent the planned D039 independent review.
 
-D040 permits continued bounded implementation but does not waive review. The debt remains explicit:
+D040 permitted continued bounded implementation without waiving review. At that time, the debt was:
 
 - D039 remains implemented, clean-evidence-bound, and unclosed;
 - its independent review must be attempted when review capacity returns;
@@ -49,7 +49,7 @@ D040 permits continued bounded implementation but does not waive review. The deb
 - D039 may not be retroactively described as independently verified;
 - Phase 6 final closure cannot declare the review ledger complete while this debt remains open.
 
-This package receives its own implementation return and review debt. Review debt may be batched later, but findings may not be ignored.
+D041 later performed the disclosed Project-Steward adversarial self-review, reproduced two D040 findings, and corrected them at `6a8082253a52a601291efaf3ed85ee411b04be20`. D042 accepted that basis and closed D039 and corrected D040 without making an independent-review claim.
 
 ---
 
@@ -375,6 +375,8 @@ Not authorized:
 - Markdown, RSS/Atom, HTML, PDF, or Phase 3B
 - Phase 4 through 6 or M06-B
 - providers, network retrieval, monitoring, agents, live LLM, Qdrant, graph, purge, or publication automation
-- closure of D039
-- waiver of any independent review debt
+- closure of D039 under D040 itself
+- any claim of independent review
+
+D042 subsequently closed D039 and corrected D040 on the disclosed Project-Steward self-review basis; the capability restrictions above remain unchanged.
 ```

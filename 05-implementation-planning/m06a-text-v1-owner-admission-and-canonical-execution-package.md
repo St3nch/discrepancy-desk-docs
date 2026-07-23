@@ -3,7 +3,7 @@
 ## Status
 
 ```text
-Package status: implemented and clean-evidence-bound; independent review and owner closure pending
+Package status: owner-accepted and closed through D042
 Implementation authority: exact package and exact 28-invariant profile only
 Parser admission authority: exact per-Vault human ceremony for the recorded tuple only
 Canonical parsing authority: human-triggered plain-text execution only
@@ -383,9 +383,9 @@ real PyInstaller sidecar build and packaged canonical execution
 exact changed-path and forbidden-file audit
 git diff --check
 clean commit-bound evidence
-independent implementation review
+Project-Steward adversarial self-review under D041
 finding disposition
-explicit owner closure
+explicit owner closure through D042
 ```
 
 Successful implementation does not automatically admit the parser in every Vault. It creates the governed ceremony; each physical Vault still requires an explicit human admission action.

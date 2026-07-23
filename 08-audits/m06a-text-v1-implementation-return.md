@@ -7,15 +7,16 @@ Implementation status: complete and pushed
 Authorization: D039
 Application commit: 7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9
 Clean commit-bound evidence: complete
-Independent implementation review: required and pending
-Owner closure: not granted
+Review type: Project-Steward adversarial self-review
+Independent review claim: none
+Owner closure: granted through D042
 Automatic or bulk admission: not authorized and not implemented
 Production owner-admitted rows created by implementation: 0
 Phase 3B or later authority: none
 M06-B authority: none
 ```
 
-This record returns the exact D039-authorized implementation for independent review. It does not close the package and does not admit `m06a.text.v1` automatically or across every physical Vault.
+This record returned the exact D039-authorized implementation for review. D041 Project-Steward self-review found no material findings, and D042 closes the package without claiming independent review. Closure does not admit `m06a.text.v1` automatically or across every physical Vault.
 
 ## Implemented Boundary
 
@@ -200,9 +201,9 @@ This implementation does not authorize or implement:
 - Phase 3B, Phases 4 through 6, or M06-B;
 - FTS, chunks, projections, assertions, dossiers, context runs, providers, network retrieval, monitoring, live LLM integration, Qdrant, graph work, purge, or publication automation.
 
-## Independent Review Gate
+## Historical Review Gate and D042 Disposition
 
-Before owner closure, an independent reviewer must inspect:
+The original D039 package required independent inspection before owner closure. D041 replaced the unstable Claude attempt with a disclosed Project-Steward adversarial self-review covering:
 
 - exact D039/package and changed-path compliance;
 - exact admission tuple/evidence/predecessor binding and per-Vault human authority;
@@ -217,4 +218,4 @@ Before owner closure, an independent reviewer must inspect:
 - exact 28-invariant evidence and inherited regressions;
 - absence of other parsers and later capability.
 
-Findings must be reproduced and dispositioned before explicit owner closure. A successful review still does not admit the parser automatically in any live Vault and does not authorize Phase 3B or another parser.
+D041 found no material D039 findings. D042 explicitly accepted that self-review basis and granted owner closure without claiming independent review. Closure still does not admit the parser automatically in any live Vault and does not authorize Phase 3B or another parser.

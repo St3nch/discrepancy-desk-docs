@@ -10,7 +10,7 @@ D040-SR-01: reproduced, corrected, and regression-proved
 D040-SR-02: reproduced, corrected, and regression-proved
 Verdict: D040 PROJECT-STEWARD SELF-REVIEW VERIFIED AFTER CORRECTION
 Independent review claim: none
-Owner closure: pending
+Owner closure: granted through D042
 ```
 
 ## D040-SR-01 Disposition
@@ -45,4 +45,4 @@ The exact D041, D040, D039, Phase 3A, Phase 2, Phase 1, and legacy profiles all 
 D040 PROJECT-STEWARD SELF-REVIEW VERIFIED AFTER CORRECTION
 ```
 
-This is a Project-Steward self-review disposition, not an independent-review claim. It does not close D040, admit SRT, enable canonical SRT parsing, or authorize another parser or later phase.
+This is a Project-Steward self-review disposition, not an independent-review claim. D042 closes corrected D040. It does not admit SRT, enable canonical SRT parsing, or authorize another parser or later phase.

@@ -767,3 +767,21 @@ The authorized correction is limited to:
 - exact focused, packaged, inherited, and clean commit-bound evidence.
 
 D041 does **not** authorize SRT owner admission, canonical SRT execution, existing-Vault retrofit, VTT, JSON, Phase 3B, later M06 phases, providers, agents, live LLM integration, Qdrant, graph work, purge, or publication automation.
+
+## D042 — Accept D041 Disposition and Close D039 and D040
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+The owner accepted the D041 Project-Steward adversarial self-review and correction disposition.
+
+D042 closes:
+
+- D039 — `m06a.text.v1` Owner Admission and Canonical Execution; and
+- D040 — the `m06a.srt.v1` Under-Test Candidate, as corrected at application commit `6a8082253a52a601291efaf3ed85ee411b04be20`.
+
+The owner explicitly acknowledged that the D039 and D040 reviews were Project-Steward self-reviews and are not represented as independent reviews. The previously deferred independent-review obligation is therefore no longer an open closure gate for these two packages, but no independent-review claim may be made.
+
+D042 does **not** automatically admit `m06a.text.v1` in any Vault, admit SRT, authorize canonical SRT execution, authorize existing-Vault SRT retrofit, authorize automatic or bulk parsing, authorize VTT or JSON, authorize Phase 3B or later M06-A phases, authorize M06-B, or authorize providers, agents, live LLM integration, Qdrant, graph work, purge, or publication automation.
+
+The authoritative closure record is `08-audits/m06a-d039-d040-owner-closure.md`.
