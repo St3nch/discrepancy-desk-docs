@@ -1,15 +1,15 @@
 # Project Status — Discrepancy Desk
 
-*Last updated: 2026-07-22*
+*Last updated: 2026-07-23*
 
 ## Current Mode
 
-M06-A Phases 1 and 2 are implemented, independently reviewed, corrected, clean-evidence-bound, owner-accepted, and closed through D035. The optional second Claude spot review of the two corrected Low findings is deferred because of subscription usage limits; the required full Phase 2 independent audit completed and satisfied D034. An exact Phase 3A candidate package for the common parser framework plus plain text in `under_test` state is prepared for owner review. It has no implementation or parser-admission authority. Phase 3 through Phase 6 and M06-B remain blocked pending separate authorization.
+M06-A Phases 1 and 2 are implemented, independently reviewed, corrected, clean-evidence-bound, owner-accepted, and closed through D035. The optional second Claude spot review of the two corrected Low findings is deferred because of subscription usage limits; the required full Phase 2 independent audit completed and satisfied D034. D036 authorizes the exact Phase 3A package and exact 35-invariant profile for the common parser framework plus plain text in `under_test` state. Implementation is active. Parser admission, canonical parsing, Phase 3B, later M06-A phases, and M06-B remain blocked.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (Phases 1 and 2 owner-accepted and closed through D035; exact Phase 3A candidate package prepared for owner review; implementation and parser admission blocked)
+M06-A — Local Manual Vault (Phases 1 and 2 owner-accepted and closed through D035; exact Phase 3A implementation authorized through D036; parser admission and canonical parsing blocked)
 ```
 
 ## Current Focus
@@ -31,7 +31,7 @@ M06-A — Local Manual Vault
 M06-B — Bounded Static Webpage Retrieval
 ```
 
-The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. Phases 1 and 2 are complete and closed through D035. Phases 3 through 6 remain blocked. M06-B is a later separately gated network/SSRF package and is not authorized for planning or implementation.
+The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. Phases 1 and 2 are complete and closed through D035. D036 authorizes only the exact Phase 3A implementation package and 35-invariant profile. Phase 3B, Phases 4 through 6, parser admission, canonical parsing, and M06-B remain blocked.
 
 All four owner decision sets are approved and recorded at `99-decisions/m06-owner-architecture-rulings.md`:
 
@@ -155,7 +155,7 @@ M02  Persistence Contract/Hammer Plan — complete
 M03  Governed Local Control Room Foundation — complete
 M04  Editorial Control Room and X Operating Workflow — complete
 M05  Tauri Desktop Foundation and Product Parity — complete; AC-01 corrections closed
-M06-A  Local Manual Vault — Phases 1 and 2 owner-accepted and closed through D035; Phase 3A candidate package prepared for owner review; implementation and admission separately gated
+M06-A  Local Manual Vault — Phases 1 and 2 owner-accepted and closed through D035; exact Phase 3A implementation authorized through D036; parser admission and canonical parsing separately gated
 M06-B  Bounded Static Webpage Retrieval — deferred; separately gated
 M07  Human-Triggered X Capture Helper
 M08  Agent-Neutral Governed Interface

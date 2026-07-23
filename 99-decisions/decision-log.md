@@ -583,3 +583,34 @@ Consequences:
 - parser implementation or admission remains blocked;
 - M06-B, network retrieval, providers, monitoring, live LLM integration, Qdrant, graph work, purge, cross-Vault transfer execution, and automated publishing remain blocked;
 - this decision closes Phase 2 only and grants no later-phase authority.
+
+
+## D036 — Authorize Exact M06-A Phase 3A Parser Framework and Plain-Text Under-Test Implementation
+
+**Date:** 2026-07-23
+**Status:** Accepted
+**Owner ruling:** The owner approved the exact `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` package and its exact 35-invariant profile.
+
+D036 authorizes implementation of only:
+
+- the common M06-A parser framework;
+- Vault migration `V0003_parser_packages_and_documents.py`;
+- parser definitions, immutable configuration/admission versions, execution receipts, normalized packages, document versions, elements, and regions;
+- normalized-package schema `m06a.normalized-package.v1` and deterministic canonical JSON handling;
+- the fixed-entrypoint short-lived parser worker and exact denial controls;
+- `m06a.text.v1` as an `under_test` candidate only;
+- synthetic fixtures, source and packaged-sidecar resources, exact tests, the exact 35-invariant profile, and commit-bound evidence;
+- the read-only parser status surface through the supported Tauri/loopback path;
+- exact package backup/restore and packaged no-egress proof.
+
+D036 does **not** authorize:
+
+- any production `owner_admitted` parser state;
+- canonical parsing of real Vault material;
+- an admission, execution, suspension, revocation, or parser-configuration mutation endpoint or UI;
+- SRT, VTT, JSON, Markdown, XML, HTML, PDF, OCR, browser rendering, or media work;
+- Phase 3B, Phases 4 through 6, or M06-B;
+- FTS, chunks, projections, assertions, entities, dossiers, context runs, providers, network retrieval, monitoring, live LLM use, Qdrant, graph work, purge, or publication automation;
+- any dependency change to `pyproject.toml` or `uv.lock`.
+
+Implementation must stop and return to owner review if any exact package stop condition is reached. Successful implementation or testing does not admit `m06a.text.v1`; parser admission remains a separate future owner gate.

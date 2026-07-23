@@ -3,8 +3,8 @@
 ## Status
 
 ```text
-Package status: candidate prepared for owner review
-Implementation authority: none
+Package status: owner-accepted for exact implementation through D036
+Implementation authority: exact Phase 3A package and 35-invariant profile only
 Parser admission authority: none
 Current admitted parsers: none
 Phase 1: owner-closed through D033
@@ -15,7 +15,7 @@ M06-B authority: none
 
 This document extracts one exact, bounded Phase 3A candidate from the owner-accepted M06-A canonical plan and parser-admission plan.
 
-Its existence does not authorize implementation. If the owner accepts this package, that acceptance authorizes only the common parser framework and the plain-text candidate in `under_test` state. It does not admit a parser for canonical Vault use.
+D036 records owner acceptance of this exact package and authorizes only the common parser framework and the plain-text candidate in `under_test` state. It does not admit a parser for canonical Vault use.
 
 ---
 
@@ -1172,15 +1172,15 @@ Stop and return to owner review if:
 # 18. Owner Review and Authority Block
 
 ```text
-Current package state: candidate only
-Implementation authority: none
-V0003 creation authority: none
-Plain-text candidate implementation authority: none
+Current package state: owner-accepted through D036
+Implementation authority: exact Phase 3A package and 35-invariant profile only
+V0003 creation authority: granted by D036
+Plain-text candidate implementation authority: granted in under_test state only
 Plain-text owner admission authority: none
 Canonical parsing authority: none
 ```
 
-If the owner accepts this exact package, the resulting authority is limited to:
+D036 accepts this exact package. The resulting authority is limited to:
 
 ```text
 implement common parser framework
