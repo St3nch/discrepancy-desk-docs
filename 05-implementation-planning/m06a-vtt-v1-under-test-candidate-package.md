@@ -3,9 +3,9 @@
 ## Status
 
 ```text
-Package status: prepared for owner review
+Package status: owner-accepted for exact implementation
 Preparation authority: D044
-Implementation authority: NONE
+Implementation authority: D045 — exact package and exact 28-invariant profile only
 Application baseline: 6a8082253a52a601291efaf3ed85ee411b04be20
 Documentation baseline: 344a3e6
 Parser state if later implemented: under_test only
@@ -790,4 +790,4 @@ bulk parsing, JSON, Phase 3B, Phase 4 through 6, M06-B, providers, agents, live 
 graph work, purge, or publication automation.
 ```
 
-Until that owner acceptance occurs, implementation authority remains `NONE`.
+D045 grants implementation authority only inside this exact package. Admission, canonical execution, existing-Vault retrofit, and every later capability remain unauthorized.

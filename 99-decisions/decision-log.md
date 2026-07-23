@@ -865,3 +865,36 @@ M06-B, providers, agents, live LLM integration, Qdrant, graph work, purge, or pu
 
 The next bounded action is owner review of the exact VTT package. Implementation requires a separate explicit
 owner decision.
+
+## D045 — Authorize Exact `m06a.vtt.v1` Under-Test Candidate Implementation
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+The owner accepted the exact M06-A `m06a.vtt.v1` Under-Test Candidate package and its exact 28-invariant profile.
+
+D045 authorizes implementation only within the exact changed-path surface defined by:
+
+```text
+05-implementation-planning/m06a-vtt-v1-under-test-candidate-package.md
+```
+
+at application baseline:
+
+```text
+6a8082253a52a601291efaf3ed85ee411b04be20
+```
+
+Authorized capability is limited to:
+
+- one strict internal VTT candidate;
+- parser-scoped immutable resources;
+- one fixed source and packaged VTT worker;
+- synthetic source and packaged proof;
+- fresh-V0004 immutable `under_test` installation only;
+- neutral read-only parser status;
+- the exact 28-invariant evidence profile and inherited regressions.
+
+D045 does **not** admit VTT, authorize canonical VTT parsing, authorize existing-Vault retrofit, authorize automatic or bulk parsing, authorize JSON, authorize Phase 3B, authorize Phases 4 through 6, authorize M06-B, or authorize providers, agents, live LLM integration, Qdrant, graph work, purge, or publication automation.
+
+Implementation must stop and return to owner review if a forbidden/unlisted path, dependency, migration, closed text/SRT tuple change, canonical VTT authority, desktop mutation control, rendering/CSS/DOM behavior, or existing-Vault retrofit becomes necessary.
