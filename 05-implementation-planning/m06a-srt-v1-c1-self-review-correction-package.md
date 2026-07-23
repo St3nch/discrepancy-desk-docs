@@ -3,8 +3,11 @@
 ## Status
 
 ```text
-Package status: authorized for bounded correction under D041
+Package status: implemented and clean-evidence-bound; owner closure pending
 Application baseline: 529165c19da30185dd9833fab608d6dc28dfed88
+Correction commit: 6a8082253a52a601291efaf3ed85ee411b04be20
+Correction return: 08-audits/m06a-srt-v1-c1-correction-return.md
+Review disposition: 08-audits/m06a-d040-project-steward-self-review-disposition.md
 Review source: 08-audits/m06a-d040-project-steward-self-review.md
 Findings: D040-SR-01 and D040-SR-02 only
 SRT admission authority: none

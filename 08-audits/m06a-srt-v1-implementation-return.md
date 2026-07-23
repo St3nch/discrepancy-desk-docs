@@ -1,5 +1,7 @@
 # M06-A `m06a.srt.v1` Under-Test Candidate — Implementation Return
 
+> **Correction notice:** D041 Project-Steward self-review reproduced two Medium defects in this original return's packaged-resource and shared-status claims. Both are corrected at application commit `6a8082253a52a601291efaf3ed85ee411b04be20`. See `08-audits/m06a-srt-v1-c1-correction-return.md` and `08-audits/m06a-d040-project-steward-self-review-disposition.md`. This historical return must not be read as the final reviewed state.
+
 ## Verdict
 
 ```text
