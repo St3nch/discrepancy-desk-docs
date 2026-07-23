@@ -4,12 +4,12 @@
 
 ## Current Mode
 
-M06-A Phases 1 and 2 are owner-accepted and closed through D035. D036 Phase 3A was implemented at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`. D037 authorized the exact correction package, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the independent review disposition and closes Phase 3A. D039 authorized the exact `m06a.text.v1` owner-admission and canonical-execution package and its exact 28-invariant profile. Application commit `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9` implements that package and is clean-evidence-bound. D040 originally deferred that independent review because Claude usage limits blocked it; the review and owner-closure gates were pending at that time. D040 also authorized the exact `m06a.srt.v1` under-test candidate package and exact 24-invariant profile. Application commit `529165c19da30185dd9833fab608d6dc28dfed88` implemented it. D041 records Project-Steward self-review after repeated Claude crashes: D039 had no material findings, while D040 required two exact corrections. Application commit `6a8082253a52a601291efaf3ed85ee411b04be20` corrects both findings with clean commit-bound evidence. These reviews are explicitly not represented as independent. D042 accepts the disclosed self-review basis and closes D039 and corrected D040. D043 accepts a documentation-only governed discrepancy-detection direction for future M06 Phase 4/5 dependencies, M12 workspace handoff, and M13 entry planning; it grants no application, schema, detector, Phase 4/5, M12, or M13 authority. SRT admission/canonical execution, VTT, JSON, Phase 3B, later M06-A phases, and M06-B remain blocked.
+M06-A Phases 1 and 2 are owner-accepted and closed through D035. D036 Phase 3A was implemented at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`. D037 authorized the exact correction package, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the independent review disposition and closes Phase 3A. D039 authorized the exact `m06a.text.v1` owner-admission and canonical-execution package and its exact 28-invariant profile. Application commit `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9` implements that package and is clean-evidence-bound. D040 originally deferred that independent review because Claude usage limits blocked it; the review and owner-closure gates were pending at that time. D040 also authorized the exact `m06a.srt.v1` under-test candidate package and exact 24-invariant profile. Application commit `529165c19da30185dd9833fab608d6dc28dfed88` implemented it. D041 records Project-Steward self-review after repeated Claude crashes: D039 had no material findings, while D040 required two exact corrections. Application commit `6a8082253a52a601291efaf3ed85ee411b04be20` corrects both findings with clean commit-bound evidence. These reviews are explicitly not represented as independent. D042 accepts the disclosed self-review basis and closes D039 and corrected D040. D043 accepts a documentation-only governed discrepancy-detection direction for future M06 Phase 4/5 dependencies, M12 workspace handoff, and M13 entry planning; it grants no application, schema, detector, Phase 4/5, M12, or M13 authority. D044 prepares the exact `m06a.vtt.v1` under-test candidate package for owner review only. SRT admission/canonical execution, VTT implementation/admission/canonical execution, JSON, Phase 3B, later M06-A phases, and M06-B remain blocked.
 
 ## Active Milestone
 
 ```text
-M06-A — Local Manual Vault (D039 and corrected D040 owner-closed through D042; no later parser authorized)
+M06-A — Local Manual Vault (VTT under-test package prepared through D044; implementation not authorized)
 ```
 
 ## Current Focus
@@ -34,6 +34,8 @@ M06-B — Bounded Static Webpage Retrieval
 The boundary is recorded at `05-implementation-planning/m06a-m06b-package-boundary.md`. M06-A remains local-only. Phases 1 and 2 are complete and closed through D035. D036 authorized Phase 3A; D037 authorized the independently required correction; D038 closes Phase 3A. D039 authorizes only the exact per-Vault plain-text admission and human-triggered canonical-execution capability, implemented at `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9`. D041 Project-Steward self-review found no material D039 finding; this is not an independent-review claim. D042 accepts that basis and closes D039. Phase 3B, Phases 4 through 6, other parser admission, automatic parsing, and M06-B remain blocked.
 
 D043 preserves the future No Coincidences direction without interrupting the active M06 build. Before the future Phase 4 exact package, corpus/coverage snapshot requirements must be addressed; before the future Phase 5 exact package, stable assertion comparison dimensions must be defined. The full feature remains M13, and any rich competing-explanations UI remains a separately admitted M12 concern.
+
+D044 prepares the exact strict WebVTT under-test candidate package at `05-implementation-planning/m06a-vtt-v1-under-test-candidate-package.md`. It is awaiting owner review. No application file, migration, dependency, parser resource, route, or UI was changed.
 
 All four owner decision sets are approved and recorded at `99-decisions/m06-owner-architecture-rulings.md`:
 
@@ -241,6 +243,7 @@ Deferred D039 review and SRT under-test authorization: D040
 Project-Steward self-review and SRT correction authorization: D041
 D039 and corrected D040 owner closure: D042
 Governed discrepancy-detection planning direction: D043
+Exact VTT under-test package preparation: D044
 M06-A Phase 1 implementation commit: `8fe3be4cc9da3183da88cee4bf4b19e2979b901d`
 M06-A Phase 1 evidence-binding commit: `5f0f9ae`
 Application closure record: `docs/m06a-phase1-implementation-closure.md`
@@ -249,6 +252,7 @@ Independent-review disposition: `08-audits/m06a-phase1-independent-review-dispos
 Phase 2 exact package: `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
 Phase 3A exact package: `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` (owner-closed through D038)
 Plain-text admission/canonical package: `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md` (implemented at `7980b1e`; owner-closed through D042)
+VTT under-test package: `05-implementation-planning/m06a-vtt-v1-under-test-candidate-package.md` (prepared through D044; implementation authority none)
 Plain-text implementation return: `08-audits/m06a-text-v1-implementation-return.md`
 Independent Phase 2 review: `08-audits/claude-m06a-phase2-independent-implementation-review.md`
 Phase 2 correction and closure: `08-audits/m06a-phase2-correction-and-closure.md`
@@ -259,4 +263,4 @@ M06-A planning correction closure: `08-audits/m06a-planning-correction-closure.m
 
 ## Next Bounded Action
 
-Prepare the exact `m06a.vtt.v1` under-test candidate package for owner review. This is package preparation only, not VTT implementation authority. Preserve the D043 Phase 4 corpus/coverage and Phase 5 comparison-dimension dependencies for their future packages; do not implement Tier 1 detectors, enter M13, admit SRT, authorize canonical SRT execution, implement JSON, enter Phase 3B, or authorize any later capability without a separate exact owner decision.
+Owner review of `05-implementation-planning/m06a-vtt-v1-under-test-candidate-package.md`. Do not implement VTT unless the owner explicitly accepts the exact package and 28-invariant profile. Preserve the D043 Phase 4 corpus/coverage and Phase 5 comparison-dimension dependencies; do not implement Tier 1 detectors, enter M13, admit SRT, authorize canonical SRT execution, implement JSON, enter Phase 3B, or authorize any later capability without a separate exact owner decision.

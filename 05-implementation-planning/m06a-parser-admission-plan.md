@@ -370,6 +370,12 @@ No row in this table is an admission.
 
 # 9. WebVTT Candidate — `m06a.vtt.v1`
 
+```text
+Exact package: 05-implementation-planning/m06a-vtt-v1-under-test-candidate-package.md
+Package preparation: accepted through D044
+Implementation authority: none
+```
+
 ## Exact proposal
 
 - Implementation: internal strict WebVTT subset parser.

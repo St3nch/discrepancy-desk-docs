@@ -830,3 +830,38 @@ integration, Qdrant, graph work, purge, or publication automation.
 After this documentation package, active development returns to the M06-A parser sequence. The next bounded
 action is preparation of the exact `m06a.vtt.v1` under-test candidate package for owner review; VTT
 implementation is not authorized by D043.
+
+## D044 — Prepare Exact `m06a.vtt.v1` Under-Test Candidate Package
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+After D042 closed D039 and corrected D040 and D043 preserved the future governed discrepancy-detection
+direction, the owner directed the Project Steward to continue the active M06-A parser sequence.
+
+D044 authorizes documentation-only preparation of:
+
+```text
+05-implementation-planning/m06a-vtt-v1-under-test-candidate-package.md
+```
+
+The prepared package defines:
+
+- a strict internal UTF-8/UTF-8-BOM WebVTT subset;
+- exact `WEBVTT` header framing and blank separation;
+- optional cue identifiers and strict timestamp ordering;
+- validated inert cue settings;
+- inert NOTE preservation;
+- terminal rejection of STYLE, REGION, region settings, timeline mapping, rendering, CSS, and DOM semantics;
+- parser-scoped full-tuple resource verification from the first implementation;
+- a neutral parser-status aggregator that does not extend SRT-owned coupling;
+- fresh-V0004 `under_test` installation only;
+- an exact changed-path surface and 28-invariant profile;
+- exact validation, review, stop, and owner-closure gates.
+
+D044 does **not** authorize application changes, VTT implementation, VTT admission, canonical VTT parsing,
+existing-Vault retrofit, automatic or bulk parsing, SRT authority changes, JSON, Phase 3B, Phase 4 through 6,
+M06-B, providers, agents, live LLM integration, Qdrant, graph work, purge, or publication automation.
+
+The next bounded action is owner review of the exact VTT package. Implementation requires a separate explicit
+owner decision.
