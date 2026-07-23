@@ -1,15 +1,17 @@
-# M06-A Phase 3A Exact Implementation Package Candidate — Parser Framework and Plain-Text Under-Test Candidate
+# M06-A Phase 3A Exact Implementation Package — Parser Framework and Plain-Text Under-Test Candidate
 
 ## Status
 
 ```text
-Package status: owner-accepted for exact implementation through D036
+Package status: implemented and clean-evidence-bound; independent review and owner closure pending
 Implementation authority: exact Phase 3A package and 35-invariant profile only
+Implementation commit: 251b3ca841af46e63485b9ab5bf292cbae55a418
 Parser admission authority: none
 Current admitted parsers: none
 Phase 1: owner-closed through D033
 Phase 2: owner-closed through D035
 Application baseline: 1e8cba8f0ef88c2e05b9617956872be26753993e
+Implementation return: 08-audits/m06a-phase3a-implementation-return.md
 M06-B authority: none
 ```
 
@@ -1172,10 +1174,10 @@ Stop and return to owner review if:
 # 18. Owner Review and Authority Block
 
 ```text
-Current package state: owner-accepted through D036
+Current package state: implemented at 251b3ca841af46e63485b9ab5bf292cbae55a418; independent review and owner closure pending
 Implementation authority: exact Phase 3A package and 35-invariant profile only
-V0003 creation authority: granted by D036
-Plain-text candidate implementation authority: granted in under_test state only
+V0003 creation authority: exercised within D036 boundary
+Plain-text candidate implementation authority: exercised in under_test state only
 Plain-text owner admission authority: none
 Canonical parsing authority: none
 ```
@@ -1203,4 +1205,4 @@ M06-B: blocked
 providers/network/monitoring/live LLM/Qdrant/graph/purge/publication automation: blocked
 ```
 
-Owner acceptance must be recorded in `99-decisions/decision-log.md` before application implementation begins.
+D036 records the required owner acceptance. Application implementation is complete at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review, finding disposition, and explicit owner closure remain required. No review result may be interpreted as parser admission.

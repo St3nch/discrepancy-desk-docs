@@ -4,7 +4,7 @@
 
 The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 through D036 govern the accepted planning baseline, editorial identity, Tauri-only boundary, Phase 1 closure, exact Phase 2 authorization and closure, and exact Phase 3A implementation authorization.
 
-M06-A Phase 1 is closed through application commits `8fe3be4` and `5f0f9ae` plus D033. Phase 2 is implemented through `eaf7b5d`, independently verified, corrected through `1e8cba8`, and owner-closed through D035. The optional second correction spot review is deferred, while the required Phase 2 audit is complete. D036 authorizes the exact Phase 3A package and exact 35-invariant profile, limited to the common parser framework plus `m06a.text.v1` in `under_test` state. Implementation is active. No parser is admitted, canonical parsing remains unavailable, and Phase 3B, later M06-A phases, and M06-B remain blocked.
+M06-A Phase 1 is closed through application commits `8fe3be4` and `5f0f9ae` plus D033. Phase 2 is implemented through `eaf7b5d`, independently verified, corrected through `1e8cba8`, and owner-closed through D035. The optional second correction spot review is deferred, while the required Phase 2 audit is complete. D036 authorized the exact Phase 3A package and exact 35-invariant profile, limited to the common parser framework plus `m06a.text.v1` in `under_test` state. Application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implements that package and has clean commit-bound evidence. Independent implementation review and owner closure remain pending. No parser is admitted, canonical parsing remains unavailable, and Phase 3B, later M06-A phases, and M06-B remain blocked.
 
 ## Package Sequence
 
@@ -30,11 +30,12 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
-- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — owner-accepted through D036 for exact implementation; parser admission remains blocked
+- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — implemented at `251b3ca`; independent review and owner closure pending; parser admission remains blocked
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
 - `08-audits/m06a-phase1-independent-review-disposition.md`
+- `08-audits/m06a-phase3a-implementation-return.md`
 - `03-system-design/obsidian-qdrant-sqlite-plan.md`
 - `03-system-design/multi-account-model.md`
 - `05-implementation-planning/hammer-test-strategy.md`
@@ -120,7 +121,7 @@ Before M06-A implementation:
 5. the exact bounded implementation package for Phase 1 is identified and owner-reviewed — satisfied through the accepted canonical phase definition;
 6. the owner explicitly authorizes Phase 1 implementation — satisfied through D030.
 
-Current result: Phases 1 and 2 implementation, clean commit-bound evidence, required independent reviews, correction disposition, and owner closure are complete through D035. D036 authorizes the exact Phase 3A package and exact 35-invariant profile for implementation. Parser admission and canonical parsing remain closed until separately authorized.
+Current result: Phases 1 and 2 implementation, clean commit-bound evidence, required independent reviews, correction disposition, and owner closure are complete through D035. D036 authorized the exact Phase 3A package and exact 35-invariant profile. Application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implements it with clean commit-bound evidence. Phase 3A independent review, finding disposition, and explicit owner closure remain pending. Parser admission and canonical parsing remain closed until separately authorized.
 
 ## M06-A Exit Gate
 
