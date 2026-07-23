@@ -48,6 +48,8 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `08-audits/m06a-d040-project-steward-self-review-disposition.md`
 - `08-audits/m06a-d039-d040-owner-closure.md`
 - `08-audits/m06a-vtt-v1-implementation-return.md`
+- `08-audits/m06a-d045-project-steward-self-review.md`
+- `05-implementation-planning/m06a-vtt-v1-c1-self-review-correction-package.md`
 - `08-audits/m06a-phase3a-closure.md`
 - `03-system-design/obsidian-qdrant-sqlite-plan.md`
 - `03-system-design/multi-account-model.md`
@@ -151,7 +153,7 @@ Before M06-A implementation:
 5. the exact bounded implementation package for Phase 1 is identified and owner-reviewed — satisfied through the accepted canonical phase definition;
 6. the owner explicitly authorizes Phase 1 implementation — satisfied through D030.
 
-Current result: Phases 1 and 2 implementation, review, correction disposition, and owner closure are complete through D035. D036 authorized Phase 3A; independent review required correction. D037 authorized Phase 3A-C1, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the review disposition and closes Phase 3A. D039 plain-text admission/canonical execution is implemented and clean-evidence-bound at `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9`; D040 defers but does not waive its independent review and owner closure. The exact SRT under-test candidate was implemented at `529165c19da30185dd9833fab608d6dc28dfed88`; D041 self-review corrections are implemented and clean-evidence-bound at `6a8082253a52a601291efaf3ed85ee411b04be20`. No independent-review claim is made. D042 accepts the disclosed self-review basis and closes D039 and corrected D040. D045 VTT under-test implementation is complete at `a96928f482f7b6c308da81061f0e8f64c6ef2966`. Clean commit-bound Python/parser/packaged evidence is preserved; Rust validation, adversarial review, and owner closure remain pending. Admission and canonical execution remain blocked. Fresh Vaults remain under-test until explicit per-Vault human admission.
+Current result: Phases 1 and 2 implementation, review, correction disposition, and owner closure are complete through D035. D036 authorized Phase 3A; independent review required correction. D037 authorized Phase 3A-C1, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the review disposition and closes Phase 3A. D039 plain-text admission/canonical execution is implemented and clean-evidence-bound at `7980b1e7ab3fff51a705d61a93ac9e26b4c26ca9`; D040 defers but does not waive its independent review and owner closure. The exact SRT under-test candidate was implemented at `529165c19da30185dd9833fab608d6dc28dfed88`; D041 self-review corrections are implemented and clean-evidence-bound at `6a8082253a52a601291efaf3ed85ee411b04be20`. No independent-review claim is made. D042 accepts the disclosed self-review basis and closes D039 and corrected D040. D045 VTT under-test implementation is complete at `a96928f482f7b6c308da81061f0e8f64c6ef2966`; Rust passes 3/3. D046 records three Medium self-review findings and prepares the exact C1 package. Correction implementation and owner closure remain pending. Admission and canonical execution remain blocked. Fresh Vaults remain under-test until explicit per-Vault human admission.
 
 ## M06-A Exit Gate
 

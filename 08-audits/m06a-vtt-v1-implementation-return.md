@@ -11,9 +11,11 @@ Package: 05-implementation-planning/m06a-vtt-v1-under-test-candidate-package.md
 Implementation state: complete inside exact package surface
 Commit-bound Python/parser/packaged evidence: complete
 Frontend tests/build: complete
-Rust validation: pending — Go10 exposes no cargo command in this session
-Adversarial implementation review: pending
-Owner closure: pending
+Rust validation: owner-executed, 3/3 passed, 0 failed
+Adversarial implementation review: complete — D045 REQUIRES CORRECTION
+Review: 08-audits/m06a-d045-project-steward-self-review.md
+Correction package: 05-implementation-planning/m06a-vtt-v1-c1-self-review-correction-package.md
+Owner closure: blocked pending correction
 VTT owner admission authority: none
 VTT canonical execution authority: none
 Existing-Vault retrofit authority: none
@@ -152,7 +154,7 @@ Tauri/Vitest                                 6/6 passed
 Frontend production build                    passed
 Real PyInstaller sidecar build               passed
 Real packaged VTT tamper matrix              passed
-Rust cargo test                              not executed — command unavailable through Go10
+Rust cargo test                              3/3 passed — owner-executed
 ```
 
 No skipped, failed, errored, xfailed, or xpassed mapped test appears in the D045 profile or inherited
@@ -252,13 +254,14 @@ This implementation does not authorize or implement:
 
 ## Remaining Gate
 
-Before this package can be represented as fully validation-complete and considered for owner closure:
+Rust validation is complete: the owner executed `cargo test --manifest-path desktop/src-tauri/Cargo.toml` and all 3 tests passed.
 
-1. run `cargo test --manifest-path desktop/src-tauri/Cargo.toml` in an environment with cargo available;
-2. preserve the exact result in the review/disposition record;
-3. perform the required adversarial implementation review against commit `a96928f482…`;
-4. reproduce and disposition every material finding;
+Project-Steward adversarial self-review returned `D045 REQUIRES CORRECTION` with three Medium, closure-blocking findings. Before owner closure:
+
+1. obtain explicit owner acceptance of the exact VTT C1 correction package;
+2. implement only its exact changed-path surface;
+3. rerun the complete clean commit-bound closure stack, including Rust;
+4. disposition all three findings;
 5. obtain explicit owner closure.
 
-The unavailable Rust command is a validation-environment limitation, not a reported test failure. This record
-does not claim that the Rust suite passed.
+No independent-review claim is made.

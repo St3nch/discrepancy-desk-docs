@@ -898,3 +898,28 @@ Authorized capability is limited to:
 D045 does **not** admit VTT, authorize canonical VTT parsing, authorize existing-Vault retrofit, authorize automatic or bulk parsing, authorize JSON, authorize Phase 3B, authorize Phases 4 through 6, authorize M06-B, or authorize providers, agents, live LLM integration, Qdrant, graph work, purge, or publication automation.
 
 Implementation must stop and return to owner review if a forbidden/unlisted path, dependency, migration, closed text/SRT tuple change, canonical VTT authority, desktop mutation control, rendering/CSS/DOM behavior, or existing-Vault retrofit becomes necessary.
+
+## D046 — Record D045 Project-Steward Self-Review and Prepare VTT C1
+
+**Date:** 2026-07-23
+**Status:** Recorded — documentation and review disposition only
+
+The owner-executed Rust suite for application commit
+`a96928f482f7b6c308da81061f0e8f64c6ef2966` passed `3/3` with zero failures.
+
+Project-Steward adversarial self-review records three Medium, closure-blocking findings:
+
+```text
+D045-SR-01 Unicode decimal digits bypass the strict ASCII grammar
+D045-SR-02 reconciliation is not independent of parser-repeated line/count/warning facts
+D045-SR-03 exact corpus and evidence mappings overclaim required coverage
+```
+
+D046 authorizes documentation-only preservation of the review and preparation of:
+
+```text
+05-implementation-planning/m06a-vtt-v1-c1-self-review-correction-package.md
+```
+
+D046 does **not** authorize correction implementation, VTT admission, canonical VTT execution, existing-Vault
+retrofit, JSON, Phase 3B, later M06 work, or any other authority expansion.
