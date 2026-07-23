@@ -3,9 +3,11 @@
 ## Status
 
 ```text
-Package status: implemented and clean-evidence-bound; independent review and owner closure pending
+Package status: independently reviewed, corrected through D037, and clean-evidence-bound; owner closure pending
 Implementation authority: exact Phase 3A package and 35-invariant profile only
-Implementation commit: 251b3ca841af46e63485b9ab5bf292cbae55a418
+Original implementation commit: 251b3ca841af46e63485b9ab5bf292cbae55a418
+Corrected implementation commit: 1337b5ac450ae82664aa1ad9667a85af41c4351e
+Correction package: 05-implementation-planning/m06a-phase3a-c1-independent-review-correction-package.md
 Parser admission authority: none
 Current admitted parsers: none
 Phase 1: owner-closed through D033
@@ -630,13 +632,14 @@ Before loading parser code, the worker must:
 - deny `socket.create_connection`;
 - deny `socket.getaddrinfo`;
 - deny `urllib` and common HTTP-client imports/use;
-- deny subprocess creation;
-- deny `os.system` and shell launch;
+- deny subprocess creation, `os.exec*`, `os.spawn*`, Windows `os.startfile*`, `os.system`, and shell launch;
 - deny arbitrary dynamic-library loading;
-- deny reads outside the exact input and packaged parser resources;
-- deny writes outside the exact operation output directory;
+- permit reads only from the exact operation input plus immutable interpreter, standard-library, application-package, frozen-bundle, and parser-resource roots required to import and execute the fixed parser;
+- deny low-level and ordinary writes outside the exact operation output directory;
+- deny remove, rename, replace, truncate, directory, link, permission, ownership, and timestamp mutations outside the exact operation output directory;
 - install an audit hook before parser import;
-- use deterministic timezone, locale, and hash-seed behavior where enforceable;
+- self-test the low-level write, mutation, exec, and Windows startfile denials before parsing;
+- set deterministic timezone, locale, and hash-seed environment values at child launch where enforceable;
 - enforce wall-clock, input, output, line, element, and memory limits through the parent plus worker checks.
 
 Monkeypatching alone is not represented as an OS sandbox. The package claims only the exact defense-in-depth controls proved by source and packaged tests.
@@ -1174,7 +1177,7 @@ Stop and return to owner review if:
 # 18. Owner Review and Authority Block
 
 ```text
-Current package state: implemented at 251b3ca841af46e63485b9ab5bf292cbae55a418; independent review and owner closure pending
+Current package state: independently reviewed, corrected at 1337b5ac450ae82664aa1ad9667a85af41c4351e, and clean-evidence-bound; explicit owner closure pending
 Implementation authority: exact Phase 3A package and 35-invariant profile only
 V0003 creation authority: exercised within D036 boundary
 Plain-text candidate implementation authority: exercised in under_test state only
@@ -1205,4 +1208,4 @@ M06-B: blocked
 providers/network/monitoring/live LLM/Qdrant/graph/purge/publication automation: blocked
 ```
 
-D036 records the required owner acceptance. Application implementation is complete at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review, finding disposition, and explicit owner closure remain required. No review result may be interpreted as parser admission.
+D036 records the original implementation authority. Independent review required correction, and D037 authorized the exact correction package. Application implementation is corrected and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`; findings are dispositioned and explicit owner closure remains required. No review or closure result may be interpreted as parser admission.

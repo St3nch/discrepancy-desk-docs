@@ -221,7 +221,7 @@ M06-A — Local Manual Vault
 M06-B — Bounded Static Webpage Retrieval
 ```
 
-M06-A establishes the governed research-memory foundation for one editorial/public brand identity per physical Vault, with platform-owned accounts bound centrally. Phase 1 is implemented, independently verified, and closed through D033. D034 authorized the exact Phase 2 observation/acquisition/artifact/foundational-recovery package and 33-invariant profile. Application commits `eaf7b5d` and `1e8cba8` implement and correct Phase 2. The required independent review returned `M06-A PHASE 2 INDEPENDENTLY VERIFIED`; D035 accepts the corrected implementation, defers only the optional second spot review, and closes Phase 2. D036 authorized the exact Phase 3A package and exact 35-invariant profile for the common parser framework plus `m06a.text.v1` in `under_test` state. Application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implements that boundary and has clean commit-bound evidence. Independent review and owner closure remain pending. Parser admission, canonical parsing, Phase 3B, later M06-A phases, and M06-B remain blocked. M06-B adds one human-supplied public URL retrieval path only after M06-A's applicable gate is separately accepted and does not inherit authority from M06-A.
+M06-A establishes the governed research-memory foundation for one editorial/public brand identity per physical Vault, with platform-owned accounts bound centrally. Phase 1 is implemented, independently verified, and closed through D033. D034/D035 authorize, independently verify, correct, and close Phase 2. D036 authorized the exact Phase 3A parser-framework package. Application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implemented it; independent review returned `M06-A PHASE 3A REQUIRES CORRECTION`. D037 authorized the exact Phase 3A-C1 correction package, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. All review findings are corrected and dispositioned; explicit owner closure remains pending. Parser admission, canonical parsing, Phase 3B, later M06-A phases, and M06-B remain blocked. M06-B adds one human-supplied public URL retrieval path only after M06-A's applicable gate is separately accepted and does not inherit authority from M06-A.
 
 **Milestone file**
 
@@ -237,15 +237,17 @@ M06-A establishes the governed research-memory foundation for one editorial/publ
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
-- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — implemented at `251b3ca`; independent review and owner closure pending; parser admission remains blocked
+- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — independently reviewed and corrected at `1337b5a`; explicit owner closure pending; parser admission remains blocked
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
 - `08-audits/m06a-phase1-independent-review-disposition.md`
 - `08-audits/claude-m06a-phase2-independent-implementation-review.md`
 - `08-audits/m06a-phase2-correction-and-closure.md`
-- `08-audits/m06a-phase3a-implementation-return.md` — implementation and clean-evidence handoff; independent review and owner closure pending
-- D027 through D036 in `99-decisions/decision-log.md`
+- `08-audits/claude-m06a-phase3a-independent-static-review.md`
+- `08-audits/m06a-phase3a-independent-review-disposition.md`
+- `08-audits/m06a-phase3a-implementation-return.md` — corrected clean-evidence handoff; explicit owner closure pending
+- D027 through D037 in `99-decisions/decision-log.md`
 
 **Governing documents**
 
@@ -287,7 +289,7 @@ One human-triggered public URL may be retrieved under a separately accepted SSRF
 
 **Entry and review gate**
 
-The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. Phase 1 is closed through D033. D034 authorized the exact Phase 2 package; commits `eaf7b5d` and `1e8cba8` implement and correct it; the required independent audit is preserved; and D035 closes Phase 2. D036 authorized the exact Phase 3A package and exact 35-invariant profile, limited to the common parser framework plus `m06a.text.v1` in `under_test` state. Application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implements it with clean commit-bound evidence; independent implementation review, finding disposition, and explicit owner closure remain required. Parser admission and canonical parsing remain separately blocked. Each later phase still requires its own exact bounded authorization tied to the accepted migration, parser, backup, and adversarial contracts.
+The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. Phase 1 is closed through D033. D034/D035 authorize, independently review, correct, and close Phase 2. D036 authorized Phase 3A; independent review required correction. D037 authorized the exact Phase 3A-C1 package, and application commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` implements the corrected V0004/security/coverage/lineage boundary with clean evidence. Findings are dispositioned and explicit owner closure remains required. Parser admission and canonical parsing remain separately blocked. Each later phase still requires its own exact bounded authorization tied to the accepted migration, parser, backup, and adversarial contracts.
 
 ## M07 — Human-Triggered X Capture Helper
 
