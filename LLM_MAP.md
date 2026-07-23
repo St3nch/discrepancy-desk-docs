@@ -87,6 +87,7 @@ Read these first:
    - `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`
    - `05-implementation-planning/m06a-parser-admission-plan.md`
    - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
+- `05-implementation-planning/m13-governed-discrepancy-detection-planning-direction.md`
    - `08-audits/m06a-planning-correction-disposition.md`
    - `08-audits/m06a-planning-correction-closure.md`
    - D027 and D028 in `99-decisions/decision-log.md`
@@ -217,10 +218,12 @@ Docs:
 
 ### No Coincidences
 
-Future pattern-candidate detector. Flags weird overlaps; does not declare truth.
+Future governed discrepancy-detection capability. D043 preserves a deterministic Tier 1 shadow-pilot direction for separate Phase 4 consideration and a full assertion-level M13 gate after stable Phase 5 comparison dimensions. Every candidate must bind an exact corpus denominator, known gaps, detector version, canonical locators, separate epistemic/editorial review, and immutable successor lineage. Detector calibration is advisory; null models, semantic mutation chains, graph assistance, background execution, and cross-Vault detection remain deferred. No implementation authority is granted.
 
 Docs:
 
+- `05-implementation-planning/m13-governed-discrepancy-detection-planning-direction.md`
+- `05-implementation-planning/milestone-13-no-coincidences.md`
 - `02-product/no-coincidences.md`
 - `03-system-design/obsidian-qdrant-sqlite-plan.md`
 

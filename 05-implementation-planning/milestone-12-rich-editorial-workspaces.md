@@ -10,6 +10,7 @@ Not started.
 - `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
 - `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
 - `06-research/deferred-humalike-quinton-reply-evaluation.md`
+- `05-implementation-planning/m13-governed-discrepancy-detection-planning-direction.md`
 - `02-product/module-map.md`
 - `02-product/workflow-overview.md`
 - `03-system-design/architecture-overview.md`
@@ -32,6 +33,17 @@ Tauri in stable daily use; core publication contracts proven; each subpackage se
 - Asset Library: rights, dimensions, variants, crops, alt text, reuse history; evidence remains immutable
 - advanced Calendar/Pipeline: drag/drop, multi-select, heatmaps, swimlanes, aging, richer saved views, keyboard-first operation
 - richer search and native operator productivity
+
+
+## Reserved No Coincidences Investigation Workspace
+
+D043 reserves a possible rich competing-explanations workspace for a separately admitted M12 subpackage.
+The future workspace may organize candidate explanations, supporting and contradicting evidence, unresolved
+questions, and next-evidence-needed records after M13 has a proven candidate lifecycle.
+
+This reservation does not make the workbench an M12 requirement and does not authorize implementation.
+M13 may later provide a minimal evidence/disposition surface; the rich investigation-management UI enters
+M12 only after demonstrated operator need and a separate exact owner decision.
 
 ## Deferred Post-Launch Evaluation Candidate
 

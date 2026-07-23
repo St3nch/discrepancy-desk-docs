@@ -29,6 +29,7 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
+- `05-implementation-planning/m13-governed-discrepancy-detection-planning-direction.md` — D043 Phase 4/5 planning dependencies only
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
 - `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — owner-closed through D038 at corrected commit `1337b5a`
 - `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md` — implemented at `7980b1e`; owner-closed through D042
@@ -119,6 +120,23 @@ M06-B may later add one human-supplied public URL per operation under a separate
 It requires a fresh bounded plan, explicit owner approval, policy/retention review, and adversarial tests for DNS, redirects, private networks, rebinding, response limits, content types, decompression, parser failure, evidence preservation, and partial responses.
 
 M06-B excludes crawling, monitoring, feeds, browser rendering, authenticated retrieval, and provider-assisted extraction unless separately admitted later.
+
+
+## D043 M13 Planning Dependencies
+
+D043 does not open M13 or authorize detector implementation. It preserves two requirements that future
+M06 packages must address without expanding their authority:
+
+1. Before the exact Phase 4 package, decide whether and how the governed search/current-version/policy
+   boundary can produce a corpus/coverage snapshot suitable for later detector evaluation. No Tier 1
+   detector or candidate store is implied without separate authorization.
+2. Before the exact Phase 5 package, define stable assertion comparison dimensions in addition to assertion
+   types, including time, unit, scope, population/included class, definition or counting method, and
+   uncertainty where applicable.
+
+These comparison dimensions do not create first-class event or chronology objects and do not alter M06-D10.
+The authoritative planning direction is
+`05-implementation-planning/m13-governed-discrepancy-detection-planning-direction.md`.
 
 ## M06-A Implementation Entry Gate
 

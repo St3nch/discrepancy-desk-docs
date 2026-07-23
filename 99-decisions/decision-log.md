@@ -785,3 +785,48 @@ The owner explicitly acknowledged that the D039 and D040 reviews were Project-St
 D042 does **not** automatically admit `m06a.text.v1` in any Vault, admit SRT, authorize canonical SRT execution, authorize existing-Vault SRT retrofit, authorize automatic or bulk parsing, authorize VTT or JSON, authorize Phase 3B or later M06-A phases, authorize M06-B, or authorize providers, agents, live LLM integration, Qdrant, graph work, purge, or publication automation.
 
 The authoritative closure record is `08-audits/m06a-d039-d040-owner-closure.md`.
+
+## D043 — Accept Governed Discrepancy-Detection Planning Direction
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+The owner directed the Project Steward to produce and preserve the revised governed discrepancy-detection
+proposal, integrate it into the development roadmap, and complete any documentation work needed now so the
+future No Coincidences capability is not forgotten.
+
+D043 accepts the planning direction at:
+
+```text
+05-implementation-planning/m13-governed-discrepancy-detection-planning-direction.md
+```
+
+D043 adopts for future planning:
+
+- governed corpus/coverage manifests with explicit searched denominators and known gaps;
+- stable assertion comparison dimensions in addition to assertion types;
+- one generic immutable candidate/successor lifecycle;
+- separate epistemic and editorial dispositions with blind first-pass epistemic review;
+- exact candidate fingerprints and delta-explained successors;
+- detector-specific admission, suspension, and retirement;
+- structured detector calibration captured from the beginning but advisory-only;
+- a bounded Tier 1 deterministic pilot with reviewer-time, noise, yield, and stop criteria;
+- initial governed expectation contracts limited to annual/periodic continuation and page/document continuity;
+- early deterministic `common_origin` candidates while broader claim mutation remains deferred.
+
+D043 reserves planning dependencies for M06 Phase 4 corpus/coverage shape and M06 Phase 5 assertion
+comparison dimensions. It places any future rich competing-explanations workbench in a separately admitted
+M12 subpackage and keeps full assertion-level detection in M13.
+
+D043 explicitly defers permutation/null models, paraphrase-based mutation chains, automated threshold
+tuning, broad public dismissal-ledger publication, semantic/graph assistance, background execution, and
+cross-Vault detection behind separate future gates.
+
+D043 authorizes documentation and roadmap synchronization only. It does **not** authorize application
+changes, migrations, dependencies, schema, Tier 1 implementation, detector admission, Phase 4, Phase 5,
+M12 implementation, M13 entry, VTT or JSON implementation, Phase 3B, M06-B, providers, agents, live LLM
+integration, Qdrant, graph work, purge, or publication automation.
+
+After this documentation package, active development returns to the M06-A parser sequence. The next bounded
+action is preparation of the exact `m06a.vtt.v1` under-test candidate package for owner review; VTT
+implementation is not authorized by D043.

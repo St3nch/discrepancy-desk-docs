@@ -236,6 +236,7 @@ M06-A establishes the governed research-memory foundation for one editorial/publ
 - `05-implementation-planning/m06a-local-manual-vault-canonical-plan.md`
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
+- `05-implementation-planning/m13-governed-discrepancy-detection-planning-direction.md` — D043 Phase 4/5 dependency and M13 direction only
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
 - `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — owner-closed through D038 at corrected commit `1337b5a`
 - `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md` — implemented at `7980b1e`; owner-closed through D042 on the disclosed Project-Steward self-review basis
@@ -290,6 +291,8 @@ A useful local-only Vault exists with:
 - per-Vault backup, disposable restore, and tamper proof.
 
 M06-A excludes URL retrieval, providers, monitoring, OCR, live LLM integration, Qdrant, graph work, cross-account transfer execution, and first-class events/chronologies.
+
+D043 adds planning dependencies only: the future exact Phase 4 package must address a governed corpus/coverage snapshot shape suitable for later evaluation, and the future exact Phase 5 package must define stable assertion comparison dimensions. D043 does not authorize Tier 1 detectors, Phase 4/5 implementation, or M13 entry.
 
 **M06-B required outcome**
 
@@ -434,6 +437,7 @@ Add deliberately admitted product packages: Reply Desk, Article Room, Asset Libr
 - `05-implementation-planning/editorial-control-room-roadmap-ruling.md`
 - `06-research/The Discrepancy Desk Editorial Control Room - Product Definition.md`
 - `06-research/deferred-humalike-quinton-reply-evaluation.md` — deferred post-launch Reply Desk provider experiment only; no current authority
+- `05-implementation-planning/m13-governed-discrepancy-detection-planning-direction.md` — future competing-explanations workbench handoff only; no current authority
 - `02-product/module-map.md`
 - `02-product/workflow-overview.md`
 - `03-system-design/architecture-overview.md`
@@ -450,7 +454,8 @@ Each content package preserves account scope, exact approval, dependency, correc
 
 ## M13 — No Coincidences Pattern Candidates
 
-Flag explainable entity/date/source/phrase/chronology overlaps without declaring truth.
+Flag explainable overlaps, divergences, common origins, and governed absences in an exact eligible corpus
+without declaring truth.
 
 **Milestone file**
 
@@ -458,17 +463,38 @@ Flag explainable entity/date/source/phrase/chronology overlaps without declaring
 
 **Governing documents**
 
+- `05-implementation-planning/m13-governed-discrepancy-detection-planning-direction.md`
 - `02-product/no-coincidences.md`
 - `03-system-design/obsidian-qdrant-sqlite-plan.md`
 - `05-implementation-planning/hammer-test-strategy.md`
 - M06 completion record in `05-implementation-planning/milestone-06-records-dossiers-anomaly-vault.md`
+- M12 completion/admission records where a rich explanations workspace is proposed
 - `03-system-design/multi-account-model.md`
-- D010 in `99-decisions/decision-log.md`
-- independent review at `08-audits/m13-no-coincidences-architecture-review.md` (must be created before accepting detector authority or cross-vault behavior)
+- D010 and D043 in `99-decisions/decision-log.md`
+- independent review at `08-audits/m13-no-coincidences-architecture-review.md` (must be created before M13 entry)
+
+**Sequencing**
+
+- a separately authorized deterministic Tier 1 shadow pilot may be proposed alongside M06 Phase 4;
+- full assertion-level M13 waits for stable M06 Phase 5 assertion types and comparison dimensions;
+- M12 owns any later rich competing-explanations workbench;
+- M14-class semantic mutation chains, null models, graph assistance, background execution, and cross-Vault
+  detection remain separately gated.
+
+**Entry gate**
+
+Sufficient governed corpus; M06 completion; stable assertion types and comparison dimensions; governed
+corpus/coverage manifests; one immutable candidate/successor lifecycle; separate epistemic/editorial
+review; detector admission and advisory calibration contracts; source-independence/common-origin treatment;
+bounded pilot disposition where applicable; adversarial detector plan; architecture review; explicit owner
+authorization.
 
 **Required outcome**
 
-Every candidate is explainable, provenance-bound, account-scoped, human-reviewed, and tested for false positives, non-detection, and detector failure.
+Every candidate is explainable, corpus-denominator- and provenance-bound, Vault-scoped, human-reviewed on
+separate epistemic and editorial axes, successor-linked when evidence changes, and tested for false positives,
+non-detection, coverage error, comparison mismatch, detector failure, duplicate storms, and authority bypass.
+No candidate auto-promotes into truth, a dossier, a draft, or publication.
 
 ## M14 — Qdrant Semantic Retrieval
 
@@ -534,7 +560,7 @@ Documented disaster drills succeed, modified evidence/backups fail closed, accou
 | Truth Social | M10 |
 | Full metrics learning and monetization analysis | M11 |
 | Reply Desk, Article Room, Assets, advanced calendar/pipeline | M12 |
-| No Coincidences | M13 |
+| No Coincidences governed discrepancy candidates | Tier 1 may be separately piloted with M06 Phase 4; full capability M13 after Phase 5 |
 | Account-scoped Qdrant retrieval under accepted D024 | M14, subject to M14 review and entry gate |
 | Full-system recovery | M15 |
 
