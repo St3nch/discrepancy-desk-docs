@@ -4,7 +4,7 @@
 
 ## Current Mode
 
-M06-A Phases 1 and 2 are implemented, independently reviewed, corrected, clean-evidence-bound, owner-accepted, and closed through D035. The optional second Claude spot review of the two corrected Low findings is deferred because of subscription usage limits; the required full Phase 2 independent audit completed and satisfied D034. D036 authorized the exact Phase 3A package and exact 35-invariant profile. Application commit `251b3ca841af46e63485b9ab5bf292cbae55a418` implements that package, is pushed to `origin/main`, and has clean commit-bound evidence. Independent Phase 3A implementation review and owner closure are pending. Parser admission, canonical parsing, Phase 3B, later M06-A phases, and M06-B remain blocked.
+M06-A Phases 1 and 2 are implemented, independently reviewed, corrected, clean-evidence-bound, owner-accepted, and closed through D035. D036 authorized Phase 3A, implemented at `251b3ca841af46e63485b9ab5bf292cbae55a418`. The independent static review returned `M06-A PHASE 3A REQUIRES CORRECTION`. The Project Steward reproduced the current-head regression, worker filesystem/process, locator-coverage, immutable lineage/identity, packaged-parity, and documentation findings. D037 authorizes the exact Phase 3A-C1 correction package. Correction implementation is active. Parser admission, canonical parsing, Phase 3B, later M06-A phases, and M06-B remain blocked.
 
 ## Active Milestone
 

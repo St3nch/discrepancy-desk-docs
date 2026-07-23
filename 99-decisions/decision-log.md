@@ -614,3 +614,34 @@ D036 does **not** authorize:
 - any dependency change to `pyproject.toml` or `uv.lock`.
 
 Implementation must stop and return to owner review if any exact package stop condition is reached. Successful implementation or testing does not admit `m06a.text.v1`; parser admission remains a separate future owner gate.
+
+
+## D037 — Authorize M06-A Phase 3A-C1 Independent Review Corrections
+
+**Date:** 2026-07-23
+**Status:** Accepted
+
+The owner authorized preparation and implementation of the exact `05-implementation-planning/m06a-phase3a-c1-independent-review-correction-package.md` package after independent static review and Project-Steward reproduction of the Phase 3A findings.
+
+D037 authorizes only:
+
+- bounded Vault migration `V0004_phase3a_c1_lineage_and_identity.py` without editing V0001 through V0003;
+- restoration of current-head inherited regression proof while preserving explicitly historical V0002 fixtures;
+- worker filesystem, process, and packaged security-boundary hardening;
+- independently reconciled complete locator coverage;
+- immutable tuple-versioned parser-definition identity and exact execution/package/document lineage;
+- fail-closed packaged implementation and dependency-lock verification;
+- correction of governing security-boundary wording;
+- complete clean commit-bound evidence regeneration and finding disposition.
+
+D037 does **not** authorize:
+
+- any production `owner_admitted` parser;
+- canonical parsing;
+- parser execution, admission, or mutation endpoints or UI;
+- Phase 3B, Phases 4 through 6, or M06-B;
+- additional parser formats;
+- providers, network retrieval, monitoring, live LLM use, Qdrant, graph work, purge, or publication automation;
+- dependency changes, central migrations, or edits to prior Vault migrations.
+
+Phase 3A remains open. Successful correction requires clean evidence, synchronized governance records, independent finding disposition, and explicit owner closure. Parser admission remains a separate future owner gate.
