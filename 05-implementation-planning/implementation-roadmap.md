@@ -237,7 +237,8 @@ M06-A establishes the governed research-memory foundation for one editorial/publ
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
-- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — owner-closed through D038 at corrected commit `1337b5a`; parser admission remains blocked
+- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — owner-closed through D038 at corrected commit `1337b5a`
+- `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md` — exact next candidate; owner review pending; no implementation authority
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
@@ -290,7 +291,7 @@ One human-triggered public URL may be retrieved under a separately accepted SSRF
 
 **Entry and review gate**
 
-The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. Phase 1 is closed through D033. D034/D035 authorize, independently review, correct, and close Phase 2. D036 authorized Phase 3A; independent review required correction. D037 authorized the exact Phase 3A-C1 package, and application commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` implements the corrected V0004/security/coverage/lineage boundary with clean evidence. D038 accepts the disposition and closes Phase 3A. Parser admission and canonical parsing remain separately blocked. Each later phase still requires its own exact bounded authorization tied to the accepted migration, parser, backup, and adversarial contracts.
+The M06 architecture synthesis and exact M06-A planning package completed independent review, correction, focused verification, and owner acceptance. Phase 1 is closed through D033. D034/D035 authorize, independently review, correct, and close Phase 2. D036 authorized Phase 3A; independent review required correction. D037 authorized the exact Phase 3A-C1 package, and application commit `1337b5ac450ae82664aa1ad9667a85af41c4351e` implements the corrected V0004/security/coverage/lineage boundary with clean evidence. D038 accepts the disposition and closes Phase 3A. The exact plain-text owner-admission and canonical-execution candidate is prepared for owner review; it grants no authority until accepted. Parser admission and canonical parsing remain blocked meanwhile. Each later phase still requires its own exact bounded authorization tied to the accepted migration, parser, backup, and adversarial contracts.
 
 ## M07 — Human-Triggered X Capture Helper
 

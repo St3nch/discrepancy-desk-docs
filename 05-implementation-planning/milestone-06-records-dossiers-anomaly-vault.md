@@ -4,7 +4,7 @@
 
 The corrected M06 architecture synthesis and resolved M06-A planning baseline are owner-accepted. AC-02 and the M06-A planning correction cycle are closed. D027 through D038 govern the accepted planning baseline, editorial identity, Tauri-only boundary, Phase 1 closure, exact Phase 2 authorization and closure, Phase 3A implementation, independent review, correction, and owner closure.
 
-M06-A Phase 1 is closed through application commits `8fe3be4` and `5f0f9ae` plus D033. Phase 2 is independently verified, corrected through `1e8cba8`, and owner-closed through D035. D036 authorized Phase 3A, implemented at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review required correction. D037 authorized the exact Phase 3A-C1 package, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the disposition and closes Phase 3A. No parser is admitted, canonical parsing remains unavailable, and Phase 3B, later M06-A phases, and M06-B remain blocked.
+M06-A Phase 1 is closed through application commits `8fe3be4` and `5f0f9ae` plus D033. Phase 2 is independently verified, corrected through `1e8cba8`, and owner-closed through D035. D036 authorized Phase 3A, implemented at `251b3ca841af46e63485b9ab5bf292cbae55a418`; independent review required correction. D037 authorized the exact Phase 3A-C1 package, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the disposition and closes Phase 3A. The exact `m06a.text.v1` owner-admission and canonical-execution package is prepared for owner review with no implementation authority. No parser is admitted, canonical parsing remains unavailable, and Phase 3B, later M06-A phases, and M06-B remain blocked.
 
 ## Package Sequence
 
@@ -30,7 +30,8 @@ M06-A and M06-B are separate gates. M06-B does not inherit implementation author
 - `05-implementation-planning/m06a-parser-admission-plan.md`
 - `05-implementation-planning/m06a-adversarial-closure-matrix.md`
 - `05-implementation-planning/m06a-phase2-exact-implementation-package.md`
-- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — owner-closed through D038 at corrected commit `1337b5a`; parser admission remains blocked
+- `05-implementation-planning/m06a-phase3a-exact-implementation-package.md` — owner-closed through D038 at corrected commit `1337b5a`
+- `05-implementation-planning/m06a-text-v1-owner-admission-and-canonical-execution-package.md` — exact next candidate; owner review pending; no implementation authority
 - `08-audits/m06a-planning-correction-disposition.md`
 - `08-audits/m06a-planning-correction-closure.md`
 - `08-audits/claude-m06a-phase1-independent-implementation-review.md`
@@ -124,7 +125,7 @@ Before M06-A implementation:
 5. the exact bounded implementation package for Phase 1 is identified and owner-reviewed — satisfied through the accepted canonical phase definition;
 6. the owner explicitly authorizes Phase 1 implementation — satisfied through D030.
 
-Current result: Phases 1 and 2 implementation, review, correction disposition, and owner closure are complete through D035. D036 authorized Phase 3A; independent review required correction. D037 authorized Phase 3A-C1, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the review disposition and closes Phase 3A. Parser admission and canonical parsing remain closed until separately authorized.
+Current result: Phases 1 and 2 implementation, review, correction disposition, and owner closure are complete through D035. D036 authorized Phase 3A; independent review required correction. D037 authorized Phase 3A-C1, implemented and clean-evidence-bound at `1337b5ac450ae82664aa1ad9667a85af41c4351e`. D038 accepts the review disposition and closes Phase 3A. The exact plain-text admission/canonical candidate is prepared for owner review; parser admission and canonical parsing remain closed until that exact package is separately accepted and implemented.
 
 ## M06-A Exit Gate
 
