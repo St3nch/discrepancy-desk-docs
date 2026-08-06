@@ -42,10 +42,32 @@ protected and must keep.
 
 | Reading | Meaning |
 |---|---|
-| `unworked` | No completed run targets this dimension |
-| `worked` | At least one completed run targets it and produced claims |
+| `unworked` | No completed run targets this dimension, and no measuring object exists for it on the case |
+| `worked` | At least one completed run targets it and produced claims, or a first-class object for that stage exists with a claim link |
 | `complete` | The operator has attested it, and the attestation still stands |
 | `unmeasurable` | Reserved for a dimension with no measuring object at all |
+
+### Object-backed readings (extended at ticket 11)
+
+The run-scoped contract above is the general one. Two stages gained first-class objects in
+ticket 11 and are measured through them instead:
+
+| Stage | Measured by |
+|---|---|
+| `public_question` | A public question on the case **with at least one claim link** |
+| `editorial_development` | An angle on the case **with at least one claim link** |
+
+The claim link is the load-bearing half. VISION §7 requires every Angle Room item to rest on
+at least one claim, so an empty angle or an unsupported public question is a draft and does
+not move coverage. Without that condition the reading would report that a stage was worked
+because somebody typed a title.
+
+**`story_intelligence` and `composition` remain `unmeasurable`, and that is a decision rather
+than an omission.** Story intelligence has no distinct object — central discrepancy, human
+conflict, narrative turn, and surprising supported detail are Angle Room content that ticket
+11 did not model separately, and inferring it from angle existence would be the proxy D20
+rejects. Composition has no renditions table until ticket 12. When those objects exist, these
+stages get object-backed readings on the same shape and this section is extended again.
 
 **`complete` is a human attestation, recorded with actor and timestamp.** "The spine is
 complete" means "I have seen enough," and no count expresses that. It sits naturally

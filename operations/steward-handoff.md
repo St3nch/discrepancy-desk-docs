@@ -78,50 +78,44 @@ empty regions in the locator range guard. Naming those keeps the instinct alive.
 
 ## Where things stand
 
-**Done, committed, pushed on `main`:** tickets 01–09a. Foundation `4037bd6` (01–06),
-`65bcc27` (07), `c53e240` (08), handoff `d1190af`, ticket 09 `ed1f134`, review backfill
-`8bf7f3a`, ticket 09 narrowings and docs `f72e671`, ticket 09a `638fe1b`. Docs repo:
-D18 and D19 at `41f4220`.
+**Done, committed, pushed on `main`:** tickets 01–11 (including 09a, 10a). F-03 closed
+in 10a; F-24 closed in 11 (D21). Docs repo carries D18–D21 and object-backed D20 coverage.
 
-**Ticket 09a was pushed before review** — it reviewed clean, but the convention is one
-commit after review passes. Push implementation commits after the review, not with the
-preceding document batch.
+**Next:** ticket 12, rendition composition. Open with the two deferred shelf questions
+(angle-scoped vs case-scoped; whole-element locators) — decide at start, not at review.
 
-**Next:** ticket 10, coverage gauge. It owes the official-foundation gate — angle work
-hard-blocked until coverage reads complete.
-
-**Remaining:** 10 coverage gauge → 10a interaction tests and F-03 → 11 Angle Room and claim
-confirmation → 12 rendition composition → 13 rendition approval → 14 publication recording →
+**Remaining:** 12 rendition composition → 13 rendition approval → 14 publication recording →
 **15 capture acquisition receipt** → **16 rubric artifacts** → **17 the Vela run**.
 
 ---
 
 ## Open obligations
 
-**F-24 is the only finding from tickets 01–08 still open.** Inference claims do not inherit
-publication risk from the claims they cite, so an inference over a `living_private` claim can
-be recorded `not_applicable`, laundering the risk one level up. Noted in the `claims.py`
-docstring. **Must close in ticket 11**, before confirmation and use paths exist.
+**No findings from tickets 01–11 are open.** F-24 closed in ticket 11 (D21) after ten
+tickets — it took three rounds, because the same laundering wore three faces: a severity
+ladder with `unknown` mis-ranked, a check bound to the proposed rather than confirmed value,
+and an unconstrained kind boundary at confirmation. The generalisation is in D21 and worth
+carrying: fixing which value a check reads does not help unless something constrains what
+that value may become.
 
-**Ticket 11 also owes the quotation shelf** the region locators built in ticket 05.
+**Ticket 12 opens with two deferred questions**, both raised by the implementer and both
+given stated triggers rather than left vague:
 
-**Ticket 10 owes the official-foundation gate** — angle work hard-blocked until
-coverage reads complete.
+- The quotation shelf is case-scoped, not angle-scoped. VISION puts it inside the Angle Room,
+  which argues for per-angle; nothing forced the question until renditions consume it.
+- Shelf entries may be whole-element locators. A region-form requirement was considered twice
+  and rejected as ceremony (see ticket 11's amended criterion). If block-granularity entries
+  produce bad renditions, that is evidence and the decision reopens.
 
-**F-03 is open and has been since ticket 01.** `api_operation_names()` has no call site.
-MCP registration is verified at startup against `mcp_tool_names()`, so the safety-critical
-direction holds — a human-authority operation on MCP fails the app. The API side has no
-equivalent: nothing detects a route added for an operation absent from `wiring.py`, or an
-`API_ONLY` entry with no route. `API_ONLY` is now sixteen entries of decorative registry.
-Close it with a test or delete the function; an unused registry that looks enforced is
-worse than none.
+Decide both at ticket 12's start rather than discovering them at its review.
 
-**Cross-operation interaction tests do not exist.** Every real defect in this project has
-been operation A changing what operation B reports — F-07, F-25b, F-34, F-38 — and every one
-was found by a reviewer reading two files side by side. Worth a deliberate handful (attach
-a lead then close a run reporting it; attest then attach then read the gauge; cancel a run
-then read its captures' status) rather than a sweep. Now a standing rule in
-`codingstandards.md`.
+**F-03 closed in ticket 10a** — bidirectional API route ↔ `api_operation_names` checks that
+name offenders. MCP still fails closed at startup against `mcp_tool_names()`. Keep both
+directions when adding routes.
+
+**Cross-operation interaction tests exist (ticket 10a)** and are a standing rule in
+`codingstandards.md`. Every real defect in this project has been operation A changing what
+operation B reports — extend the suite when new pairs share state.
 
 **Ticket 15 gates the Vela run.** The capture receipt cannot be backfilled. Do not run Vela
 with a thin one — that is the run the whole architecture exists to compare against v1, and
