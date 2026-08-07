@@ -78,13 +78,16 @@ empty regions in the locator range guard. Naming those keeps the instinct alive.
 
 ## Where things stand
 
-**Done, committed, pushed on `main`:** tickets 01–11 (including 09a, 10a). F-03 closed
-in 10a; F-24 closed in 11 (D21). Docs repo carries D18–D21 and object-backed D20 coverage.
+**Done, committed, pushed on `main`:** tickets 01–12 (including 09a, 10a). F-03 closed
+in 10a; F-24 closed in 11 (D21); composition object-backed in 12. Docs repo carries
+D18–D21 and object-backed D20 (composition via renditions; `story_intelligence` still
+unmeasurable by decision).
 
-**Next:** ticket 12, rendition composition. Open with the two deferred shelf questions
-(angle-scoped vs case-scoped; whole-element locators) — decide at start, not at review.
+**Next:** ticket 13, rendition approval. Issue file is still the thin draft until amended.
+Opens with the exact-content binding constraint (below). Do not start until the issue is
+amended; brief both review axes with the implementer.
 
-**Remaining:** 12 rendition composition → 13 rendition approval → 14 publication recording →
+**Remaining:** 13 rendition approval → 14 publication recording →
 **15 capture acquisition receipt** → **16 rubric artifacts** → **17 the Vela run**.
 
 ---
@@ -98,16 +101,44 @@ and an unconstrained kind boundary at confirmation. The generalisation is in D21
 carrying: fixing which value a check reads does not help unless something constrains what
 that value may become.
 
-**Ticket 12 opens with two deferred questions**, both raised by the implementer and both
-given stated triggers rather than left vague:
+**F-57 needs designing before Vela.** Two independent primary documents can assert the same
+thing, and there is no vocabulary for the operator to record that they corroborate each
+other. A live executor hit this on the first real run: it classified each claim
+`single_source` — correct under D4, since each claim is about what one document says — then
+said plainly it lacked the vocabulary and left the judgement to the operator. VISION §12
+reserves "decide whether sources are genuinely independent" to the human and gives it
+nowhere to land. Nine sources on a contested topic will hit this constantly. Not a bug; a
+missing concept.
 
-- The quotation shelf is case-scoped, not angle-scoped. VISION puts it inside the Angle Room,
-  which argues for per-angle; nothing forced the question until renditions consume it.
-- Shelf entries may be whole-element locators. A region-form requirement was considered twice
-  and rejected as ceremony (see ticket 11's amended criterion). If block-granularity entries
-  produce bad renditions, that is evidence and the decision reopens.
+**F-55 and F-56 belong to ticket 16.** The `e/{n}/r/{start}-{end}` convention exists only
+inside refusal text, and a bare `e/n` means the quotation surface is the whole element —
+learnable only by failing once. The classification vocabulary is invisible to the executor,
+which pattern-matched values from the case's existing claims and recorded that it had done
+so. Both are rubric-and-surface problems.
 
-Decide both at ticket 12's start rather than discovering them at its review.
+**F-59 is recorded, no action.** `DEFAULT_CAPTURE_BUDGET` now exists in `runs.py` and
+`api.ts`, with a comment in each saying it matches the other. Third instance of the
+two-artifacts-one-contract shape after F-51 and F-54; low cost, worth watching.
+
+**Ticket 13 opens with a constraint worth stating before work starts.** Approval binds exact
+content — VISION §14 says the human clears the text as it will appear, and may edit before
+approving, at which point the edited text is what gets bound. A boolean and a timestamp on a
+draft satisfies a careless reading and breaks the first time someone edits after approval.
+
+**Brief both axes, not just the implementer.** Through ticket 12 the implementer received
+amended issue files and named defect classes while the spec reviewer received summaries. His
+strongest findings — the populated migration, the source-basis field binding, the case-wide
+claim pool — all came when he had something concrete to push on. Write two prompts per
+ticket and send them together.
+
+**F-51 closed in ticket 12** — `tests/test_client_api_paths.py` extracts literal `/api/…`
+paths from `client/src/api.ts` and asserts each resolves on the router. Operator JSON.parse
+symptom was a port conflict (wrong process on :8000), not a missing path; the guard landed
+regardless. Same two-artifacts-one-contract class as F-54 / F-58 / F-59.
+
+**Ticket 12 shelf questions closed on evidence.** Case-scoped shelf retained (cite
+eligibility stays angle-scoped at `propose_rendition`). Whole-element locators allowed;
+region form remains available. Recorded in CONTEXT and the ticket 12 review.
 
 **F-03 closed in ticket 10a** — bidirectional API route ↔ `api_operation_names` checks that
 name offenders. MCP still fails closed at startup against `mcp_tool_names()`. Keep both

@@ -441,12 +441,17 @@ external executor needs a run registry rather than a worker pool.
 
 Remaining:
 
+- **What coverage actually measures.** **Closed — see D20
+  (`coverage-measurement.md`).** The operator sets a coverage dimension on a run at dispatch;
+  coverage derives from activity attributed to that dimension, and `complete` is a human
+  attestation rather than a computed threshold. Two stages gained object-backed readings at
+  ticket 11 and one more at ticket 12 (`composition` via renditions). `story_intelligence`
+  remains `unmeasurable` as a stated decision — no first-class object records it — and that
+  is the only part of this item still open.
 - **Run registry mechanics.** Statuses, how a run is claimed, what happens when an executor
   abandons one mid-flight, whether concurrent runs on one case are permitted.
 - **Rubric contents.** The indicative questions are sketched; the real text is tuned against
   output rather than written in advance. First draft after the first run, not before.
-- **What coverage actually measures.** Signals that honestly indicate "the official spine is
-  complete" rather than "a run labelled stage 1 finished."
 - **Entity resolution ergonomics.** Authority-at-use covers claims; entity identity is a
   separate human-only decision with its own volume problem.
 - **Web UX model.** Notion-style tiles are the current reference point, and the reason they
@@ -468,7 +473,9 @@ Remaining:
 
 - **No Coincidences / automatic pattern detection.** The system stores; the human notices.
 - **Autonomous publication** of any kind, on any platform.
-- **Multi-account UI.** Carry `account_id` in the schema; keep the interface single-account.
+- **Multi-brand support inside one instance.** Cancelled, not deferred. A second brand is a
+  separate deployment — separate database, separate Vault, same code. No account column, no
+  account scoping, no account-aware projections. See D17.
 - **Semantic retrieval / Qdrant / graph.** Deferred until a governed corpus and a measured
   retrieval need exist.
 - **Video production.** Scripts are a rendition type reserved in shape only.

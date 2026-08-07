@@ -62,12 +62,16 @@ at least one claim, so an empty angle or an unsupported public question is a dra
 not move coverage. Without that condition the reading would report that a stage was worked
 because somebody typed a title.
 
-**`story_intelligence` and `composition` remain `unmeasurable`, and that is a decision rather
-than an omission.** Story intelligence has no distinct object — central discrepancy, human
-conflict, narrative turn, and surprising supported detail are Angle Room content that ticket
-11 did not model separately, and inferring it from angle existence would be the proxy D20
-rejects. Composition has no renditions table until ticket 12. When those objects exist, these
-stages get object-backed readings on the same shape and this section is extended again.
+**`story_intelligence` remains `unmeasurable`, and that is a decision rather than an
+omission.** Story intelligence has no distinct object — central discrepancy, human conflict,
+narrative turn, and surprising supported detail are Angle Room content that ticket 11 did not
+model separately, and inferring it from angle existence would be the proxy D20 rejects. Do
+not silently leave it unmeasurable by forgetting to touch it when other stages gain objects.
+
+**`composition` is object-backed from ticket 12.** A case has worked composition when it has
+at least one rendition with at least one unit that cites at least one claim — the same
+"object plus claim linkage" shape as public_question and editorial_development. Empty or
+uncited drafts do not move the gauge.
 
 **`complete` is a human attestation, recorded with actor and timestamp.** "The spine is
 complete" means "I have seen enough," and no count expresses that. It sits naturally
