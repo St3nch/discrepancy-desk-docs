@@ -78,10 +78,10 @@ empty regions in the locator range guard. Naming those keeps the instinct alive.
 
 ## Where things stand
 
-**Done, committed, pushed on `main`:** tickets 01–12 (including 09a, 10a). F-03 closed
-in 10a; F-24 closed in 11 (D21); composition object-backed in 12. Docs repo carries
-D18–D21 and object-backed D20 (composition via renditions; `story_intelligence` still
-unmeasurable by decision).
+**Done, committed, pushed on `main`:** tickets 01–12a (including 09a, 10a). F-03 closed
+in 10a; F-24 closed in 11 (D21); composition object-backed in 12; refusal invariant and
+`find_quote` in 12a (F-55, F-60 closed). Docs repo carries D18–D21 and object-backed D20
+(composition via renditions; `story_intelligence` still unmeasurable by decision).
 
 **Next:** ticket 13, rendition approval. Issue file is still the thin draft until amended.
 Opens with the exact-content binding constraint (below). Do not start until the issue is
@@ -94,27 +94,64 @@ amended; brief both review axes with the implementer.
 
 ## Open obligations
 
-**No findings from tickets 01–11 are open.** F-24 closed in ticket 11 (D21) after ten
-tickets — it took three rounds, because the same laundering wore three faces: a severity
-ladder with `unknown` mis-ranked, a check bound to the proposed rather than confirmed value,
-and an unconstrained kind boundary at confirmation. The generalisation is in D21 and worth
-carrying: fixing which value a check reads does not help unless something constrains what
-that value may become.
+**No findings from tickets 01–12a are open** except deferred design (F-57) and recorded
+no-action items (F-59). F-24 closed in ticket 11 (D21) after ten tickets — it took three
+rounds, because the same laundering wore three faces: a severity ladder with `unknown`
+mis-ranked, a check bound to the proposed rather than confirmed value, and an unconstrained
+kind boundary at confirmation. The generalisation is in D21 and worth carrying: fixing which
+value a check reads does not help unless something constrains what that value may become.
 
-**F-57 needs designing before Vela.** Two independent primary documents can assert the same
-thing, and there is no vocabulary for the operator to record that they corroborate each
-other. A live executor hit this on the first real run: it classified each claim
-`single_source` — correct under D4, since each claim is about what one document says — then
-said plainly it lacked the vocabulary and left the judgement to the operator. VISION §12
-reserves "decide whether sources are genuinely independent" to the human and gives it
-nowhere to land. Nine sources on a contested topic will hit this constantly. Not a bug; a
-missing concept.
+**F-57 needs designing before Vela — deferred, with the design question open.** Two
+independent primary documents can assert the same thing, and there is no vocabulary for the
+operator to record that they corroborate each other. A live executor hit this on the first
+real run: it classified each claim `single_source` — correct under D4, since each claim is
+about what one document says — then said plainly it lacked the vocabulary and left the
+judgement to the operator. VISION §12 reserves "decide whether sources are genuinely
+independent" to the human and gives it nowhere to land.
 
-**F-55 and F-56 belong to ticket 16.** The `e/{n}/r/{start}-{end}` convention exists only
-inside refusal text, and a bare `e/n` means the quotation surface is the whole element —
-learnable only by failing once. The classification vocabulary is invisible to the executor,
-which pattern-matched values from the case's existing claims and recorded that it had done
-so. Both are rubric-and-surface problems.
+Two views exist and they compose, but the shape is not settled:
+
+- **The implementer's:** a first-class human-only relation between claims, with actor,
+  timestamp, note, append-only when re-ruled — the `claim_confirmations` pattern. Argued
+  against a field on the claim (forces asymmetric or dual writes, blurs D4's per-claim basis)
+  and against a property of the angle (independence is about sources, not framing).
+- **An outside review's:** the system finds candidate pairs and the operator attests, so the
+  judgement stays human while the finding is automated.
+
+**Two questions to settle before sizing.** Is independence a property of a *pair*, or of a
+pair *for a given proposition*? Two documents can be independent about one fact and share a
+source on another — a wire report quoting an agency statement. Per-pair is simple and
+sometimes wrong; per-proposition is honest and reintroduces the volume problem the
+confirmation surface was designed around. And does an independence ruling feed back into the
+claim's `corroboration` dimension, or stay separate? Separate is correct on D4 grounds, but
+then the ruling lives somewhere nobody looks — F-44's shape.
+
+Note also that candidate-finding cannot use semantic matching. "Same proposition family"
+needs embeddings or a model call in the backend, and backend-as-LLM-client was refused at
+ticket 09 and again at ticket 12; semantic retrieval is deferred until a governed corpus and
+a measured retrieval need exist. Structural signals only — claims on the same angle citing
+captures from distinct domains.
+
+**F-55 closed in ticket 12a.** Quotation-surface conventions were learnable only by failing
+once; `find_quote` makes the vault self-describing on exact substring → `e/{n}/r/{start}-{end}`
+(or structured miss). `propose_claim` still verifies independently. No fuzzy matching.
+
+**F-56 written into ticket 16's criteria** (not closed until 16 ships). Classification
+vocabulary invisible to the executor — enums and a one-line meaning each, plus one canonical
+worked example claim, so cold-start does not depend on case history. Origin was the live
+run pattern-matching confirmed claims.
+
+**F-60 closed in ticket 12a.** The refusal invariant sat inside the framework on the first
+pass (body decorator only; tests called `tool.fn`). Round two intercepts at
+`ToolManager.call_tool`: three categories — domain `DeskRefusal`, `TOOL_ARGUMENT_INVALID`
+(actionable framework validation), `TOOL_INTERNAL_ERROR` (non-correctable). Discriminates on
+`ToolError.__cause__`, not string-matching. Coding standards carry the three-category
+contract.
+
+**Live-model wrong-type smoke sits with the operator.** Both 12a axes agree it is not an
+acceptance criterion. The automated suite shows `TOOL_ARGUMENT_INVALID` is well-formed; only
+a live session shows whether a real executor reads it and corrects. Do before relying on the
+invariant in production use.
 
 **F-59 is recorded, no action.** `DEFAULT_CAPTURE_BUDGET` now exists in `runs.py` and
 `api.ts`, with a comment in each saying it matches the other. Third instance of the
@@ -124,6 +161,7 @@ two-artifacts-one-contract shape after F-51 and F-54; low cost, worth watching.
 content — VISION §14 says the human clears the text as it will appear, and may edit before
 approving, at which point the edited text is what gets bound. A boolean and a timestamp on a
 draft satisfies a careless reading and breaks the first time someone edits after approval.
+Do not start until the issue file is amended.
 
 **Brief both axes, not just the implementer.** Through ticket 12 the implementer received
 amended issue files and named defect classes while the spec reviewer received summaries. His
