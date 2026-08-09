@@ -65,3 +65,41 @@ what comes back.
 Uncertainty is therefore correctly parked on the client and should not be resolved
 by picking a UI framework before the interaction model is known. The web UX shape
 remains fog (see `architecture-decisions.md`).
+
+---
+
+## D17 — One brand per deployment; no account column
+
+Decided during ticket 02 review, when an account-scoping gap appeared two days into
+the build.
+
+**This system serves one editorial brand.** There is no `account_id` column, no
+account scoping in queries, and no account-aware projection anywhere. A second brand
+— GoingBulk, the declassified-documents account, or any future one — is a **separate
+deployment**: separate database, separate Vault, separate configuration, same code.
+
+**Rejected — carry an account column from the start and keep the UI single-account.**
+This was the original position and it lasted exactly one domain table. Ticket 02
+shipped `list_cases` filtering on `account_id` and `get_case` not filtering at all,
+because `GetCaseInput` had no such field. Nothing leaked, since only one account
+existed — but that is the point: an in-instance account boundary has to be enforced
+in **every** query, projection, and join, forever, and the failure is silent. Half
+the surface enforcing it and half not, on day two, is the honest forecast for how it
+would go across fourteen tickets.
+
+Carrying the column is also speculative generality — machinery for a case that does
+not exist — which `codingstandards.md` names as a smell for precisely this reason.
+
+**Precedent:** the prior build reached the same conclusion independently for the
+Vault, which it separated physically per editorial brand rather than partitioning
+within one store.
+
+**Accepted cost, stated plainly.** If one instance is ever wanted for two brands,
+retrofitting means adding the column *and* revisiting every query and projection —
+and missing one is a silent cross-brand leak. That risk is real. It is accepted
+because separate deployments give a stronger boundary for free, and because a
+boundary enforced by process separation cannot be forgotten in a `WHERE` clause.
+
+**Consequence for ticket 02:** the `account_id` column, the `CASE_ACCOUNT_EMPTY`
+refusal, and the `account_id` fields on all Case models are removed rather than
+fixed.
