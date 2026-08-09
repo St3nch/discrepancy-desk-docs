@@ -710,9 +710,17 @@ Canonical captured evidence is exact bytes, or an immutable file referenced by p
 SHA-256 and capture provenance. Parsed output is derivative and never presented as the
 original. Missing, moved, altered, or orphaned evidence must be detectable.
 
-**Multi-account:** carry account scope in the schema from the start; keep the interface
-single-account until there is a reason otherwise. Accounts never coordinate for artificial
-engagement.
+**Multi-brand:** cancelled as an in-instance concern. This system serves one editorial brand.
+A second brand — should one ever run — is a **separate deployment**: separate database,
+separate Vault, separate configuration, same code. There is no account column, no account
+scoping in queries, and no account-aware projection anywhere.
+
+The reason is that an in-instance account boundary must be enforced in every query, every
+projection, and every join, forever — and missing one is a silent cross-brand leak. Separate
+deployments give a stronger boundary at no cost. The prior build reached the same conclusion
+independently for the Vault, which it separated physically per brand.
+
+Accounts never coordinate for artificial engagement.
 
 ---
 
@@ -771,15 +779,17 @@ finding disputed by the scientific panel that examined it, decades of unresolved
 exactly the Desk's material.
 
 It is also the only topic the previous build ever ran live, and it failed: five drafts, all
-retired as failed editorial artifacts, nine sources carrying zero source notes, the longest
-draft stored as a single flat blob with no claim structure beneath it. That failure is
-precisely what this architecture was designed against.
+retired as failed editorial artifacts, a source manifest carrying no research beneath it, the
+longest draft stored as a single flat blob with no claim structure. That failure is precisely
+what this architecture was designed against.
 
-Nine real sources are already identified from that pass. Running Vela first therefore gives a
-controlled comparison on identical material — same topic, same sources, different system. If
-this produces something publishable where the last one produced five retirements, the
-architecture is doing its job. If it does not, that is worth learning before anything is
-built on top of it.
+The source set from that pass is preserved and is the benchmark corpus: **seven external
+sources plus case-owner notes**, recorded in the v1 runbook's Source Manifest and frozen into
+ticket 17. (The v1 audit's "nine source records" were per-work-item rows with repeated
+locators, not nine unique sources — F-68.) Running Vela first therefore gives a controlled
+comparison on identical material — same topic, same sources, different system. If this
+produces something publishable where the last one produced five retirements, the architecture
+is doing its job. If it does not, that is worth learning before anything is built on top of it.
 
 Everything else — Truth Social, Substack, video scripts, release monitoring, metrics
 analysis, pattern detection, multiple accounts — is extension off a proven spine.

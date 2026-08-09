@@ -101,6 +101,43 @@ mis-ranked, a check bound to the proposed rather than confirmed value, and an un
 kind boundary at confirmation. The generalisation is in D21 and worth carrying: fixing which
 value a check reads does not help unless something constrains what that value may become.
 
+**Tickets 01–14 are shipped and pushed. The spine is complete.** Desk `88e1069`.
+
+**Two blocking findings in ticket 14 both came from the spec axis, both in places the seam
+pass did not look.** The `approval_id` binding was found while reading a brief for ticket 13;
+the client fabricating `external_post_id` and `canonical_url` was found in a file the seam
+pass never opened, because the service was correct and all 233 tests passed. That is the
+second consecutive ticket where the seam reviewer checked the mechanism he expected and
+stopped.
+
+**The standing rule has a client-shaped hole.** "Run things, do not only read them" is worth
+nothing against a file no test imports. The client is now the place where the worst defects
+live — F-44, F-53, and ticket 14's S-01 are all the same shape, and all three reached the
+operator rather than a reviewer. Read `client/src/` on every ticket that touches it, and treat
+a green suite as evidence about the service only.
+
+**F-64 — one publication set per rendition.** Recorded as a stated decision, not a defect.
+`UNIQUE(rendition_id)` forecloses a thread that posts three of four units, and a unit deleted
+and reposted with a new id on unchanged cleared text. Both become a new rendition. Vela is the
+first time real posting friction meets this schema.
+
+**F-65 — publication risk is enforced on inference inheritance and nowhere else.** VISION §13
+says `unknown` and `living_private` are non-publishable. D21 enforces that categorically for
+inference claims, and re-confirming a claim to a non-publishable risk is refused while a
+confirmed inference cites it. **Ordinary claims are ungated.**
+
+Verified at ticket 14: `NON_PUBLISHABLE_PUBLICATION_RISKS` appears only in
+`assert_inference_publication_risk_allowed` and the re-confirmation block. `renditions.py`
+contains zero references to `publication_risk`. So an ordinary claim classified
+`living_private` can be confirmed, linked to an angle, composed into a unit, cleared, and
+published with nothing refusing it.
+
+This is F-24's shape — a doctrine enforced on the interpretive path and absent from the
+ordinary one — and F-24 sat open for ten tickets. Decide before Vela, alongside F-57. The
+question is not whether to gate but where: at confirmation, at angle linkage, at composition,
+or at clearance. Clearance is the natural home, since that is where the human asserts
+publishability and where the existing shared eligibility helper already runs.
+
 **F-57 needs designing before Vela — deferred, with the design question open.** Two
 independent primary documents can assert the same thing, and there is no vocabulary for the
 operator to record that they corroborate each other. A live executor hit this on the first
@@ -163,11 +200,43 @@ approving, at which point the edited text is what gets bound. A boolean and a ti
 draft satisfies a careless reading and breaks the first time someone edits after approval.
 Do not start until the issue file is amended.
 
-**Brief both axes, not just the implementer.** Through ticket 12 the implementer received
-amended issue files and named defect classes while the spec reviewer received summaries. His
-strongest findings — the populated migration, the source-basis field binding, the case-wide
-claim pool — all came when he had something concrete to push on. Write two prompts per
-ticket and send them together.
+**Ask the implementer, do not only instruct him.** He is the only party who has read the whole
+diff and the surrounding code at the same time, and `AGENTS.md` already asks his reports to say
+what he noticed. That works in both directions: a prompt that carries genuine questions gets
+better answers than one that only carries findings. Three decisions have changed on the
+strength of an implementer observation — the F-57 relation shape, the ticket 12 shelf scope,
+and the ticket 14 publication constraint — and each came from a question rather than a
+directive.
+
+Good questions are the ones where he holds information the reviewer does not: what a required
+change would cost elsewhere, why he chose one of two defensible shapes, whether a defect class
+just named appears anywhere else he has seen. Do not ask him to re-decide settled doctrine, and
+do not use a question to soften a required fix — state the requirement, then ask what it costs.
+
+**Brief the implementer; brief the spec axis when he reviews.** Sequencing is linear, and the
+reason is a real race rather than a preference: **every agent has filesystem access to the
+same working tree.** Brief a reviewer while the implementer is mid-ticket and he reads a
+half-applied edit — forming findings about code that never existed, in a state nobody can
+reconstruct afterwards to tell a real defect from a snapshot artifact.
+
+**The invariant: only one agent touches the tree at a time.** Grok gets the ticket brief and
+works. His session is stopped before either reviewer is briefed. Reviewers then read a stable
+tree. This is the same call D12 made for runtime runs — serialise because it is simpler — and
+D12's note that development-time agents are a separate layer meant the decision did not
+transfer automatically, not that the layer needs no rule. It does, and this is it.
+
+**What linear sequencing costs, and how to pay it.** Through ticket 12 the spec reviewer
+received summaries while Grok received amended issue files, and his strongest findings — the
+populated migration, the source-basis field binding, the case-wide claim pool — all came when
+he had something concrete to push on. That loss was about *artifacts*, not timing. **Give the
+spec axis the same artifacts the implementer got** — the amended issue file, any new decision
+record, the named defect classes — inside his review prompt. He reviews spec fidelity against
+the contract, so he needs the contract, not a summary of it.
+
+**Where design questions get settled.** Before the ticket opens, while no agent is working the
+tree. A design question put to the spec axis *as a design question*, ahead of any brief, is
+cheap, breaks no invariant, and twice reshaped ticket 15 before a line was written. That is a
+separate exchange from review.
 
 **F-51 closed in ticket 12** — `tests/test_client_api_paths.py` extracts literal `/api/…`
 paths from `client/src/api.ts` and asserts each resolves on the router. Operator JSON.parse
