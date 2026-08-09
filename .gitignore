@@ -16,3 +16,6 @@ Thumbs.db
 
 # Grok local sessions
 .grok/sessions/
+
+# Local v1 archive (on disk for forensics; frozen extracts live under reference/)
+vedaops-legacy-2026-08-05/
