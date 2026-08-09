@@ -36,12 +36,22 @@ publication risk is a separate control.
 
 ## D21 — Categorical inheritance, no ranking
 
-**§13 states the rule directly: `unknown` and `living_private` are non-publishable.
-Everything else is publishable subject to human judgement.** That binary is the whole
-constraint:
+**§13 groups `unknown` and `living_private` as the fail-closed pair: those two are
+non-publishable *as cross-case connections*, and everything else is publishable subject to
+human judgement.** D21 adopts that same pair for inference inheritance. That binary is the
+whole constraint:
 
 > If any cited claim carries `unknown` or `living_private`, the inference must also carry
 > `unknown` or `living_private`.
+
+**Scope correction (D23).** An earlier wording of this section read "§13 states the rule
+directly: `unknown` and `living_private` are non-publishable," dropping §13's *as cross-case
+connections* qualifier. That made a narrow rule about the No Coincidences surface look like a
+universal bar on publishing either value, and that misreading produced F-65's framing. The pair
+is correct **here**, for inference inheritance, because neither value may be laundered into a
+safer one. It is not a universal ordinary-claim rule — see `publication-risk-ordinary-claims.md`
+(D23), which settles what each value does at clearance and publication and renames the code
+constant so its scope cannot be mistaken again.
 
 No ranking, no comparison between incomparable categories, and `unknown` fails closed by
 construction rather than by where it happens to sit in a dictionary.
